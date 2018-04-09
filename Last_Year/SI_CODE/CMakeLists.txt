@@ -11,8 +11,11 @@ link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
 include_directories(src)
+# set(SOURCE_FILES
+#        src/*.cpp)
+
 set(SOURCE_FILES
-       src/*.cpp)
+        pcd_read.cpp)
 
 #set(SOURCE_FILES
 #        src/Memory.cpp
