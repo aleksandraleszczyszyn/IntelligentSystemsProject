@@ -1,0 +1,447 @@
+\hypertarget{class_test_result}{}\section{Test\+Result Class Reference}
+\label{class_test_result}\index{Test\+Result@{Test\+Result}}
+
+
+Holds the performance test results for individual test runs.  
+
+
+
+
+{\ttfamily \#include $<$Test\+Result.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_test_result_af77fa5c098e06de9a1dd456169a6b329}{Test\+Result} ()
+\item 
+void \hyperlink{class_test_result_a0828de248f0a56eb99b24211c47db125}{set\+Perf\+Assess} (unordered\+\_\+map$<$ int, \hyperlink{class_category}{Category} $>$ \&categories)
+\item 
+void \hyperlink{class_test_result_a99aeb67d2dec816bcaf73d62554e65b9}{print\+Test\+Results} ()
+\item 
+void \hyperlink{class_test_result_a6b879e18776fac2d27c367df9073637c}{set\+Num\+Forgotten\+Features} (long long Num\+Forgotten\+Features)
+\item 
+long long \hyperlink{class_test_result_af5237dc8023ce158e523e6aa87917941}{get\+Num\+Forgotten\+Features} ()
+\item 
+void \hyperlink{class_test_result_abb934e44428a188be6d86bb5a9b7b409}{set\+Num\+Forgotten\+Features\+By\+Mem\+Decay} (long long Num\+Forgotten\+Features\+By\+Mem\+Decay)
+\item 
+long long \hyperlink{class_test_result_a753726e30dc19e459520e996a57449a1}{get\+Num\+Forgotten\+Features\+By\+Mem\+Decay} ()
+\item 
+void \hyperlink{class_test_result_a893a356de57d3148a33f8ed437d0a0fc}{set\+Num\+Redundant\+Features} (long long Num\+Redundant\+Features)
+\item 
+long long \hyperlink{class_test_result_a2969cb491e01764d1ba6b55cb959f9be}{get\+Num\+Redundant\+Features} ()
+\item 
+void \hyperlink{class_test_result_a901e43703e2a09d2dd6f55fdc74f803b}{set\+Num\+Seen\+Objects} (long long Num\+Seen\+Objects)
+\item 
+long long \hyperlink{class_test_result_a2fc8d3dc661c79d6432ea5724f0a27f1}{get\+Num\+Seen\+Objects} ()
+\item 
+void \hyperlink{class_test_result_a3b62eac13ac36a12454ced117e6eebe3}{set\+Num\+Seen\+Features} (long long Num\+Seen\+Features)
+\item 
+long long \hyperlink{class_test_result_af31d71d5f3a86aabc5004e725b1c467c}{get\+Num\+Seen\+Features} ()
+\item 
+void \hyperlink{class_test_result_a834d5e72053690b3c695a939f969b21f}{set\+Num\+Features\+In\+Memory} (long long Num\+Features\+In\+Memory)
+\item 
+long long \hyperlink{class_test_result_a9ccd5cc0a7dd562015d8030d565dda8b}{get\+Num\+Features\+In\+Memory} ()
+\item 
+void \hyperlink{class_test_result_a81a7c2e2b80e316df3f5ad9a8144a454}{set\+Smallest\+Distance} (double Smallest\+Distance)
+\item 
+double \hyperlink{class_test_result_a592c4856a78c354fa97029c526eaa306}{get\+Smallest\+Distance} ()
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, \hyperlink{class_measure}{Measure} $>$ $>$ \& \hyperlink{class_test_result_a4bb4cc060985ad8a8b8bc12266daffd2}{get\+Category\+Performance\+Meassures} ()
+\item 
+double \hyperlink{class_test_result_acf90ffd2fa4e6d459ee75747ea07cc93}{accuracy} ()
+\item 
+void \hyperlink{class_test_result_a52297b1ef46add85147456a8011991a4}{add\+To\+Sample} ()
+\item 
+void \hyperlink{class_test_result_a4a46aaf2d355f73c2fd366945ed46496}{add\+To\+Correct\+Classifications} ()
+\item 
+int \& \hyperlink{class_test_result_a6063b616fe294b8cee9efa1739958d04}{get\+Num\+Clusters} ()
+\item 
+void \hyperlink{class_test_result_acf1bc1c422b1edfd53b9c7cf11980aca}{set\+Num\+Clusters} (int n\+Clusts)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, \hyperlink{class_measure}{Measure} $>$ $>$ \hyperlink{class_test_result_a7d451af5c02d15b3b8d117adbcdede57}{perf\+Assess}
+\item 
+int \hyperlink{class_test_result_a2986ed45ae3e5dd3287804d3e35f3830}{n\+Samples}
+\item 
+int \hyperlink{class_test_result_a35cefffa1f0be43a99b0061c03008c16}{n\+Correct\+Class}
+\item 
+int \hyperlink{class_test_result_add83898b67f41cc78be15efef7748ac0}{n\+Clusters}
+\item 
+long long \hyperlink{class_test_result_ac6db89d90c92fbc19b701c3e1327dabf}{num\+Forgotten\+Features}
+\item 
+long long \hyperlink{class_test_result_aa416470604df77c02a8f4a971f413e1a}{num\+Redundant\+Features}
+\item 
+long long \hyperlink{class_test_result_a1e421539c0074eeb06cc31ba177a724e}{num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}
+\item 
+long long \hyperlink{class_test_result_a5e10d3944bd5a8f6997547fb2faf4de6}{num\+Seen\+Objects}
+\item 
+long long \hyperlink{class_test_result_a3908b36b2834082b11fdbb3932a4908e}{num\+Seen\+Features}
+\item 
+long long \hyperlink{class_test_result_a9d7b76c3afe61c67ffd4a73af768e9c4}{num\+Features\+In\+Memory}
+\item 
+double \hyperlink{class_test_result_a9a58045656cd237ce1231b15b234f2c3}{smallest\+Distance}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the performance test results for individual test runs. 
+
+Definition at line 19 of file Test\+Result.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_test_result_af77fa5c098e06de9a1dd456169a6b329}\label{class_test_result_af77fa5c098e06de9a1dd456169a6b329}} 
+\index{Test\+Result@{Test\+Result}!Test\+Result@{Test\+Result}}
+\index{Test\+Result@{Test\+Result}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{Test\+Result()}{TestResult()}}
+{\footnotesize\ttfamily Test\+Result\+::\+Test\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The empty constructor is required when used as the value in a map. 
+
+Definition at line 6 of file Test\+Result.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_test_result_acf90ffd2fa4e6d459ee75747ea07cc93}\label{class_test_result_acf90ffd2fa4e6d459ee75747ea07cc93}} 
+\index{Test\+Result@{Test\+Result}!accuracy@{accuracy}}
+\index{accuracy@{accuracy}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{accuracy()}{accuracy()}}
+{\footnotesize\ttfamily double Test\+Result\+::accuracy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the accuracy in the range 0-\/1 
+
+Definition at line 159 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a4a46aaf2d355f73c2fd366945ed46496}\label{class_test_result_a4a46aaf2d355f73c2fd366945ed46496}} 
+\index{Test\+Result@{Test\+Result}!add\+To\+Correct\+Classifications@{add\+To\+Correct\+Classifications}}
+\index{add\+To\+Correct\+Classifications@{add\+To\+Correct\+Classifications}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{add\+To\+Correct\+Classifications()}{addToCorrectClassifications()}}
+{\footnotesize\ttfamily void Test\+Result\+::add\+To\+Correct\+Classifications (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 167 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a52297b1ef46add85147456a8011991a4}\label{class_test_result_a52297b1ef46add85147456a8011991a4}} 
+\index{Test\+Result@{Test\+Result}!add\+To\+Sample@{add\+To\+Sample}}
+\index{add\+To\+Sample@{add\+To\+Sample}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{add\+To\+Sample()}{addToSample()}}
+{\footnotesize\ttfamily void Test\+Result\+::add\+To\+Sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 163 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a4bb4cc060985ad8a8b8bc12266daffd2}\label{class_test_result_a4bb4cc060985ad8a8b8bc12266daffd2}} 
+\index{Test\+Result@{Test\+Result}!get\+Category\+Performance\+Meassures@{get\+Category\+Performance\+Meassures}}
+\index{get\+Category\+Performance\+Meassures@{get\+Category\+Performance\+Meassures}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{get\+Category\+Performance\+Meassures()}{getCategoryPerformanceMeassures()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$std\+::string, \hyperlink{class_measure}{Measure}$>$ $>$\& Test\+Result\+::get\+Category\+Performance\+Meassures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 152 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a6063b616fe294b8cee9efa1739958d04}\label{class_test_result_a6063b616fe294b8cee9efa1739958d04}} 
+\index{Test\+Result@{Test\+Result}!get\+Num\+Clusters@{get\+Num\+Clusters}}
+\index{get\+Num\+Clusters@{get\+Num\+Clusters}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{get\+Num\+Clusters()}{getNumClusters()}}
+{\footnotesize\ttfamily int\& Test\+Result\+::get\+Num\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the final number of clusters used during the test. 
+
+Definition at line 174 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a9ccd5cc0a7dd562015d8030d565dda8b}\label{class_test_result_a9ccd5cc0a7dd562015d8030d565dda8b}} 
+\index{Test\+Result@{Test\+Result}!get\+Num\+Features\+In\+Memory@{get\+Num\+Features\+In\+Memory}}
+\index{get\+Num\+Features\+In\+Memory@{get\+Num\+Features\+In\+Memory}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{get\+Num\+Features\+In\+Memory()}{getNumFeaturesInMemory()}}
+{\footnotesize\ttfamily long long Test\+Result\+::get\+Num\+Features\+In\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 140 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_af5237dc8023ce158e523e6aa87917941}\label{class_test_result_af5237dc8023ce158e523e6aa87917941}} 
+\index{Test\+Result@{Test\+Result}!get\+Num\+Forgotten\+Features@{get\+Num\+Forgotten\+Features}}
+\index{get\+Num\+Forgotten\+Features@{get\+Num\+Forgotten\+Features}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{get\+Num\+Forgotten\+Features()}{getNumForgottenFeatures()}}
+{\footnotesize\ttfamily long long Test\+Result\+::get\+Num\+Forgotten\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a753726e30dc19e459520e996a57449a1}\label{class_test_result_a753726e30dc19e459520e996a57449a1}} 
+\index{Test\+Result@{Test\+Result}!get\+Num\+Forgotten\+Features\+By\+Mem\+Decay@{get\+Num\+Forgotten\+Features\+By\+Mem\+Decay}}
+\index{get\+Num\+Forgotten\+Features\+By\+Mem\+Decay@{get\+Num\+Forgotten\+Features\+By\+Mem\+Decay}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{get\+Num\+Forgotten\+Features\+By\+Mem\+Decay()}{getNumForgottenFeaturesByMemDecay()}}
+{\footnotesize\ttfamily long long Test\+Result\+::get\+Num\+Forgotten\+Features\+By\+Mem\+Decay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a2969cb491e01764d1ba6b55cb959f9be}\label{class_test_result_a2969cb491e01764d1ba6b55cb959f9be}} 
+\index{Test\+Result@{Test\+Result}!get\+Num\+Redundant\+Features@{get\+Num\+Redundant\+Features}}
+\index{get\+Num\+Redundant\+Features@{get\+Num\+Redundant\+Features}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{get\+Num\+Redundant\+Features()}{getNumRedundantFeatures()}}
+{\footnotesize\ttfamily long long Test\+Result\+::get\+Num\+Redundant\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 116 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_af31d71d5f3a86aabc5004e725b1c467c}\label{class_test_result_af31d71d5f3a86aabc5004e725b1c467c}} 
+\index{Test\+Result@{Test\+Result}!get\+Num\+Seen\+Features@{get\+Num\+Seen\+Features}}
+\index{get\+Num\+Seen\+Features@{get\+Num\+Seen\+Features}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{get\+Num\+Seen\+Features()}{getNumSeenFeatures()}}
+{\footnotesize\ttfamily long long Test\+Result\+::get\+Num\+Seen\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 132 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a2fc8d3dc661c79d6432ea5724f0a27f1}\label{class_test_result_a2fc8d3dc661c79d6432ea5724f0a27f1}} 
+\index{Test\+Result@{Test\+Result}!get\+Num\+Seen\+Objects@{get\+Num\+Seen\+Objects}}
+\index{get\+Num\+Seen\+Objects@{get\+Num\+Seen\+Objects}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{get\+Num\+Seen\+Objects()}{getNumSeenObjects()}}
+{\footnotesize\ttfamily long long Test\+Result\+::get\+Num\+Seen\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 124 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a592c4856a78c354fa97029c526eaa306}\label{class_test_result_a592c4856a78c354fa97029c526eaa306}} 
+\index{Test\+Result@{Test\+Result}!get\+Smallest\+Distance@{get\+Smallest\+Distance}}
+\index{get\+Smallest\+Distance@{get\+Smallest\+Distance}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{get\+Smallest\+Distance()}{getSmallestDistance()}}
+{\footnotesize\ttfamily double Test\+Result\+::get\+Smallest\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 148 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a99aeb67d2dec816bcaf73d62554e65b9}\label{class_test_result_a99aeb67d2dec816bcaf73d62554e65b9}} 
+\index{Test\+Result@{Test\+Result}!print\+Test\+Results@{print\+Test\+Results}}
+\index{print\+Test\+Results@{print\+Test\+Results}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{print\+Test\+Results()}{printTestResults()}}
+{\footnotesize\ttfamily void Test\+Result\+::print\+Test\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints test perfomance information. 
+
+Definition at line 16 of file Test\+Result.\+cpp.
+
+\mbox{\Hypertarget{class_test_result_acf1bc1c422b1edfd53b9c7cf11980aca}\label{class_test_result_acf1bc1c422b1edfd53b9c7cf11980aca}} 
+\index{Test\+Result@{Test\+Result}!set\+Num\+Clusters@{set\+Num\+Clusters}}
+\index{set\+Num\+Clusters@{set\+Num\+Clusters}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{set\+Num\+Clusters()}{setNumClusters()}}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Num\+Clusters (\begin{DoxyParamCaption}\item[{int}]{n\+Clusts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 178 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a834d5e72053690b3c695a939f969b21f}\label{class_test_result_a834d5e72053690b3c695a939f969b21f}} 
+\index{Test\+Result@{Test\+Result}!set\+Num\+Features\+In\+Memory@{set\+Num\+Features\+In\+Memory}}
+\index{set\+Num\+Features\+In\+Memory@{set\+Num\+Features\+In\+Memory}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{set\+Num\+Features\+In\+Memory()}{setNumFeaturesInMemory()}}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Num\+Features\+In\+Memory (\begin{DoxyParamCaption}\item[{long long}]{Num\+Features\+In\+Memory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 136 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a6b879e18776fac2d27c367df9073637c}\label{class_test_result_a6b879e18776fac2d27c367df9073637c}} 
+\index{Test\+Result@{Test\+Result}!set\+Num\+Forgotten\+Features@{set\+Num\+Forgotten\+Features}}
+\index{set\+Num\+Forgotten\+Features@{set\+Num\+Forgotten\+Features}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{set\+Num\+Forgotten\+Features()}{setNumForgottenFeatures()}}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Num\+Forgotten\+Features (\begin{DoxyParamCaption}\item[{long long}]{Num\+Forgotten\+Features }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 96 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_abb934e44428a188be6d86bb5a9b7b409}\label{class_test_result_abb934e44428a188be6d86bb5a9b7b409}} 
+\index{Test\+Result@{Test\+Result}!set\+Num\+Forgotten\+Features\+By\+Mem\+Decay@{set\+Num\+Forgotten\+Features\+By\+Mem\+Decay}}
+\index{set\+Num\+Forgotten\+Features\+By\+Mem\+Decay@{set\+Num\+Forgotten\+Features\+By\+Mem\+Decay}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{set\+Num\+Forgotten\+Features\+By\+Mem\+Decay()}{setNumForgottenFeaturesByMemDecay()}}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Num\+Forgotten\+Features\+By\+Mem\+Decay (\begin{DoxyParamCaption}\item[{long long}]{Num\+Forgotten\+Features\+By\+Mem\+Decay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 104 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a893a356de57d3148a33f8ed437d0a0fc}\label{class_test_result_a893a356de57d3148a33f8ed437d0a0fc}} 
+\index{Test\+Result@{Test\+Result}!set\+Num\+Redundant\+Features@{set\+Num\+Redundant\+Features}}
+\index{set\+Num\+Redundant\+Features@{set\+Num\+Redundant\+Features}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{set\+Num\+Redundant\+Features()}{setNumRedundantFeatures()}}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Num\+Redundant\+Features (\begin{DoxyParamCaption}\item[{long long}]{Num\+Redundant\+Features }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 112 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a3b62eac13ac36a12454ced117e6eebe3}\label{class_test_result_a3b62eac13ac36a12454ced117e6eebe3}} 
+\index{Test\+Result@{Test\+Result}!set\+Num\+Seen\+Features@{set\+Num\+Seen\+Features}}
+\index{set\+Num\+Seen\+Features@{set\+Num\+Seen\+Features}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{set\+Num\+Seen\+Features()}{setNumSeenFeatures()}}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Num\+Seen\+Features (\begin{DoxyParamCaption}\item[{long long}]{Num\+Seen\+Features }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 128 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a901e43703e2a09d2dd6f55fdc74f803b}\label{class_test_result_a901e43703e2a09d2dd6f55fdc74f803b}} 
+\index{Test\+Result@{Test\+Result}!set\+Num\+Seen\+Objects@{set\+Num\+Seen\+Objects}}
+\index{set\+Num\+Seen\+Objects@{set\+Num\+Seen\+Objects}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{set\+Num\+Seen\+Objects()}{setNumSeenObjects()}}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Num\+Seen\+Objects (\begin{DoxyParamCaption}\item[{long long}]{Num\+Seen\+Objects }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 120 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a0828de248f0a56eb99b24211c47db125}\label{class_test_result_a0828de248f0a56eb99b24211c47db125}} 
+\index{Test\+Result@{Test\+Result}!set\+Perf\+Assess@{set\+Perf\+Assess}}
+\index{set\+Perf\+Assess@{set\+Perf\+Assess}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{set\+Perf\+Assess()}{setPerfAssess()}}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Perf\+Assess (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ int, \hyperlink{class_category}{Category} $>$ \&}]{categories }\end{DoxyParamCaption})}
+
+Sets the performance measures obtained for the categories. 
+
+Definition at line 10 of file Test\+Result.\+cpp.
+
+\mbox{\Hypertarget{class_test_result_a81a7c2e2b80e316df3f5ad9a8144a454}\label{class_test_result_a81a7c2e2b80e316df3f5ad9a8144a454}} 
+\index{Test\+Result@{Test\+Result}!set\+Smallest\+Distance@{set\+Smallest\+Distance}}
+\index{set\+Smallest\+Distance@{set\+Smallest\+Distance}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{set\+Smallest\+Distance()}{setSmallestDistance()}}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Smallest\+Distance (\begin{DoxyParamCaption}\item[{double}]{Smallest\+Distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 144 of file Test\+Result.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_test_result_add83898b67f41cc78be15efef7748ac0}\label{class_test_result_add83898b67f41cc78be15efef7748ac0}} 
+\index{Test\+Result@{Test\+Result}!n\+Clusters@{n\+Clusters}}
+\index{n\+Clusters@{n\+Clusters}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{n\+Clusters}{nClusters}}
+{\footnotesize\ttfamily int Test\+Result\+::n\+Clusters\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of clusters used to perfom the test. 
+
+Definition at line 57 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a35cefffa1f0be43a99b0061c03008c16}\label{class_test_result_a35cefffa1f0be43a99b0061c03008c16}} 
+\index{Test\+Result@{Test\+Result}!n\+Correct\+Class@{n\+Correct\+Class}}
+\index{n\+Correct\+Class@{n\+Correct\+Class}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{n\+Correct\+Class}{nCorrectClass}}
+{\footnotesize\ttfamily int Test\+Result\+::n\+Correct\+Class\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of correct classifications occored during the test run. 
+
+Definition at line 52 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a2986ed45ae3e5dd3287804d3e35f3830}\label{class_test_result_a2986ed45ae3e5dd3287804d3e35f3830}} 
+\index{Test\+Result@{Test\+Result}!n\+Samples@{n\+Samples}}
+\index{n\+Samples@{n\+Samples}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{n\+Samples}{nSamples}}
+{\footnotesize\ttfamily int Test\+Result\+::n\+Samples\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of samples used in the test run. 
+
+Definition at line 47 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a9d7b76c3afe61c67ffd4a73af768e9c4}\label{class_test_result_a9d7b76c3afe61c67ffd4a73af768e9c4}} 
+\index{Test\+Result@{Test\+Result}!num\+Features\+In\+Memory@{num\+Features\+In\+Memory}}
+\index{num\+Features\+In\+Memory@{num\+Features\+In\+Memory}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{num\+Features\+In\+Memory}{numFeaturesInMemory}}
+{\footnotesize\ttfamily long long Test\+Result\+::num\+Features\+In\+Memory\hspace{0.3cm}{\ttfamily [protected]}}
+
+The final number of features in memory. 
+
+Definition at line 87 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_ac6db89d90c92fbc19b701c3e1327dabf}\label{class_test_result_ac6db89d90c92fbc19b701c3e1327dabf}} 
+\index{Test\+Result@{Test\+Result}!num\+Forgotten\+Features@{num\+Forgotten\+Features}}
+\index{num\+Forgotten\+Features@{num\+Forgotten\+Features}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{num\+Forgotten\+Features}{numForgottenFeatures}}
+{\footnotesize\ttfamily long long Test\+Result\+::num\+Forgotten\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of forgotten features. 
+
+Definition at line 62 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a1e421539c0074eeb06cc31ba177a724e}\label{class_test_result_a1e421539c0074eeb06cc31ba177a724e}} 
+\index{Test\+Result@{Test\+Result}!num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor@{num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}}
+\index{num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor@{num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}{numForgottenFeaturesByMemoryDecayFactor}}
+{\footnotesize\ttfamily long long Test\+Result\+::num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of forgotten features by reaching the memory decay factor. 
+
+Definition at line 72 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_aa416470604df77c02a8f4a971f413e1a}\label{class_test_result_aa416470604df77c02a8f4a971f413e1a}} 
+\index{Test\+Result@{Test\+Result}!num\+Redundant\+Features@{num\+Redundant\+Features}}
+\index{num\+Redundant\+Features@{num\+Redundant\+Features}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{num\+Redundant\+Features}{numRedundantFeatures}}
+{\footnotesize\ttfamily long long Test\+Result\+::num\+Redundant\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of redundant features. 
+
+Definition at line 67 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a3908b36b2834082b11fdbb3932a4908e}\label{class_test_result_a3908b36b2834082b11fdbb3932a4908e}} 
+\index{Test\+Result@{Test\+Result}!num\+Seen\+Features@{num\+Seen\+Features}}
+\index{num\+Seen\+Features@{num\+Seen\+Features}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{num\+Seen\+Features}{numSeenFeatures}}
+{\footnotesize\ttfamily long long Test\+Result\+::num\+Seen\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of seen features. 
+
+Definition at line 82 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a5e10d3944bd5a8f6997547fb2faf4de6}\label{class_test_result_a5e10d3944bd5a8f6997547fb2faf4de6}} 
+\index{Test\+Result@{Test\+Result}!num\+Seen\+Objects@{num\+Seen\+Objects}}
+\index{num\+Seen\+Objects@{num\+Seen\+Objects}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{num\+Seen\+Objects}{numSeenObjects}}
+{\footnotesize\ttfamily long long Test\+Result\+::num\+Seen\+Objects\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of seen objects. 
+
+Definition at line 77 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a7d451af5c02d15b3b8d117adbcdede57}\label{class_test_result_a7d451af5c02d15b3b8d117adbcdede57}} 
+\index{Test\+Result@{Test\+Result}!perf\+Assess@{perf\+Assess}}
+\index{perf\+Assess@{perf\+Assess}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{perf\+Assess}{perfAssess}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$std\+::string, \hyperlink{class_measure}{Measure}$>$ $>$ Test\+Result\+::perf\+Assess\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds the perfomance results (precision and recall) for the categories used in the test run. 
+
+Definition at line 42 of file Test\+Result.\+h.
+
+\mbox{\Hypertarget{class_test_result_a9a58045656cd237ce1231b15b234f2c3}\label{class_test_result_a9a58045656cd237ce1231b15b234f2c3}} 
+\index{Test\+Result@{Test\+Result}!smallest\+Distance@{smallest\+Distance}}
+\index{smallest\+Distance@{smallest\+Distance}!Test\+Result@{Test\+Result}}
+\subsubsection{\texorpdfstring{smallest\+Distance}{smallestDistance}}
+{\footnotesize\ttfamily double Test\+Result\+::smallest\+Distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+The smmalest distance between 2 features during the test. 
+
+Definition at line 92 of file Test\+Result.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_test_result_8h}{Test\+Result.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_test_result_8cpp}{Test\+Result.\+cpp}\end{DoxyCompactItemize}

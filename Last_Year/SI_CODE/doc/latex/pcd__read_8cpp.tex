@@ -1,0 +1,338 @@
+\hypertarget{pcd__read_8cpp}{}\section{H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/pcd\+\_\+read.cpp File Reference}
+\label{pcd__read_8cpp}\index{H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/pcd\+\_\+read.\+cpp@{H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/pcd\+\_\+read.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$pcl/io/pcd\+\_\+io.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/point\+\_\+types.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/filters/voxel\+\_\+grid.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/features/normal\+\_\+3d.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/features/spin\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/pcl\+\_\+base.\+h$>$}\newline
+{\ttfamily \#include $<$include.\+h$>$}\newline
+{\ttfamily \#include $<$Viewer.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}kmeans.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Memory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cluster.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Performance\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Feature\+Extractor.\+h$>$}\newline
+{\ttfamily \#include $<$Object\+View\+Repository.\+h$>$}\newline
+{\ttfamily \#include $<$Category\+Recognizer.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for pcd\+\_\+read.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pcd__read_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{pcd__read_8cpp_a556b3c6905dcddb8e025f01fe26aeeb0}{load\+\_\+configuration} (const char $\ast$\hyperlink{pcd__read_8cpp_aca091ce0edc2826a2daa09632fe1df87}{configuration\+\_\+file})
+\item 
+void \hyperlink{pcd__read_8cpp_aa45f069fe76674a03f3dd560dd00b1ee}{print\+Configuration} ()
+\item 
+char \hyperlink{pcd__read_8cpp_a04b60e3f5695797d1c8a637116847b0d}{run\+Test} (\hyperlink{class_memory}{Memory} \&memory, \hyperlink{class_test_result}{Test\+Result} \&test\+Result)
+\item 
+int \hyperlink{pcd__read_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{pcd__read_8cpp_abb53629fa0b24a5b441a9459a9a260bd}{voxel\+\_\+size} = 0.\+03
+\item 
+float \hyperlink{pcd__read_8cpp_a138272d8c4416a17717f968a40c689a0}{search\+\_\+radius} = 0.\+1
+\item 
+int \hyperlink{pcd__read_8cpp_a0e2e740afd510cfe652a1836ffbad209}{window\+\_\+width} = 8
+\item 
+float \hyperlink{pcd__read_8cpp_abed5c1c3716fc66df9f1a01a430aa8cc}{support\+\_\+lenght} = 0.\+1
+\item 
+float \hyperlink{pcd__read_8cpp_a13fd0ebf6c809f68d2b0e9bfc16bf68d}{support\+\_\+angle} = 0
+\item 
+float \hyperlink{pcd__read_8cpp_abbd3dac675fcfc5a5b1d4650518f3771}{min\+\_\+pts\+\_\+neighbours} = 0
+\item 
+double \hyperlink{pcd__read_8cpp_a509a4ff42b75fb552a368fb612b4d5aa}{feature\+Redundancy\+Treshold}
+\item 
+float \hyperlink{pcd__read_8cpp_aa84893582aa7db6e7f8d264c9d5f551d}{memory\+Decay\+Factor}
+\item 
+float \hyperlink{pcd__read_8cpp_a079ca08c1f50cffd8aeed76cb32f953d}{memory\+Decay\+Treshold}
+\item 
+long long \hyperlink{pcd__read_8cpp_a8d4989d5c738bf1af4de9534934b31c2}{max\+Num\+Features\+In\+Memory}
+\item 
+float \hyperlink{pcd__read_8cpp_aff7e6408eaf90a97c24e2040a8276c9d}{redistribute\+\_\+g\+Weights\+\_\+search\+\_\+radius} = 0.\+05
+\item 
+bool \hyperlink{pcd__read_8cpp_a117352cc494cc62c6b2f1882786a332c}{D\+E\+B\+UG} = false
+\item 
+const char $\ast$ \hyperlink{pcd__read_8cpp_acd0fefcf1eadbf91d3e55e688fdfed78}{object\+\_\+views\+\_\+directory} = N\+U\+LL
+\item 
+int \hyperlink{pcd__read_8cpp_a21d538faa7b6b1c86f9d819afb80545a}{n\+Categories} = 0
+\item 
+float \hyperlink{pcd__read_8cpp_ac20bcaf1ef4dcd80403aa6226205f078}{training\+Percentage} = 0.\+0
+\item 
+int \hyperlink{pcd__read_8cpp_ae4d2a6bfe8a5f3769966bedeb51fd5ce}{number\+Of\+Tests} = 0
+\item 
+const char $\ast$ \hyperlink{pcd__read_8cpp_aca091ce0edc2826a2daa09632fe1df87}{configuration\+\_\+file} = N\+U\+LL
+\item 
+bool \hyperlink{pcd__read_8cpp_a9b88421536cf9e112537307343ce61ab}{forget} = false
+\item 
+int \hyperlink{pcd__read_8cpp_ad7293039828c875da50e40a0640f3dfa}{n\+Views\+To\+See\+Per\+Category} = 0
+\item 
+bool \hyperlink{pcd__read_8cpp_a70b060316aa5f0bcce50bae018f006f2}{rand\+Shuffle} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{pcd__read_8cpp_a556b3c6905dcddb8e025f01fe26aeeb0}\label{pcd__read_8cpp_a556b3c6905dcddb8e025f01fe26aeeb0}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!load\+\_\+configuration@{load\+\_\+configuration}}
+\index{load\+\_\+configuration@{load\+\_\+configuration}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{load\+\_\+configuration()}{load\_configuration()}}
+{\footnotesize\ttfamily bool load\+\_\+configuration (\begin{DoxyParamCaption}\item[{const char $\ast$}]{configuration\+\_\+file }\end{DoxyParamCaption})}
+
+Loads the configuration file from disk. 
+
+Definition at line 74 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{pcd__read_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!main@{main}}
+\index{main@{main}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+The application entry point. 
+
+Definition at line 358 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_aa45f069fe76674a03f3dd560dd00b1ee}\label{pcd__read_8cpp_aa45f069fe76674a03f3dd560dd00b1ee}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!print\+Configuration@{print\+Configuration}}
+\index{print\+Configuration@{print\+Configuration}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{print\+Configuration()}{printConfiguration()}}
+{\footnotesize\ttfamily void print\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the application configuration. 
+
+Definition at line 124 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a04b60e3f5695797d1c8a637116847b0d}\label{pcd__read_8cpp_a04b60e3f5695797d1c8a637116847b0d}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!run\+Test@{run\+Test}}
+\index{run\+Test@{run\+Test}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{run\+Test()}{runTest()}}
+{\footnotesize\ttfamily char run\+Test (\begin{DoxyParamCaption}\item[{\hyperlink{class_memory}{Memory} \&}]{memory,  }\item[{\hyperlink{class_test_result}{Test\+Result} \&}]{test\+Result }\end{DoxyParamCaption})}
+
+Runs a test. A test includes 2 phases\+: trainig and learning. 
+
+Definition at line 161 of file pcd\+\_\+read.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{pcd__read_8cpp_aca091ce0edc2826a2daa09632fe1df87}\label{pcd__read_8cpp_aca091ce0edc2826a2daa09632fe1df87}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!configuration\+\_\+file@{configuration\+\_\+file}}
+\index{configuration\+\_\+file@{configuration\+\_\+file}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{configuration\+\_\+file}{configuration\_file}}
+{\footnotesize\ttfamily const char$\ast$ configuration\+\_\+file = N\+U\+LL}
+
+
+
+Definition at line 64 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a117352cc494cc62c6b2f1882786a332c}\label{pcd__read_8cpp_a117352cc494cc62c6b2f1882786a332c}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!D\+E\+B\+UG@{D\+E\+B\+UG}}
+\index{D\+E\+B\+UG@{D\+E\+B\+UG}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{D\+E\+B\+UG}{DEBUG}}
+{\footnotesize\ttfamily bool D\+E\+B\+UG = false}
+
+
+
+Definition at line 58 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a509a4ff42b75fb552a368fb612b4d5aa}\label{pcd__read_8cpp_a509a4ff42b75fb552a368fb612b4d5aa}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!feature\+Redundancy\+Treshold@{feature\+Redundancy\+Treshold}}
+\index{feature\+Redundancy\+Treshold@{feature\+Redundancy\+Treshold}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{feature\+Redundancy\+Treshold}{featureRedundancyTreshold}}
+{\footnotesize\ttfamily double feature\+Redundancy\+Treshold}
+
+
+
+Definition at line 51 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a9b88421536cf9e112537307343ce61ab}\label{pcd__read_8cpp_a9b88421536cf9e112537307343ce61ab}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!forget@{forget}}
+\index{forget@{forget}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{forget}{forget}}
+{\footnotesize\ttfamily bool forget = false}
+
+
+
+Definition at line 65 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a8d4989d5c738bf1af4de9534934b31c2}\label{pcd__read_8cpp_a8d4989d5c738bf1af4de9534934b31c2}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!max\+Num\+Features\+In\+Memory@{max\+Num\+Features\+In\+Memory}}
+\index{max\+Num\+Features\+In\+Memory@{max\+Num\+Features\+In\+Memory}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{max\+Num\+Features\+In\+Memory}{maxNumFeaturesInMemory}}
+{\footnotesize\ttfamily long long max\+Num\+Features\+In\+Memory}
+
+
+
+Definition at line 54 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_aa84893582aa7db6e7f8d264c9d5f551d}\label{pcd__read_8cpp_aa84893582aa7db6e7f8d264c9d5f551d}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!memory\+Decay\+Factor@{memory\+Decay\+Factor}}
+\index{memory\+Decay\+Factor@{memory\+Decay\+Factor}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{memory\+Decay\+Factor}{memoryDecayFactor}}
+{\footnotesize\ttfamily float memory\+Decay\+Factor}
+
+
+
+Definition at line 52 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a079ca08c1f50cffd8aeed76cb32f953d}\label{pcd__read_8cpp_a079ca08c1f50cffd8aeed76cb32f953d}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!memory\+Decay\+Treshold@{memory\+Decay\+Treshold}}
+\index{memory\+Decay\+Treshold@{memory\+Decay\+Treshold}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{memory\+Decay\+Treshold}{memoryDecayTreshold}}
+{\footnotesize\ttfamily float memory\+Decay\+Treshold}
+
+
+
+Definition at line 53 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_abbd3dac675fcfc5a5b1d4650518f3771}\label{pcd__read_8cpp_abbd3dac675fcfc5a5b1d4650518f3771}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!min\+\_\+pts\+\_\+neighbours@{min\+\_\+pts\+\_\+neighbours}}
+\index{min\+\_\+pts\+\_\+neighbours@{min\+\_\+pts\+\_\+neighbours}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{min\+\_\+pts\+\_\+neighbours}{min\_pts\_neighbours}}
+{\footnotesize\ttfamily float min\+\_\+pts\+\_\+neighbours = 0}
+
+
+
+Definition at line 49 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a21d538faa7b6b1c86f9d819afb80545a}\label{pcd__read_8cpp_a21d538faa7b6b1c86f9d819afb80545a}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!n\+Categories@{n\+Categories}}
+\index{n\+Categories@{n\+Categories}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{n\+Categories}{nCategories}}
+{\footnotesize\ttfamily int n\+Categories = 0}
+
+
+
+Definition at line 61 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_ae4d2a6bfe8a5f3769966bedeb51fd5ce}\label{pcd__read_8cpp_ae4d2a6bfe8a5f3769966bedeb51fd5ce}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!number\+Of\+Tests@{number\+Of\+Tests}}
+\index{number\+Of\+Tests@{number\+Of\+Tests}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{number\+Of\+Tests}{numberOfTests}}
+{\footnotesize\ttfamily int number\+Of\+Tests = 0}
+
+
+
+Definition at line 63 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_ad7293039828c875da50e40a0640f3dfa}\label{pcd__read_8cpp_ad7293039828c875da50e40a0640f3dfa}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!n\+Views\+To\+See\+Per\+Category@{n\+Views\+To\+See\+Per\+Category}}
+\index{n\+Views\+To\+See\+Per\+Category@{n\+Views\+To\+See\+Per\+Category}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{n\+Views\+To\+See\+Per\+Category}{nViewsToSeePerCategory}}
+{\footnotesize\ttfamily int n\+Views\+To\+See\+Per\+Category = 0}
+
+
+
+Definition at line 66 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_acd0fefcf1eadbf91d3e55e688fdfed78}\label{pcd__read_8cpp_acd0fefcf1eadbf91d3e55e688fdfed78}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!object\+\_\+views\+\_\+directory@{object\+\_\+views\+\_\+directory}}
+\index{object\+\_\+views\+\_\+directory@{object\+\_\+views\+\_\+directory}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{object\+\_\+views\+\_\+directory}{object\_views\_directory}}
+{\footnotesize\ttfamily const char$\ast$ object\+\_\+views\+\_\+directory = N\+U\+LL}
+
+
+
+Definition at line 60 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a70b060316aa5f0bcce50bae018f006f2}\label{pcd__read_8cpp_a70b060316aa5f0bcce50bae018f006f2}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!rand\+Shuffle@{rand\+Shuffle}}
+\index{rand\+Shuffle@{rand\+Shuffle}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{rand\+Shuffle}{randShuffle}}
+{\footnotesize\ttfamily bool rand\+Shuffle = false}
+
+
+
+Definition at line 67 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_aff7e6408eaf90a97c24e2040a8276c9d}\label{pcd__read_8cpp_aff7e6408eaf90a97c24e2040a8276c9d}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!redistribute\+\_\+g\+Weights\+\_\+search\+\_\+radius@{redistribute\+\_\+g\+Weights\+\_\+search\+\_\+radius}}
+\index{redistribute\+\_\+g\+Weights\+\_\+search\+\_\+radius@{redistribute\+\_\+g\+Weights\+\_\+search\+\_\+radius}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{redistribute\+\_\+g\+Weights\+\_\+search\+\_\+radius}{redistribute\_gWeights\_search\_radius}}
+{\footnotesize\ttfamily float redistribute\+\_\+g\+Weights\+\_\+search\+\_\+radius = 0.\+05}
+
+
+
+Definition at line 56 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a138272d8c4416a17717f968a40c689a0}\label{pcd__read_8cpp_a138272d8c4416a17717f968a40c689a0}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!search\+\_\+radius@{search\+\_\+radius}}
+\index{search\+\_\+radius@{search\+\_\+radius}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{search\+\_\+radius}{search\_radius}}
+{\footnotesize\ttfamily float search\+\_\+radius = 0.\+1}
+
+
+
+Definition at line 45 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a13fd0ebf6c809f68d2b0e9bfc16bf68d}\label{pcd__read_8cpp_a13fd0ebf6c809f68d2b0e9bfc16bf68d}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!support\+\_\+angle@{support\+\_\+angle}}
+\index{support\+\_\+angle@{support\+\_\+angle}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{support\+\_\+angle}{support\_angle}}
+{\footnotesize\ttfamily float support\+\_\+angle = 0}
+
+
+
+Definition at line 48 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_abed5c1c3716fc66df9f1a01a430aa8cc}\label{pcd__read_8cpp_abed5c1c3716fc66df9f1a01a430aa8cc}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!support\+\_\+lenght@{support\+\_\+lenght}}
+\index{support\+\_\+lenght@{support\+\_\+lenght}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{support\+\_\+lenght}{support\_lenght}}
+{\footnotesize\ttfamily float support\+\_\+lenght = 0.\+1}
+
+
+
+Definition at line 47 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_ac20bcaf1ef4dcd80403aa6226205f078}\label{pcd__read_8cpp_ac20bcaf1ef4dcd80403aa6226205f078}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!training\+Percentage@{training\+Percentage}}
+\index{training\+Percentage@{training\+Percentage}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{training\+Percentage}{trainingPercentage}}
+{\footnotesize\ttfamily float training\+Percentage = 0.\+0}
+
+
+
+Definition at line 62 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_abb53629fa0b24a5b441a9459a9a260bd}\label{pcd__read_8cpp_abb53629fa0b24a5b441a9459a9a260bd}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!voxel\+\_\+size@{voxel\+\_\+size}}
+\index{voxel\+\_\+size@{voxel\+\_\+size}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{voxel\+\_\+size}{voxel\_size}}
+{\footnotesize\ttfamily float voxel\+\_\+size = 0.\+03}
+
+
+
+Definition at line 42 of file pcd\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{pcd__read_8cpp_a0e2e740afd510cfe652a1836ffbad209}\label{pcd__read_8cpp_a0e2e740afd510cfe652a1836ffbad209}} 
+\index{pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}!window\+\_\+width@{window\+\_\+width}}
+\index{window\+\_\+width@{window\+\_\+width}!pcd\+\_\+read.\+cpp@{pcd\+\_\+read.\+cpp}}
+\subsubsection{\texorpdfstring{window\+\_\+width}{window\_width}}
+{\footnotesize\ttfamily int window\+\_\+width = 8}
+
+
+
+Definition at line 46 of file pcd\+\_\+read.\+cpp.
+

@@ -1,0 +1,525 @@
+\hypertarget{class_cluster}{}\section{Cluster Class Reference}
+\label{class_cluster}\index{Cluster@{Cluster}}
+
+
+Represents a cluster.  
+
+
+
+
+{\ttfamily \#include $<$Cluster.\+h$>$}
+
+
+
+Collaboration diagram for Cluster\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_cluster__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}{Cluster} ()
+\item 
+\hyperlink{class_cluster_a7ec216455347ce05a9e0b410378a01f9}{Cluster} (int \hyperlink{class_cluster_a5b3de44acabe712cdcc405fa40f8812a}{identifier}, pcl\+::\+Histogram$<$ 153 $>$ \&center)
+\item 
+void \hyperlink{class_cluster_a9af018a96861327b211e6fe5c7290f52}{set\+Centroid} (pcl\+::\+Histogram$<$ 153 $>$ \&center)
+\item 
+void \hyperlink{class_cluster_af01610223d1a98628ba974609918db91}{add\+Point} (int \&idx)
+\item 
+void \hyperlink{class_cluster_aa0e0757d491b0b201500c64978abdaf8}{remove\+Point} (int \&idx)
+\item 
+void \hyperlink{class_cluster_a0c4f4cc4e9249ac54ccb995b7d027f52}{clear\+Points} ()
+\item 
+void \hyperlink{class_cluster_a77511825a9d51c343a20565a7e71a23c}{get\+Points} (std\+::vector$<$ int $>$ \&points\+Idx) const
+\item 
+const int \hyperlink{class_cluster_add3a7f58320774fdfcb3772b992115a0}{get\+Random\+Point} ()
+\item 
+const int \hyperlink{class_cluster_aab876ab329ebaa1c4baaac5bf5dadcbf}{get\+Random\+Point} (int \&point\+Idx)
+\item 
+float \& \hyperlink{class_cluster_a7b871b24968ca5c63bfd32cda9ff6c75}{add\+To\+Sum\+Weight} (const float \&weight)
+\item 
+float \& \hyperlink{class_cluster_a93b4f6092b558747d0882bf0af959da8}{subtract\+From\+Sum\+Weight} (const float \&weight)
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \& \hyperlink{class_cluster_ac0922c4c1a1d54fbd9971a77b785698d}{add\+To\+Sum\+Features} (pcl\+::\+Histogram$<$ 153 $>$ \&feat, const float \&feat\+Weight)
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \& \hyperlink{class_cluster_a8cf196c9c3f77aeeafb7b793967e17ed}{remove\+From\+Sum\+Features} (pcl\+::\+Histogram$<$ 153 $>$ \&feat, const float \&feat\+Weight)
+\item 
+void \hyperlink{class_cluster_a3ed40ce6adf7cc47b9e5721baed4fb51}{recompute\+Centroid} ()
+\item 
+void \hyperlink{class_cluster_ad164f4a4c7eb8d35b8098149d83246db}{reset\+Cluster\+Totals} ()
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \& \hyperlink{class_cluster_ad4e959d20fb0c9b208ee97e2082c51b1}{get\+Centroid} ()
+\item 
+const int \& \hyperlink{class_cluster_a78429c346e1fdfe24fbd3863a16c924f}{get\+Identifier} () const
+\item 
+unordered\+\_\+set$<$ int $>$ \& \hyperlink{class_cluster_a14344a9dd9efc93609344cc3fb018f37}{get\+Points} ()
+\item 
+int \hyperlink{class_cluster_a3de9ef447e04c6691a5010d3b0b7916b}{size} ()
+\item 
+float \& \hyperlink{class_cluster_ac011ee866632afed7b36759f9675f01f}{get\+Sum\+Weight} ()
+\item 
+void \hyperlink{class_cluster_a4cd75a1e9afb0d72b0d91c5549869ce1}{reset\+Sum\+Weight} ()
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \& \hyperlink{class_cluster_ab5d2cbdb6de3a6efbecaab959503714b}{get\+Sum\+Features} ()
+\item 
+void \hyperlink{class_cluster_a0ea9e78709352146e9a0f3bcb0574928}{reset\+Sum\+Features} ()
+\item 
+float \& \hyperlink{class_cluster_ab8c35f60eff5f2f4c0508900650b058c}{get\+Wss} ()
+\item 
+void \hyperlink{class_cluster_a400d6e1f3b7e206bec4821dcf5aef3ec}{set\+Wss} (float \&val)
+\item 
+float \& \hyperlink{class_cluster_acc50770cbc475efa285a2ff79b335530}{get\+Bss} ()
+\item 
+void \hyperlink{class_cluster_a6d4da0772bd78a707e59d90a4a026588}{set\+Bss} (float \&val)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_cluster_a5b3de44acabe712cdcc405fa40f8812a}{identifier}
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \hyperlink{class_cluster_a06b612a067c349bd2a56d1960d229e2a}{centroid}
+\item 
+unordered\+\_\+set$<$ int $>$ \hyperlink{class_cluster_a9aa583a643474a3744e1508ab51807d5}{points}
+\item 
+float \hyperlink{class_cluster_a1380f8914d5f22ca56afe13dd323d8e5}{sum\+Weight}
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \hyperlink{class_cluster_a9440083a17c6144a556433afa719e8ad}{sum\+Features}
+\item 
+float \hyperlink{class_cluster_a3485a5dc53d0094f618b9308aea59288}{wss}
+\item 
+float \hyperlink{class_cluster_aa83d01b4c4d33763154c82cbfdce7fff}{bss}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a cluster. 
+
+Definition at line 17 of file Cluster.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}\label{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The empty constructor is required when used as the value in a map. However calling it is considered an error since an invalid object will be injected into the system! 
+
+Definition at line 24 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a7ec216455347ce05a9e0b410378a01f9}\label{class_cluster_a7ec216455347ce05a9e0b410378a01f9}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{int}]{identifier,  }\item[{pcl\+::\+Histogram$<$ 153 $>$ \&}]{center }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em identifier} & the unique identifier of the cluster \\
+\hline
+\mbox{\tt in}  & {\em center} & the centroid of the cluster \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cluster_af01610223d1a98628ba974609918db91}\label{class_cluster_af01610223d1a98628ba974609918db91}} 
+\index{Cluster@{Cluster}!add\+Point@{add\+Point}}
+\index{add\+Point@{add\+Point}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{add\+Point()}{addPoint()}}
+{\footnotesize\ttfamily void Cluster\+::add\+Point (\begin{DoxyParamCaption}\item[{int \&}]{idx }\end{DoxyParamCaption})}
+
+Adds a feature to the cluster (the index of the feature in main memory is used). 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em idx} & the index of the feature in the main memory structure dictionary (its key). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_ac0922c4c1a1d54fbd9971a77b785698d}\label{class_cluster_ac0922c4c1a1d54fbd9971a77b785698d}} 
+\index{Cluster@{Cluster}!add\+To\+Sum\+Features@{add\+To\+Sum\+Features}}
+\index{add\+To\+Sum\+Features@{add\+To\+Sum\+Features}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{add\+To\+Sum\+Features()}{addToSumFeatures()}}
+{\footnotesize\ttfamily Histogram$<$ 153 $>$ \& Cluster\+::add\+To\+Sum\+Features (\begin{DoxyParamCaption}\item[{pcl\+::\+Histogram$<$ 153 $>$ \&}]{feat,  }\item[{const float \&}]{feat\+Weight }\end{DoxyParamCaption})}
+
+Adds the product (feat $\ast$ feat\+Weight) of a new feature to the running weighted sum of features
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feat} & the feature \\
+\hline
+\mbox{\tt in}  & {\em feat\+Weight} & the global weight of the feature \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_a7b871b24968ca5c63bfd32cda9ff6c75}\label{class_cluster_a7b871b24968ca5c63bfd32cda9ff6c75}} 
+\index{Cluster@{Cluster}!add\+To\+Sum\+Weight@{add\+To\+Sum\+Weight}}
+\index{add\+To\+Sum\+Weight@{add\+To\+Sum\+Weight}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{add\+To\+Sum\+Weight()}{addToSumWeight()}}
+{\footnotesize\ttfamily float \& Cluster\+::add\+To\+Sum\+Weight (\begin{DoxyParamCaption}\item[{const float \&}]{weight }\end{DoxyParamCaption})}
+
+Adds a new weight to the running sum of weights
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em weight} & the new weight to add \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_a0c4f4cc4e9249ac54ccb995b7d027f52}\label{class_cluster_a0c4f4cc4e9249ac54ccb995b7d027f52}} 
+\index{Cluster@{Cluster}!clear\+Points@{clear\+Points}}
+\index{clear\+Points@{clear\+Points}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{clear\+Points()}{clearPoints()}}
+{\footnotesize\ttfamily void Cluster\+::clear\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove all points from the list of popints assigned to the cluster. 
+
+Definition at line 27 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_acc50770cbc475efa285a2ff79b335530}\label{class_cluster_acc50770cbc475efa285a2ff79b335530}} 
+\index{Cluster@{Cluster}!get\+Bss@{get\+Bss}}
+\index{get\+Bss@{get\+Bss}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Bss()}{getBss()}}
+{\footnotesize\ttfamily float\& Cluster\+::get\+Bss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 221 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_ad4e959d20fb0c9b208ee97e2082c51b1}\label{class_cluster_ad4e959d20fb0c9b208ee97e2082c51b1}} 
+\index{Cluster@{Cluster}!get\+Centroid@{get\+Centroid}}
+\index{get\+Centroid@{get\+Centroid}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Centroid()}{getCentroid()}}
+{\footnotesize\ttfamily pcl\+::\+Histogram$<$153$>$\& Cluster\+::get\+Centroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 170 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a78429c346e1fdfe24fbd3863a16c924f}\label{class_cluster_a78429c346e1fdfe24fbd3863a16c924f}} 
+\index{Cluster@{Cluster}!get\+Identifier@{get\+Identifier}}
+\index{get\+Identifier@{get\+Identifier}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Identifier()}{getIdentifier()}}
+{\footnotesize\ttfamily const int\& Cluster\+::get\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 174 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a77511825a9d51c343a20565a7e71a23c}\label{class_cluster_a77511825a9d51c343a20565a7e71a23c}} 
+\index{Cluster@{Cluster}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Cluster\+::get\+Points (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{points\+Idx }\end{DoxyParamCaption}) const}
+
+Return the features assigned to the cluster (the indeces of the features in main memory are returned). 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em points\+Idx} & a vector holding the indeces (map keys) of the features assigned to the cluster. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cluster_a14344a9dd9efc93609344cc3fb018f37}\label{class_cluster_a14344a9dd9efc93609344cc3fb018f37}} 
+\index{Cluster@{Cluster}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unordered\+\_\+set$<$int$>$\& Cluster\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 178 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_add3a7f58320774fdfcb3772b992115a0}\label{class_cluster_add3a7f58320774fdfcb3772b992115a0}} 
+\index{Cluster@{Cluster}!get\+Random\+Point@{get\+Random\+Point}}
+\index{get\+Random\+Point@{get\+Random\+Point}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Random\+Point()}{getRandomPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const int Cluster\+::get\+Random\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a random point index from the set of points in the cluster 
+
+Definition at line 36 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_aab876ab329ebaa1c4baaac5bf5dadcbf}\label{class_cluster_aab876ab329ebaa1c4baaac5bf5dadcbf}} 
+\index{Cluster@{Cluster}!get\+Random\+Point@{get\+Random\+Point}}
+\index{get\+Random\+Point@{get\+Random\+Point}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Random\+Point()}{getRandomPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const int Cluster\+::get\+Random\+Point (\begin{DoxyParamCaption}\item[{int \&}]{point\+Idx }\end{DoxyParamCaption})}
+
+Get a random point index from the set of points in the cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point\+Idx} & the value not to duplicate\\
+\hline
+\end{DoxyParams}
+Returns random number but different from the specified value 
+
+Definition at line 51 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_ab5d2cbdb6de3a6efbecaab959503714b}\label{class_cluster_ab5d2cbdb6de3a6efbecaab959503714b}} 
+\index{Cluster@{Cluster}!get\+Sum\+Features@{get\+Sum\+Features}}
+\index{get\+Sum\+Features@{get\+Sum\+Features}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Sum\+Features()}{getSumFeatures()}}
+{\footnotesize\ttfamily pcl\+::\+Histogram$<$153$>$\& Cluster\+::get\+Sum\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 203 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_ac011ee866632afed7b36759f9675f01f}\label{class_cluster_ac011ee866632afed7b36759f9675f01f}} 
+\index{Cluster@{Cluster}!get\+Sum\+Weight@{get\+Sum\+Weight}}
+\index{get\+Sum\+Weight@{get\+Sum\+Weight}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Sum\+Weight()}{getSumWeight()}}
+{\footnotesize\ttfamily float\& Cluster\+::get\+Sum\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 192 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_ab8c35f60eff5f2f4c0508900650b058c}\label{class_cluster_ab8c35f60eff5f2f4c0508900650b058c}} 
+\index{Cluster@{Cluster}!get\+Wss@{get\+Wss}}
+\index{get\+Wss@{get\+Wss}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{get\+Wss()}{getWss()}}
+{\footnotesize\ttfamily float\& Cluster\+::get\+Wss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 213 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a3ed40ce6adf7cc47b9e5721baed4fb51}\label{class_cluster_a3ed40ce6adf7cc47b9e5721baed4fb51}} 
+\index{Cluster@{Cluster}!recompute\+Centroid@{recompute\+Centroid}}
+\index{recompute\+Centroid@{recompute\+Centroid}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{recompute\+Centroid()}{recomputeCentroid()}}
+{\footnotesize\ttfamily void Cluster\+::recompute\+Centroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Recompute the cluster centroid based on the running sums (sum\+Features / sum\+Weight) 
+
+Definition at line 87 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_a8cf196c9c3f77aeeafb7b793967e17ed}\label{class_cluster_a8cf196c9c3f77aeeafb7b793967e17ed}} 
+\index{Cluster@{Cluster}!remove\+From\+Sum\+Features@{remove\+From\+Sum\+Features}}
+\index{remove\+From\+Sum\+Features@{remove\+From\+Sum\+Features}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{remove\+From\+Sum\+Features()}{removeFromSumFeatures()}}
+{\footnotesize\ttfamily Histogram$<$ 153 $>$ \& Cluster\+::remove\+From\+Sum\+Features (\begin{DoxyParamCaption}\item[{pcl\+::\+Histogram$<$ 153 $>$ \&}]{feat,  }\item[{const float \&}]{feat\+Weight }\end{DoxyParamCaption})}
+
+Subtracts the product (feat $\ast$ feat\+Weight) of a new feature from the running weighted sum of features
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feat} & the feature \\
+\hline
+\mbox{\tt in}  & {\em feat\+Weight} & the global weight of the feature \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_aa0e0757d491b0b201500c64978abdaf8}\label{class_cluster_aa0e0757d491b0b201500c64978abdaf8}} 
+\index{Cluster@{Cluster}!remove\+Point@{remove\+Point}}
+\index{remove\+Point@{remove\+Point}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{remove\+Point()}{removePoint()}}
+{\footnotesize\ttfamily void Cluster\+::remove\+Point (\begin{DoxyParamCaption}\item[{int \&}]{idx }\end{DoxyParamCaption})}
+
+Removes a feature from the cluster (the index of the feature in main memory is used). 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em idx} & the index of the feature in the main memory structure dictionary (its key). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_ad164f4a4c7eb8d35b8098149d83246db}\label{class_cluster_ad164f4a4c7eb8d35b8098149d83246db}} 
+\index{Cluster@{Cluster}!reset\+Cluster\+Totals@{reset\+Cluster\+Totals}}
+\index{reset\+Cluster\+Totals@{reset\+Cluster\+Totals}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{reset\+Cluster\+Totals()}{resetClusterTotals()}}
+{\footnotesize\ttfamily void Cluster\+::reset\+Cluster\+Totals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the running totals of the cluster to zeroes; sum\+Weight and sum\+Features 
+
+Definition at line 93 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_a0ea9e78709352146e9a0f3bcb0574928}\label{class_cluster_a0ea9e78709352146e9a0f3bcb0574928}} 
+\index{Cluster@{Cluster}!reset\+Sum\+Features@{reset\+Sum\+Features}}
+\index{reset\+Sum\+Features@{reset\+Sum\+Features}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{reset\+Sum\+Features()}{resetSumFeatures()}}
+{\footnotesize\ttfamily void Cluster\+::reset\+Sum\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 207 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a4cd75a1e9afb0d72b0d91c5549869ce1}\label{class_cluster_a4cd75a1e9afb0d72b0d91c5549869ce1}} 
+\index{Cluster@{Cluster}!reset\+Sum\+Weight@{reset\+Sum\+Weight}}
+\index{reset\+Sum\+Weight@{reset\+Sum\+Weight}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{reset\+Sum\+Weight()}{resetSumWeight()}}
+{\footnotesize\ttfamily void Cluster\+::reset\+Sum\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets the running total for weights. 
+
+Definition at line 199 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a6d4da0772bd78a707e59d90a4a026588}\label{class_cluster_a6d4da0772bd78a707e59d90a4a026588}} 
+\index{Cluster@{Cluster}!set\+Bss@{set\+Bss}}
+\index{set\+Bss@{set\+Bss}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{set\+Bss()}{setBss()}}
+{\footnotesize\ttfamily void Cluster\+::set\+Bss (\begin{DoxyParamCaption}\item[{float \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 225 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a9af018a96861327b211e6fe5c7290f52}\label{class_cluster_a9af018a96861327b211e6fe5c7290f52}} 
+\index{Cluster@{Cluster}!set\+Centroid@{set\+Centroid}}
+\index{set\+Centroid@{set\+Centroid}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{set\+Centroid()}{setCentroid()}}
+{\footnotesize\ttfamily void Cluster\+::set\+Centroid (\begin{DoxyParamCaption}\item[{pcl\+::\+Histogram$<$ 153 $>$ \&}]{center }\end{DoxyParamCaption})}
+
+Sets the centroid of the cluster. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em center} & the centroid of the cluster. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file Cluster.\+cpp.
+
+\mbox{\Hypertarget{class_cluster_a400d6e1f3b7e206bec4821dcf5aef3ec}\label{class_cluster_a400d6e1f3b7e206bec4821dcf5aef3ec}} 
+\index{Cluster@{Cluster}!set\+Wss@{set\+Wss}}
+\index{set\+Wss@{set\+Wss}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{set\+Wss()}{setWss()}}
+{\footnotesize\ttfamily void Cluster\+::set\+Wss (\begin{DoxyParamCaption}\item[{float \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 217 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a3de9ef447e04c6691a5010d3b0b7916b}\label{class_cluster_a3de9ef447e04c6691a5010d3b0b7916b}} 
+\index{Cluster@{Cluster}!size@{size}}
+\index{size@{size}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Cluster\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 188 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a93b4f6092b558747d0882bf0af959da8}\label{class_cluster_a93b4f6092b558747d0882bf0af959da8}} 
+\index{Cluster@{Cluster}!subtract\+From\+Sum\+Weight@{subtract\+From\+Sum\+Weight}}
+\index{subtract\+From\+Sum\+Weight@{subtract\+From\+Sum\+Weight}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{subtract\+From\+Sum\+Weight()}{subtractFromSumWeight()}}
+{\footnotesize\ttfamily float \& Cluster\+::subtract\+From\+Sum\+Weight (\begin{DoxyParamCaption}\item[{const float \&}]{weight }\end{DoxyParamCaption})}
+
+Subtracts a weight from the running sum of weights
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em weight} & the new weight to subtract \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file Cluster.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cluster_aa83d01b4c4d33763154c82cbfdce7fff}\label{class_cluster_aa83d01b4c4d33763154c82cbfdce7fff}} 
+\index{Cluster@{Cluster}!bss@{bss}}
+\index{bss@{bss}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{bss}{bss}}
+{\footnotesize\ttfamily float Cluster\+::bss\hspace{0.3cm}{\ttfamily [protected]}}
+
+The B\+SS measure of the cluster
+
+p.\+s. This is not a proper B\+SS. This is just to help calculations 
+
+Definition at line 166 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a06b612a067c349bd2a56d1960d229e2a}\label{class_cluster_a06b612a067c349bd2a56d1960d229e2a}} 
+\index{Cluster@{Cluster}!centroid@{centroid}}
+\index{centroid@{centroid}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{centroid}{centroid}}
+{\footnotesize\ttfamily pcl\+::\+Histogram$<$153$>$ Cluster\+::centroid\hspace{0.3cm}{\ttfamily [protected]}}
+
+The centroid of the cluster 
+
+Definition at line 127 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a5b3de44acabe712cdcc405fa40f8812a}\label{class_cluster_a5b3de44acabe712cdcc405fa40f8812a}} 
+\index{Cluster@{Cluster}!identifier@{identifier}}
+\index{identifier@{identifier}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{identifier}{identifier}}
+{\footnotesize\ttfamily int Cluster\+::identifier\hspace{0.3cm}{\ttfamily [protected]}}
+
+The cluster identifier 
+
+Definition at line 122 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a9aa583a643474a3744e1508ab51807d5}\label{class_cluster_a9aa583a643474a3744e1508ab51807d5}} 
+\index{Cluster@{Cluster}!points@{points}}
+\index{points@{points}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily unordered\+\_\+set$<$int$>$ Cluster\+::points\hspace{0.3cm}{\ttfamily [protected]}}
+
+The features assigned to the cluster (the map keys of the features in main memory) 
+
+Definition at line 134 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a9440083a17c6144a556433afa719e8ad}\label{class_cluster_a9440083a17c6144a556433afa719e8ad}} 
+\index{Cluster@{Cluster}!sum\+Features@{sum\+Features}}
+\index{sum\+Features@{sum\+Features}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{sum\+Features}{sumFeatures}}
+{\footnotesize\ttfamily pcl\+::\+Histogram$<$153$>$ Cluster\+::sum\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+The sum of the features mulyiplied by their respective global weights 
+
+Definition at line 154 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a1380f8914d5f22ca56afe13dd323d8e5}\label{class_cluster_a1380f8914d5f22ca56afe13dd323d8e5}} 
+\index{Cluster@{Cluster}!sum\+Weight@{sum\+Weight}}
+\index{sum\+Weight@{sum\+Weight}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{sum\+Weight}{sumWeight}}
+{\footnotesize\ttfamily float Cluster\+::sum\+Weight\hspace{0.3cm}{\ttfamily [protected]}}
+
+The sum of the global weights is maintained along with the sum of the (weight $\ast$ feature) calculation
+
+This is done so that updating the centroids is less computationally intensive
+
+The centroid is calculated by dividing the sum\+Features by the sum\+Weight (sum\+Features / sum\+Weight)
+
+When a new feature is added to the cluster its weight s added to the sum of weights (sum\+Weight) The product (weight $\ast$ feature) is also added to the weighted sum of the features (sum\+Features)
+
+To remove the feature from the cluster the process is similar, but instead of adding to the running summations, we subtract 
+
+Definition at line 149 of file Cluster.\+h.
+
+\mbox{\Hypertarget{class_cluster_a3485a5dc53d0094f618b9308aea59288}\label{class_cluster_a3485a5dc53d0094f618b9308aea59288}} 
+\index{Cluster@{Cluster}!wss@{wss}}
+\index{wss@{wss}!Cluster@{Cluster}}
+\subsubsection{\texorpdfstring{wss}{wss}}
+{\footnotesize\ttfamily float Cluster\+::wss\hspace{0.3cm}{\ttfamily [protected]}}
+
+The W\+SS measure of the cluster 
+
+Definition at line 159 of file Cluster.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_cluster_8h}{Cluster.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_cluster_8cpp}{Cluster.\+cpp}\end{DoxyCompactItemize}

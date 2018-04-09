@@ -1,0 +1,217 @@
+\hypertarget{class_searcher}{}\section{Searcher Class Reference}
+\label{class_searcher}\index{Searcher@{Searcher}}
+
+
+A class with functions to search for features in a given search domain. It also provides functions for the calculation of the euclidean distance for vectors.  
+
+
+
+
+{\ttfamily \#include $<$Searcher.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_searcher_a46e9a9fa3aad21131cf6bd25237e3a80}{Searcher} ()
+\item 
+\hyperlink{class_searcher_a3e17c2eac3d13bb5eb14f7879a265ece}{$\sim$\+Searcher} ()
+\item 
+int \hyperlink{class_searcher_ae9ffd5f08df9cad6064818d365d0cde4}{K\+Dtree\+S\+P\+Match} (const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr query, const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr database, int maximum\+Returned\+Neighbors, vector$<$ int $>$ \&neighbor\+Points\+Idxs, vector$<$ float $>$ \&neighbor\+Points\+Squared\+Distances) const
+\item 
+int \hyperlink{class_searcher_a981bdda575da9c5c38e11bc97ab947ab}{K\+Dtree\+S\+P\+Match} (const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&search\+Feature, const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr database, int maximum\+Returned\+Neighbors, vector$<$ int $>$ \&neighbor\+Points\+Idxs, vector$<$ float $>$ \&neighbor\+Points\+Squared\+Distances, bool sorted) const
+\item 
+int \hyperlink{class_searcher_a360e9a7152dc3b9683af6375955b174a}{K\+Dtree\+Radius\+Search} (const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&search\+Feature, const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr database, double search\+Radius, int maximum\+Returned\+Neighbors, vector$<$ int $>$ \&neighbor\+Points\+Idxs, vector$<$ float $>$ \&neighbor\+Points\+Squared\+Distances) const
+\item 
+void \hyperlink{class_searcher_aa5c9be08f9e94a93bc767e56a17eed9d}{K\+Dtree\+Check\+Redundancy} (const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $\ast$$>$\+::Ptr query, const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr database, double redundancy\+Threshold, vector$<$ int $>$ \&to\+Forget) const
+\item 
+double \hyperlink{class_searcher_af014c108e385e12afd5561f9547343c9}{euclidean\+Distance} (const double $\ast$vectorA, const double $\ast$vectorB, size\+\_\+t size) const
+\item 
+double \hyperlink{class_searcher_a774e173960b031678013a26c14d29dea}{euclidean\+Distance} (const vector$<$ double $>$ \&vectorA, const vector$<$ double $>$ \&vectorB) const
+\item 
+double \hyperlink{class_searcher_a4ed497f0d5f1f21c161d9101c0c980aa}{euclidean\+Distance} (const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&A, const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&B) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class with functions to search for features in a given search domain. It also provides functions for the calculation of the euclidean distance for vectors. 
+
+Definition at line 12 of file Searcher.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_searcher_a46e9a9fa3aad21131cf6bd25237e3a80}\label{class_searcher_a46e9a9fa3aad21131cf6bd25237e3a80}} 
+\index{Searcher@{Searcher}!Searcher@{Searcher}}
+\index{Searcher@{Searcher}!Searcher@{Searcher}}
+\subsubsection{\texorpdfstring{Searcher()}{Searcher()}}
+{\footnotesize\ttfamily Searcher\+::\+Searcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Searcher.\+cpp.
+
+\mbox{\Hypertarget{class_searcher_a3e17c2eac3d13bb5eb14f7879a265ece}\label{class_searcher_a3e17c2eac3d13bb5eb14f7879a265ece}} 
+\index{Searcher@{Searcher}!````~Searcher@{$\sim$\+Searcher}}
+\index{````~Searcher@{$\sim$\+Searcher}!Searcher@{Searcher}}
+\subsubsection{\texorpdfstring{$\sim$\+Searcher()}{~Searcher()}}
+{\footnotesize\ttfamily Searcher\+::$\sim$\+Searcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Searcher.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_searcher_af014c108e385e12afd5561f9547343c9}\label{class_searcher_af014c108e385e12afd5561f9547343c9}} 
+\index{Searcher@{Searcher}!euclidean\+Distance@{euclidean\+Distance}}
+\index{euclidean\+Distance@{euclidean\+Distance}!Searcher@{Searcher}}
+\subsubsection{\texorpdfstring{euclidean\+Distance()}{euclideanDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double Searcher\+::euclidean\+Distance (\begin{DoxyParamCaption}\item[{const double $\ast$}]{vectorA,  }\item[{const double $\ast$}]{vectorB,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption}) const}
+
+Calculates the euclidean distance between two vectors, vectorA and vectorB. The vectors are assumed to be normalized.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vectorA} & \\
+\hline
+\mbox{\tt in}  & {\em vectorB} & \\
+\hline
+\mbox{\tt in}  & {\em size} & the size of the vectors\\
+\hline
+\end{DoxyParams}
+returns the euclidean distance between the two vectors 
+
+Definition at line 73 of file Searcher.\+cpp.
+
+\mbox{\Hypertarget{class_searcher_a774e173960b031678013a26c14d29dea}\label{class_searcher_a774e173960b031678013a26c14d29dea}} 
+\index{Searcher@{Searcher}!euclidean\+Distance@{euclidean\+Distance}}
+\index{euclidean\+Distance@{euclidean\+Distance}!Searcher@{Searcher}}
+\subsubsection{\texorpdfstring{euclidean\+Distance()}{euclideanDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double Searcher\+::euclidean\+Distance (\begin{DoxyParamCaption}\item[{const vector$<$ double $>$ \&}]{vectorA,  }\item[{const vector$<$ double $>$ \&}]{vectorB }\end{DoxyParamCaption}) const}
+
+Calculates the euclidean distance between two vectors, vectorA and vectorB. The vectors are assumed to be normalized.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vectorA} & \\
+\hline
+\mbox{\tt in}  & {\em vectorB} & returns the euclidean distance between the two vectors \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file Searcher.\+cpp.
+
+\mbox{\Hypertarget{class_searcher_a4ed497f0d5f1f21c161d9101c0c980aa}\label{class_searcher_a4ed497f0d5f1f21c161d9101c0c980aa}} 
+\index{Searcher@{Searcher}!euclidean\+Distance@{euclidean\+Distance}}
+\index{euclidean\+Distance@{euclidean\+Distance}!Searcher@{Searcher}}
+\subsubsection{\texorpdfstring{euclidean\+Distance()}{euclideanDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double Searcher\+::euclidean\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&}]{A,  }\item[{const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&}]{B }\end{DoxyParamCaption}) const}
+
+Calculates the euclidean distance between two spin images, A and B. The vectors are assumed to be normalized.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em A} & \\
+\hline
+\mbox{\tt in}  & {\em B} & returns the euclidean distance between the two spin images \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 30 of file Searcher.\+cpp.
+
+\mbox{\Hypertarget{class_searcher_aa5c9be08f9e94a93bc767e56a17eed9d}\label{class_searcher_aa5c9be08f9e94a93bc767e56a17eed9d}} 
+\index{Searcher@{Searcher}!K\+Dtree\+Check\+Redundancy@{K\+Dtree\+Check\+Redundancy}}
+\index{K\+Dtree\+Check\+Redundancy@{K\+Dtree\+Check\+Redundancy}!Searcher@{Searcher}}
+\subsubsection{\texorpdfstring{K\+Dtree\+Check\+Redundancy()}{KDtreeCheckRedundancy()}}
+{\footnotesize\ttfamily void Searcher\+::\+K\+Dtree\+Check\+Redundancy (\begin{DoxyParamCaption}\item[{const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $\ast$$>$\+::Ptr}]{query,  }\item[{const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr}]{database,  }\item[{double}]{redundancy\+Threshold,  }\item[{vector$<$ int $>$ \&}]{to\+Forget }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 121 of file Searcher.\+cpp.
+
+\mbox{\Hypertarget{class_searcher_a360e9a7152dc3b9683af6375955b174a}\label{class_searcher_a360e9a7152dc3b9683af6375955b174a}} 
+\index{Searcher@{Searcher}!K\+Dtree\+Radius\+Search@{K\+Dtree\+Radius\+Search}}
+\index{K\+Dtree\+Radius\+Search@{K\+Dtree\+Radius\+Search}!Searcher@{Searcher}}
+\subsubsection{\texorpdfstring{K\+Dtree\+Radius\+Search()}{KDtreeRadiusSearch()}}
+{\footnotesize\ttfamily int Searcher\+::\+K\+Dtree\+Radius\+Search (\begin{DoxyParamCaption}\item[{const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&}]{search\+Feature,  }\item[{const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr}]{database,  }\item[{double}]{search\+Radius,  }\item[{int}]{maximum\+Returned\+Neighbors,  }\item[{vector$<$ int $>$ \&}]{neighbor\+Points\+Idxs,  }\item[{vector$<$ float $>$ \&}]{neighbor\+Points\+Squared\+Distances }\end{DoxyParamCaption}) const}
+
+Searches for the Neighbor points of a given point in a radius, using Kd\+Tree\+F\+L\+A\+NN.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em search\+Feature} & point to search \\
+\hline
+\mbox{\tt in}  & {\em database} & search domain \\
+\hline
+\mbox{\tt in}  & {\em search\+Radius} & search radius \\
+\hline
+\mbox{\tt in}  & {\em maximum\+Returned\+Neighbors} & maximum number of points to return from the \char`\"{}solutions\char`\"{} set \\
+\hline
+\mbox{\tt out}  & {\em neighbor\+Points\+Idxs} & ids of the returned \char`\"{}solutions\char`\"{} (i.\+e., points in the search domain) \\
+\hline
+\mbox{\tt out}  & {\em neighbor\+Points\+Squared\+Distances} & squared distances between the search point and the retruned Neighbors (solutions)\\
+\hline
+\end{DoxyParams}
+returns the number of matches 
+
+Definition at line 187 of file Searcher.\+cpp.
+
+\mbox{\Hypertarget{class_searcher_ae9ffd5f08df9cad6064818d365d0cde4}\label{class_searcher_ae9ffd5f08df9cad6064818d365d0cde4}} 
+\index{Searcher@{Searcher}!K\+Dtree\+S\+P\+Match@{K\+Dtree\+S\+P\+Match}}
+\index{K\+Dtree\+S\+P\+Match@{K\+Dtree\+S\+P\+Match}!Searcher@{Searcher}}
+\subsubsection{\texorpdfstring{K\+Dtree\+S\+P\+Match()}{KDtreeSPMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Searcher\+::\+K\+Dtree\+S\+P\+Match (\begin{DoxyParamCaption}\item[{const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr}]{query,  }\item[{const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr}]{database,  }\item[{int}]{maximum\+Returned\+Neighbors,  }\item[{vector$<$ int $>$ \&}]{neighbor\+Points\+Idxs,  }\item[{vector$<$ float $>$ \&}]{neighbor\+Points\+Squared\+Distances }\end{DoxyParamCaption}) const}
+
+I\+M\+P\+O\+R\+T\+A\+NT\+: Don\textquotesingle{}t use this function! Searches for the K closest Neighbor points of a given point using Kd\+Tree\+F\+L\+A\+NN.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em query} & set of points to search \\
+\hline
+\mbox{\tt in}  & {\em database} & search domain \\
+\hline
+\mbox{\tt in}  & {\em maximum\+Returned\+Neighbors} & maximum number of points to return from the \char`\"{}solutions\char`\"{} set \\
+\hline
+\mbox{\tt out}  & {\em neighbor\+Points\+Idxs} & ids of the returned \char`\"{}solutions\char`\"{} (i.\+e., points in the search domain), maximum\+Returned\+Neighbors at most. \\
+\hline
+\mbox{\tt out}  & {\em neighbor\+Points\+Squared\+Distances} & squared distances between the search point and the retruned Neighbors (solutions)\\
+\hline
+\end{DoxyParams}
+returns the number of matches 
+
+Definition at line 89 of file Searcher.\+cpp.
+
+\mbox{\Hypertarget{class_searcher_a981bdda575da9c5c38e11bc97ab947ab}\label{class_searcher_a981bdda575da9c5c38e11bc97ab947ab}} 
+\index{Searcher@{Searcher}!K\+Dtree\+S\+P\+Match@{K\+Dtree\+S\+P\+Match}}
+\index{K\+Dtree\+S\+P\+Match@{K\+Dtree\+S\+P\+Match}!Searcher@{Searcher}}
+\subsubsection{\texorpdfstring{K\+Dtree\+S\+P\+Match()}{KDtreeSPMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Searcher\+::\+K\+Dtree\+S\+P\+Match (\begin{DoxyParamCaption}\item[{const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&}]{search\+Feature,  }\item[{const Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr}]{database,  }\item[{int}]{maximum\+Returned\+Neighbors,  }\item[{vector$<$ int $>$ \&}]{neighbor\+Points\+Idxs,  }\item[{vector$<$ float $>$ \&}]{neighbor\+Points\+Squared\+Distances,  }\item[{bool}]{sorted = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+Searches for the K closest Neighbor points of a given point using Kd\+Tree\+F\+L\+A\+NN.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em search\+Feature} & point to search \\
+\hline
+\mbox{\tt in}  & {\em database} & search domain \\
+\hline
+\mbox{\tt in}  & {\em maximum\+Returned\+Neighbors} & maximum number of points to return from the \char`\"{}solutions\char`\"{} set \\
+\hline
+\mbox{\tt out}  & {\em neighbor\+Points\+Idxs} & ids of the returned \char`\"{}solutions\char`\"{} (i.\+e., points in the search domain) \\
+\hline
+\mbox{\tt out}  & {\em neighbor\+Points\+Squared\+Distances} & squared distances between the search point and the retruned Neighbors (solutions)\\
+\hline
+\end{DoxyParams}
+returns the number of matches 
+
+Definition at line 164 of file Searcher.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_searcher_8h}{Searcher.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_searcher_8cpp}{Searcher.\+cpp}\end{DoxyCompactItemize}

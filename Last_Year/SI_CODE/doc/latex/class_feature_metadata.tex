@@ -1,0 +1,367 @@
+\hypertarget{class_feature_metadata}{}\section{Feature\+Metadata Class Reference}
+\label{class_feature_metadata}\index{Feature\+Metadata@{Feature\+Metadata}}
+
+
+Holds metadata about a feature as well as the feature itself.  
+
+
+
+
+{\ttfamily \#include $<$Feature\+Metadata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_feature_metadata_ab117cd690bb70fe8795422f976a251d7}{Feature\+Metadata} ()
+\item 
+\hyperlink{class_feature_metadata_ac94095ccb8ba325b552dd192c86bce09}{Feature\+Metadata} (const \hyperlink{class_feature_metadata}{Feature\+Metadata} \&obj)
+\item 
+\hyperlink{class_feature_metadata_a1374c7d4f2e24bf0cf343949eeb93422}{Feature\+Metadata} (pcl\+::\+Histogram$<$ 153 $>$ \&\hyperlink{class_feature_metadata_a0b288799d230ccf13d34efd60165ebb6}{feature}, float \hyperlink{class_feature_metadata_a5b7a2efcdc98b2fc62fd7e47eceed296}{l\+Weight}=1, float \hyperlink{class_feature_metadata_acb096e77efd9a31c51b99682160324ce}{g\+Weight}=1, int \hyperlink{class_feature_metadata_a722c6a86c099fc76fe4d25aedaf98c1c}{count}=1, int \hyperlink{class_feature_metadata_a7f5a6347721de970e0dd5abf4b0a8455}{cluster}=-\/1, float \hyperlink{class_feature_metadata_ab8a28f696d38b7bdd3aeef92a3453bcf}{d\+Cluster\+Centroid}=0, int \hyperlink{class_feature_metadata_a30e96aabc8090f41b8136cbb274da383}{category}=-\/1)
+\item 
+float \hyperlink{class_feature_metadata_a03bdbfab84fa2b98930093657d40735c}{get\+Local\+Weight} () const
+\item 
+void \hyperlink{class_feature_metadata_a48c33c739f9ee12a04c3cf01a09d4f47}{set\+Local\+Weight} (float val)
+\item 
+float \hyperlink{class_feature_metadata_a0ba779c2a9d106b987edc306b14f3191}{get\+Global\+Weight} () const
+\item 
+void \hyperlink{class_feature_metadata_a135f89c383379bee9943acec65d3bdeb}{set\+Global\+Weight} (float val)
+\item 
+int \hyperlink{class_feature_metadata_a4691adf4f46586826fd8c0667119fc52}{get\+Cluster} () const
+\item 
+bool \hyperlink{class_feature_metadata_a896922c34a6bf90f4c22b8e9546108dc}{assign\+To\+Cluster} (int n\+Cluster)
+\item 
+void \hyperlink{class_feature_metadata_a203acc4e77eaf40cb42ac446c92af241}{un\+Assign\+From\+Cluster} ()
+\item 
+const float \hyperlink{class_feature_metadata_a4736658ecb89297dd9bad9c701f59e8f}{get\+Distance\+To\+Centroid} () const
+\item 
+const int \hyperlink{class_feature_metadata_a52510d086e0b5fdc1b34b718c3bebd14}{get\+Count} () const
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \& \hyperlink{class_feature_metadata_a92f0b1da1d3892508fa358a58946060a}{get\+Feature} ()
+\item 
+void \hyperlink{class_feature_metadata_abd9ec7695ed8e497aa1101695d3b5143}{set\+Distance\+To\+Centroid} (float val)
+\item 
+int \hyperlink{class_feature_metadata_a8121654a5fc7422adb41cd04ddb0bc72}{get\+Category} () const
+\item 
+void \hyperlink{class_feature_metadata_acc32427e65eab74731498c4a3f0eca34}{assign\+To\+Category} (int n\+Category)
+\item 
+void \hyperlink{class_feature_metadata_a64772c40574899bb2b3985b1bea2a819}{un\+Assign\+From\+Category} ()
+\item 
+void \hyperlink{class_feature_metadata_acbb60bf43880c89dacd3a81b4e2d0c43}{set\+Feature} (pcl\+::\+Histogram$<$ 153 $>$ \&feat)
+\item 
+void \hyperlink{class_feature_metadata_a2c493838e535578c670052b08b61d069}{add\+Count} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \hyperlink{class_feature_metadata_a0b288799d230ccf13d34efd60165ebb6}{feature}
+\item 
+float \hyperlink{class_feature_metadata_a5b7a2efcdc98b2fc62fd7e47eceed296}{l\+Weight}
+\item 
+float \hyperlink{class_feature_metadata_acb096e77efd9a31c51b99682160324ce}{g\+Weight}
+\item 
+int \hyperlink{class_feature_metadata_a722c6a86c099fc76fe4d25aedaf98c1c}{count}
+\item 
+int \hyperlink{class_feature_metadata_a7f5a6347721de970e0dd5abf4b0a8455}{cluster}
+\item 
+float \hyperlink{class_feature_metadata_ab8a28f696d38b7bdd3aeef92a3453bcf}{d\+Cluster\+Centroid}
+\item 
+int \hyperlink{class_feature_metadata_a30e96aabc8090f41b8136cbb274da383}{category}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds metadata about a feature as well as the feature itself. 
+
+Definition at line 14 of file Feature\+Metadata.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_feature_metadata_ab117cd690bb70fe8795422f976a251d7}\label{class_feature_metadata_ab117cd690bb70fe8795422f976a251d7}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!Feature\+Metadata@{Feature\+Metadata}}
+\index{Feature\+Metadata@{Feature\+Metadata}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{Feature\+Metadata()}{FeatureMetadata()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Feature\+Metadata\+::\+Feature\+Metadata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The empty constructor is required when used as the value in a map. But calling it is considered an error and is treated with an exception! 
+
+Definition at line 20 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_ac94095ccb8ba325b552dd192c86bce09}\label{class_feature_metadata_ac94095ccb8ba325b552dd192c86bce09}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!Feature\+Metadata@{Feature\+Metadata}}
+\index{Feature\+Metadata@{Feature\+Metadata}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{Feature\+Metadata()}{FeatureMetadata()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Feature\+Metadata\+::\+Feature\+Metadata (\begin{DoxyParamCaption}\item[{const \hyperlink{class_feature_metadata}{Feature\+Metadata} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor. T\+O\+DO; is this realy needed? 
+
+Definition at line 29 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a1374c7d4f2e24bf0cf343949eeb93422}\label{class_feature_metadata_a1374c7d4f2e24bf0cf343949eeb93422}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!Feature\+Metadata@{Feature\+Metadata}}
+\index{Feature\+Metadata@{Feature\+Metadata}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{Feature\+Metadata()}{FeatureMetadata()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Feature\+Metadata\+::\+Feature\+Metadata (\begin{DoxyParamCaption}\item[{pcl\+::\+Histogram$<$ 153 $>$ \&}]{feature,  }\item[{float}]{l\+Weight = {\ttfamily 1},  }\item[{float}]{g\+Weight = {\ttfamily 1},  }\item[{int}]{count = {\ttfamily 1},  }\item[{int}]{cluster = {\ttfamily -\/1},  }\item[{float}]{d\+Cluster\+Centroid = {\ttfamily 0},  }\item[{int}]{category = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Creates a new \char`\"{}feature\char`\"{}. Don\textquotesingle{}t use\+: count and d\+Cluster\+Centroid!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feature} & the feature \\
+\hline
+\mbox{\tt in}  & {\em l\+Weight} & the local weight of the feature (associated to the category the feature was assigned) \\
+\hline
+\mbox{\tt in}  & {\em g\+Weight} & the global weight of the feature (associated to the cluster the feature was assigned) \\
+\hline
+\mbox{\tt in}  & {\em count} & the number of similar features the feature represents \\
+\hline
+\mbox{\tt in}  & {\em cluster} & the cluster identifier (map key) to the cluster the feature was assigned to \\
+\hline
+\mbox{\tt in}  & {\em d\+Cluster\+Centroid} & the distace of the feature to the its cluster centroid \\
+\hline
+\mbox{\tt in}  & {\em category} & the category identifier (map key) to the category the feature was assigned to \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_feature_metadata_a2c493838e535578c670052b08b61d069}\label{class_feature_metadata_a2c493838e535578c670052b08b61d069}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!add\+Count@{add\+Count}}
+\index{add\+Count@{add\+Count}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{add\+Count()}{addCount()}}
+{\footnotesize\ttfamily void Feature\+Metadata\+::add\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Don\textquotesingle{}t use this function! 
+
+Definition at line 194 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_acc32427e65eab74731498c4a3f0eca34}\label{class_feature_metadata_acc32427e65eab74731498c4a3f0eca34}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!assign\+To\+Category@{assign\+To\+Category}}
+\index{assign\+To\+Category@{assign\+To\+Category}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{assign\+To\+Category()}{assignToCategory()}}
+{\footnotesize\ttfamily void Feature\+Metadata\+::assign\+To\+Category (\begin{DoxyParamCaption}\item[{int}]{n\+Category }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 175 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a896922c34a6bf90f4c22b8e9546108dc}\label{class_feature_metadata_a896922c34a6bf90f4c22b8e9546108dc}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!assign\+To\+Cluster@{assign\+To\+Cluster}}
+\index{assign\+To\+Cluster@{assign\+To\+Cluster}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{assign\+To\+Cluster()}{assignToCluster()}}
+{\footnotesize\ttfamily bool Feature\+Metadata\+::assign\+To\+Cluster (\begin{DoxyParamCaption}\item[{int}]{n\+Cluster }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 129 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a8121654a5fc7422adb41cd04ddb0bc72}\label{class_feature_metadata_a8121654a5fc7422adb41cd04ddb0bc72}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!get\+Category@{get\+Category}}
+\index{get\+Category@{get\+Category}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{get\+Category()}{getCategory()}}
+{\footnotesize\ttfamily int Feature\+Metadata\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 171 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a4691adf4f46586826fd8c0667119fc52}\label{class_feature_metadata_a4691adf4f46586826fd8c0667119fc52}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!get\+Cluster@{get\+Cluster}}
+\index{get\+Cluster@{get\+Cluster}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{get\+Cluster()}{getCluster()}}
+{\footnotesize\ttfamily int Feature\+Metadata\+::get\+Cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 125 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a52510d086e0b5fdc1b34b718c3bebd14}\label{class_feature_metadata_a52510d086e0b5fdc1b34b718c3bebd14}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{get\+Count()}{getCount()}}
+{\footnotesize\ttfamily const int Feature\+Metadata\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Don\textquotesingle{}t use this function! 
+
+Definition at line 153 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a4736658ecb89297dd9bad9c701f59e8f}\label{class_feature_metadata_a4736658ecb89297dd9bad9c701f59e8f}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!get\+Distance\+To\+Centroid@{get\+Distance\+To\+Centroid}}
+\index{get\+Distance\+To\+Centroid@{get\+Distance\+To\+Centroid}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{get\+Distance\+To\+Centroid()}{getDistanceToCentroid()}}
+{\footnotesize\ttfamily const float Feature\+Metadata\+::get\+Distance\+To\+Centroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Don\textquotesingle{}t use this function! 
+
+Definition at line 146 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a92f0b1da1d3892508fa358a58946060a}\label{class_feature_metadata_a92f0b1da1d3892508fa358a58946060a}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!get\+Feature@{get\+Feature}}
+\index{get\+Feature@{get\+Feature}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{get\+Feature()}{getFeature()}}
+{\footnotesize\ttfamily pcl\+::\+Histogram$<$153$>$\& Feature\+Metadata\+::get\+Feature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the feature. 
+
+Definition at line 160 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a0ba779c2a9d106b987edc306b14f3191}\label{class_feature_metadata_a0ba779c2a9d106b987edc306b14f3191}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!get\+Global\+Weight@{get\+Global\+Weight}}
+\index{get\+Global\+Weight@{get\+Global\+Weight}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{get\+Global\+Weight()}{getGlobalWeight()}}
+{\footnotesize\ttfamily float Feature\+Metadata\+::get\+Global\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 117 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a03bdbfab84fa2b98930093657d40735c}\label{class_feature_metadata_a03bdbfab84fa2b98930093657d40735c}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!get\+Local\+Weight@{get\+Local\+Weight}}
+\index{get\+Local\+Weight@{get\+Local\+Weight}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{get\+Local\+Weight()}{getLocalWeight()}}
+{\footnotesize\ttfamily float Feature\+Metadata\+::get\+Local\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 109 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_abd9ec7695ed8e497aa1101695d3b5143}\label{class_feature_metadata_abd9ec7695ed8e497aa1101695d3b5143}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!set\+Distance\+To\+Centroid@{set\+Distance\+To\+Centroid}}
+\index{set\+Distance\+To\+Centroid@{set\+Distance\+To\+Centroid}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{set\+Distance\+To\+Centroid()}{setDistanceToCentroid()}}
+{\footnotesize\ttfamily void Feature\+Metadata\+::set\+Distance\+To\+Centroid (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Don\textquotesingle{}t use this function! 
+
+Definition at line 167 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_acbb60bf43880c89dacd3a81b4e2d0c43}\label{class_feature_metadata_acbb60bf43880c89dacd3a81b4e2d0c43}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!set\+Feature@{set\+Feature}}
+\index{set\+Feature@{set\+Feature}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{set\+Feature()}{setFeature()}}
+{\footnotesize\ttfamily void Feature\+Metadata\+::set\+Feature (\begin{DoxyParamCaption}\item[{pcl\+::\+Histogram$<$ 153 $>$ \&}]{feat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 187 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a135f89c383379bee9943acec65d3bdeb}\label{class_feature_metadata_a135f89c383379bee9943acec65d3bdeb}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!set\+Global\+Weight@{set\+Global\+Weight}}
+\index{set\+Global\+Weight@{set\+Global\+Weight}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{set\+Global\+Weight()}{setGlobalWeight()}}
+{\footnotesize\ttfamily void Feature\+Metadata\+::set\+Global\+Weight (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 121 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a48c33c739f9ee12a04c3cf01a09d4f47}\label{class_feature_metadata_a48c33c739f9ee12a04c3cf01a09d4f47}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!set\+Local\+Weight@{set\+Local\+Weight}}
+\index{set\+Local\+Weight@{set\+Local\+Weight}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{set\+Local\+Weight()}{setLocalWeight()}}
+{\footnotesize\ttfamily void Feature\+Metadata\+::set\+Local\+Weight (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 113 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a64772c40574899bb2b3985b1bea2a819}\label{class_feature_metadata_a64772c40574899bb2b3985b1bea2a819}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!un\+Assign\+From\+Category@{un\+Assign\+From\+Category}}
+\index{un\+Assign\+From\+Category@{un\+Assign\+From\+Category}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{un\+Assign\+From\+Category()}{unAssignFromCategory()}}
+{\footnotesize\ttfamily void Feature\+Metadata\+::un\+Assign\+From\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unassigns the feature from the category it was assigned to. The value -\/1 means that the feature is currently not assigned to any category. 
+
+Definition at line 183 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a203acc4e77eaf40cb42ac446c92af241}\label{class_feature_metadata_a203acc4e77eaf40cb42ac446c92af241}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!un\+Assign\+From\+Cluster@{un\+Assign\+From\+Cluster}}
+\index{un\+Assign\+From\+Cluster@{un\+Assign\+From\+Cluster}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{un\+Assign\+From\+Cluster()}{unAssignFromCluster()}}
+{\footnotesize\ttfamily void Feature\+Metadata\+::un\+Assign\+From\+Cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unassigns the feature from the cluster it was assigned to. The value -\/1 means that the feature is currently not assigned to any cluster. 
+
+Definition at line 139 of file Feature\+Metadata.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_feature_metadata_a30e96aabc8090f41b8136cbb274da383}\label{class_feature_metadata_a30e96aabc8090f41b8136cbb274da383}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!category@{category}}
+\index{category@{category}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{category}{category}}
+{\footnotesize\ttfamily int Feature\+Metadata\+::category\hspace{0.3cm}{\ttfamily [protected]}}
+
+The category identifier of the category the feature has been assigned to 
+
+Definition at line 103 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a7f5a6347721de970e0dd5abf4b0a8455}\label{class_feature_metadata_a7f5a6347721de970e0dd5abf4b0a8455}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!cluster@{cluster}}
+\index{cluster@{cluster}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{cluster}{cluster}}
+{\footnotesize\ttfamily int Feature\+Metadata\+::cluster\hspace{0.3cm}{\ttfamily [protected]}}
+
+The cluster identifier of the cluster the feature has been assigned to 
+
+Definition at line 92 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a722c6a86c099fc76fe4d25aedaf98c1c}\label{class_feature_metadata_a722c6a86c099fc76fe4d25aedaf98c1c}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!count@{count}}
+\index{count@{count}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int Feature\+Metadata\+::count\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of similar features to this feature-\/ Don\textquotesingle{}t use this!
+
+This can be used to keep a count of the number of features seen that were similar to this feature and therefore discarded to avoid redundancy This measure can serve as an indicator of how representative a feature is when we have to decide which features to forget 
+
+Definition at line 87 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_ab8a28f696d38b7bdd3aeef92a3453bcf}\label{class_feature_metadata_ab8a28f696d38b7bdd3aeef92a3453bcf}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!d\+Cluster\+Centroid@{d\+Cluster\+Centroid}}
+\index{d\+Cluster\+Centroid@{d\+Cluster\+Centroid}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{d\+Cluster\+Centroid}{dClusterCentroid}}
+{\footnotesize\ttfamily float Feature\+Metadata\+::d\+Cluster\+Centroid\hspace{0.3cm}{\ttfamily [protected]}}
+
+The distance from the feature to its cluster centroid. Don\textquotesingle{}t use this! 
+
+Definition at line 98 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a0b288799d230ccf13d34efd60165ebb6}\label{class_feature_metadata_a0b288799d230ccf13d34efd60165ebb6}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!feature@{feature}}
+\index{feature@{feature}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{feature}{feature}}
+{\footnotesize\ttfamily pcl\+::\+Histogram$<$153$>$ Feature\+Metadata\+::feature\hspace{0.3cm}{\ttfamily [protected]}}
+
+The feature 
+
+Definition at line 66 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_acb096e77efd9a31c51b99682160324ce}\label{class_feature_metadata_acb096e77efd9a31c51b99682160324ce}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!g\+Weight@{g\+Weight}}
+\index{g\+Weight@{g\+Weight}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{g\+Weight}{gWeight}}
+{\footnotesize\ttfamily float Feature\+Metadata\+::g\+Weight\hspace{0.3cm}{\ttfamily [protected]}}
+
+The global weight of the feature (in its cluster) 
+
+Definition at line 76 of file Feature\+Metadata.\+h.
+
+\mbox{\Hypertarget{class_feature_metadata_a5b7a2efcdc98b2fc62fd7e47eceed296}\label{class_feature_metadata_a5b7a2efcdc98b2fc62fd7e47eceed296}} 
+\index{Feature\+Metadata@{Feature\+Metadata}!l\+Weight@{l\+Weight}}
+\index{l\+Weight@{l\+Weight}!Feature\+Metadata@{Feature\+Metadata}}
+\subsubsection{\texorpdfstring{l\+Weight}{lWeight}}
+{\footnotesize\ttfamily float Feature\+Metadata\+::l\+Weight\hspace{0.3cm}{\ttfamily [protected]}}
+
+The local weight of the feature (features\textquotesingle{} category weight) 
+
+Definition at line 71 of file Feature\+Metadata.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_feature_metadata_8h}{Feature\+Metadata.\+h}\end{DoxyCompactItemize}

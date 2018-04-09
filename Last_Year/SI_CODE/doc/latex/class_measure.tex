@@ -1,0 +1,187 @@
+\hypertarget{class_measure}{}\section{Measure Class Reference}
+\label{class_measure}\index{Measure@{Measure}}
+
+
+A class used to measure the performance of the application assigning object views to categories. Use to hold the results for a specific category.  
+
+
+
+
+{\ttfamily \#include $<$Measure.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_measure_ab55c93d6121f43c91a337fb7bcd26825}{Measure} ()
+\item 
+int \& \hyperlink{class_measure_a28c4d8877916c477d2e3003d3f467ca2}{get\+TP} ()
+\item 
+int \& \hyperlink{class_measure_a68c038fe576017b5d3ce00895dc0aeb5}{get\+FP} ()
+\item 
+int \& \hyperlink{class_measure_a9b2213f1dd9fd63e64629ecbb8ecce35}{get\+FN} ()
+\item 
+void \hyperlink{class_measure_a163284f13b6b79ba19f7db571365c7e1}{add\+TP} ()
+\item 
+void \hyperlink{class_measure_ae3b5b1f8db1a660dd55495bcc69d2a3d}{add\+FP} ()
+\item 
+void \hyperlink{class_measure_adfac0ce9647ed61b6fdfa6c81b1e5971}{add\+FN} ()
+\item 
+double \hyperlink{class_measure_a2cac1a29c5ae012b810499be8d301753}{precision} ()
+\item 
+double \hyperlink{class_measure_afb7cbc9872452a8ce1f78e6f0661daa0}{recall} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_measure_a88e0c0f67850429f30650a2b7e7076aa}{tp}
+\item 
+int \hyperlink{class_measure_a2f4b9fd7379fc019a8dd276f316eddd7}{fp}
+\item 
+int \hyperlink{class_measure_ac0e820e813b633be8aa145f415aa81eb}{fn}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class used to measure the performance of the application assigning object views to categories. Use to hold the results for a specific category. 
+
+Definition at line 10 of file Measure.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_measure_ab55c93d6121f43c91a337fb7bcd26825}\label{class_measure_ab55c93d6121f43c91a337fb7bcd26825}} 
+\index{Measure@{Measure}!Measure@{Measure}}
+\index{Measure@{Measure}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{Measure()}{Measure()}}
+{\footnotesize\ttfamily Measure\+::\+Measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The empty constructor is required when used as the value in a map. 
+
+Definition at line 3 of file Measure.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_measure_adfac0ce9647ed61b6fdfa6c81b1e5971}\label{class_measure_adfac0ce9647ed61b6fdfa6c81b1e5971}} 
+\index{Measure@{Measure}!add\+FN@{add\+FN}}
+\index{add\+FN@{add\+FN}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{add\+F\+N()}{addFN()}}
+{\footnotesize\ttfamily void Measure\+::add\+FN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increments the amount of false negatives. 
+
+Definition at line 73 of file Measure.\+h.
+
+\mbox{\Hypertarget{class_measure_ae3b5b1f8db1a660dd55495bcc69d2a3d}\label{class_measure_ae3b5b1f8db1a660dd55495bcc69d2a3d}} 
+\index{Measure@{Measure}!add\+FP@{add\+FP}}
+\index{add\+FP@{add\+FP}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{add\+F\+P()}{addFP()}}
+{\footnotesize\ttfamily void Measure\+::add\+FP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increments the amount of false positives. 
+
+Definition at line 66 of file Measure.\+h.
+
+\mbox{\Hypertarget{class_measure_a163284f13b6b79ba19f7db571365c7e1}\label{class_measure_a163284f13b6b79ba19f7db571365c7e1}} 
+\index{Measure@{Measure}!add\+TP@{add\+TP}}
+\index{add\+TP@{add\+TP}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{add\+T\+P()}{addTP()}}
+{\footnotesize\ttfamily void Measure\+::add\+TP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increments the amount of true positives. 
+
+Definition at line 59 of file Measure.\+h.
+
+\mbox{\Hypertarget{class_measure_a9b2213f1dd9fd63e64629ecbb8ecce35}\label{class_measure_a9b2213f1dd9fd63e64629ecbb8ecce35}} 
+\index{Measure@{Measure}!get\+FN@{get\+FN}}
+\index{get\+FN@{get\+FN}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{get\+F\+N()}{getFN()}}
+{\footnotesize\ttfamily int\& Measure\+::get\+FN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the amount of false negatives. 
+
+Definition at line 52 of file Measure.\+h.
+
+\mbox{\Hypertarget{class_measure_a68c038fe576017b5d3ce00895dc0aeb5}\label{class_measure_a68c038fe576017b5d3ce00895dc0aeb5}} 
+\index{Measure@{Measure}!get\+FP@{get\+FP}}
+\index{get\+FP@{get\+FP}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{get\+F\+P()}{getFP()}}
+{\footnotesize\ttfamily int\& Measure\+::get\+FP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the amount of false positives. 
+
+Definition at line 45 of file Measure.\+h.
+
+\mbox{\Hypertarget{class_measure_a28c4d8877916c477d2e3003d3f467ca2}\label{class_measure_a28c4d8877916c477d2e3003d3f467ca2}} 
+\index{Measure@{Measure}!get\+TP@{get\+TP}}
+\index{get\+TP@{get\+TP}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{get\+T\+P()}{getTP()}}
+{\footnotesize\ttfamily int\& Measure\+::get\+TP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the amount of true positives. 
+
+Definition at line 38 of file Measure.\+h.
+
+\mbox{\Hypertarget{class_measure_a2cac1a29c5ae012b810499be8d301753}\label{class_measure_a2cac1a29c5ae012b810499be8d301753}} 
+\index{Measure@{Measure}!precision@{precision}}
+\index{precision@{precision}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{precision()}{precision()}}
+{\footnotesize\ttfamily double Measure\+::precision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the precision.
+
+returns tp / (tp + fp) or 0 if (tp + fp) = 0. 
+
+Definition at line 82 of file Measure.\+h.
+
+\mbox{\Hypertarget{class_measure_afb7cbc9872452a8ce1f78e6f0661daa0}\label{class_measure_afb7cbc9872452a8ce1f78e6f0661daa0}} 
+\index{Measure@{Measure}!recall@{recall}}
+\index{recall@{recall}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{recall()}{recall()}}
+{\footnotesize\ttfamily double Measure\+::recall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the recall.
+
+returns tp / (tp + fn) or 0 if (tp + fn) = 0. 
+
+Definition at line 92 of file Measure.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_measure_ac0e820e813b633be8aa145f415aa81eb}\label{class_measure_ac0e820e813b633be8aa145f415aa81eb}} 
+\index{Measure@{Measure}!fn@{fn}}
+\index{fn@{fn}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{fn}{fn}}
+{\footnotesize\ttfamily int Measure\+::fn\hspace{0.3cm}{\ttfamily [protected]}}
+
+False negatives 
+
+Definition at line 32 of file Measure.\+h.
+
+\mbox{\Hypertarget{class_measure_a2f4b9fd7379fc019a8dd276f316eddd7}\label{class_measure_a2f4b9fd7379fc019a8dd276f316eddd7}} 
+\index{Measure@{Measure}!fp@{fp}}
+\index{fp@{fp}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{fp}{fp}}
+{\footnotesize\ttfamily int Measure\+::fp\hspace{0.3cm}{\ttfamily [protected]}}
+
+False positives 
+
+Definition at line 27 of file Measure.\+h.
+
+\mbox{\Hypertarget{class_measure_a88e0c0f67850429f30650a2b7e7076aa}\label{class_measure_a88e0c0f67850429f30650a2b7e7076aa}} 
+\index{Measure@{Measure}!tp@{tp}}
+\index{tp@{tp}!Measure@{Measure}}
+\subsubsection{\texorpdfstring{tp}{tp}}
+{\footnotesize\ttfamily int Measure\+::tp\hspace{0.3cm}{\ttfamily [protected]}}
+
+True positives 
+
+Definition at line 22 of file Measure.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_measure_8h}{Measure.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_measure_8cpp}{Measure.\+cpp}\end{DoxyCompactItemize}

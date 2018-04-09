@@ -1,0 +1,2820 @@
+
+Configuration
+	voxel_size 0.01
+	spin_imgs_search_radius 0.1
+	window_width 8
+	support_length 0.1
+	support_angle 0
+	min_pts_neighbours 0
+	redistribute_GWeights_search_radius 0.065
+	Forget Features Off
+	Number Of Tests To Perform: 1
+	Number Categories used in the tests: 51
+	% Views for training: 0.65
+	Views Dir: ../SI_CODE/views/
+	Memory Decay Factor: 0.99985
+	Memory Decay Threshold: 0.97775
+	Feature Redundancy Threshold: 0.000126
+	Max Number Features In Memory: 35000
+	bin_size 0.00883883
+	cylinder r = 0.8 height = 1.6
+
+Test 1
+Nº Categories used: 51
+Nº Categories Available: 51
+Nº Views per Categories: 20
+Nº Views for Training: 12
+Nº Views for Testing: 8
+
+Task: Training
+
+View: ../SI_CODE/views/plate/plate_5_4_59.pcd
+View: ../SI_CODE/views/stapler/stapler_1_4_45.pcd
+View: ../SI_CODE/views/potato/potato_3_1_181.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_26.pcd
+View: ../SI_CODE/views/comb/comb_1_1_155.pcd
+View: ../SI_CODE/views/food_box/food_box_1_4_236.pcd
+View: ../SI_CODE/views/apple/apple_1_2_89.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_4_38.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_4_176.pcd
+View: ../SI_CODE/views/pear/pear_1_1_111.pcd
+View: ../SI_CODE/views/lime/lime_1_2_107.pcd
+View: ../SI_CODE/views/marker/marker_1_4_226.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_4_53.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_1_164.pcd
+View: ../SI_CODE/views/lemon/lemon_1_4_143.pcd
+View: ../SI_CODE/views/food_box/food_box_1_1_64.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_258.pcd
+View: ../SI_CODE/views/lime/lime_1_2_187.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_2_15.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_4_81.pcd
+View: ../SI_CODE/views/notebook/notebook_2_2_37.pcd
+View: ../SI_CODE/views/onion/onion_5_2_250.pcd
+View: ../SI_CODE/views/orange/orange_4_2_8.pcd
+View: ../SI_CODE/views/scissors/scissors_1_1_164.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_50.pcd
+View: ../SI_CODE/views/binder/binder_1_2_69.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_4_180.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_2_23.pcd
+View: ../SI_CODE/views/pear/pear_1_4_26.pcd
+View: ../SI_CODE/views/food_can/food_can_1_1_218.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_1_69.pcd
+View: ../SI_CODE/views/cap/cap_1_1_129.pcd
+View: ../SI_CODE/views/ball/ball_1_1_186.pcd
+View: ../SI_CODE/views/tomato/tomato_1_2_31.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_2_126.pcd
+View: ../SI_CODE/views/lime/lime_1_2_82.pcd
+View: ../SI_CODE/views/apple/apple_1_2_102.pcd
+View: ../SI_CODE/views/potato/potato_3_1_97.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_2_256.pcd
+View: ../SI_CODE/views/tomato/tomato_1_1_129.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_205.pcd
+View: ../SI_CODE/views/comb/comb_1_4_74.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_1_44.pcd
+View: ../SI_CODE/views/notebook/notebook_2_2_182.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_4_44.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_4_92.pcd
+View: ../SI_CODE/views/camera/camera_1_4_109.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_92.pcd
+View: ../SI_CODE/views/pear/pear_1_4_131.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_2_222.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_2_27.pcd
+View: ../SI_CODE/views/sponge/sponge_1_1_9.pcd
+View: ../SI_CODE/views/greens/greens_1_2_180.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_107.pcd
+View: ../SI_CODE/views/greens/greens_1_4_263.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_4_151.pcd
+View: ../SI_CODE/views/food_can/food_can_1_2_51.pcd
+View: ../SI_CODE/views/apple/apple_1_2_43.pcd
+View: ../SI_CODE/views/bowl/bowl_1_4_143.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_1_101.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_4_182.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_4_76.pcd
+View: ../SI_CODE/views/greens/greens_1_2_91.pcd
+View: ../SI_CODE/views/tomato/tomato_1_1_231.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_4.pcd
+View: ../SI_CODE/views/binder/binder_1_2_18.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_11.pcd
+View: ../SI_CODE/views/lemon/lemon_1_4_190.pcd
+View: ../SI_CODE/views/potato/potato_3_2_174.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_2_115.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_181.pcd
+View: ../SI_CODE/views/scissors/scissors_1_4_25.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_1_127.pcd
+View: ../SI_CODE/views/bowl/bowl_1_2_40.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_1_181.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_46.pcd
+View: ../SI_CODE/views/orange/orange_4_2_177.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_4_186.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_4_128.pcd
+View: ../SI_CODE/views/pear/pear_1_1_90.pcd
+View: ../SI_CODE/views/peach/peach_2_4_84.pcd
+View: ../SI_CODE/views/notebook/notebook_2_2_87.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_2_118.pcd
+View: ../SI_CODE/views/lemon/lemon_1_2_170.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_4_60.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_4_84.pcd
+View: ../SI_CODE/views/binder/binder_1_2_181.pcd
+View: ../SI_CODE/views/peach/peach_2_4_219.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_4_8.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_18.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_4_70.pcd
+View: ../SI_CODE/views/ball/ball_1_4_204.pcd
+View: ../SI_CODE/views/notebook/notebook_2_4_186.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_4_137.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_4_184.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_2_42.pcd
+View: ../SI_CODE/views/scissors/scissors_1_4_73.pcd
+View: ../SI_CODE/views/calculator/calculator_1_1_63.pcd
+View: ../SI_CODE/views/cap/cap_1_2_95.pcd
+View: ../SI_CODE/views/peach/peach_2_4_193.pcd
+View: ../SI_CODE/views/potato/potato_3_1_156.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_1_213.pcd
+View: ../SI_CODE/views/greens/greens_1_2_200.pcd
+View: ../SI_CODE/views/potato/potato_3_2_194.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_2_97.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_1_103.pcd
+View: ../SI_CODE/views/comb/comb_1_2_155.pcd
+View: ../SI_CODE/views/onion/onion_5_1_173.pcd
+View: ../SI_CODE/views/scissors/scissors_1_1_89.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_4_122.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_1_11.pcd
+View: ../SI_CODE/views/marker/marker_1_2_80.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_43.pcd
+View: ../SI_CODE/views/plate/plate_5_1_27.pcd
+View: ../SI_CODE/views/apple/apple_1_1_68.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_12.pcd
+View: ../SI_CODE/views/marker/marker_1_2_64.pcd
+View: ../SI_CODE/views/cap/cap_1_1_163.pcd
+View: ../SI_CODE/views/camera/camera_1_2_166.pcd
+View: ../SI_CODE/views/bowl/bowl_1_1_113.pcd
+View: ../SI_CODE/views/lime/lime_1_1_101.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_17.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_196.pcd
+View: ../SI_CODE/views/stapler/stapler_1_4_20.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_4_62.pcd
+View: ../SI_CODE/views/food_box/food_box_1_2_22.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_4_184.pcd
+View: ../SI_CODE/views/peach/peach_2_2_140.pcd
+View: ../SI_CODE/views/onion/onion_5_4_100.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_1_137.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_1_29.pcd
+View: ../SI_CODE/views/bowl/bowl_1_2_174.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_2_2.pcd
+View: ../SI_CODE/views/marker/marker_1_4_255.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_1_3.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_2_274.pcd
+View: ../SI_CODE/views/banana/banana_1_2_114.pcd
+View: ../SI_CODE/views/plate/plate_5_2_29.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_1_116.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_4_184.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_4_271.pcd
+View: ../SI_CODE/views/tomato/tomato_1_4_60.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_1_199.pcd
+View: ../SI_CODE/views/orange/orange_4_4_114.pcd
+View: ../SI_CODE/views/sponge/sponge_1_4_130.pcd
+View: ../SI_CODE/views/plate/plate_5_1_82.pcd
+View: ../SI_CODE/views/comb/comb_1_4_100.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_1_71.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_1_191.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_62.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_89.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_4_176.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_1_111.pcd
+View: ../SI_CODE/views/bowl/bowl_1_4_169.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_2_212.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_2_253.pcd
+View: ../SI_CODE/views/pliers/pliers_6_1_31.pcd
+View: ../SI_CODE/views/comb/comb_1_2_179.pcd
+View: ../SI_CODE/views/banana/banana_1_1_149.pcd
+View: ../SI_CODE/views/bowl/bowl_1_4_31.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_2_137.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_4_56.pcd
+View: ../SI_CODE/views/scissors/scissors_1_4_13.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_4_73.pcd
+View: ../SI_CODE/views/notebook/notebook_2_1_177.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_2_15.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_1_31.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_4_142.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_190.pcd
+View: ../SI_CODE/views/food_box/food_box_1_1_222.pcd
+View: ../SI_CODE/views/sponge/sponge_1_4_190.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_1_110.pcd
+View: ../SI_CODE/views/cap/cap_1_4_202.pcd
+View: ../SI_CODE/views/apple/apple_1_4_133.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_4_242.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_2_187.pcd
+View: ../SI_CODE/views/notebook/notebook_2_4_83.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_15.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_2_214.pcd
+View: ../SI_CODE/views/onion/onion_5_1_133.pcd
+View: ../SI_CODE/views/binder/binder_1_2_15.pcd
+View: ../SI_CODE/views/food_box/food_box_1_1_217.pcd
+View: ../SI_CODE/views/scissors/scissors_1_1_173.pcd
+View: ../SI_CODE/views/pear/pear_1_2_120.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_150.pcd
+View: ../SI_CODE/views/peach/peach_2_1_134.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_4_186.pcd
+View: ../SI_CODE/views/notebook/notebook_2_2_162.pcd
+View: ../SI_CODE/views/lime/lime_1_4_196.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_212.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_4_118.pcd
+View: ../SI_CODE/views/lemon/lemon_1_2_171.pcd
+View: ../SI_CODE/views/cap/cap_1_1_95.pcd
+View: ../SI_CODE/views/notebook/notebook_2_1_59.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_1_78.pcd
+View: ../SI_CODE/views/binder/binder_1_2_158.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_92.pcd
+View: ../SI_CODE/views/stapler/stapler_1_1_134.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_4_101.pcd
+View: ../SI_CODE/views/pliers/pliers_6_1_137.pcd
+View: ../SI_CODE/views/lemon/lemon_1_1_102.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_2_146.pcd
+View: ../SI_CODE/views/marker/marker_1_1_13.pcd
+View: ../SI_CODE/views/cap/cap_1_1_174.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_4_61.pcd
+View: ../SI_CODE/views/comb/comb_1_2_156.pcd
+View: ../SI_CODE/views/scissors/scissors_1_2_40.pcd
+View: ../SI_CODE/views/greens/greens_1_4_68.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_2_8.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_2_254.pcd
+View: ../SI_CODE/views/camera/camera_1_2_162.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_53.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_4_231.pcd
+View: ../SI_CODE/views/calculator/calculator_1_2_132.pcd
+View: ../SI_CODE/views/comb/comb_1_4_7.pcd
+View: ../SI_CODE/views/marker/marker_1_4_77.pcd
+View: ../SI_CODE/views/tomato/tomato_1_4_161.pcd
+View: ../SI_CODE/views/orange/orange_4_4_34.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_2_193.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_4_172.pcd
+View: ../SI_CODE/views/ball/ball_1_2_38.pcd
+View: ../SI_CODE/views/food_can/food_can_1_1_112.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_111.pcd
+View: ../SI_CODE/views/sponge/sponge_1_4_167.pcd
+View: ../SI_CODE/views/camera/camera_1_4_84.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_4_173.pcd
+View: ../SI_CODE/views/pliers/pliers_6_4_76.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_2_110.pcd
+View: ../SI_CODE/views/onion/onion_5_4_225.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_142.pcd
+View: ../SI_CODE/views/notebook/notebook_2_2_150.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_156.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_1_3.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_2_164.pcd
+View: ../SI_CODE/views/food_can/food_can_1_2_105.pcd
+View: ../SI_CODE/views/food_box/food_box_1_4_152.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_4_108.pcd
+View: ../SI_CODE/views/scissors/scissors_1_4_72.pcd
+View: ../SI_CODE/views/food_can/food_can_1_4_295.pcd
+View: ../SI_CODE/views/camera/camera_1_1_109.pcd
+View: ../SI_CODE/views/ball/ball_1_2_116.pcd
+View: ../SI_CODE/views/apple/apple_1_1_119.pcd
+View: ../SI_CODE/views/calculator/calculator_1_1_75.pcd
+View: ../SI_CODE/views/tomato/tomato_1_1_164.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_78.pcd
+View: ../SI_CODE/views/calculator/calculator_1_2_165.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_4_78.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_185.pcd
+View: ../SI_CODE/views/stapler/stapler_1_1_58.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_2_75.pcd
+View: ../SI_CODE/views/onion/onion_5_2_237.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_2_115.pcd
+View: ../SI_CODE/views/apple/apple_1_4_29.pcd
+View: ../SI_CODE/views/lemon/lemon_1_1_191.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_120.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_52.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_1_63.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_1_47.pcd
+View: ../SI_CODE/views/ball/ball_1_1_22.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_2_191.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_151.pcd
+View: ../SI_CODE/views/orange/orange_4_1_2.pcd
+View: ../SI_CODE/views/pear/pear_1_1_10.pcd
+View: ../SI_CODE/views/ball/ball_1_4_41.pcd
+View: ../SI_CODE/views/binder/binder_1_2_174.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_143.pcd
+View: ../SI_CODE/views/scissors/scissors_1_2_46.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_157.pcd
+View: ../SI_CODE/views/food_can/food_can_1_1_207.pcd
+View: ../SI_CODE/views/banana/banana_1_4_133.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_1.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_146.pcd
+View: ../SI_CODE/views/pear/pear_1_1_23.pcd
+View: ../SI_CODE/views/potato/potato_3_1_139.pcd
+View: ../SI_CODE/views/onion/onion_5_2_103.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_4_176.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_109.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_4_96.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_2_70.pcd
+View: ../SI_CODE/views/food_can/food_can_1_1_171.pcd
+View: ../SI_CODE/views/pliers/pliers_6_2_154.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_2_170.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_4_75.pcd
+View: ../SI_CODE/views/peach/peach_2_4_157.pcd
+View: ../SI_CODE/views/comb/comb_1_1_119.pcd
+View: ../SI_CODE/views/camera/camera_1_1_176.pcd
+View: ../SI_CODE/views/potato/potato_3_2_45.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_1_54.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_1_80.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_2_118.pcd
+View: ../SI_CODE/views/plate/plate_5_2_47.pcd
+View: ../SI_CODE/views/lemon/lemon_1_1_55.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_1_17.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_2_105.pcd
+View: ../SI_CODE/views/greens/greens_1_4_166.pcd
+View: ../SI_CODE/views/pear/pear_1_2_99.pcd
+View: ../SI_CODE/views/food_box/food_box_1_1_230.pcd
+View: ../SI_CODE/views/calculator/calculator_1_2_170.pcd
+View: ../SI_CODE/views/plate/plate_5_4_169.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_101.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_4_62.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_153.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_2_125.pcd
+View: ../SI_CODE/views/orange/orange_4_1_57.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_4_117.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_1_186.pcd
+View: ../SI_CODE/views/onion/onion_5_4_161.pcd
+View: ../SI_CODE/views/camera/camera_1_1_216.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_1_21.pcd
+View: ../SI_CODE/views/plate/plate_5_2_114.pcd
+View: ../SI_CODE/views/scissors/scissors_1_1_44.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_2_219.pcd
+View: ../SI_CODE/views/notebook/notebook_2_4_142.pcd
+View: ../SI_CODE/views/marker/marker_1_2_158.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_2_23.pcd
+View: ../SI_CODE/views/food_can/food_can_1_1_137.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_2_163.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_4_201.pcd
+View: ../SI_CODE/views/camera/camera_1_1_44.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_1_240.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_26.pcd
+View: ../SI_CODE/views/banana/banana_1_4_227.pcd
+View: ../SI_CODE/views/apple/apple_1_2_150.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_2_85.pcd
+View: ../SI_CODE/views/camera/camera_1_4_118.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_2_120.pcd
+View: ../SI_CODE/views/greens/greens_1_2_45.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_1_183.pcd
+View: ../SI_CODE/views/bowl/bowl_1_2_82.pcd
+View: ../SI_CODE/views/tomato/tomato_1_4_210.pcd
+View: ../SI_CODE/views/marker/marker_1_2_67.pcd
+View: ../SI_CODE/views/banana/banana_1_2_167.pcd
+View: ../SI_CODE/views/notebook/notebook_2_4_85.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_4_250.pcd
+View: ../SI_CODE/views/food_box/food_box_1_1_189.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_2_26.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_4_53.pcd
+View: ../SI_CODE/views/peach/peach_2_2_93.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_2_92.pcd
+View: ../SI_CODE/views/orange/orange_4_4_75.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_2_113.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_138.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_4_258.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_2_133.pcd
+View: ../SI_CODE/views/cap/cap_1_1_61.pcd
+View: ../SI_CODE/views/banana/banana_1_2_46.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_2_50.pcd
+View: ../SI_CODE/views/comb/comb_1_4_186.pcd
+View: ../SI_CODE/views/banana/banana_1_2_55.pcd
+View: ../SI_CODE/views/lime/lime_1_1_120.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_185.pcd
+View: ../SI_CODE/views/banana/banana_1_1_16.pcd
+View: ../SI_CODE/views/stapler/stapler_1_2_151.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_2_199.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_174.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_4_206.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_1_53.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_1_3.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_48.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_1_141.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_49.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_4_177.pcd
+View: ../SI_CODE/views/stapler/stapler_1_2_148.pcd
+View: ../SI_CODE/views/onion/onion_5_1_153.pcd
+View: ../SI_CODE/views/binder/binder_1_2_209.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_2_4.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_4_173.pcd
+View: ../SI_CODE/views/potato/potato_3_4_165.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_2_117.pcd
+View: ../SI_CODE/views/binder/binder_1_1_107.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_1_108.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_64.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_2_212.pcd
+View: ../SI_CODE/views/calculator/calculator_1_4_205.pcd
+View: ../SI_CODE/views/pliers/pliers_6_1_161.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_55.pcd
+View: ../SI_CODE/views/calculator/calculator_1_4_109.pcd
+View: ../SI_CODE/views/marker/marker_1_2_230.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_197.pcd
+View: ../SI_CODE/views/stapler/stapler_1_1_151.pcd
+View: ../SI_CODE/views/banana/banana_1_4_191.pcd
+View: ../SI_CODE/views/comb/comb_1_1_165.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_4_71.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_16.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_4_93.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_4_117.pcd
+View: ../SI_CODE/views/peach/peach_2_1_26.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_4_100.pcd
+View: ../SI_CODE/views/pear/pear_1_2_47.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_1_128.pcd
+View: ../SI_CODE/views/peach/peach_2_2_53.pcd
+View: ../SI_CODE/views/plate/plate_5_4_196.pcd
+View: ../SI_CODE/views/food_can/food_can_1_4_185.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_1_128.pcd
+View: ../SI_CODE/views/binder/binder_1_1_175.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_2_147.pcd
+View: ../SI_CODE/views/tomato/tomato_1_2_74.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_4_49.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_1_10.pcd
+View: ../SI_CODE/views/lime/lime_1_2_157.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_1_194.pcd
+View: ../SI_CODE/views/binder/binder_1_4_14.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_4_253.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_197.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_159.pcd
+View: ../SI_CODE/views/peach/peach_2_1_63.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_160.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_4_221.pcd
+View: ../SI_CODE/views/potato/potato_3_4_136.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_127.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_1_5.pcd
+View: ../SI_CODE/views/plate/plate_5_4_91.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_1_179.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_2_213.pcd
+View: ../SI_CODE/views/onion/onion_5_1_182.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_17.pcd
+View: ../SI_CODE/views/tomato/tomato_1_4_193.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_2_57.pcd
+View: ../SI_CODE/views/food_can/food_can_1_1_153.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_162.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_4_59.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_133.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_160.pcd
+View: ../SI_CODE/views/garlic/garlic_1_1_206.pcd
+View: ../SI_CODE/views/greens/greens_1_1_43.pcd
+View: ../SI_CODE/views/peach/peach_2_1_100.pcd
+View: ../SI_CODE/views/calculator/calculator_1_2_126.pcd
+View: ../SI_CODE/views/apple/apple_1_2_154.pcd
+View: ../SI_CODE/views/pliers/pliers_6_4_37.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_4_46.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_2_207.pcd
+View: ../SI_CODE/views/ball/ball_1_1_87.pcd
+View: ../SI_CODE/views/camera/camera_1_1_10.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_1_18.pcd
+View: ../SI_CODE/views/apple/apple_1_4_167.pcd
+View: ../SI_CODE/views/food_box/food_box_1_2_174.pcd
+View: ../SI_CODE/views/tomato/tomato_1_1_124.pcd
+View: ../SI_CODE/views/stapler/stapler_1_2_153.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_1_109.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_4_119.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_1_108.pcd
+View: ../SI_CODE/views/camera/camera_1_4_119.pcd
+View: ../SI_CODE/views/lime/lime_1_2_120.pcd
+View: ../SI_CODE/views/bowl/bowl_1_2_192.pcd
+View: ../SI_CODE/views/sponge/sponge_1_4_138.pcd
+View: ../SI_CODE/views/camera/camera_1_1_200.pcd
+View: ../SI_CODE/views/cap/cap_1_1_134.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_112.pcd
+View: ../SI_CODE/views/sponge/sponge_1_4_69.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_4_10.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_2_86.pcd
+View: ../SI_CODE/views/stapler/stapler_1_2_73.pcd
+View: ../SI_CODE/views/banana/banana_1_2_103.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_82.pcd
+View: ../SI_CODE/views/calculator/calculator_1_1_62.pcd
+View: ../SI_CODE/views/mushroom/mushroom_2_1_52.pcd
+View: ../SI_CODE/views/greens/greens_1_1_29.pcd
+View: ../SI_CODE/views/pliers/pliers_6_1_24.pcd
+View: ../SI_CODE/views/sponge/sponge_1_2_168.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_1_83.pcd
+View: ../SI_CODE/views/scissors/scissors_1_1_5.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_4_137.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_4_75.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_1_18.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_2_166.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_1_145.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_42.pcd
+View: ../SI_CODE/views/binder/binder_1_1_29.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_122.pcd
+View: ../SI_CODE/views/pear/pear_1_2_63.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_4_18.pcd
+View: ../SI_CODE/views/plate/plate_5_1_159.pcd
+View: ../SI_CODE/views/sponge/sponge_1_2_140.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_67.pcd
+View: ../SI_CODE/views/plate/plate_5_2_142.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_4_215.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_4_12.pcd
+View: ../SI_CODE/views/food_can/food_can_1_4_84.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_1_118.pcd
+View: ../SI_CODE/views/potato/potato_3_2_237.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_66.pcd
+View: ../SI_CODE/views/pear/pear_1_2_146.pcd
+View: ../SI_CODE/views/lemon/lemon_1_2_117.pcd
+View: ../SI_CODE/views/food_can/food_can_1_4_36.pcd
+View: ../SI_CODE/views/banana/banana_1_1_128.pcd
+View: ../SI_CODE/views/ball/ball_1_1_5.pcd
+View: ../SI_CODE/views/food_box/food_box_1_1_47.pcd
+View: ../SI_CODE/views/plate/plate_5_2_117.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_1_81.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_4_169.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_175.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_2_53.pcd
+View: ../SI_CODE/views/comb/comb_1_1_5.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_2_114.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_1_75.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_10.pcd
+View: ../SI_CODE/views/sponge/sponge_1_1_23.pcd
+View: ../SI_CODE/views/lemon/lemon_1_4_91.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_60.pcd
+View: ../SI_CODE/views/cap/cap_1_1_37.pcd
+View: ../SI_CODE/views/scissors/scissors_1_2_70.pcd
+View: ../SI_CODE/views/comb/comb_1_1_123.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_129.pcd
+View: ../SI_CODE/views/greens/greens_1_4_146.pcd
+View: ../SI_CODE/views/ball/ball_1_2_135.pcd
+View: ../SI_CODE/views/sponge/sponge_1_1_109.pcd
+View: ../SI_CODE/views/notebook/notebook_2_4_225.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_4_74.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_75.pcd
+View: ../SI_CODE/views/cap/cap_1_4_182.pcd
+View: ../SI_CODE/views/ball/ball_1_4_28.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_2_251.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_4_129.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_142.pcd
+View: ../SI_CODE/views/bowl/bowl_1_4_136.pcd
+View: ../SI_CODE/views/pliers/pliers_6_4_183.pcd
+View: ../SI_CODE/views/lime/lime_1_4_116.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_86.pcd
+View: ../SI_CODE/views/cap/cap_1_4_124.pcd
+View: ../SI_CODE/views/pliers/pliers_6_2_133.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_41.pcd
+View: ../SI_CODE/views/greens/greens_1_2_128.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_2_174.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_132.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_4_29.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_4_169.pcd
+View: ../SI_CODE/views/pliers/pliers_6_4_99.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_4_42.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_139.pcd
+View: ../SI_CODE/views/marker/marker_1_2_77.pcd
+View: ../SI_CODE/views/toothbrush/toothbrush_1_1_100.pcd
+View: ../SI_CODE/views/bowl/bowl_1_4_118.pcd
+View: ../SI_CODE/views/lime/lime_1_1_184.pcd
+View: ../SI_CODE/views/ball/ball_1_4_86.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_1_32.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_1_143.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_1_98.pcd
+View: ../SI_CODE/views/food_box/food_box_1_2_163.pcd
+View: ../SI_CODE/views/calculator/calculator_1_4_174.pcd
+View: ../SI_CODE/views/soda_can/soda_can_1_1_58.pcd
+View: ../SI_CODE/views/cap/cap_1_4_15.pcd
+View: ../SI_CODE/views/lemon/lemon_1_1_3.pcd
+View: ../SI_CODE/views/calculator/calculator_1_4_194.pcd
+View: ../SI_CODE/views/toothpaste/toothpaste_1_4_7.pcd
+View: ../SI_CODE/views/glue_stick/glue_stick_1_1_36.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_2_204.pcd
+View: ../SI_CODE/views/potato/potato_3_1_111.pcd
+View: ../SI_CODE/views/flashlight/flashlight_1_4_62.pcd
+View: ../SI_CODE/views/food_bag/food_bag_1_2_134.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_2_16.pcd
+View: ../SI_CODE/views/lemon/lemon_1_4_191.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_1_82.pcd
+View: ../SI_CODE/views/orange/orange_4_2_128.pcd
+View: ../SI_CODE/views/potato/potato_3_2_30.pcd
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_33.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_4_267.pcd
+View: ../SI_CODE/views/food_jar/food_jar_1_4_124.pcd
+View: ../SI_CODE/views/sponge/sponge_1_4_175.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_1_175.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_1_151.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_12.pcd
+View: ../SI_CODE/views/orange/orange_4_4_199.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_20.pcd
+View: ../SI_CODE/views/banana/banana_1_4_186.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_2_17.pcd
+View: ../SI_CODE/views/binder/binder_1_1_19.pcd
+View: ../SI_CODE/views/peach/peach_2_4_243.pcd
+View: ../SI_CODE/views/bowl/bowl_1_1_161.pcd
+View: ../SI_CODE/views/sponge/sponge_1_2_103.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_1_113.pcd
+View: ../SI_CODE/views/greens/greens_1_4_153.pcd
+View: ../SI_CODE/views/stapler/stapler_1_4_203.pcd
+View: ../SI_CODE/views/apple/apple_1_4_12.pcd
+View: ../SI_CODE/views/tomato/tomato_1_4_183.pcd
+View: ../SI_CODE/views/bowl/bowl_1_4_110.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_2_21.pcd
+View: ../SI_CODE/views/stapler/stapler_1_4_221.pcd
+View: ../SI_CODE/views/onion/onion_5_1_141.pcd
+View: ../SI_CODE/views/pear/pear_1_4_83.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_1_100.pcd
+View: ../SI_CODE/views/stapler/stapler_1_4_24.pcd
+View: ../SI_CODE/views/pliers/pliers_6_1_107.pcd
+View: ../SI_CODE/views/orange/orange_4_4_110.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_4_46.pcd
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_70.pcd
+View: ../SI_CODE/views/onion/onion_5_4_21.pcd
+View: ../SI_CODE/views/ball/ball_1_4_242.pcd
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_186.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_1_69.pcd
+View: ../SI_CODE/views/water_bottle/water_bottle_10_1_194.pcd
+View: ../SI_CODE/views/lemon/lemon_1_2_182.pcd
+View: ../SI_CODE/views/lime/lime_1_4_1.pcd
+View: ../SI_CODE/views/lime/lime_1_4_124.pcd
+View: ../SI_CODE/views/calculator/calculator_1_1_25.pcd
+View: ../SI_CODE/views/pliers/pliers_6_2_43.pcd
+View: ../SI_CODE/views/marker/marker_1_4_147.pcd
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_121.pcd
+View: ../SI_CODE/views/orange/orange_4_4_32.pcd
+View: ../SI_CODE/views/shampoo/shampoo_2_4_39.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_113.pcd
+View: ../SI_CODE/views/cell_phone/cell_phone_1_1_168.pcd
+View: ../SI_CODE/views/tomato/tomato_1_1_109.pcd
+View: ../SI_CODE/views/pitcher/pitcher_1_4_34.pcd
+View: ../SI_CODE/views/marker/marker_1_2_89.pcd
+View: ../SI_CODE/views/apple/apple_1_1_199.pcd
+View: ../SI_CODE/views/hand_towel/hand_towel_1_1_221.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_17.pcd
+View: ../SI_CODE/views/food_cup/food_cup_1_2_238.pcd
+View: ../SI_CODE/views/orange/orange_4_4_181.pcd
+View: ../SI_CODE/views/keyboard/keyboard_1_1_214.pcd
+View: ../SI_CODE/views/food_box/food_box_1_4_126.pcd
+View: ../SI_CODE/views/kleenex/kleenex_1_4_206.pcd
+
+Training done!
+
+Starting Testing phase!
+
+Task: Testing
+
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_4_101.pcd
+Category Id:
+	Predicted: 47 || Real: 37
+Category:
+	Predicted: pitcher || Real: coffee_mug
+View: ../SI_CODE/views/tomato/tomato_1_4_178.pcd
+Category Id:
+	Predicted: 15 || Real: 29
+Category:
+	Predicted: garlic || Real: tomato
+View: ../SI_CODE/views/pear/pear_1_2_195.pcd
+Category Id:
+	Predicted: 13 || Real: 9
+Category:
+	Predicted: lightbulb || Real: pear
+View: ../SI_CODE/views/food_jar/food_jar_1_2_103.pcd
+Category Id:
+	Predicted: 48 || Real: 48
+Category:
+	Predicted: food_jar || Real: food_jar
+View: ../SI_CODE/views/keyboard/keyboard_1_1_231.pcd
+Category Id:
+	Predicted: 22 || Real: 16
+Category:
+	Predicted: binder || Real: keyboard
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_1_137.pcd
+Category Id:
+	Predicted: 37 || Real: 37
+Category:
+	Predicted: coffee_mug || Real: coffee_mug
+View: ../SI_CODE/views/calculator/calculator_1_2_15.pcd
+Category Id:
+	Predicted: 45 || Real: 45
+Category:
+	Predicted: calculator || Real: calculator
+View: ../SI_CODE/views/garlic/garlic_1_1_248.pcd
+Category Id:
+	Predicted: 15 || Real: 15
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/scissors/scissors_1_1_121.pcd
+Category Id:
+	Predicted: 50 || Real: 21
+Category:
+	Predicted: pliers || Real: scissors
+View: ../SI_CODE/views/kleenex/kleenex_1_2_22.pcd
+Category Id:
+	Predicted: 31 || Real: 31
+Category:
+	Predicted: kleenex || Real: kleenex
+View: ../SI_CODE/views/stapler/stapler_1_4_137.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: stapler || Real: stapler
+View: ../SI_CODE/views/lemon/lemon_1_4_43.pcd
+Category Id:
+	Predicted: 10 || Real: 14
+Category:
+	Predicted: lime || Real: lemon
+View: ../SI_CODE/views/food_can/food_can_1_4_223.pcd
+Category Id:
+	Predicted: 47 || Real: 25
+Category:
+	Predicted: pitcher || Real: food_can
+View: ../SI_CODE/views/water_bottle/water_bottle_10_2_99.pcd
+Category Id:
+	Predicted: 15 || Real: 8
+Category:
+	Predicted: garlic || Real: water_bottle
+View: ../SI_CODE/views/glue_stick/glue_stick_1_2_62.pcd
+Category Id:
+	Predicted: 33 || Real: 33
+Category:
+	Predicted: glue_stick || Real: glue_stick
+View: ../SI_CODE/views/potato/potato_3_4_113.pcd
+Category Id:
+	Predicted: 28 || Real: 2
+Category:
+	Predicted: ball || Real: potato
+View: ../SI_CODE/views/food_bag/food_bag_1_4_114.pcd
+Category Id:
+	Predicted: 46 || Real: 46
+Category:
+	Predicted: food_bag || Real: food_bag
+View: ../SI_CODE/views/kleenex/kleenex_1_2_211.pcd
+Category Id:
+	Predicted: 31 || Real: 31
+Category:
+	Predicted: kleenex || Real: kleenex
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_2_212.pcd
+Category Id:
+	Predicted: 33 || Real: 26
+Category:
+	Predicted: glue_stick || Real: rubber_eraser
+View: ../SI_CODE/views/calculator/calculator_1_1_1.pcd
+Category Id:
+	Predicted: 50 || Real: 45
+Category:
+	Predicted: pliers || Real: calculator
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_173.pcd
+Category Id:
+	Predicted: 33 || Real: 26
+Category:
+	Predicted: glue_stick || Real: rubber_eraser
+View: ../SI_CODE/views/lemon/lemon_1_2_106.pcd
+Category Id:
+	Predicted: 10 || Real: 14
+Category:
+	Predicted: lime || Real: lemon
+View: ../SI_CODE/views/toothpaste/toothpaste_1_2_107.pcd
+Category Id:
+	Predicted: 4 || Real: 44
+Category:
+	Predicted: comb || Real: toothpaste
+View: ../SI_CODE/views/tomato/tomato_1_2_132.pcd
+Category Id:
+	Predicted: 15 || Real: 29
+Category:
+	Predicted: garlic || Real: tomato
+View: ../SI_CODE/views/camera/camera_1_4_188.pcd
+Category Id:
+	Predicted: 13 || Real: 32
+Category:
+	Predicted: lightbulb || Real: camera
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_73.pcd
+Category Id:
+	Predicted: 13 || Real: 13
+Category:
+	Predicted: lightbulb || Real: lightbulb
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_150.pcd
+Category Id:
+	Predicted: 3 || Real: 3
+Category:
+	Predicted: cereal_box || Real: cereal_box
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_31.pcd
+Category Id:
+	Predicted: 42 || Real: 42
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/toothpaste/toothpaste_1_4_178.pcd
+Category Id:
+	Predicted: 4 || Real: 44
+Category:
+	Predicted: comb || Real: toothpaste
+View: ../SI_CODE/views/ball/ball_1_2_165.pcd
+Category Id:
+	Predicted: 15 || Real: 28
+Category:
+	Predicted: garlic || Real: ball
+View: ../SI_CODE/views/food_bag/food_bag_1_1_41.pcd
+Category Id:
+	Predicted: 39 || Real: 46
+Category:
+	Predicted: instant_noodles || Real: food_bag
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_13.pcd
+Category Id:
+	Predicted: 47 || Real: 37
+Category:
+	Predicted: pitcher || Real: coffee_mug
+View: ../SI_CODE/views/kleenex/kleenex_1_4_28.pcd
+Category Id:
+	Predicted: 31 || Real: 31
+Category:
+	Predicted: kleenex || Real: kleenex
+View: ../SI_CODE/views/water_bottle/water_bottle_10_4_59.pcd
+Category Id:
+	Predicted: 25 || Real: 8
+Category:
+	Predicted: food_can || Real: water_bottle
+View: ../SI_CODE/views/banana/banana_1_2_64.pcd
+Category Id:
+	Predicted: 49 || Real: 49
+Category:
+	Predicted: banana || Real: banana
+View: ../SI_CODE/views/camera/camera_1_1_81.pcd
+Category Id:
+	Predicted: 12 || Real: 32
+Category:
+	Predicted: cell_phone || Real: camera
+View: ../SI_CODE/views/lemon/lemon_1_1_174.pcd
+Category Id:
+	Predicted: 10 || Real: 14
+Category:
+	Predicted: lime || Real: lemon
+View: ../SI_CODE/views/orange/orange_4_1_150.pcd
+Category Id:
+	Predicted: 20 || Real: 20
+Category:
+	Predicted: orange || Real: orange
+View: ../SI_CODE/views/stapler/stapler_1_2_64.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: stapler || Real: stapler
+View: ../SI_CODE/views/food_bag/food_bag_1_2_227.pcd
+Category Id:
+	Predicted: 46 || Real: 46
+Category:
+	Predicted: food_bag || Real: food_bag
+View: ../SI_CODE/views/cap/cap_1_4_214.pcd
+Category Id:
+	Predicted: 27 || Real: 27
+Category:
+	Predicted: cap || Real: cap
+View: ../SI_CODE/views/water_bottle/water_bottle_10_1_107.pcd
+Category Id:
+	Predicted: 28 || Real: 8
+Category:
+	Predicted: ball || Real: water_bottle
+View: ../SI_CODE/views/shampoo/shampoo_2_2_105.pcd
+Category Id:
+	Predicted: 7 || Real: 7
+Category:
+	Predicted: shampoo || Real: shampoo
+View: ../SI_CODE/views/food_jar/food_jar_1_1_107.pcd
+Category Id:
+	Predicted: 44 || Real: 48
+Category:
+	Predicted: toothpaste || Real: food_jar
+View: ../SI_CODE/views/plate/plate_5_4_2.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: plate || Real: plate
+View: ../SI_CODE/views/scissors/scissors_1_1_71.pcd
+Category Id:
+	Predicted: 12 || Real: 21
+Category:
+	Predicted: cell_phone || Real: scissors
+View: ../SI_CODE/views/pear/pear_1_2_200.pcd
+Category Id:
+	Predicted: 14 || Real: 9
+Category:
+	Predicted: lemon || Real: pear
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_19.pcd
+Category Id:
+	Predicted: 3 || Real: 3
+Category:
+	Predicted: cereal_box || Real: cereal_box
+View: ../SI_CODE/views/pliers/pliers_6_1_47.pcd
+Category Id:
+	Predicted: 42 || Real: 50
+Category:
+	Predicted: dry_battery || Real: pliers
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_165.pcd
+Category Id:
+	Predicted: 42 || Real: 42
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/banana/banana_1_2_79.pcd
+Category Id:
+	Predicted: 49 || Real: 49
+Category:
+	Predicted: banana || Real: banana
+View: ../SI_CODE/views/kleenex/kleenex_1_1_114.pcd
+Category Id:
+	Predicted: 31 || Real: 31
+Category:
+	Predicted: kleenex || Real: kleenex
+View: ../SI_CODE/views/flashlight/flashlight_1_2_108.pcd
+Category Id:
+	Predicted: 4 || Real: 17
+Category:
+	Predicted: comb || Real: flashlight
+View: ../SI_CODE/views/sponge/sponge_1_4_140.pcd
+Category Id:
+	Predicted: 34 || Real: 34
+Category:
+	Predicted: sponge || Real: sponge
+View: ../SI_CODE/views/toothbrush/toothbrush_1_2_196.pcd
+Category Id:
+	Predicted: 40 || Real: 40
+Category:
+	Predicted: toothbrush || Real: toothbrush
+View: ../SI_CODE/views/notebook/notebook_2_2_152.pcd
+Category Id:
+	Predicted: 18 || Real: 18
+Category:
+	Predicted: notebook || Real: notebook
+View: ../SI_CODE/views/binder/binder_1_2_172.pcd
+Category Id:
+	Predicted: 22 || Real: 22
+Category:
+	Predicted: binder || Real: binder
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_3.pcd
+Category Id:
+	Predicted: 31 || Real: 3
+Category:
+	Predicted: kleenex || Real: cereal_box
+View: ../SI_CODE/views/comb/comb_1_1_4.pcd
+Category Id:
+	Predicted: 40 || Real: 4
+Category:
+	Predicted: toothbrush || Real: comb
+View: ../SI_CODE/views/food_box/food_box_1_4_70.pcd
+Category Id:
+	Predicted: 5 || Real: 5
+Category:
+	Predicted: food_box || Real: food_box
+View: ../SI_CODE/views/comb/comb_1_1_17.pcd
+Category Id:
+	Predicted: 40 || Real: 4
+Category:
+	Predicted: toothbrush || Real: comb
+View: ../SI_CODE/views/food_box/food_box_1_1_251.pcd
+Category Id:
+	Predicted: 5 || Real: 5
+Category:
+	Predicted: food_box || Real: food_box
+View: ../SI_CODE/views/banana/banana_1_4_192.pcd
+Category Id:
+	Predicted: 4 || Real: 49
+Category:
+	Predicted: comb || Real: banana
+View: ../SI_CODE/views/keyboard/keyboard_1_1_202.pcd
+Category Id:
+	Predicted: 16 || Real: 16
+Category:
+	Predicted: keyboard || Real: keyboard
+View: ../SI_CODE/views/marker/marker_1_2_239.pcd
+Category Id:
+	Predicted: 40 || Real: 11
+Category:
+	Predicted: toothbrush || Real: marker
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_12.pcd
+Category Id:
+	Predicted: 42 || Real: 42
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/toothbrush/toothbrush_1_4_75.pcd
+Category Id:
+	Predicted: 40 || Real: 40
+Category:
+	Predicted: toothbrush || Real: toothbrush
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_3.pcd
+Category Id:
+	Predicted: 4 || Real: 12
+Category:
+	Predicted: comb || Real: cell_phone
+View: ../SI_CODE/views/garlic/garlic_1_1_255.pcd
+Category Id:
+	Predicted: 26 || Real: 15
+Category:
+	Predicted: rubber_eraser || Real: garlic
+View: ../SI_CODE/views/mushroom/mushroom_2_4_13.pcd
+Category Id:
+	Predicted: 15 || Real: 24
+Category:
+	Predicted: garlic || Real: mushroom
+View: ../SI_CODE/views/bowl/bowl_1_2_139.pcd
+Category Id:
+	Predicted: 36 || Real: 36
+Category:
+	Predicted: bowl || Real: bowl
+View: ../SI_CODE/views/bowl/bowl_1_2_108.pcd
+Category Id:
+	Predicted: 36 || Real: 36
+Category:
+	Predicted: bowl || Real: bowl
+View: ../SI_CODE/views/onion/onion_5_1_198.pcd
+Category Id:
+	Predicted: 19 || Real: 19
+Category:
+	Predicted: onion || Real: onion
+View: ../SI_CODE/views/stapler/stapler_1_4_168.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: stapler || Real: stapler
+View: ../SI_CODE/views/cap/cap_1_2_149.pcd
+Category Id:
+	Predicted: 27 || Real: 27
+Category:
+	Predicted: cap || Real: cap
+View: ../SI_CODE/views/toothbrush/toothbrush_1_1_46.pcd
+Category Id:
+	Predicted: 40 || Real: 40
+Category:
+	Predicted: toothbrush || Real: toothbrush
+View: ../SI_CODE/views/greens/greens_1_4_24.pcd
+Category Id:
+	Predicted: 35 || Real: 35
+Category:
+	Predicted: greens || Real: greens
+View: ../SI_CODE/views/plate/plate_5_1_51.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: plate || Real: plate
+View: ../SI_CODE/views/ball/ball_1_2_21.pcd
+Category Id:
+	Predicted: 15 || Real: 28
+Category:
+	Predicted: garlic || Real: ball
+View: ../SI_CODE/views/food_jar/food_jar_1_4_270.pcd
+Category Id:
+	Predicted: 47 || Real: 48
+Category:
+	Predicted: pitcher || Real: food_jar
+View: ../SI_CODE/views/stapler/stapler_1_1_133.pcd
+Category Id:
+	Predicted: 10 || Real: 1
+Category:
+	Predicted: lime || Real: stapler
+View: ../SI_CODE/views/flashlight/flashlight_1_1_154.pcd
+Category Id:
+	Predicted: 49 || Real: 17
+Category:
+	Predicted: banana || Real: flashlight
+View: ../SI_CODE/views/greens/greens_1_1_102.pcd
+Category Id:
+	Predicted: 47 || Real: 35
+Category:
+	Predicted: pitcher || Real: greens
+View: ../SI_CODE/views/glue_stick/glue_stick_1_4_153.pcd
+Category Id:
+	Predicted: 13 || Real: 33
+Category:
+	Predicted: lightbulb || Real: glue_stick
+View: ../SI_CODE/views/pear/pear_1_2_130.pcd
+Category Id:
+	Predicted: 9 || Real: 9
+Category:
+	Predicted: pear || Real: pear
+View: ../SI_CODE/views/apple/apple_1_1_73.pcd
+Category Id:
+	Predicted: 6 || Real: 6
+Category:
+	Predicted: apple || Real: apple
+View: ../SI_CODE/views/mushroom/mushroom_2_1_11.pcd
+Category Id:
+	Predicted: 15 || Real: 24
+Category:
+	Predicted: garlic || Real: mushroom
+View: ../SI_CODE/views/lemon/lemon_1_1_155.pcd
+Category Id:
+	Predicted: 10 || Real: 14
+Category:
+	Predicted: lime || Real: lemon
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_53.pcd
+Category Id:
+	Predicted: 42 || Real: 42
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/pitcher/pitcher_1_4_52.pcd
+Category Id:
+	Predicted: 47 || Real: 47
+Category:
+	Predicted: pitcher || Real: pitcher
+View: ../SI_CODE/views/stapler/stapler_1_4_49.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: stapler || Real: stapler
+View: ../SI_CODE/views/lemon/lemon_1_1_194.pcd
+Category Id:
+	Predicted: 10 || Real: 14
+Category:
+	Predicted: lime || Real: lemon
+View: ../SI_CODE/views/banana/banana_1_2_16.pcd
+Category Id:
+	Predicted: 40 || Real: 49
+Category:
+	Predicted: toothbrush || Real: banana
+View: ../SI_CODE/views/food_bag/food_bag_1_4_38.pcd
+Category Id:
+	Predicted: 46 || Real: 46
+Category:
+	Predicted: food_bag || Real: food_bag
+View: ../SI_CODE/views/stapler/stapler_1_2_89.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: stapler || Real: stapler
+View: ../SI_CODE/views/scissors/scissors_1_2_69.pcd
+Category Id:
+	Predicted: 50 || Real: 21
+Category:
+	Predicted: pliers || Real: scissors
+View: ../SI_CODE/views/ball/ball_1_1_108.pcd
+Category Id:
+	Predicted: 15 || Real: 28
+Category:
+	Predicted: garlic || Real: ball
+View: ../SI_CODE/views/food_cup/food_cup_1_1_194.pcd
+Category Id:
+	Predicted: 14 || Real: 23
+Category:
+	Predicted: lemon || Real: food_cup
+View: ../SI_CODE/views/lemon/lemon_1_2_58.pcd
+Category Id:
+	Predicted: 10 || Real: 14
+Category:
+	Predicted: lime || Real: lemon
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_30.pcd
+Category Id:
+	Predicted: 31 || Real: 3
+Category:
+	Predicted: kleenex || Real: cereal_box
+View: ../SI_CODE/views/tomato/tomato_1_4_145.pcd
+Category Id:
+	Predicted: 15 || Real: 29
+Category:
+	Predicted: garlic || Real: tomato
+View: ../SI_CODE/views/soda_can/soda_can_1_2_43.pcd
+Category Id:
+	Predicted: 28 || Real: 43
+Category:
+	Predicted: ball || Real: soda_can
+View: ../SI_CODE/views/peach/peach_2_4_58.pcd
+Category Id:
+	Predicted: 2 || Real: 41
+Category:
+	Predicted: potato || Real: peach
+View: ../SI_CODE/views/flashlight/flashlight_1_4_33.pcd
+Category Id:
+	Predicted: 44 || Real: 17
+Category:
+	Predicted: toothpaste || Real: flashlight
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_2_82.pcd
+Category Id:
+	Predicted: 46 || Real: 39
+Category:
+	Predicted: food_bag || Real: instant_noodles
+View: ../SI_CODE/views/food_bag/food_bag_1_2_231.pcd
+Category Id:
+	Predicted: 46 || Real: 46
+Category:
+	Predicted: food_bag || Real: food_bag
+View: ../SI_CODE/views/hand_towel/hand_towel_1_4_162.pcd
+Category Id:
+	Predicted: 30 || Real: 30
+Category:
+	Predicted: hand_towel || Real: hand_towel
+View: ../SI_CODE/views/calculator/calculator_1_1_60.pcd
+Category Id:
+	Predicted: 7 || Real: 45
+Category:
+	Predicted: shampoo || Real: calculator
+View: ../SI_CODE/views/notebook/notebook_2_4_181.pcd
+Category Id:
+	Predicted: 18 || Real: 18
+Category:
+	Predicted: notebook || Real: notebook
+View: ../SI_CODE/views/ball/ball_1_2_46.pcd
+Category Id:
+	Predicted: 15 || Real: 28
+Category:
+	Predicted: garlic || Real: ball
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_174.pcd
+Category Id:
+	Predicted: 47 || Real: 37
+Category:
+	Predicted: pitcher || Real: coffee_mug
+View: ../SI_CODE/views/food_jar/food_jar_1_1_218.pcd
+Category Id:
+	Predicted: 23 || Real: 48
+Category:
+	Predicted: food_cup || Real: food_jar
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_56.pcd
+Category Id:
+	Predicted: 3 || Real: 3
+Category:
+	Predicted: cereal_box || Real: cereal_box
+View: ../SI_CODE/views/bowl/bowl_1_4_123.pcd
+Category Id:
+	Predicted: 36 || Real: 36
+Category:
+	Predicted: bowl || Real: bowl
+View: ../SI_CODE/views/notebook/notebook_2_2_92.pcd
+Category Id:
+	Predicted: 18 || Real: 18
+Category:
+	Predicted: notebook || Real: notebook
+View: ../SI_CODE/views/garlic/garlic_1_1_102.pcd
+Category Id:
+	Predicted: 42 || Real: 15
+Category:
+	Predicted: dry_battery || Real: garlic
+View: ../SI_CODE/views/water_bottle/water_bottle_10_4_139.pcd
+Category Id:
+	Predicted: 23 || Real: 8
+Category:
+	Predicted: food_cup || Real: water_bottle
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_57.pcd
+Category Id:
+	Predicted: 11 || Real: 12
+Category:
+	Predicted: marker || Real: cell_phone
+View: ../SI_CODE/views/greens/greens_1_4_40.pcd
+Category Id:
+	Predicted: 35 || Real: 35
+Category:
+	Predicted: greens || Real: greens
+View: ../SI_CODE/views/orange/orange_4_2_102.pcd
+Category Id:
+	Predicted: 6 || Real: 20
+Category:
+	Predicted: apple || Real: orange
+View: ../SI_CODE/views/pear/pear_1_2_65.pcd
+Category Id:
+	Predicted: 14 || Real: 9
+Category:
+	Predicted: lemon || Real: pear
+View: ../SI_CODE/views/banana/banana_1_4_27.pcd
+Category Id:
+	Predicted: 11 || Real: 49
+Category:
+	Predicted: marker || Real: banana
+View: ../SI_CODE/views/pear/pear_1_1_134.pcd
+Category Id:
+	Predicted: 9 || Real: 9
+Category:
+	Predicted: pear || Real: pear
+View: ../SI_CODE/views/calculator/calculator_1_2_131.pcd
+Category Id:
+	Predicted: 45 || Real: 45
+Category:
+	Predicted: calculator || Real: calculator
+View: ../SI_CODE/views/glue_stick/glue_stick_1_2_5.pcd
+Category Id:
+	Predicted: 33 || Real: 33
+Category:
+	Predicted: glue_stick || Real: glue_stick
+View: ../SI_CODE/views/toothpaste/toothpaste_1_2_114.pcd
+Category Id:
+	Predicted: 40 || Real: 44
+Category:
+	Predicted: toothbrush || Real: toothpaste
+View: ../SI_CODE/views/toothbrush/toothbrush_1_1_169.pcd
+Category Id:
+	Predicted: 40 || Real: 40
+Category:
+	Predicted: toothbrush || Real: toothbrush
+View: ../SI_CODE/views/water_bottle/water_bottle_10_1_187.pcd
+Category Id:
+	Predicted: 10 || Real: 8
+Category:
+	Predicted: lime || Real: water_bottle
+View: ../SI_CODE/views/lime/lime_1_4_190.pcd
+Category Id:
+	Predicted: 10 || Real: 10
+Category:
+	Predicted: lime || Real: lime
+View: ../SI_CODE/views/marker/marker_1_1_133.pcd
+Category Id:
+	Predicted: 40 || Real: 11
+Category:
+	Predicted: toothbrush || Real: marker
+View: ../SI_CODE/views/cell_phone/cell_phone_1_4_97.pcd
+Category Id:
+	Predicted: 11 || Real: 12
+Category:
+	Predicted: marker || Real: cell_phone
+View: ../SI_CODE/views/lime/lime_1_2_24.pcd
+Category Id:
+	Predicted: 10 || Real: 10
+Category:
+	Predicted: lime || Real: lime
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_1_186.pcd
+Category Id:
+	Predicted: 42 || Real: 26
+Category:
+	Predicted: dry_battery || Real: rubber_eraser
+View: ../SI_CODE/views/kleenex/kleenex_1_2_127.pcd
+Category Id:
+	Predicted: 31 || Real: 31
+Category:
+	Predicted: kleenex || Real: kleenex
+View: ../SI_CODE/views/comb/comb_1_4_104.pcd
+Category Id:
+	Predicted: 40 || Real: 4
+Category:
+	Predicted: toothbrush || Real: comb
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_71.pcd
+Category Id:
+	Predicted: 26 || Real: 12
+Category:
+	Predicted: rubber_eraser || Real: cell_phone
+View: ../SI_CODE/views/comb/comb_1_2_182.pcd
+Category Id:
+	Predicted: 40 || Real: 4
+Category:
+	Predicted: toothbrush || Real: comb
+View: ../SI_CODE/views/ball/ball_1_1_282.pcd
+Category Id:
+	Predicted: 15 || Real: 28
+Category:
+	Predicted: garlic || Real: ball
+View: ../SI_CODE/views/apple/apple_1_4_36.pcd
+Category Id:
+	Predicted: 19 || Real: 6
+Category:
+	Predicted: onion || Real: apple
+View: ../SI_CODE/views/tomato/tomato_1_2_134.pcd
+Category Id:
+	Predicted: 15 || Real: 29
+Category:
+	Predicted: garlic || Real: tomato
+View: ../SI_CODE/views/bowl/bowl_1_1_183.pcd
+Category Id:
+	Predicted: 36 || Real: 36
+Category:
+	Predicted: bowl || Real: bowl
+View: ../SI_CODE/views/cap/cap_1_1_87.pcd
+Category Id:
+	Predicted: 39 || Real: 27
+Category:
+	Predicted: instant_noodles || Real: cap
+View: ../SI_CODE/views/pear/pear_1_1_58.pcd
+Category Id:
+	Predicted: 9 || Real: 9
+Category:
+	Predicted: pear || Real: pear
+View: ../SI_CODE/views/toothpaste/toothpaste_1_4_41.pcd
+Category Id:
+	Predicted: 49 || Real: 44
+Category:
+	Predicted: banana || Real: toothpaste
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_39.pcd
+Category Id:
+	Predicted: 3 || Real: 3
+Category:
+	Predicted: cereal_box || Real: cereal_box
+View: ../SI_CODE/views/food_jar/food_jar_1_4_25.pcd
+Category Id:
+	Predicted: 47 || Real: 48
+Category:
+	Predicted: pitcher || Real: food_jar
+View: ../SI_CODE/views/water_bottle/water_bottle_10_2_2.pcd
+Category Id:
+	Predicted: 13 || Real: 8
+Category:
+	Predicted: lightbulb || Real: water_bottle
+View: ../SI_CODE/views/hand_towel/hand_towel_1_2_36.pcd
+Category Id:
+	Predicted: 30 || Real: 30
+Category:
+	Predicted: hand_towel || Real: hand_towel
+View: ../SI_CODE/views/binder/binder_1_4_110.pcd
+Category Id:
+	Predicted: 18 || Real: 22
+Category:
+	Predicted: notebook || Real: binder
+View: ../SI_CODE/views/pliers/pliers_6_1_66.pcd
+Category Id:
+	Predicted: 8 || Real: 50
+Category:
+	Predicted: water_bottle || Real: pliers
+View: ../SI_CODE/views/plate/plate_5_1_173.pcd
+Category Id:
+	Predicted: 21 || Real: 0
+Category:
+	Predicted: scissors || Real: plate
+View: ../SI_CODE/views/comb/comb_1_2_121.pcd
+Category Id:
+	Predicted: 40 || Real: 4
+Category:
+	Predicted: toothbrush || Real: comb
+View: ../SI_CODE/views/plate/plate_5_2_43.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: plate || Real: plate
+View: ../SI_CODE/views/hand_towel/hand_towel_1_2_71.pcd
+Category Id:
+	Predicted: 30 || Real: 30
+Category:
+	Predicted: hand_towel || Real: hand_towel
+View: ../SI_CODE/views/potato/potato_3_2_53.pcd
+Category Id:
+	Predicted: 10 || Real: 2
+Category:
+	Predicted: lime || Real: potato
+View: ../SI_CODE/views/pitcher/pitcher_1_4_85.pcd
+Category Id:
+	Predicted: 47 || Real: 47
+Category:
+	Predicted: pitcher || Real: pitcher
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_105.pcd
+Category Id:
+	Predicted: 39 || Real: 39
+Category:
+	Predicted: instant_noodles || Real: instant_noodles
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_4_77.pcd
+Category Id:
+	Predicted: 39 || Real: 39
+Category:
+	Predicted: instant_noodles || Real: instant_noodles
+View: ../SI_CODE/views/flashlight/flashlight_1_1_173.pcd
+Category Id:
+	Predicted: 17 || Real: 17
+Category:
+	Predicted: flashlight || Real: flashlight
+View: ../SI_CODE/views/food_bag/food_bag_1_2_205.pcd
+Category Id:
+	Predicted: 46 || Real: 46
+Category:
+	Predicted: food_bag || Real: food_bag
+View: ../SI_CODE/views/water_bottle/water_bottle_10_1_151.pcd
+Category Id:
+	Predicted: 28 || Real: 8
+Category:
+	Predicted: ball || Real: water_bottle
+View: ../SI_CODE/views/stapler/stapler_1_2_150.pcd
+Category Id:
+	Predicted: 48 || Real: 1
+Category:
+	Predicted: food_jar || Real: stapler
+View: ../SI_CODE/views/food_cup/food_cup_1_2_226.pcd
+Category Id:
+	Predicted: 23 || Real: 23
+Category:
+	Predicted: food_cup || Real: food_cup
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_121.pcd
+Category Id:
+	Predicted: 33 || Real: 26
+Category:
+	Predicted: glue_stick || Real: rubber_eraser
+View: ../SI_CODE/views/ball/ball_1_4_201.pcd
+Category Id:
+	Predicted: 15 || Real: 28
+Category:
+	Predicted: garlic || Real: ball
+View: ../SI_CODE/views/kleenex/kleenex_1_4_240.pcd
+Category Id:
+	Predicted: 31 || Real: 31
+Category:
+	Predicted: kleenex || Real: kleenex
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_1_64.pcd
+Category Id:
+	Predicted: 47 || Real: 37
+Category:
+	Predicted: pitcher || Real: coffee_mug
+View: ../SI_CODE/views/binder/binder_1_1_91.pcd
+Category Id:
+	Predicted: 18 || Real: 22
+Category:
+	Predicted: notebook || Real: binder
+View: ../SI_CODE/views/garlic/garlic_1_2_113.pcd
+Category Id:
+	Predicted: 15 || Real: 15
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/food_bag/food_bag_1_2_146.pcd
+Category Id:
+	Predicted: 46 || Real: 46
+Category:
+	Predicted: food_bag || Real: food_bag
+View: ../SI_CODE/views/tomato/tomato_1_4_203.pcd
+Category Id:
+	Predicted: 10 || Real: 29
+Category:
+	Predicted: lime || Real: tomato
+View: ../SI_CODE/views/plate/plate_5_1_108.pcd
+Category Id:
+	Predicted: 21 || Real: 0
+Category:
+	Predicted: scissors || Real: plate
+View: ../SI_CODE/views/greens/greens_1_1_249.pcd
+Category Id:
+	Predicted: 47 || Real: 35
+Category:
+	Predicted: pitcher || Real: greens
+View: ../SI_CODE/views/pliers/pliers_6_2_4.pcd
+Category Id:
+	Predicted: 40 || Real: 50
+Category:
+	Predicted: toothbrush || Real: pliers
+View: ../SI_CODE/views/ball/ball_1_1_225.pcd
+Category Id:
+	Predicted: 15 || Real: 28
+Category:
+	Predicted: garlic || Real: ball
+View: ../SI_CODE/views/food_cup/food_cup_1_2_48.pcd
+Category Id:
+	Predicted: 23 || Real: 23
+Category:
+	Predicted: food_cup || Real: food_cup
+View: ../SI_CODE/views/lightbulb/lightbulb_1_1_12.pcd
+Category Id:
+	Predicted: 13 || Real: 13
+Category:
+	Predicted: lightbulb || Real: lightbulb
+View: ../SI_CODE/views/food_cup/food_cup_1_2_253.pcd
+Category Id:
+	Predicted: 23 || Real: 23
+Category:
+	Predicted: food_cup || Real: food_cup
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_49.pcd
+Category Id:
+	Predicted: 42 || Real: 42
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/cap/cap_1_2_121.pcd
+Category Id:
+	Predicted: 27 || Real: 27
+Category:
+	Predicted: cap || Real: cap
+View: ../SI_CODE/views/soda_can/soda_can_1_1_14.pcd
+Category Id:
+	Predicted: 23 || Real: 43
+Category:
+	Predicted: food_cup || Real: soda_can
+View: ../SI_CODE/views/mushroom/mushroom_2_2_100.pcd
+Category Id:
+	Predicted: 15 || Real: 24
+Category:
+	Predicted: garlic || Real: mushroom
+View: ../SI_CODE/views/calculator/calculator_1_1_40.pcd
+Category Id:
+	Predicted: 11 || Real: 45
+Category:
+	Predicted: marker || Real: calculator
+View: ../SI_CODE/views/peach/peach_2_1_78.pcd
+Category Id:
+	Predicted: 14 || Real: 41
+Category:
+	Predicted: lemon || Real: peach
+View: ../SI_CODE/views/garlic/garlic_1_2_176.pcd
+Category Id:
+	Predicted: 15 || Real: 15
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/lemon/lemon_1_1_82.pcd
+Category Id:
+	Predicted: 10 || Real: 14
+Category:
+	Predicted: lime || Real: lemon
+View: ../SI_CODE/views/peach/peach_2_2_115.pcd
+Category Id:
+	Predicted: 41 || Real: 41
+Category:
+	Predicted: peach || Real: peach
+View: ../SI_CODE/views/garlic/garlic_1_2_201.pcd
+Category Id:
+	Predicted: 15 || Real: 15
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/mushroom/mushroom_2_1_31.pcd
+Category Id:
+	Predicted: 15 || Real: 24
+Category:
+	Predicted: garlic || Real: mushroom
+View: ../SI_CODE/views/sponge/sponge_1_4_217.pcd
+Category Id:
+	Predicted: 34 || Real: 34
+Category:
+	Predicted: sponge || Real: sponge
+View: ../SI_CODE/views/shampoo/shampoo_2_4_28.pcd
+Category Id:
+	Predicted: 40 || Real: 7
+Category:
+	Predicted: toothbrush || Real: shampoo
+View: ../SI_CODE/views/pitcher/pitcher_1_4_89.pcd
+Category Id:
+	Predicted: 47 || Real: 47
+Category:
+	Predicted: pitcher || Real: pitcher
+View: ../SI_CODE/views/binder/binder_1_4_145.pcd
+Category Id:
+	Predicted: 16 || Real: 22
+Category:
+	Predicted: keyboard || Real: binder
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_86.pcd
+Category Id:
+	Predicted: 42 || Real: 42
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/food_box/food_box_1_2_127.pcd
+Category Id:
+	Predicted: 39 || Real: 5
+Category:
+	Predicted: instant_noodles || Real: food_box
+View: ../SI_CODE/views/greens/greens_1_1_180.pcd
+Category Id:
+	Predicted: 35 || Real: 35
+Category:
+	Predicted: greens || Real: greens
+View: ../SI_CODE/views/flashlight/flashlight_1_1_75.pcd
+Category Id:
+	Predicted: 44 || Real: 17
+Category:
+	Predicted: toothpaste || Real: flashlight
+View: ../SI_CODE/views/mushroom/mushroom_2_1_164.pcd
+Category Id:
+	Predicted: 10 || Real: 24
+Category:
+	Predicted: lime || Real: mushroom
+View: ../SI_CODE/views/toothbrush/toothbrush_1_1_82.pcd
+Category Id:
+	Predicted: 40 || Real: 40
+Category:
+	Predicted: toothbrush || Real: toothbrush
+View: ../SI_CODE/views/cap/cap_1_2_83.pcd
+Category Id:
+	Predicted: 39 || Real: 27
+Category:
+	Predicted: instant_noodles || Real: cap
+View: ../SI_CODE/views/pitcher/pitcher_1_4_68.pcd
+Category Id:
+	Predicted: 47 || Real: 47
+Category:
+	Predicted: pitcher || Real: pitcher
+View: ../SI_CODE/views/keyboard/keyboard_1_4_147.pcd
+Category Id:
+	Predicted: 16 || Real: 16
+Category:
+	Predicted: keyboard || Real: keyboard
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_28.pcd
+Category Id:
+	Predicted: 39 || Real: 39
+Category:
+	Predicted: instant_noodles || Real: instant_noodles
+View: ../SI_CODE/views/comb/comb_1_4_5.pcd
+Category Id:
+	Predicted: 40 || Real: 4
+Category:
+	Predicted: toothbrush || Real: comb
+View: ../SI_CODE/views/toothbrush/toothbrush_1_4_206.pcd
+Category Id:
+	Predicted: 40 || Real: 40
+Category:
+	Predicted: toothbrush || Real: toothbrush
+View: ../SI_CODE/views/stapler/stapler_1_2_31.pcd
+Category Id:
+	Predicted: 23 || Real: 1
+Category:
+	Predicted: food_cup || Real: stapler
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_2_196.pcd
+Category Id:
+	Predicted: 39 || Real: 39
+Category:
+	Predicted: instant_noodles || Real: instant_noodles
+View: ../SI_CODE/views/lime/lime_1_4_85.pcd
+Category Id:
+	Predicted: 10 || Real: 10
+Category:
+	Predicted: lime || Real: lime
+View: ../SI_CODE/views/lime/lime_1_1_144.pcd
+Category Id:
+	Predicted: 10 || Real: 10
+Category:
+	Predicted: lime || Real: lime
+View: ../SI_CODE/views/peach/peach_2_4_69.pcd
+Category Id:
+	Predicted: 44 || Real: 41
+Category:
+	Predicted: toothpaste || Real: peach
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_82.pcd
+Category Id:
+	Predicted: 26 || Real: 26
+Category:
+	Predicted: rubber_eraser || Real: rubber_eraser
+View: ../SI_CODE/views/pear/pear_1_2_73.pcd
+Category Id:
+	Predicted: 23 || Real: 9
+Category:
+	Predicted: food_cup || Real: pear
+View: ../SI_CODE/views/shampoo/shampoo_2_1_221.pcd
+Category Id:
+	Predicted: 4 || Real: 7
+Category:
+	Predicted: comb || Real: shampoo
+View: ../SI_CODE/views/banana/banana_1_1_157.pcd
+Category Id:
+	Predicted: 13 || Real: 49
+Category:
+	Predicted: lightbulb || Real: banana
+View: ../SI_CODE/views/tomato/tomato_1_1_183.pcd
+Category Id:
+	Predicted: 28 || Real: 29
+Category:
+	Predicted: ball || Real: tomato
+View: ../SI_CODE/views/soda_can/soda_can_1_2_59.pcd
+Category Id:
+	Predicted: 25 || Real: 43
+Category:
+	Predicted: food_can || Real: soda_can
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_18.pcd
+Category Id:
+	Predicted: 39 || Real: 39
+Category:
+	Predicted: instant_noodles || Real: instant_noodles
+View: ../SI_CODE/views/greens/greens_1_4_180.pcd
+Category Id:
+	Predicted: 35 || Real: 35
+Category:
+	Predicted: greens || Real: greens
+View: ../SI_CODE/views/greens/greens_1_2_142.pcd
+Category Id:
+	Predicted: 35 || Real: 35
+Category:
+	Predicted: greens || Real: greens
+View: ../SI_CODE/views/soda_can/soda_can_1_1_159.pcd
+Category Id:
+	Predicted: 23 || Real: 43
+Category:
+	Predicted: food_cup || Real: soda_can
+View: ../SI_CODE/views/plate/plate_5_1_6.pcd
+Category Id:
+	Predicted: 21 || Real: 0
+Category:
+	Predicted: scissors || Real: plate
+View: ../SI_CODE/views/camera/camera_1_1_76.pcd
+Category Id:
+	Predicted: 49 || Real: 32
+Category:
+	Predicted: banana || Real: camera
+View: ../SI_CODE/views/hand_towel/hand_towel_1_2_78.pcd
+Category Id:
+	Predicted: 30 || Real: 30
+Category:
+	Predicted: hand_towel || Real: hand_towel
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_156.pcd
+Category Id:
+	Predicted: 35 || Real: 38
+Category:
+	Predicted: greens || Real: bell_pepper
+View: ../SI_CODE/views/shampoo/shampoo_2_2_131.pcd
+Category Id:
+	Predicted: 49 || Real: 7
+Category:
+	Predicted: banana || Real: shampoo
+View: ../SI_CODE/views/potato/potato_3_2_80.pcd
+Category Id:
+	Predicted: 15 || Real: 2
+Category:
+	Predicted: garlic || Real: potato
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_2_120.pcd
+Category Id:
+	Predicted: 33 || Real: 26
+Category:
+	Predicted: glue_stick || Real: rubber_eraser
+View: ../SI_CODE/views/camera/camera_1_1_118.pcd
+Category Id:
+	Predicted: 13 || Real: 32
+Category:
+	Predicted: lightbulb || Real: camera
+View: ../SI_CODE/views/marker/marker_1_4_126.pcd
+Category Id:
+	Predicted: 40 || Real: 11
+Category:
+	Predicted: toothbrush || Real: marker
+View: ../SI_CODE/views/banana/banana_1_1_104.pcd
+Category Id:
+	Predicted: 40 || Real: 49
+Category:
+	Predicted: toothbrush || Real: banana
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_1_200.pcd
+Category Id:
+	Predicted: 7 || Real: 39
+Category:
+	Predicted: shampoo || Real: instant_noodles
+View: ../SI_CODE/views/soda_can/soda_can_1_4_67.pcd
+Category Id:
+	Predicted: 6 || Real: 43
+Category:
+	Predicted: apple || Real: soda_can
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_184.pcd
+Category Id:
+	Predicted: 35 || Real: 38
+Category:
+	Predicted: greens || Real: bell_pepper
+View: ../SI_CODE/views/onion/onion_5_4_33.pcd
+Category Id:
+	Predicted: 6 || Real: 19
+Category:
+	Predicted: apple || Real: onion
+View: ../SI_CODE/views/pliers/pliers_6_1_157.pcd
+Category Id:
+	Predicted: 40 || Real: 50
+Category:
+	Predicted: toothbrush || Real: pliers
+View: ../SI_CODE/views/pear/pear_1_4_110.pcd
+Category Id:
+	Predicted: 9 || Real: 9
+Category:
+	Predicted: pear || Real: pear
+View: ../SI_CODE/views/food_can/food_can_1_4_125.pcd
+Category Id:
+	Predicted: 48 || Real: 25
+Category:
+	Predicted: food_jar || Real: food_can
+View: ../SI_CODE/views/mushroom/mushroom_2_2_289.pcd
+Category Id:
+	Predicted: 15 || Real: 24
+Category:
+	Predicted: garlic || Real: mushroom
+View: ../SI_CODE/views/soda_can/soda_can_1_2_90.pcd
+Category Id:
+	Predicted: 20 || Real: 43
+Category:
+	Predicted: orange || Real: soda_can
+View: ../SI_CODE/views/cell_phone/cell_phone_1_2_119.pcd
+Category Id:
+	Predicted: 11 || Real: 12
+Category:
+	Predicted: marker || Real: cell_phone
+View: ../SI_CODE/views/onion/onion_5_4_71.pcd
+Category Id:
+	Predicted: 6 || Real: 19
+Category:
+	Predicted: apple || Real: onion
+View: ../SI_CODE/views/apple/apple_1_1_102.pcd
+Category Id:
+	Predicted: 6 || Real: 6
+Category:
+	Predicted: apple || Real: apple
+View: ../SI_CODE/views/camera/camera_1_4_82.pcd
+Category Id:
+	Predicted: 1 || Real: 32
+Category:
+	Predicted: stapler || Real: camera
+View: ../SI_CODE/views/sponge/sponge_1_4_58.pcd
+Category Id:
+	Predicted: 34 || Real: 34
+Category:
+	Predicted: sponge || Real: sponge
+View: ../SI_CODE/views/keyboard/keyboard_1_1_175.pcd
+Category Id:
+	Predicted: 16 || Real: 16
+Category:
+	Predicted: keyboard || Real: keyboard
+View: ../SI_CODE/views/sponge/sponge_1_2_9.pcd
+Category Id:
+	Predicted: 12 || Real: 34
+Category:
+	Predicted: cell_phone || Real: sponge
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_1_68.pcd
+Category Id:
+	Predicted: 47 || Real: 37
+Category:
+	Predicted: pitcher || Real: coffee_mug
+View: ../SI_CODE/views/kleenex/kleenex_1_2_53.pcd
+Category Id:
+	Predicted: 31 || Real: 31
+Category:
+	Predicted: kleenex || Real: kleenex
+View: ../SI_CODE/views/toothbrush/toothbrush_1_1_131.pcd
+Category Id:
+	Predicted: 42 || Real: 40
+Category:
+	Predicted: dry_battery || Real: toothbrush
+View: ../SI_CODE/views/food_box/food_box_1_4_101.pcd
+Category Id:
+	Predicted: 5 || Real: 5
+Category:
+	Predicted: food_box || Real: food_box
+View: ../SI_CODE/views/potato/potato_3_2_160.pcd
+Category Id:
+	Predicted: 10 || Real: 2
+Category:
+	Predicted: lime || Real: potato
+View: ../SI_CODE/views/shampoo/shampoo_2_1_258.pcd
+Category Id:
+	Predicted: 49 || Real: 7
+Category:
+	Predicted: banana || Real: shampoo
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_56.pcd
+Category Id:
+	Predicted: 23 || Real: 13
+Category:
+	Predicted: food_cup || Real: lightbulb
+View: ../SI_CODE/views/marker/marker_1_4_155.pcd
+Category Id:
+	Predicted: 40 || Real: 11
+Category:
+	Predicted: toothbrush || Real: marker
+View: ../SI_CODE/views/banana/banana_1_1_69.pcd
+Category Id:
+	Predicted: 40 || Real: 49
+Category:
+	Predicted: toothbrush || Real: banana
+View: ../SI_CODE/views/apple/apple_1_4_93.pcd
+Category Id:
+	Predicted: 41 || Real: 6
+Category:
+	Predicted: peach || Real: apple
+View: ../SI_CODE/views/binder/binder_1_1_115.pcd
+Category Id:
+	Predicted: 16 || Real: 22
+Category:
+	Predicted: keyboard || Real: binder
+View: ../SI_CODE/views/soda_can/soda_can_1_1_134.pcd
+Category Id:
+	Predicted: 23 || Real: 43
+Category:
+	Predicted: food_cup || Real: soda_can
+View: ../SI_CODE/views/onion/onion_5_4_111.pcd
+Category Id:
+	Predicted: 25 || Real: 19
+Category:
+	Predicted: food_can || Real: onion
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_2_133.pcd
+Category Id:
+	Predicted: 33 || Real: 26
+Category:
+	Predicted: glue_stick || Real: rubber_eraser
+View: ../SI_CODE/views/calculator/calculator_1_1_18.pcd
+Category Id:
+	Predicted: 49 || Real: 45
+Category:
+	Predicted: banana || Real: calculator
+View: ../SI_CODE/views/flashlight/flashlight_1_2_73.pcd
+Category Id:
+	Predicted: 23 || Real: 17
+Category:
+	Predicted: food_cup || Real: flashlight
+View: ../SI_CODE/views/toothpaste/toothpaste_1_4_225.pcd
+Category Id:
+	Predicted: 49 || Real: 44
+Category:
+	Predicted: banana || Real: toothpaste
+View: ../SI_CODE/views/greens/greens_1_4_109.pcd
+Category Id:
+	Predicted: 1 || Real: 35
+Category:
+	Predicted: stapler || Real: greens
+View: ../SI_CODE/views/scissors/scissors_1_2_107.pcd
+Category Id:
+	Predicted: 49 || Real: 21
+Category:
+	Predicted: banana || Real: scissors
+View: ../SI_CODE/views/mushroom/mushroom_2_2_87.pcd
+Category Id:
+	Predicted: 15 || Real: 24
+Category:
+	Predicted: garlic || Real: mushroom
+View: ../SI_CODE/views/toothpaste/toothpaste_1_1_168.pcd
+Category Id:
+	Predicted: 49 || Real: 44
+Category:
+	Predicted: banana || Real: toothpaste
+View: ../SI_CODE/views/orange/orange_4_1_157.pcd
+Category Id:
+	Predicted: 6 || Real: 20
+Category:
+	Predicted: apple || Real: orange
+View: ../SI_CODE/views/pitcher/pitcher_1_2_13.pcd
+Category Id:
+	Predicted: 47 || Real: 47
+Category:
+	Predicted: pitcher || Real: pitcher
+View: ../SI_CODE/views/scissors/scissors_1_2_183.pcd
+Category Id:
+	Predicted: 50 || Real: 21
+Category:
+	Predicted: pliers || Real: scissors
+View: ../SI_CODE/views/food_box/food_box_1_1_81.pcd
+Category Id:
+	Predicted: 39 || Real: 5
+Category:
+	Predicted: instant_noodles || Real: food_box
+View: ../SI_CODE/views/orange/orange_4_4_70.pcd
+Category Id:
+	Predicted: 20 || Real: 20
+Category:
+	Predicted: orange || Real: orange
+View: ../SI_CODE/views/glue_stick/glue_stick_1_1_243.pcd
+Category Id:
+	Predicted: 33 || Real: 33
+Category:
+	Predicted: glue_stick || Real: glue_stick
+View: ../SI_CODE/views/lime/lime_1_1_23.pcd
+Category Id:
+	Predicted: 15 || Real: 10
+Category:
+	Predicted: garlic || Real: lime
+View: ../SI_CODE/views/scissors/scissors_1_1_126.pcd
+Category Id:
+	Predicted: 50 || Real: 21
+Category:
+	Predicted: pliers || Real: scissors
+View: ../SI_CODE/views/binder/binder_1_1_37.pcd
+Category Id:
+	Predicted: 22 || Real: 22
+Category:
+	Predicted: binder || Real: binder
+View: ../SI_CODE/views/glue_stick/glue_stick_1_1_109.pcd
+Category Id:
+	Predicted: 33 || Real: 33
+Category:
+	Predicted: glue_stick || Real: glue_stick
+View: ../SI_CODE/views/food_can/food_can_1_2_74.pcd
+Category Id:
+	Predicted: 10 || Real: 25
+Category:
+	Predicted: lime || Real: food_can
+View: ../SI_CODE/views/apple/apple_1_4_157.pcd
+Category Id:
+	Predicted: 19 || Real: 6
+Category:
+	Predicted: onion || Real: apple
+View: ../SI_CODE/views/notebook/notebook_2_2_2.pcd
+Category Id:
+	Predicted: 18 || Real: 18
+Category:
+	Predicted: notebook || Real: notebook
+View: ../SI_CODE/views/food_jar/food_jar_1_1_149.pcd
+Category Id:
+	Predicted: 13 || Real: 48
+Category:
+	Predicted: lightbulb || Real: food_jar
+View: ../SI_CODE/views/scissors/scissors_1_2_64.pcd
+Category Id:
+	Predicted: 50 || Real: 21
+Category:
+	Predicted: pliers || Real: scissors
+View: ../SI_CODE/views/hand_towel/hand_towel_1_1_107.pcd
+Category Id:
+	Predicted: 0 || Real: 30
+Category:
+	Predicted: plate || Real: hand_towel
+View: ../SI_CODE/views/food_box/food_box_1_2_15.pcd
+Category Id:
+	Predicted: 39 || Real: 5
+Category:
+	Predicted: instant_noodles || Real: food_box
+View: ../SI_CODE/views/bowl/bowl_1_1_28.pcd
+Category Id:
+	Predicted: 36 || Real: 36
+Category:
+	Predicted: bowl || Real: bowl
+View: ../SI_CODE/views/food_bag/food_bag_1_4_204.pcd
+Category Id:
+	Predicted: 27 || Real: 46
+Category:
+	Predicted: cap || Real: food_bag
+View: ../SI_CODE/views/lemon/lemon_1_1_52.pcd
+Category Id:
+	Predicted: 10 || Real: 14
+Category:
+	Predicted: lime || Real: lemon
+View: ../SI_CODE/views/pliers/pliers_6_4_54.pcd
+Category Id:
+	Predicted: 11 || Real: 50
+Category:
+	Predicted: marker || Real: pliers
+View: ../SI_CODE/views/cap/cap_1_1_114.pcd
+Category Id:
+	Predicted: 35 || Real: 27
+Category:
+	Predicted: greens || Real: cap
+View: ../SI_CODE/views/keyboard/keyboard_1_4_99.pcd
+Category Id:
+	Predicted: 18 || Real: 16
+Category:
+	Predicted: notebook || Real: keyboard
+View: ../SI_CODE/views/camera/camera_1_2_144.pcd
+Category Id:
+	Predicted: 7 || Real: 32
+Category:
+	Predicted: shampoo || Real: camera
+View: ../SI_CODE/views/lightbulb/lightbulb_1_4_14.pcd
+Category Id:
+	Predicted: 13 || Real: 13
+Category:
+	Predicted: lightbulb || Real: lightbulb
+View: ../SI_CODE/views/marker/marker_1_1_18.pcd
+Category Id:
+	Predicted: 40 || Real: 11
+Category:
+	Predicted: toothbrush || Real: marker
+View: ../SI_CODE/views/calculator/calculator_1_4_152.pcd
+Category Id:
+	Predicted: 45 || Real: 45
+Category:
+	Predicted: calculator || Real: calculator
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_166.pcd
+Category Id:
+	Predicted: 13 || Real: 13
+Category:
+	Predicted: lightbulb || Real: lightbulb
+View: ../SI_CODE/views/orange/orange_4_2_9.pcd
+Category Id:
+	Predicted: 20 || Real: 20
+Category:
+	Predicted: orange || Real: orange
+View: ../SI_CODE/views/peach/peach_2_4_125.pcd
+Category Id:
+	Predicted: 17 || Real: 41
+Category:
+	Predicted: flashlight || Real: peach
+View: ../SI_CODE/views/apple/apple_1_1_194.pcd
+Category Id:
+	Predicted: 25 || Real: 6
+Category:
+	Predicted: food_can || Real: apple
+View: ../SI_CODE/views/bowl/bowl_1_1_47.pcd
+Category Id:
+	Predicted: 36 || Real: 36
+Category:
+	Predicted: bowl || Real: bowl
+View: ../SI_CODE/views/sponge/sponge_1_1_167.pcd
+Category Id:
+	Predicted: 34 || Real: 34
+Category:
+	Predicted: sponge || Real: sponge
+View: ../SI_CODE/views/toothpaste/toothpaste_1_4_73.pcd
+Category Id:
+	Predicted: 4 || Real: 44
+Category:
+	Predicted: comb || Real: toothpaste
+View: ../SI_CODE/views/flashlight/flashlight_1_2_162.pcd
+Category Id:
+	Predicted: 47 || Real: 17
+Category:
+	Predicted: pitcher || Real: flashlight
+View: ../SI_CODE/views/pitcher/pitcher_1_1_60.pcd
+Category Id:
+	Predicted: 47 || Real: 47
+Category:
+	Predicted: pitcher || Real: pitcher
+View: ../SI_CODE/views/food_jar/food_jar_1_4_228.pcd
+Category Id:
+	Predicted: 47 || Real: 48
+Category:
+	Predicted: pitcher || Real: food_jar
+View: ../SI_CODE/views/binder/binder_1_2_197.pcd
+Category Id:
+	Predicted: 22 || Real: 22
+Category:
+	Predicted: binder || Real: binder
+View: ../SI_CODE/views/shampoo/shampoo_2_2_124.pcd
+Category Id:
+	Predicted: 49 || Real: 7
+Category:
+	Predicted: banana || Real: shampoo
+View: ../SI_CODE/views/pitcher/pitcher_1_2_143.pcd
+Category Id:
+	Predicted: 47 || Real: 47
+Category:
+	Predicted: pitcher || Real: pitcher
+View: ../SI_CODE/views/onion/onion_5_4_5.pcd
+Category Id:
+	Predicted: 6 || Real: 19
+Category:
+	Predicted: apple || Real: onion
+View: ../SI_CODE/views/lime/lime_1_1_134.pcd
+Category Id:
+	Predicted: 10 || Real: 10
+Category:
+	Predicted: lime || Real: lime
+View: ../SI_CODE/views/flashlight/flashlight_1_1_103.pcd
+Category Id:
+	Predicted: 4 || Real: 17
+Category:
+	Predicted: comb || Real: flashlight
+View: ../SI_CODE/views/tomato/tomato_1_1_99.pcd
+Category Id:
+	Predicted: 15 || Real: 29
+Category:
+	Predicted: garlic || Real: tomato
+View: ../SI_CODE/views/onion/onion_5_1_90.pcd
+Category Id:
+	Predicted: 25 || Real: 19
+Category:
+	Predicted: food_can || Real: onion
+View: ../SI_CODE/views/lime/lime_1_2_36.pcd
+Category Id:
+	Predicted: 10 || Real: 10
+Category:
+	Predicted: lime || Real: lime
+View: ../SI_CODE/views/soda_can/soda_can_1_2_187.pcd
+Category Id:
+	Predicted: 20 || Real: 43
+Category:
+	Predicted: orange || Real: soda_can
+View: ../SI_CODE/views/orange/orange_4_4_121.pcd
+Category Id:
+	Predicted: 6 || Real: 20
+Category:
+	Predicted: apple || Real: orange
+View: ../SI_CODE/views/shampoo/shampoo_2_4_234.pcd
+Category Id:
+	Predicted: 42 || Real: 7
+Category:
+	Predicted: dry_battery || Real: shampoo
+View: ../SI_CODE/views/marker/marker_1_1_24.pcd
+Category Id:
+	Predicted: 40 || Real: 11
+Category:
+	Predicted: toothbrush || Real: marker
+View: ../SI_CODE/views/bowl/bowl_1_2_67.pcd
+Category Id:
+	Predicted: 36 || Real: 36
+Category:
+	Predicted: bowl || Real: bowl
+View: ../SI_CODE/views/food_cup/food_cup_1_2_114.pcd
+Category Id:
+	Predicted: 13 || Real: 23
+Category:
+	Predicted: lightbulb || Real: food_cup
+View: ../SI_CODE/views/potato/potato_3_1_160.pcd
+Category Id:
+	Predicted: 13 || Real: 2
+Category:
+	Predicted: lightbulb || Real: potato
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_107.pcd
+Category Id:
+	Predicted: 47 || Real: 38
+Category:
+	Predicted: pitcher || Real: bell_pepper
+View: ../SI_CODE/views/glue_stick/glue_stick_1_1_88.pcd
+Category Id:
+	Predicted: 33 || Real: 33
+Category:
+	Predicted: glue_stick || Real: glue_stick
+View: ../SI_CODE/views/cell_phone/cell_phone_1_4_127.pcd
+Category Id:
+	Predicted: 4 || Real: 12
+Category:
+	Predicted: comb || Real: cell_phone
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_4_135.pcd
+Category Id:
+	Predicted: 37 || Real: 37
+Category:
+	Predicted: coffee_mug || Real: coffee_mug
+View: ../SI_CODE/views/garlic/garlic_1_2_118.pcd
+Category Id:
+	Predicted: 15 || Real: 15
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/food_can/food_can_1_4_6.pcd
+Category Id:
+	Predicted: 38 || Real: 25
+Category:
+	Predicted: bell_pepper || Real: food_can
+View: ../SI_CODE/views/notebook/notebook_2_2_210.pcd
+Category Id:
+	Predicted: 18 || Real: 18
+Category:
+	Predicted: notebook || Real: notebook
+View: ../SI_CODE/views/food_box/food_box_1_4_74.pcd
+Category Id:
+	Predicted: 5 || Real: 5
+Category:
+	Predicted: food_box || Real: food_box
+View: ../SI_CODE/views/instant_noodles/instant_noodles_1_2_156.pcd
+Category Id:
+	Predicted: 39 || Real: 39
+Category:
+	Predicted: instant_noodles || Real: instant_noodles
+View: ../SI_CODE/views/sponge/sponge_1_1_156.pcd
+Category Id:
+	Predicted: 50 || Real: 34
+Category:
+	Predicted: pliers || Real: sponge
+View: ../SI_CODE/views/lightbulb/lightbulb_1_4_26.pcd
+Category Id:
+	Predicted: 13 || Real: 13
+Category:
+	Predicted: lightbulb || Real: lightbulb
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_15.pcd
+Category Id:
+	Predicted: 47 || Real: 38
+Category:
+	Predicted: pitcher || Real: bell_pepper
+View: ../SI_CODE/views/peach/peach_2_2_26.pcd
+Category Id:
+	Predicted: 41 || Real: 41
+Category:
+	Predicted: peach || Real: peach
+View: ../SI_CODE/views/notebook/notebook_2_1_189.pcd
+Category Id:
+	Predicted: 18 || Real: 18
+Category:
+	Predicted: notebook || Real: notebook
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_159.pcd
+Category Id:
+	Predicted: 42 || Real: 42
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/peach/peach_2_4_171.pcd
+Category Id:
+	Predicted: 23 || Real: 41
+Category:
+	Predicted: food_cup || Real: peach
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_36.pcd
+Category Id:
+	Predicted: 47 || Real: 38
+Category:
+	Predicted: pitcher || Real: bell_pepper
+View: ../SI_CODE/views/orange/orange_4_4_167.pcd
+Category Id:
+	Predicted: 6 || Real: 20
+Category:
+	Predicted: apple || Real: orange
+View: ../SI_CODE/views/cell_phone/cell_phone_1_4_144.pcd
+Category Id:
+	Predicted: 11 || Real: 12
+Category:
+	Predicted: marker || Real: cell_phone
+View: ../SI_CODE/views/peach/peach_2_1_51.pcd
+Category Id:
+	Predicted: 19 || Real: 41
+Category:
+	Predicted: onion || Real: peach
+View: ../SI_CODE/views/rubber_eraser/rubber_eraser_1_4_245.pcd
+Category Id:
+	Predicted: 33 || Real: 26
+Category:
+	Predicted: glue_stick || Real: rubber_eraser
+View: ../SI_CODE/views/marker/marker_1_1_16.pcd
+Category Id:
+	Predicted: 40 || Real: 11
+Category:
+	Predicted: toothbrush || Real: marker
+View: ../SI_CODE/views/ball/ball_1_2_24.pcd
+Category Id:
+	Predicted: 15 || Real: 28
+Category:
+	Predicted: garlic || Real: ball
+View: ../SI_CODE/views/food_cup/food_cup_1_1_124.pcd
+Category Id:
+	Predicted: 10 || Real: 23
+Category:
+	Predicted: lime || Real: food_cup
+View: ../SI_CODE/views/cap/cap_1_4_61.pcd
+Category Id:
+	Predicted: 39 || Real: 27
+Category:
+	Predicted: instant_noodles || Real: cap
+View: ../SI_CODE/views/food_cup/food_cup_1_4_66.pcd
+Category Id:
+	Predicted: 23 || Real: 23
+Category:
+	Predicted: food_cup || Real: food_cup
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_59.pcd
+Category Id:
+	Predicted: 35 || Real: 38
+Category:
+	Predicted: greens || Real: bell_pepper
+View: ../SI_CODE/views/food_jar/food_jar_1_2_206.pcd
+Category Id:
+	Predicted: 48 || Real: 48
+Category:
+	Predicted: food_jar || Real: food_jar
+View: ../SI_CODE/views/food_can/food_can_1_1_146.pcd
+Category Id:
+	Predicted: 10 || Real: 25
+Category:
+	Predicted: lime || Real: food_can
+View: ../SI_CODE/views/potato/potato_3_2_119.pcd
+Category Id:
+	Predicted: 10 || Real: 2
+Category:
+	Predicted: lime || Real: potato
+View: ../SI_CODE/views/pliers/pliers_6_1_78.pcd
+Category Id:
+	Predicted: 49 || Real: 50
+Category:
+	Predicted: banana || Real: pliers
+View: ../SI_CODE/views/bowl/bowl_1_2_68.pcd
+Category Id:
+	Predicted: 36 || Real: 36
+Category:
+	Predicted: bowl || Real: bowl
+View: ../SI_CODE/views/apple/apple_1_4_28.pcd
+Category Id:
+	Predicted: 19 || Real: 6
+Category:
+	Predicted: onion || Real: apple
+View: ../SI_CODE/views/mushroom/mushroom_2_1_156.pcd
+Category Id:
+	Predicted: 15 || Real: 24
+Category:
+	Predicted: garlic || Real: mushroom
+View: ../SI_CODE/views/tomato/tomato_1_4_85.pcd
+Category Id:
+	Predicted: 15 || Real: 29
+Category:
+	Predicted: garlic || Real: tomato
+View: ../SI_CODE/views/plate/plate_5_2_70.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: plate || Real: plate
+View: ../SI_CODE/views/keyboard/keyboard_1_1_26.pcd
+Category Id:
+	Predicted: 22 || Real: 16
+Category:
+	Predicted: binder || Real: keyboard
+View: ../SI_CODE/views/camera/camera_1_1_110.pcd
+Category Id:
+	Predicted: 48 || Real: 32
+Category:
+	Predicted: food_jar || Real: camera
+View: ../SI_CODE/views/glue_stick/glue_stick_1_4_11.pcd
+Category Id:
+	Predicted: 33 || Real: 33
+Category:
+	Predicted: glue_stick || Real: glue_stick
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_65.pcd
+Category Id:
+	Predicted: 47 || Real: 38
+Category:
+	Predicted: pitcher || Real: bell_pepper
+View: ../SI_CODE/views/pliers/pliers_6_2_173.pcd
+Category Id:
+	Predicted: 40 || Real: 50
+Category:
+	Predicted: toothbrush || Real: pliers
+View: ../SI_CODE/views/kleenex/kleenex_1_1_21.pcd
+Category Id:
+	Predicted: 31 || Real: 31
+Category:
+	Predicted: kleenex || Real: kleenex
+View: ../SI_CODE/views/pliers/pliers_6_1_148.pcd
+Category Id:
+	Predicted: 42 || Real: 50
+Category:
+	Predicted: dry_battery || Real: pliers
+View: ../SI_CODE/views/water_bottle/water_bottle_10_1_20.pcd
+Category Id:
+	Predicted: 49 || Real: 8
+Category:
+	Predicted: banana || Real: water_bottle
+View: ../SI_CODE/views/orange/orange_4_4_212.pcd
+Category Id:
+	Predicted: 20 || Real: 20
+Category:
+	Predicted: orange || Real: orange
+View: ../SI_CODE/views/calculator/calculator_1_1_45.pcd
+Category Id:
+	Predicted: 7 || Real: 45
+Category:
+	Predicted: shampoo || Real: calculator
+View: ../SI_CODE/views/food_can/food_can_1_2_5.pcd
+Category Id:
+	Predicted: 10 || Real: 25
+Category:
+	Predicted: lime || Real: food_can
+View: ../SI_CODE/views/hand_towel/hand_towel_1_4_251.pcd
+Category Id:
+	Predicted: 30 || Real: 30
+Category:
+	Predicted: hand_towel || Real: hand_towel
+View: ../SI_CODE/views/hand_towel/hand_towel_1_4_248.pcd
+Category Id:
+	Predicted: 30 || Real: 30
+Category:
+	Predicted: hand_towel || Real: hand_towel
+View: ../SI_CODE/views/camera/camera_1_1_20.pcd
+Category Id:
+	Predicted: 33 || Real: 32
+Category:
+	Predicted: glue_stick || Real: camera
+View: ../SI_CODE/views/food_can/food_can_1_4_39.pcd
+Category Id:
+	Predicted: 38 || Real: 25
+Category:
+	Predicted: bell_pepper || Real: food_can
+View: ../SI_CODE/views/comb/comb_1_1_139.pcd
+Category Id:
+	Predicted: 42 || Real: 4
+Category:
+	Predicted: dry_battery || Real: comb
+View: ../SI_CODE/views/potato/potato_3_2_201.pcd
+Category Id:
+	Predicted: 10 || Real: 2
+Category:
+	Predicted: lime || Real: potato
+View: ../SI_CODE/views/glue_stick/glue_stick_1_2_213.pcd
+Category Id:
+	Predicted: 33 || Real: 33
+Category:
+	Predicted: glue_stick || Real: glue_stick
+View: ../SI_CODE/views/notebook/notebook_2_1_224.pcd
+Category Id:
+	Predicted: 18 || Real: 18
+Category:
+	Predicted: notebook || Real: notebook
+View: ../SI_CODE/views/food_cup/food_cup_1_1_156.pcd
+Category Id:
+	Predicted: 10 || Real: 23
+Category:
+	Predicted: lime || Real: food_cup
+View: ../SI_CODE/views/lightbulb/lightbulb_1_4_197.pcd
+Category Id:
+	Predicted: 19 || Real: 13
+Category:
+	Predicted: onion || Real: lightbulb
+View: ../SI_CODE/views/lime/lime_1_1_39.pcd
+Category Id:
+	Predicted: 15 || Real: 10
+Category:
+	Predicted: garlic || Real: lime
+View: ../SI_CODE/views/binder/binder_1_2_234.pcd
+Category Id:
+	Predicted: 22 || Real: 22
+Category:
+	Predicted: binder || Real: binder
+View: ../SI_CODE/views/garlic/garlic_1_4_195.pcd
+Category Id:
+	Predicted: 15 || Real: 15
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/food_can/food_can_1_4_169.pcd
+Category Id:
+	Predicted: 6 || Real: 25
+Category:
+	Predicted: apple || Real: food_can
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_203.pcd
+Category Id:
+	Predicted: 1 || Real: 38
+Category:
+	Predicted: stapler || Real: bell_pepper
+View: ../SI_CODE/views/apple/apple_1_1_112.pcd
+Category Id:
+	Predicted: 6 || Real: 6
+Category:
+	Predicted: apple || Real: apple
+View: ../SI_CODE/views/shampoo/shampoo_2_2_228.pcd
+Category Id:
+	Predicted: 49 || Real: 7
+Category:
+	Predicted: banana || Real: shampoo
+View: ../SI_CODE/views/scissors/scissors_1_2_84.pcd
+Category Id:
+	Predicted: 50 || Real: 21
+Category:
+	Predicted: pliers || Real: scissors
+View: ../SI_CODE/views/sponge/sponge_1_1_198.pcd
+Category Id:
+	Predicted: 50 || Real: 34
+Category:
+	Predicted: pliers || Real: sponge
+View: ../SI_CODE/views/hand_towel/hand_towel_1_2_139.pcd
+Category Id:
+	Predicted: 30 || Real: 30
+Category:
+	Predicted: hand_towel || Real: hand_towel
+View: ../SI_CODE/views/coffee_mug/coffee_mug_1_2_123.pcd
+Category Id:
+	Predicted: 47 || Real: 37
+Category:
+	Predicted: pitcher || Real: coffee_mug
+View: ../SI_CODE/views/keyboard/keyboard_1_1_209.pcd
+Category Id:
+	Predicted: 16 || Real: 16
+Category:
+	Predicted: keyboard || Real: keyboard
+View: ../SI_CODE/views/comb/comb_1_2_127.pcd
+Category Id:
+	Predicted: 8 || Real: 4
+Category:
+	Predicted: water_bottle || Real: comb
+View: ../SI_CODE/views/food_box/food_box_1_2_154.pcd
+Category Id:
+	Predicted: 35 || Real: 5
+Category:
+	Predicted: greens || Real: food_box
+View: ../SI_CODE/views/potato/potato_3_1_175.pcd
+Category Id:
+	Predicted: 23 || Real: 2
+Category:
+	Predicted: food_cup || Real: potato
+View: ../SI_CODE/views/keyboard/keyboard_1_1_176.pcd
+Category Id:
+	Predicted: 16 || Real: 16
+Category:
+	Predicted: keyboard || Real: keyboard
+View: ../SI_CODE/views/onion/onion_5_2_139.pcd
+Category Id:
+	Predicted: 19 || Real: 19
+Category:
+	Predicted: onion || Real: onion
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_106.pcd
+Category Id:
+	Predicted: 3 || Real: 3
+Category:
+	Predicted: cereal_box || Real: cereal_box
+View: ../SI_CODE/views/cap/cap_1_2_24.pcd
+Category Id:
+	Predicted: 27 || Real: 27
+Category:
+	Predicted: cap || Real: cap
+View: ../SI_CODE/views/lightbulb/lightbulb_1_2_21.pcd
+Category Id:
+	Predicted: 28 || Real: 13
+Category:
+	Predicted: ball || Real: lightbulb
+View: ../SI_CODE/views/pitcher/pitcher_1_2_75.pcd
+Category Id:
+	Predicted: 47 || Real: 47
+Category:
+	Predicted: pitcher || Real: pitcher
+View: ../SI_CODE/views/onion/onion_5_1_238.pcd
+Category Id:
+	Predicted: 19 || Real: 19
+Category:
+	Predicted: onion || Real: onion
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_153.pcd
+Category Id:
+	Predicted: 42 || Real: 42
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/toothpaste/toothpaste_1_1_193.pcd
+Category Id:
+	Predicted: 40 || Real: 44
+Category:
+	Predicted: toothbrush || Real: toothpaste
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_107.pcd
+Category Id:
+	Predicted: 3 || Real: 3
+Category:
+	Predicted: cereal_box || Real: cereal_box
+View: ../SI_CODE/views/sponge/sponge_1_1_191.pcd
+Category Id:
+	Predicted: 34 || Real: 34
+Category:
+	Predicted: sponge || Real: sponge
+View: ../SI_CODE/views/plate/plate_5_2_154.pcd
+Category Id:
+	Predicted: 30 || Real: 0
+Category:
+	Predicted: hand_towel || Real: plate
+View: ../SI_CODE/views/cell_phone/cell_phone_1_1_148.pcd
+Category Id:
+	Predicted: 40 || Real: 12
+Category:
+	Predicted: toothbrush || Real: cell_phone
+View: ../SI_CODE/views/notebook/notebook_2_2_29.pcd
+Category Id:
+	Predicted: 18 || Real: 18
+Category:
+	Predicted: notebook || Real: notebook
+View: ../SI_CODE/views/toothbrush/toothbrush_1_2_23.pcd
+Category Id:
+	Predicted: 40 || Real: 40
+Category:
+	Predicted: toothbrush || Real: toothbrush
+View: ../SI_CODE/views/marker/marker_1_4_260.pcd
+Category Id:
+	Predicted: 40 || Real: 11
+Category:
+	Predicted: toothbrush || Real: marker
+
+Testing done!
+	Max Global Weight: -100000
+	Min Global Weigh: 100000
+	Max Local Weight: -100000
+	Min Local Weigh: 100000
+	Min distance: 1000
+	Max distance: -100000
+
+RESULTS
+Test 1
+Test performance
+	50 cluster(s) used in the test
+	408 samples used: 164 correct classifications, accuracy: 40.20%
+Category Meassures
+	Category plate ,precision 80.00% ,recall 50.00%
+	Category stapler ,precision 62.50% ,recall 62.50%
+	Category potato ,precision 0.00% ,recall 0.00%
+	Category cereal_box ,precision 100.00% ,recall 75.00%
+	Category comb ,precision 0.00% ,recall 0.00%
+	Category food_box ,precision 100.00% ,recall 50.00%
+	Category apple ,precision 25.00% ,recall 37.50%
+	Category shampoo ,precision 20.00% ,recall 12.50%
+	Category water_bottle ,precision 0.00% ,recall 0.00%
+	Category pear ,precision 100.00% ,recall 50.00%
+	Category lime ,precision 22.22% ,recall 75.00%
+	Category marker ,precision 0.00% ,recall 0.00%
+	Category cell_phone ,precision 0.00% ,recall 0.00%
+	Category lightbulb ,precision 35.71% ,recall 62.50%
+	Category lemon ,precision 0.00% ,recall 0.00%
+	Category garlic ,precision 19.35% ,recall 75.00%
+	Category keyboard ,precision 71.43% ,recall 62.50%
+	Category flashlight ,precision 50.00% ,recall 12.50%
+	Category notebook ,precision 72.73% ,recall 100.00%
+	Category onion ,precision 37.50% ,recall 37.50%
+	Category orange ,precision 66.67% ,recall 50.00%
+	Category scissors ,precision 0.00% ,recall 0.00%
+	Category binder ,precision 66.67% ,recall 50.00%
+	Category food_cup ,precision 26.67% ,recall 50.00%
+	Category mushroom ,precision 0.00% ,recall 0.00%
+	Category food_can ,precision 0.00% ,recall 0.00%
+	Category rubber_eraser ,precision 33.33% ,recall 12.50%
+	Category cap ,precision 80.00% ,recall 50.00%
+	Category ball ,precision 0.00% ,recall 0.00%
+	Category tomato ,precision 0.00% ,recall 0.00%
+	Category hand_towel ,precision 87.50% ,recall 87.50%
+	Category kleenex ,precision 80.00% ,recall 100.00%
+	Category camera ,precision 0.00% ,recall 0.00%
+	Category glue_stick ,precision 50.00% ,recall 87.50%
+	Category sponge ,precision 100.00% ,recall 62.50%
+	Category greens ,precision 50.00% ,recall 62.50%
+	Category bowl ,precision 100.00% ,recall 100.00%
+	Category coffee_mug ,precision 100.00% ,recall 25.00%
+	Category bell_pepper ,precision 0.00% ,recall 0.00%
+	Category instant_noodles ,precision 46.15% ,recall 75.00%
+	Category toothbrush ,precision 22.58% ,recall 87.50%
+	Category peach ,precision 66.67% ,recall 25.00%
+	Category dry_battery ,precision 53.33% ,recall 100.00%
+	Category soda_can ,precision 0.00% ,recall 0.00%
+	Category toothpaste ,precision 0.00% ,recall 0.00%
+	Category calculator ,precision 100.00% ,recall 37.50%
+	Category food_bag ,precision 85.71% ,recall 75.00%
+	Category pitcher ,precision 32.00% ,recall 100.00%
+	Category food_jar ,precision 40.00% ,recall 25.00%
+	Category banana ,precision 13.33% ,recall 25.00%
+	Category pliers ,precision 0.00% ,recall 0.00%
+Memory Managment
+	Nº forgotten features: 0
+	Nº redundant features: 0
+	Nº forgotten features by Memory Decay: 0
+	Nº seen objects: 1020
+	Nº seen features: 220136
+	Nº features in memory: 220136
+	Feature smallest distance: 1000.000000
+
+Average Results
+	Accuracy: 40.20%
+	Category: apple Precision: 25.00% Recall: 37.50%
+	Category: ball Precision: 0.00% Recall: 0.00%
+	Category: banana Precision: 13.33% Recall: 25.00%
+	Category: bell_pepper Precision: 0.00% Recall: 0.00%
+	Category: binder Precision: 66.67% Recall: 50.00%
+	Category: bowl Precision: 100.00% Recall: 100.00%
+	Category: calculator Precision: 100.00% Recall: 37.50%
+	Category: camera Precision: 0.00% Recall: 0.00%
+	Category: cap Precision: 80.00% Recall: 50.00%
+	Category: cell_phone Precision: 0.00% Recall: 0.00%
+	Category: cereal_box Precision: 100.00% Recall: 75.00%
+	Category: coffee_mug Precision: 100.00% Recall: 25.00%
+	Category: comb Precision: 0.00% Recall: 0.00%
+	Category: dry_battery Precision: 53.33% Recall: 100.00%
+	Category: flashlight Precision: 50.00% Recall: 12.50%
+	Category: food_bag Precision: 85.71% Recall: 75.00%
+	Category: food_box Precision: 100.00% Recall: 50.00%
+	Category: food_can Precision: 0.00% Recall: 0.00%
+	Category: food_cup Precision: 26.67% Recall: 50.00%
+	Category: food_jar Precision: 40.00% Recall: 25.00%
+	Category: garlic Precision: 19.35% Recall: 75.00%
+	Category: glue_stick Precision: 50.00% Recall: 87.50%
+	Category: greens Precision: 50.00% Recall: 62.50%
+	Category: hand_towel Precision: 87.50% Recall: 87.50%
+	Category: instant_noodles Precision: 46.15% Recall: 75.00%
+	Category: keyboard Precision: 71.43% Recall: 62.50%
+	Category: kleenex Precision: 80.00% Recall: 100.00%
+	Category: lemon Precision: 0.00% Recall: 0.00%
+	Category: lightbulb Precision: 35.71% Recall: 62.50%
+	Category: lime Precision: 22.22% Recall: 75.00%
+	Category: marker Precision: 0.00% Recall: 0.00%
+	Category: mushroom Precision: 0.00% Recall: 0.00%
+	Category: notebook Precision: 72.73% Recall: 100.00%
+	Category: onion Precision: 37.50% Recall: 37.50%
+	Category: orange Precision: 66.67% Recall: 50.00%
+	Category: peach Precision: 66.67% Recall: 25.00%
+	Category: pear Precision: 100.00% Recall: 50.00%
+	Category: pitcher Precision: 32.00% Recall: 100.00%
+	Category: plate Precision: 80.00% Recall: 50.00%
+	Category: pliers Precision: 0.00% Recall: 0.00%
+	Category: potato Precision: 0.00% Recall: 0.00%
+	Category: rubber_eraser Precision: 33.33% Recall: 12.50%
+	Category: scissors Precision: 0.00% Recall: 0.00%
+	Category: shampoo Precision: 20.00% Recall: 12.50%
+	Category: soda_can Precision: 0.00% Recall: 0.00%
+	Category: sponge Precision: 100.00% Recall: 62.50%
+	Category: stapler Precision: 62.50% Recall: 62.50%
+	Category: tomato Precision: 0.00% Recall: 0.00%
+	Category: toothbrush Precision: 22.58% Recall: 87.50%
+	Category: toothpaste Precision: 0.00% Recall: 0.00%
+	Category: water_bottle Precision: 0.00% Recall: 0.00%
+
+Time Elapsed: 1:26:31
+Time Elapsed: 01:26:31

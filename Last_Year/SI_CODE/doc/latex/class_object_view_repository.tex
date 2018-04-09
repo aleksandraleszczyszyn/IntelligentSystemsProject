@@ -1,0 +1,175 @@
+\hypertarget{class_object_view_repository}{}\section{Object\+View\+Repository Class Reference}
+\label{class_object_view_repository}\index{Object\+View\+Repository@{Object\+View\+Repository}}
+
+
+Loads point clouds from a given directory. Also provides shuffle for random point cloud viewing. This class should not be reused because some paremeter are shared and must be re-\/initialized properly!  
+
+
+
+
+{\ttfamily \#include $<$Object\+View\+Repository.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_object_view_repository_a1197d0cb7fe1bd05ff2da5a8cf215cc5}{Object\+View\+Repository} (bool D\+E\+B\+UG, int n\+Views\+To\+See\+Per\+Category, bool rand\+Shuffle)
+\item 
+\hyperlink{class_object_view_repository_a168d69e2f40f5f97bd8b56f3eca35cde}{$\sim$\+Object\+View\+Repository} ()
+\item 
+char \hyperlink{class_object_view_repository_adceeb33508a5e48f32c304d84a84313b}{Set\+Object\+View\+Repository\+Source} (const char $\ast$directory)
+\item 
+char \hyperlink{class_object_view_repository_adc9db1af3b3d61f0fe45a6a4173abd0d}{Next\+Object\+View} (Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&pointcloud)
+\item 
+string \hyperlink{class_object_view_repository_a36db267a37e49a138719124066411bc1}{get\+Category} () const
+\item 
+void \hyperlink{class_object_view_repository_af99676826f94e205b37b9b76d07d32ab}{shuffle\+Views\+For\+Training} (int \hyperlink{pcd__read_8cpp_a21d538faa7b6b1c86f9d819afb80545a}{n\+Categories}, float percentage\+For\+Training)
+\item 
+void \hyperlink{class_object_view_repository_ab82bb5b777885bc5900ca9ba55eabbd6}{shuffle\+Views\+For\+Learning} ()
+\item 
+void \hyperlink{class_object_view_repository_afb69d2aac573032b3c10a57060d2eab7}{print\+Categories} () const
+\item 
+void \hyperlink{class_object_view_repository_a5fe3f74c032f0d24f695eaee1714071c}{print\+Category\+Views} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loads point clouds from a given directory. Also provides shuffle for random point cloud viewing. This class should not be reused because some paremeter are shared and must be re-\/initialized properly! 
+
+Definition at line 12 of file Object\+View\+Repository.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_object_view_repository_a1197d0cb7fe1bd05ff2da5a8cf215cc5}\label{class_object_view_repository_a1197d0cb7fe1bd05ff2da5a8cf215cc5}} 
+\index{Object\+View\+Repository@{Object\+View\+Repository}!Object\+View\+Repository@{Object\+View\+Repository}}
+\index{Object\+View\+Repository@{Object\+View\+Repository}!Object\+View\+Repository@{Object\+View\+Repository}}
+\subsubsection{\texorpdfstring{Object\+View\+Repository()}{ObjectViewRepository()}}
+{\footnotesize\ttfamily Object\+View\+Repository\+::\+Object\+View\+Repository (\begin{DoxyParamCaption}\item[{bool}]{D\+E\+B\+UG,  }\item[{int}]{n\+Views\+To\+See\+Per\+Category,  }\item[{bool}]{rand\+Shuffle }\end{DoxyParamCaption})}
+
+D\+E\+B\+UG indicates if extra information should be printed to the console.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\+E\+B\+UG} & set debug mode on$\vert$off. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file Object\+View\+Repository.\+cpp.
+
+\mbox{\Hypertarget{class_object_view_repository_a168d69e2f40f5f97bd8b56f3eca35cde}\label{class_object_view_repository_a168d69e2f40f5f97bd8b56f3eca35cde}} 
+\index{Object\+View\+Repository@{Object\+View\+Repository}!````~Object\+View\+Repository@{$\sim$\+Object\+View\+Repository}}
+\index{````~Object\+View\+Repository@{$\sim$\+Object\+View\+Repository}!Object\+View\+Repository@{Object\+View\+Repository}}
+\subsubsection{\texorpdfstring{$\sim$\+Object\+View\+Repository()}{~ObjectViewRepository()}}
+{\footnotesize\ttfamily Object\+View\+Repository\+::$\sim$\+Object\+View\+Repository (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file Object\+View\+Repository.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_view_repository_a36db267a37e49a138719124066411bc1}\label{class_object_view_repository_a36db267a37e49a138719124066411bc1}} 
+\index{Object\+View\+Repository@{Object\+View\+Repository}!get\+Category@{get\+Category}}
+\index{get\+Category@{get\+Category}!Object\+View\+Repository@{Object\+View\+Repository}}
+\subsubsection{\texorpdfstring{get\+Category()}{getCategory()}}
+{\footnotesize\ttfamily string Object\+View\+Repository\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the category of the current object view taken from its file name.
+
+returns the category name of the current object view. 
+
+Definition at line 19 of file Object\+View\+Repository.\+cpp.
+
+\mbox{\Hypertarget{class_object_view_repository_adc9db1af3b3d61f0fe45a6a4173abd0d}\label{class_object_view_repository_adc9db1af3b3d61f0fe45a6a4173abd0d}} 
+\index{Object\+View\+Repository@{Object\+View\+Repository}!Next\+Object\+View@{Next\+Object\+View}}
+\index{Next\+Object\+View@{Next\+Object\+View}!Object\+View\+Repository@{Object\+View\+Repository}}
+\subsubsection{\texorpdfstring{Next\+Object\+View()}{NextObjectView()}}
+{\footnotesize\ttfamily char Object\+View\+Repository\+::\+Next\+Object\+View (\begin{DoxyParamCaption}\item[{Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&}]{pointcloud }\end{DoxyParamCaption})}
+
+Returns the next object view to be seen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em pointcloud} & the next point cloud to be seen. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 193 of file Object\+View\+Repository.\+cpp.
+
+\mbox{\Hypertarget{class_object_view_repository_afb69d2aac573032b3c10a57060d2eab7}\label{class_object_view_repository_afb69d2aac573032b3c10a57060d2eab7}} 
+\index{Object\+View\+Repository@{Object\+View\+Repository}!print\+Categories@{print\+Categories}}
+\index{print\+Categories@{print\+Categories}!Object\+View\+Repository@{Object\+View\+Repository}}
+\subsubsection{\texorpdfstring{print\+Categories()}{printCategories()}}
+{\footnotesize\ttfamily void Object\+View\+Repository\+::print\+Categories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Print the list of available categories, for debug. 
+
+Definition at line 166 of file Object\+View\+Repository.\+cpp.
+
+\mbox{\Hypertarget{class_object_view_repository_a5fe3f74c032f0d24f695eaee1714071c}\label{class_object_view_repository_a5fe3f74c032f0d24f695eaee1714071c}} 
+\index{Object\+View\+Repository@{Object\+View\+Repository}!print\+Category\+Views@{print\+Category\+Views}}
+\index{print\+Category\+Views@{print\+Category\+Views}!Object\+View\+Repository@{Object\+View\+Repository}}
+\subsubsection{\texorpdfstring{print\+Category\+Views()}{printCategoryViews()}}
+{\footnotesize\ttfamily void Object\+View\+Repository\+::print\+Category\+Views (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Print the list of available categories and respective views, for debug. 
+
+Definition at line 176 of file Object\+View\+Repository.\+cpp.
+
+\mbox{\Hypertarget{class_object_view_repository_adceeb33508a5e48f32c304d84a84313b}\label{class_object_view_repository_adceeb33508a5e48f32c304d84a84313b}} 
+\index{Object\+View\+Repository@{Object\+View\+Repository}!Set\+Object\+View\+Repository\+Source@{Set\+Object\+View\+Repository\+Source}}
+\index{Set\+Object\+View\+Repository\+Source@{Set\+Object\+View\+Repository\+Source}!Object\+View\+Repository@{Object\+View\+Repository}}
+\subsubsection{\texorpdfstring{Set\+Object\+View\+Repository\+Source()}{SetObjectViewRepositorySource()}}
+{\footnotesize\ttfamily char Object\+View\+Repository\+::\+Set\+Object\+View\+Repository\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{directory }\end{DoxyParamCaption})}
+
+Sets the directory containing the object views.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em directory} & the object views directory on disk. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 223 of file Object\+View\+Repository.\+cpp.
+
+\mbox{\Hypertarget{class_object_view_repository_ab82bb5b777885bc5900ca9ba55eabbd6}\label{class_object_view_repository_ab82bb5b777885bc5900ca9ba55eabbd6}} 
+\index{Object\+View\+Repository@{Object\+View\+Repository}!shuffle\+Views\+For\+Learning@{shuffle\+Views\+For\+Learning}}
+\index{shuffle\+Views\+For\+Learning@{shuffle\+Views\+For\+Learning}!Object\+View\+Repository@{Object\+View\+Repository}}
+\subsubsection{\texorpdfstring{shuffle\+Views\+For\+Learning()}{shuffleViewsForLearning()}}
+{\footnotesize\ttfamily void Object\+View\+Repository\+::shuffle\+Views\+For\+Learning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Shuffles views for the learning phase taking into consideration the views and categories shuffled for the training phase. No repetations are allowed! 
+
+Definition at line 24 of file Object\+View\+Repository.\+cpp.
+
+\mbox{\Hypertarget{class_object_view_repository_af99676826f94e205b37b9b76d07d32ab}\label{class_object_view_repository_af99676826f94e205b37b9b76d07d32ab}} 
+\index{Object\+View\+Repository@{Object\+View\+Repository}!shuffle\+Views\+For\+Training@{shuffle\+Views\+For\+Training}}
+\index{shuffle\+Views\+For\+Training@{shuffle\+Views\+For\+Training}!Object\+View\+Repository@{Object\+View\+Repository}}
+\subsubsection{\texorpdfstring{shuffle\+Views\+For\+Training()}{shuffleViewsForTraining()}}
+{\footnotesize\ttfamily void Object\+View\+Repository\+::shuffle\+Views\+For\+Training (\begin{DoxyParamCaption}\item[{int}]{n\+Categories,  }\item[{float}]{percentage\+For\+Training }\end{DoxyParamCaption})}
+
+Shuffles views for the training phase. Categories and views are ramdomlly chosen. The shuffle takes into consideration\+: the number of categories and the percentage of views from each category, to be use.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n\+Categories} & the number of categories to use \\
+\hline
+\mbox{\tt in}  & {\em percentage\+For\+Training} & a percentage of the total number of views available for each category\\
+\hline
+\end{DoxyParams}
+assumptions\+: each category has the same, or some equal, number of views available.
+
+The shuffle is different for each executation of the application! 
+
+Definition at line 66 of file Object\+View\+Repository.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_object_view_repository_8h}{Object\+View\+Repository.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_object_view_repository_8cpp}{Object\+View\+Repository.\+cpp}\end{DoxyCompactItemize}

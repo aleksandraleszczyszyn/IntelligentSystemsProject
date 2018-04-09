@@ -1,0 +1,3 @@
+/home/lsl/SI/tg-entrega-final/g4/SI_VIZ/CMakeFiles/edit_cache.dir
+/home/lsl/SI/tg-entrega-final/g4/SI_VIZ/CMakeFiles/rebuild_cache.dir
+/home/lsl/SI/tg-entrega-final/g4/SI_VIZ/CMakeFiles/viz.dir

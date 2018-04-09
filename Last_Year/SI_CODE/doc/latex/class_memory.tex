@@ -1,0 +1,1889 @@
+\hypertarget{class_memory}{}\section{Memory Class Reference}
+\label{class_memory}\index{Memory@{Memory}}
+
+
+Main structure of the application. Holds the applications\textquotesingle{} memory.  
+
+
+
+
+{\ttfamily \#include $<$Memory.\+h$>$}
+
+
+
+Collaboration diagram for Memory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_memory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_memory_1_1_category_view_distance}{Category\+View\+Distance}
+\begin{DoxyCompactList}\small\item\em Auxiliar data structure to hold the distances between a specific object view and the categories. The distance is the euclidean distance between the respective histograms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_memory_a585d7bb6fc6f2237bcebf94a86b7dd99}{Memory} ()
+\item 
+\hyperlink{class_memory_a0ffa9759ebbf103f11132a505b93bdc0}{$\sim$\+Memory} ()
+\item 
+void \hyperlink{class_memory_a81ed8055b93c8e1e050d0e5f62f8a354}{update\+Centroids} (int p\+Cluster\+Id, int n\+Cluster\+Id, int feat\+Idx)
+\item 
+void \hyperlink{class_memory_af9c379b0907b97bc242c46bda5d58c4e}{sync\+Cluster\+Assignment} (int p\+Cluster\+Id, int n\+Cluster\+Id, int feat\+Idx)
+\item 
+char \hyperlink{class_memory_a02592896aaa8a91632b5c959b0a5df4c}{add\+Feature} (pcl\+::\+Histogram$<$ 153 $>$ \&feat, int \&feature\+Id)
+\item 
+const \hyperlink{class_feature_metadata}{Feature\+Metadata} $\ast$ \hyperlink{class_memory_ac57d713e84dce226545c1bd13007084b}{get\+Feature\+Metadata2} (const int \&key)
+\item 
+\hyperlink{class_feature_metadata}{Feature\+Metadata} \& \hyperlink{class_memory_a31661ea1c1d5a5fd22c0168541e82e3a}{get\+Feature\+Metadata} (const int \&key)
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \& \hyperlink{class_memory_abdfd86649f7e608ae6ea6af54e192fe6}{get\+Feature} (const int \&key)
+\item 
+void \hyperlink{class_memory_a6ba49963ea1576312687d17d8976285c}{get\+Centroids} (pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&centroids, std\+::vector$<$ int $>$ \&mapper, unordered\+\_\+map$<$ int, int $>$ \&rev\+Mapper)
+\item 
+void \hyperlink{class_memory_a34e8ddd680ea3a878d7564bedc8bb220}{get\+Cluster\+Points\+As\+Cloud} (Point\+Cloud$<$ Histogram$<$ 153 $>$ $>$\+::Ptr \&points, vector$<$ int $>$ \&points\+Mapper, int \&cluster\+Id)
+\item 
+pcl\+::\+Histogram$<$ 153 $>$ \& \hyperlink{class_memory_a56f9018e4eb1b2be429cc49b062263db}{get\+Cluster\+Centroid} (int \&cluster\+Id)
+\item 
+int \hyperlink{class_memory_af9c8b5c59df8b4d7ba77d08b90828d96}{get\+Cluster\+Size} (int \&cluster\+Id)
+\item 
+int \hyperlink{class_memory_ab71403837c0335a0e96a1e4814d4beb6}{add\+Cluster} (pcl\+::\+Histogram$<$ 153 $>$ \&centroid)
+\item 
+void \hyperlink{class_memory_a97043ab11f12fdd595e18ffc1fcd2291}{delete\+Cluster} (int \&cluster\+Id)
+\item 
+void \hyperlink{class_memory_a56ad78b70a31d0688dc160b029b8cf0e}{add\+Point\+To\+Cluster} (int \&cluster\+Id, int \&feat\+Idx)
+\item 
+void \hyperlink{class_memory_a3f1f42a162bbee90517642e9b2aad294}{remove\+Point\+From\+Cluster} (int \&cluster\+Id, int \&feat\+Idx)
+\item 
+void \hyperlink{class_memory_a638e22630bebfff55e6122b38d37c464}{un\+Assign\+All\+Points\+From\+Cluster} (int \&cluster\+Id)
+\item 
+void \hyperlink{class_memory_afae3d1c028779858634b0cfe0492a214}{set\+Cluster\+Centroid} (int \&cluster\+Id, int \&feat\+Idx)
+\item 
+void \hyperlink{class_memory_a4e5a7afc93319dd8be8f17dcfd6dc3c2}{reset\+Cluster\+Totals} (int \&cluster\+Id)
+\item 
+int \& \hyperlink{class_memory_aa80e09318da917906522a6cdf27b052b}{get\+Bigger\+Cluster} (int \&l\+Cluster\+Id, int \&r\+Cluster\+Id)
+\item 
+void \hyperlink{class_memory_a3666067f038b6765440a66cd5a3989f0}{get\+Cluster\+Points} (int \&cluster\+Id, std\+::vector$<$ int $>$ \&points\+Idx)
+\item 
+float \hyperlink{class_memory_aa4dae2fc7a803982c1926e2808389f73}{bss\+Betwen\+Clusters} (int \&l\+Cluster, int \&r\+Cluster)
+\item 
+float \hyperlink{class_memory_a74fc1ce26e175d8c992e201a3017064b}{bss} (unordered\+\_\+map$<$ int, \hyperlink{class_bss_bag}{Bss\+Bag} $>$ \&clusters\+Bss)
+\item 
+float \hyperlink{class_memory_a951c156d970ba7fa7a61290b1d63d95b}{wss} (std\+::vector$<$ std\+::pair$<$ int, \hyperlink{class_wss_bag}{Wss\+Bag} $>$ $>$ \&clusters\+Wss)
+\item 
+int \hyperlink{class_memory_a239bd8dc977f6dff458b3973e1dd4bb2}{get\+Category\+Id} (const std\+::string \&category\+Name)
+\item 
+int \hyperlink{class_memory_a082886bbe8c386bb7ce25a25f1b7ea8a}{add\+Category} (std\+::string category\+Name)
+\item 
+void \hyperlink{class_memory_a18516769c393cb146b32b42a4973176b}{add\+Point\+To\+Category} (int cat\+Id, int feat\+Idx)
+\item 
+void \hyperlink{class_memory_ad4a2f8d5ad6def3bca8ca8cfff122d66}{remove\+Point\+From\+Category} (int \&cat\+Id, int \&feat\+Idx)
+\item 
+void \hyperlink{class_memory_aeee28733d4a736e1c37a373405a532d4}{print\+Categories\+Info} ()
+\item 
+const std\+::string \& \hyperlink{class_memory_a80ad5f670ba87f74c170e5623f8eefc6}{get\+Category\+Name} (int category\+Id)
+\item 
+void \hyperlink{class_memory_a90b1dfcf945ed2b899e8c67febb23300}{assign\+View\+To\+Category} (std\+::vector$<$ int $>$ \&feats\+Idx, int category\+Id)
+\item 
+void \hyperlink{class_memory_af222808fa4add918c102916128ccef05}{add\+T\+P\+To\+Category} (int \&category\+Id)
+\item 
+void \hyperlink{class_memory_acf7decf375ad87f9997b1a295d1bf02b}{add\+F\+P\+To\+Category} (int \&category\+Id)
+\item 
+void \hyperlink{class_memory_a25af58af1f3c43808ec5c76f68ca6b31}{add\+F\+N\+To\+Category} (int \&category\+Id)
+\item 
+std\+::vector$<$ double $>$ $\ast$ \hyperlink{class_memory_a137b4cca30a6eb6bce929f53112cbb40}{get\+View\+Histogram} (std\+::vector$<$ int $>$ \&feats\+Idx, vector$<$ int $>$ \&redundancy\+Feats\+Idx)
+\item 
+void \hyperlink{class_memory_a9861a7a0fa823cc992f96651a08a177d}{get\+Point\+Cloud} (pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&cloud)
+\item 
+const int \hyperlink{class_memory_a54eea5f00668704da0dac9fb91f4773e}{get\+Cluster\+Random\+Point} (const int \&cluster)
+\item 
+const int \hyperlink{class_memory_a3a327af9dcb4c8f6213833b880564620}{get\+Cluster\+Random\+Point} (const int \&cluster, int \&point\+Idx)
+\item 
+int \hyperlink{class_memory_a7be462960a5fa5fdd8ab63dd980a56c2}{get\+View\+Category} (std\+::vector$<$ double $>$ \&view\+Histogram)
+\item 
+bool \hyperlink{class_memory_ae520566ff0cd3b122c0773825141f567}{is\+Redundant\+Feature} (const Histogram$<$ 153 $>$ \&search\+Feature, int feature\+Id)
+\item 
+void \hyperlink{class_memory_a2ead3c4cac6c9fea43047ae1c63b5a54}{remove\+Feature\+From\+Memory} (int feature\+Id)
+\item 
+void \hyperlink{class_memory_ab9449f7b75eeb52bf50a9e4ae08da8f0}{set\+Memory\+Decay\+Factor} (float a\+Memory\+Decay\+Factor)
+\item 
+float \hyperlink{class_memory_a03d6c9fa9594c8385bfe30a4c6253757}{get\+Memory\+Decay\+Factor} ()
+\item 
+void \hyperlink{class_memory_a035e450994077e442b5607e72b22cb0c}{set\+Memory\+Decay\+Treshold} (float a\+Memory\+Decay\+Treshold)
+\item 
+float \hyperlink{class_memory_ada0d9f016a8913fd6ca9c959c3a7f49a}{get\+Memory\+Decay\+Treshold} ()
+\item 
+long long \hyperlink{class_memory_a71384aeaf8830770030cd7e7fc8d4342}{get\+Num\+Forgotten\+Features} ()
+\item 
+long long \hyperlink{class_memory_aff0dd81352bffafc0989c71721f5c685}{get\+Num\+Seen\+Features} ()
+\item 
+long long \hyperlink{class_memory_ae5b168514b6b6bf8121526a6216a8b4e}{get\+Num\+Features\+In\+Memory} ()
+\item 
+long long \hyperlink{class_memory_a5ea7ba5bae1d18a31b83b7a9cc5c30cb}{get\+Num\+Redundant\+Features} ()
+\item 
+long long \hyperlink{class_memory_aee4eb4b1f005a36bd59a0b159d6b8a32}{get\+Num\+Seen\+Objects} ()
+\item 
+double \hyperlink{class_memory_aaf033cd124262162565795054e4051c9}{get\+Smallest\+Distance} ()
+\item 
+void \hyperlink{class_memory_a9baac2bce6c671109e3ca334c82208dd}{set\+Feature\+Redundancy\+Treshold} (double a\+Feature\+Redundancy\+Treshold)
+\item 
+double \hyperlink{class_memory_a6fe889030e89f7d9e473b1fc276a2def}{get\+Feature\+Redundancy\+Treshold} ()
+\item 
+void \hyperlink{class_memory_a87e6f6575dde85b6e823370fe8b94d16}{set\+Max\+Num\+Features\+In\+Memory} (float Max\+Num\+Features\+In\+Memory)
+\item 
+float \hyperlink{class_memory_ab744bd3c27190554606e4ed4ed8ce44d}{get\+Max\+Num\+Features\+In\+Memory} ()
+\item 
+int \hyperlink{class_memory_a9b0d2e1ab33d34fef984581921acdf7e}{get\+Num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor} ()
+\item 
+void \hyperlink{class_memory_a797dccf9387e072227b00208545581b9}{apply\+Memory\+Decay} ()
+\item 
+void \hyperlink{class_memory_a743603d575e4f65c0ca1292957fd9cf2}{set\+Forget\+Features} (bool \hyperlink{class_memory_ac3c18308c5e73bd2a54fcf5cb346c638}{forget\+Features})
+\item 
+bool \hyperlink{class_memory_a590b5d16853c7af4c97fbffab86b9c4b}{get\+Forget\+Features} ()
+\item 
+void \hyperlink{class_memory_a84fcb51d7b244744161b27fe731eb1dc}{set\+Kmeans} (\hyperlink{class_k_means}{K\+Means} $\ast$a\+Kmeans)
+\item 
+void \hyperlink{class_memory_a6f874ffdeee770c5349c712f0b7d0952}{set\+Debug\+Mode} (bool state)
+\item 
+double \hyperlink{class_memory_a0317f4f9b25f51ed57b53971439b93de}{get\+Max\+Search\+Radius} ()
+\item 
+double \hyperlink{class_memory_a22d038e7c6a1a9c273af2f14764cdca5}{get\+Min\+Search\+Radius} ()
+\item 
+double \hyperlink{class_memory_a094aabdbe0f06bb5a5db61645cead64b}{get\+Max\+Wg} ()
+\item 
+double \hyperlink{class_memory_aba901fec044454033b0534d2a602eeb4}{get\+Min\+Wg} ()
+\item 
+double \hyperlink{class_memory_ada2689cdc85e2429579c0e8a75b63b8b}{get\+Max\+Wl} ()
+\item 
+double \hyperlink{class_memory_a8af1be617551d77f7356e2d10f796af1}{get\+Min\+Wl} ()
+\item 
+double \hyperlink{class_memory_af8bb8336585ad267f1ea7ca8c35b7421}{get\+Min\+Distance} ()
+\item 
+double \hyperlink{class_memory_a7cc17e0a04c535832ae23420901b3978}{get\+Max\+Distance} ()
+\item 
+void \hyperlink{class_memory_a7bd13e3f01051c375764f92c5ad25db6}{check\+Redundancy} (vector$<$ int $>$ \&feats\+Idx)
+\item 
+void \hyperlink{class_memory_afa0151bc0daa95b0c96aa2f5e750c7c4}{set\+G\+W\+Redist\+Search\+Radius} (double G\+Weights\+\_\+\+R\+\_\+search\+\_\+radius)
+\item 
+double \hyperlink{class_memory_a46da690515148bd8adaf9fbc7f42e0dc}{get\+G\+W\+Redist\+Search\+Radius} ()
+\item 
+int \hyperlink{class_memory_aacaf803387738204131008c1a0658fa2}{get\+N\+Clusters} ()
+\item 
+unordered\+\_\+map$<$ int, \hyperlink{class_cluster}{Cluster} $>$ \& \hyperlink{class_memory_ae40891f66673f8aab1f33efed7fc9750}{get\+Clusters} ()
+\item 
+unordered\+\_\+map$<$ int, \hyperlink{class_category}{Category} $>$ \& \hyperlink{class_memory_a51f0f9c3a202dd21c9dbae0dbeadaf68}{get\+Categories} ()
+\item 
+int \hyperlink{class_memory_a02757aec9ff7f8285a28213e9777d56a}{generate\+Cluster\+Id} ()
+\item 
+int \hyperlink{class_memory_ab31cf2fb776b10af99265c55ef1703d2}{generate\+Category\+Id} ()
+\item 
+int \hyperlink{class_memory_aa39a1f59ecca722d41b77e34f7c5763c}{generate\+Feature\+Id} ()
+\item 
+int \hyperlink{class_memory_a91ac81338123d3b57a7f5ee62db8ec8d}{size} () const
+\item 
+unordered\+\_\+map$<$ int, \hyperlink{class_feature_metadata}{Feature\+Metadata} $>$ \& \hyperlink{class_memory_a0b1d14bfe43af3d3a0353dea8c6eca35}{get\+Features} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_memory_aa98d92e8d824eeb2e5699d6e1e2ff44b}{forget\+Redundant\+Features} (const vector$<$ int $>$ features\+Ids)
+\item 
+void \hyperlink{class_memory_ae4c5bcd99c34f0bcc62e0fcc8bac57fc}{rem\+Feature\+From\+Memory} (int feature\+Id, \hyperlink{class_feature_metadata}{Feature\+Metadata} \&feature\+Metadata)
+\item 
+void \hyperlink{class_memory_a1f36348fab81a50b9bbe16986b7a0337}{redistribute\+Local\+Weights} (unordered\+\_\+set$<$ int $>$ \&to\+Forget, int category\+Id)
+\item 
+void \hyperlink{class_memory_a53d9e1a15f774f05c68eeb1ab1042cb8}{redistribute\+Local\+Weights} (int feature\+Id, \hyperlink{class_feature_metadata}{Feature\+Metadata} \&feature\+Metadata)
+\item 
+void \hyperlink{class_memory_a0dbad1e7f9ae70aaf65dd733f3e6c9b9}{remove\+Point\+From\+Cluster2} (int cluster\+Id, int feat\+Idx)
+\item 
+double \hyperlink{class_memory_af45cd527f0c6fad40154e19b42d8fce3}{get\+Search\+Radius} (int feature\+Id, \hyperlink{class_feature_metadata}{Feature\+Metadata} \&feature\+Metadata, int k)
+\item 
+void \hyperlink{class_memory_ac99702a46e98175ec1b05dfd6001eaab}{remove\+Point\+From\+Category2} (int category\+Id, int feat\+Idx)
+\item 
+void \hyperlink{class_memory_a8b6338bb727061f8c55e0e5df04204d4}{redistribute\+Global\+Weights} (int feature\+Id, \hyperlink{class_feature_metadata}{Feature\+Metadata} \&feature\+Metadata, double search\+Radius)
+\item 
+void \hyperlink{class_memory_a3b697274988fa315d03015d854e3f813}{redistribute\+Global\+Weights} (unordered\+\_\+set$<$ int $>$ \&to\+Forget, Kd\+Tree\+F\+L\+A\+NN$<$ Histogram$<$ 153 $>$ $>$ \&kdtree, vector$<$ int $>$ \&mapping, double search\+Radius)
+\item 
+float \hyperlink{class_memory_ac31686018cb26f05d51714e057af954b}{apply\+Memory\+Decay\+Factor} (float weight)
+\item 
+void \hyperlink{class_memory_add3f52953d79c8ace1de5d7c667a33d1}{forget\+Feature} (int feature\+Id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_memory_a26d5cb9d95759ae04db5e3c89dbae345}{max\+Search\+Radius}
+\item 
+double \hyperlink{class_memory_a80399a94aa2cb5d06d4e7b4b578b73b8}{min\+Search\+Radius}
+\item 
+double \hyperlink{class_memory_a657eb626fc7fa089dea3274b87658d81}{max\+Wg}
+\item 
+double \hyperlink{class_memory_a1bf6db077ded1e0f826a09b89b543695}{min\+Wg}
+\item 
+double \hyperlink{class_memory_af3eb8d644c9b8bef76a262234ae6c070}{max\+Wl}
+\item 
+double \hyperlink{class_memory_a9172ef7604d582af5b7d38ecd5245e47}{min\+Wl}
+\item 
+double \hyperlink{class_memory_ac3ffdf66cf9b1144dad6aa9f39040db6}{min\+Distance}
+\item 
+double \hyperlink{class_memory_aed07b3dddef97de3f7eaca420ff00df3}{max\+Distance}
+\item 
+double \hyperlink{class_memory_a65e77a8517b78627da8bc33dd5f7925b}{fixed\+Search\+Radius}
+\item 
+bool \hyperlink{class_memory_a8607f19b7d9871eeb12ca94d7938c710}{D\+E\+B\+UG}
+\item 
+\hyperlink{class_k_means}{K\+Means} $\ast$ \hyperlink{class_memory_a4d1844ac4c1ff005f5a87373783a96f1}{kmeans}
+\item 
+double \hyperlink{class_memory_a4b73ac8b78b6a1003e946f61697fe65d}{smallest\+Distance}
+\item 
+\hyperlink{class_searcher}{Searcher} \hyperlink{class_memory_a28d1cf97ef560d4f096a506ef53a1410}{searcher}
+\item 
+double \hyperlink{class_memory_a5b4e6c308dedb36e66bef5b85f5a1d1a}{feature\+Redundancy\+Treshold}
+\item 
+float \hyperlink{class_memory_ad82103f1fc27ceab9c6e20c8c96ddfb2}{memory\+Decay\+Factor}
+\item 
+float \hyperlink{class_memory_a5cbea14d34dceeca8d8f3fd82674a7f0}{memory\+Decay\+Treshold}
+\item 
+int \hyperlink{class_memory_aa351103686a0f8230ca638fbf0b2dc5b}{n\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}
+\item 
+bool \hyperlink{class_memory_ac3c18308c5e73bd2a54fcf5cb346c638}{forget\+Features}
+\item 
+long long \hyperlink{class_memory_a35ac41aee3f23446e2f34e492818007e}{num\+Features\+In\+Memory}
+\item 
+long long \hyperlink{class_memory_ae10824d7cf347234fd910fa3a4e6a9c7}{num\+Seen\+Features}
+\item 
+long long \hyperlink{class_memory_a3b7f28c5be1d201bb41cdbc90646fb4b}{num\+Seen\+Objects}
+\item 
+long long \hyperlink{class_memory_ae3c078fe2fb8bc942d13ede6a2eb951b}{num\+Redundant\+Features}
+\item 
+long long \hyperlink{class_memory_a01e573fd360050d1d87e4702eeec77ff}{num\+Forgotten\+Features}
+\item 
+long long \hyperlink{class_memory_a39621632b0a7c038b589cdb1c7402c02}{max\+Num\+Features\+In\+Memory}
+\item 
+unordered\+\_\+map$<$ int, \hyperlink{class_feature_metadata}{Feature\+Metadata} $>$ \hyperlink{class_memory_a70a3ffe94ecd25fa10c683b3fac6328b}{features\+Metadata}
+\item 
+unordered\+\_\+map$<$ int, \hyperlink{class_cluster}{Cluster} $>$ \hyperlink{class_memory_a9836b99d2ec4b06e98a90aa31d16439a}{clusters}
+\item 
+vector$<$ int $>$ \hyperlink{class_memory_a9bb05f7f61a8eb13c91fa9f99d1962a6}{new\+Seen\+Features\+Ids}
+\item 
+\hyperlink{class_seq_generator}{Seq\+Generator} \hyperlink{class_memory_aedc30fc567e03bfa3fa43fb47ba506f8}{cluster\+Id\+Gen}
+\item 
+unordered\+\_\+map$<$ int, \hyperlink{class_category}{Category} $>$ \hyperlink{class_memory_ab7733936ac814bc1f834a79fd868c8d9}{categories}
+\item 
+unordered\+\_\+map$<$ std\+::string, int $>$ \hyperlink{class_memory_aa40e026a0318c101754d065725a7b72d}{categories\+Id\+Map}
+\item 
+\hyperlink{class_seq_generator}{Seq\+Generator} \hyperlink{class_memory_a9e1a47adebdbbbade810a92215903ce1}{category\+Id\+Gen}
+\item 
+\hyperlink{class_seq_generator}{Seq\+Generator} \hyperlink{class_memory_a3c07af17879875325b9073fc77f56e3f}{feature\+Id\+Gen}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main structure of the application. Holds the applications\textquotesingle{} memory. 
+
+Definition at line 30 of file Memory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_memory_a585d7bb6fc6f2237bcebf94a86b7dd99}\label{class_memory_a585d7bb6fc6f2237bcebf94a86b7dd99}} 
+\index{Memory@{Memory}!Memory@{Memory}}
+\index{Memory@{Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{Memory()}{Memory()}}
+{\footnotesize\ttfamily Memory\+::\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a0ffa9759ebbf103f11132a505b93bdc0}\label{class_memory_a0ffa9759ebbf103f11132a505b93bdc0}} 
+\index{Memory@{Memory}!````~Memory@{$\sim$\+Memory}}
+\index{````~Memory@{$\sim$\+Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{$\sim$\+Memory()}{~Memory()}}
+{\footnotesize\ttfamily Memory\+::$\sim$\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file Memory.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_memory_a082886bbe8c386bb7ce25a25f1b7ea8a}\label{class_memory_a082886bbe8c386bb7ce25a25f1b7ea8a}} 
+\index{Memory@{Memory}!add\+Category@{add\+Category}}
+\index{add\+Category@{add\+Category}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{add\+Category()}{addCategory()}}
+{\footnotesize\ttfamily int Memory\+::add\+Category (\begin{DoxyParamCaption}\item[{std\+::string}]{category\+Name }\end{DoxyParamCaption})}
+
+Create a new category
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & the name of the category\\
+\hline
+\end{DoxyParams}
+Returns the identifier of the created category 
+
+Definition at line 814 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_ab71403837c0335a0e96a1e4814d4beb6}\label{class_memory_ab71403837c0335a0e96a1e4814d4beb6}} 
+\index{Memory@{Memory}!add\+Cluster@{add\+Cluster}}
+\index{add\+Cluster@{add\+Cluster}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{add\+Cluster()}{addCluster()}}
+{\footnotesize\ttfamily int Memory\+::add\+Cluster (\begin{DoxyParamCaption}\item[{pcl\+::\+Histogram$<$ 153 $>$ \&}]{centroid }\end{DoxyParamCaption})}
+
+Create a new cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em centroid} & the centroid of the cluster\\
+\hline
+\end{DoxyParams}
+Returns the identifier of the created cluster 
+
+Definition at line 560 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a02592896aaa8a91632b5c959b0a5df4c}\label{class_memory_a02592896aaa8a91632b5c959b0a5df4c}} 
+\index{Memory@{Memory}!add\+Feature@{add\+Feature}}
+\index{add\+Feature@{add\+Feature}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{add\+Feature()}{addFeature()}}
+{\footnotesize\ttfamily char Memory\+::add\+Feature (\begin{DoxyParamCaption}\item[{pcl\+::\+Histogram$<$ 153 $>$ \&}]{feat,  }\item[{int \&}]{feature\+Id }\end{DoxyParamCaption})}
+
+Adds a feature (point) to memory-\/ It also adds the corresponding metadata to the feature metadata structure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feat} & the feature to be added to the memory\\
+\hline
+\end{DoxyParams}
+Returns the identifier of the created feature. 
+
+Definition at line 120 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a25af58af1f3c43808ec5c76f68ca6b31}\label{class_memory_a25af58af1f3c43808ec5c76f68ca6b31}} 
+\index{Memory@{Memory}!add\+F\+N\+To\+Category@{add\+F\+N\+To\+Category}}
+\index{add\+F\+N\+To\+Category@{add\+F\+N\+To\+Category}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{add\+F\+N\+To\+Category()}{addFNToCategory()}}
+{\footnotesize\ttfamily void Memory\+::add\+F\+N\+To\+Category (\begin{DoxyParamCaption}\item[{int \&}]{category\+Id }\end{DoxyParamCaption})}
+
+Increments the False Negatives count for the specified category
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em category\+Id} & the category identifier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 914 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_acf7decf375ad87f9997b1a295d1bf02b}\label{class_memory_acf7decf375ad87f9997b1a295d1bf02b}} 
+\index{Memory@{Memory}!add\+F\+P\+To\+Category@{add\+F\+P\+To\+Category}}
+\index{add\+F\+P\+To\+Category@{add\+F\+P\+To\+Category}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{add\+F\+P\+To\+Category()}{addFPToCategory()}}
+{\footnotesize\ttfamily void Memory\+::add\+F\+P\+To\+Category (\begin{DoxyParamCaption}\item[{int \&}]{category\+Id }\end{DoxyParamCaption})}
+
+Increments the False Positives count for the specified category
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em category\+Id} & the category identifier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 910 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a18516769c393cb146b32b42a4973176b}\label{class_memory_a18516769c393cb146b32b42a4973176b}} 
+\index{Memory@{Memory}!add\+Point\+To\+Category@{add\+Point\+To\+Category}}
+\index{add\+Point\+To\+Category@{add\+Point\+To\+Category}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{add\+Point\+To\+Category()}{addPointToCategory()}}
+{\footnotesize\ttfamily void Memory\+::add\+Point\+To\+Category (\begin{DoxyParamCaption}\item[{int}]{cat\+Id,  }\item[{int}]{feat\+Idx }\end{DoxyParamCaption})}
+
+Add a feature to the category
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cat\+Id} & the identifier of the category \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the index of the feature (in main memory) to add to the category \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 834 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a56ad78b70a31d0688dc160b029b8cf0e}\label{class_memory_a56ad78b70a31d0688dc160b029b8cf0e}} 
+\index{Memory@{Memory}!add\+Point\+To\+Cluster@{add\+Point\+To\+Cluster}}
+\index{add\+Point\+To\+Cluster@{add\+Point\+To\+Cluster}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{add\+Point\+To\+Cluster()}{addPointToCluster()}}
+{\footnotesize\ttfamily void Memory\+::add\+Point\+To\+Cluster (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id,  }\item[{int \&}]{feat\+Idx }\end{DoxyParamCaption})}
+
+Add a feature to the cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the identifier of the cluster \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the index of the feature (in main memory) to add to the cluster \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 572 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_af222808fa4add918c102916128ccef05}\label{class_memory_af222808fa4add918c102916128ccef05}} 
+\index{Memory@{Memory}!add\+T\+P\+To\+Category@{add\+T\+P\+To\+Category}}
+\index{add\+T\+P\+To\+Category@{add\+T\+P\+To\+Category}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{add\+T\+P\+To\+Category()}{addTPToCategory()}}
+{\footnotesize\ttfamily void Memory\+::add\+T\+P\+To\+Category (\begin{DoxyParamCaption}\item[{int \&}]{category\+Id }\end{DoxyParamCaption})}
+
+Increments the True Positives count for the specified category
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em category\+Id} & the category identifier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 906 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a797dccf9387e072227b00208545581b9}\label{class_memory_a797dccf9387e072227b00208545581b9}} 
+\index{Memory@{Memory}!apply\+Memory\+Decay@{apply\+Memory\+Decay}}
+\index{apply\+Memory\+Decay@{apply\+Memory\+Decay}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{apply\+Memory\+Decay()}{applyMemoryDecay()}}
+{\footnotesize\ttfamily void Memory\+::apply\+Memory\+Decay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the memory decay factor to all features in memory. Call this function before adding new features or all features will be affected by the decay factor including the new added ones. Maybe it makes no sense to apply the memory decay factor to fresh new seen features! The memory decay factor is applied to the local and global weights\+: the category and clusters weights of a feature, respectively.
+
+If after applying the decay memory factor the global weight of a feature drops bellow a given treshold, that feature will be forgotten.
+
+Open issues\+:
+\begin{DoxyItemize}
+\item The best value for the \hyperlink{class_memory}{Memory} Decay Threshold has to be determined more precisely and accurately!
+\end{DoxyItemize}
+
+This should be the main method used to forget features and to control the number of features in memory.
+\begin{DoxyItemize}
+\item This does not, of course, include redundancy! 
+\end{DoxyItemize}
+
+Definition at line 945 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_ac31686018cb26f05d51714e057af954b}\label{class_memory_ac31686018cb26f05d51714e057af954b}} 
+\index{Memory@{Memory}!apply\+Memory\+Decay\+Factor@{apply\+Memory\+Decay\+Factor}}
+\index{apply\+Memory\+Decay\+Factor@{apply\+Memory\+Decay\+Factor}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{apply\+Memory\+Decay\+Factor()}{applyMemoryDecayFactor()}}
+{\footnotesize\ttfamily float Memory\+::apply\+Memory\+Decay\+Factor (\begin{DoxyParamCaption}\item[{float}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Applies the memory decay factor to a given weight. The formula follows\+: given weight $\ast$= memory\+Decay\+Factor 
+
+Definition at line 676 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a90b1dfcf945ed2b899e8c67febb23300}\label{class_memory_a90b1dfcf945ed2b899e8c67febb23300}} 
+\index{Memory@{Memory}!assign\+View\+To\+Category@{assign\+View\+To\+Category}}
+\index{assign\+View\+To\+Category@{assign\+View\+To\+Category}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{assign\+View\+To\+Category()}{assignViewToCategory()}}
+{\footnotesize\ttfamily void Memory\+::assign\+View\+To\+Category (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{feats\+Idx,  }\item[{int}]{category\+Id }\end{DoxyParamCaption})}
+
+Assings the specified features ids to the specified category. . $\ast$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feats\+Idx} & features ids to assign \\
+\hline
+\mbox{\tt in}  & {\em category\+Id} & the identifier of the category to assign the features to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 852 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a74fc1ce26e175d8c992e201a3017064b}\label{class_memory_a74fc1ce26e175d8c992e201a3017064b}} 
+\index{Memory@{Memory}!bss@{bss}}
+\index{bss@{bss}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{bss()}{bss()}}
+{\footnotesize\ttfamily float Memory\+::bss (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ int, \hyperlink{class_bss_bag}{Bss\+Bag} $>$ \&}]{clusters\+Bss }\end{DoxyParamCaption})}
+
+Compute B\+SS (Between cluster Sum of Squares) measure
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em clusters\+Bss} & vector holding the \textquotesingle{}partial bss\textquotesingle{} computed for every cluster\\
+\hline
+\end{DoxyParams}
+Returns the total bss 
+
+Definition at line 650 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_aa4dae2fc7a803982c1926e2808389f73}\label{class_memory_aa4dae2fc7a803982c1926e2808389f73}} 
+\index{Memory@{Memory}!bss\+Betwen\+Clusters@{bss\+Betwen\+Clusters}}
+\index{bss\+Betwen\+Clusters@{bss\+Betwen\+Clusters}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{bss\+Betwen\+Clusters()}{bssBetwenClusters()}}
+{\footnotesize\ttfamily float Memory\+::bss\+Betwen\+Clusters (\begin{DoxyParamCaption}\item[{int \&}]{l\+Cluster,  }\item[{int \&}]{r\+Cluster }\end{DoxyParamCaption})}
+
+Compute the distance between two clusters
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em l\+Cluster} & the identifier of the first cluster \\
+\hline
+\mbox{\tt in}  & {\em r\+Cluster} & the identifier of the second cluster \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 633 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a7bd13e3f01051c375764f92c5ad25db6}\label{class_memory_a7bd13e3f01051c375764f92c5ad25db6}} 
+\index{Memory@{Memory}!check\+Redundancy@{check\+Redundancy}}
+\index{check\+Redundancy@{check\+Redundancy}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{check\+Redundancy()}{checkRedundancy()}}
+{\footnotesize\ttfamily void Memory\+::check\+Redundancy (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{feats\+Idx }\end{DoxyParamCaption})}
+
+Checks redundancy for every feature id specified in the feats\+Idx vector. These features are assumed to be new seen features. This function is currently using snapshots to check redundancy and to redistribute weights.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feats\+Idx} & the id of the features to check for redundancy. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 137 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a97043ab11f12fdd595e18ffc1fcd2291}\label{class_memory_a97043ab11f12fdd595e18ffc1fcd2291}} 
+\index{Memory@{Memory}!delete\+Cluster@{delete\+Cluster}}
+\index{delete\+Cluster@{delete\+Cluster}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{delete\+Cluster()}{deleteCluster()}}
+{\footnotesize\ttfamily void Memory\+::delete\+Cluster (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id }\end{DoxyParamCaption})}
+
+Delete a cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the identifier of the cluster to delete \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 568 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_add3f52953d79c8ace1de5d7c667a33d1}\label{class_memory_add3f52953d79c8ace1de5d7c667a33d1}} 
+\index{Memory@{Memory}!forget\+Feature@{forget\+Feature}}
+\index{forget\+Feature@{forget\+Feature}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{forget\+Feature()}{forgetFeature()}}
+{\footnotesize\ttfamily void Memory\+::forget\+Feature (\begin{DoxyParamCaption}\item[{int}]{feature\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Forgets a given feature i.\+e., 1 -\/ redistribute global weights 2 -\/ redistribute local weights 3 -\/ update the cluster centroid to wich the feature is assign 4 -\/ remove the feature from memory 5 -\/ reorganize the clusters if needed 
+
+Definition at line 1379 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_aa98d92e8d824eeb2e5699d6e1e2ff44b}\label{class_memory_aa98d92e8d824eeb2e5699d6e1e2ff44b}} 
+\index{Memory@{Memory}!forget\+Redundant\+Features@{forget\+Redundant\+Features}}
+\index{forget\+Redundant\+Features@{forget\+Redundant\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{forget\+Redundant\+Features()}{forgetRedundantFeatures()}}
+{\footnotesize\ttfamily void Memory\+::forget\+Redundant\+Features (\begin{DoxyParamCaption}\item[{const vector$<$ int $>$}]{features\+Ids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if a feature is redundant. Don\textquotesingle{}t use this function. I think, I\textquotesingle{}m almost sure, it is not checking redundancy by itself and mutual redundancy properly. 
+
+Definition at line 1598 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_ab31cf2fb776b10af99265c55ef1703d2}\label{class_memory_ab31cf2fb776b10af99265c55ef1703d2}} 
+\index{Memory@{Memory}!generate\+Category\+Id@{generate\+Category\+Id}}
+\index{generate\+Category\+Id@{generate\+Category\+Id}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{generate\+Category\+Id()}{generateCategoryId()}}
+{\footnotesize\ttfamily int Memory\+::generate\+Category\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a unique integer identifier for the category (map key). 
+
+Definition at line 796 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a02757aec9ff7f8285a28213e9777d56a}\label{class_memory_a02757aec9ff7f8285a28213e9777d56a}} 
+\index{Memory@{Memory}!generate\+Cluster\+Id@{generate\+Cluster\+Id}}
+\index{generate\+Cluster\+Id@{generate\+Cluster\+Id}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{generate\+Cluster\+Id()}{generateClusterId()}}
+{\footnotesize\ttfamily int Memory\+::generate\+Cluster\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a unique integer identifier for the cluster (map key). 
+
+Definition at line 789 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aa39a1f59ecca722d41b77e34f7c5763c}\label{class_memory_aa39a1f59ecca722d41b77e34f7c5763c}} 
+\index{Memory@{Memory}!generate\+Feature\+Id@{generate\+Feature\+Id}}
+\index{generate\+Feature\+Id@{generate\+Feature\+Id}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{generate\+Feature\+Id()}{generateFeatureId()}}
+{\footnotesize\ttfamily int Memory\+::generate\+Feature\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a unique integer identifier for the feature (map key). 
+
+Definition at line 803 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aa80e09318da917906522a6cdf27b052b}\label{class_memory_aa80e09318da917906522a6cdf27b052b}} 
+\index{Memory@{Memory}!get\+Bigger\+Cluster@{get\+Bigger\+Cluster}}
+\index{get\+Bigger\+Cluster@{get\+Bigger\+Cluster}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Bigger\+Cluster()}{getBiggerCluster()}}
+{\footnotesize\ttfamily int \& Memory\+::get\+Bigger\+Cluster (\begin{DoxyParamCaption}\item[{int \&}]{l\+Cluster\+Id,  }\item[{int \&}]{r\+Cluster\+Id }\end{DoxyParamCaption})}
+
+Returns the cluster identifier for the biggest cluster of the 2 clusters specified
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em l\+Cluster\+Id} & the identifier of the first cluster to be compared in terms of size \\
+\hline
+\mbox{\tt in}  & {\em r\+Cluster\+Id} & the identifier of the second cluster to be compared in terms of size \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 620 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a51f0f9c3a202dd21c9dbae0dbeadaf68}\label{class_memory_a51f0f9c3a202dd21c9dbae0dbeadaf68}} 
+\index{Memory@{Memory}!get\+Categories@{get\+Categories}}
+\index{get\+Categories@{get\+Categories}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Categories()}{getCategories()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$int, \hyperlink{class_category}{Category}$>$\& Memory\+::get\+Categories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 782 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a239bd8dc977f6dff458b3973e1dd4bb2}\label{class_memory_a239bd8dc977f6dff458b3973e1dd4bb2}} 
+\index{Memory@{Memory}!get\+Category\+Id@{get\+Category\+Id}}
+\index{get\+Category\+Id@{get\+Category\+Id}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Category\+Id()}{getCategoryId()}}
+{\footnotesize\ttfamily int Memory\+::get\+Category\+Id (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{category\+Name }\end{DoxyParamCaption})}
+
+Return category identifier for specified categoy name
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cat} & the category name to return the identifier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 802 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a80ad5f670ba87f74c170e5623f8eefc6}\label{class_memory_a80ad5f670ba87f74c170e5623f8eefc6}} 
+\index{Memory@{Memory}!get\+Category\+Name@{get\+Category\+Name}}
+\index{get\+Category\+Name@{get\+Category\+Name}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Category\+Name()}{getCategoryName()}}
+{\footnotesize\ttfamily const std\+::string \& Memory\+::get\+Category\+Name (\begin{DoxyParamCaption}\item[{int}]{category\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 777 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a6ba49963ea1576312687d17d8976285c}\label{class_memory_a6ba49963ea1576312687d17d8976285c}} 
+\index{Memory@{Memory}!get\+Centroids@{get\+Centroids}}
+\index{get\+Centroids@{get\+Centroids}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Centroids()}{getCentroids()}}
+{\footnotesize\ttfamily void Memory\+::get\+Centroids (\begin{DoxyParamCaption}\item[{pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&}]{centroids,  }\item[{std\+::vector$<$ int $>$ \&}]{mapper,  }\item[{unordered\+\_\+map$<$ int, int $>$ \&}]{rev\+Mapper }\end{DoxyParamCaption})}
+
+Retrieve the cluster centroids stored in memory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em centroids} & the centroids of the clusters \\
+\hline
+\mbox{\tt out}  & {\em mapper} & a structure that maps from the centroids vector indexes to the cluster identifiers \\
+\hline
+\mbox{\tt out}  & {\em rev\+Mapper} & a structure that maps from the cluster identifiers to the centroids vector indexes \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 518 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a56f9018e4eb1b2be429cc49b062263db}\label{class_memory_a56f9018e4eb1b2be429cc49b062263db}} 
+\index{Memory@{Memory}!get\+Cluster\+Centroid@{get\+Cluster\+Centroid}}
+\index{get\+Cluster\+Centroid@{get\+Cluster\+Centroid}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Cluster\+Centroid()}{getClusterCentroid()}}
+{\footnotesize\ttfamily Histogram$<$ 153 $>$ \& Memory\+::get\+Cluster\+Centroid (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id }\end{DoxyParamCaption})}
+
+Get the centroid of a specific cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the cluster identifier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 556 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a3666067f038b6765440a66cd5a3989f0}\label{class_memory_a3666067f038b6765440a66cd5a3989f0}} 
+\index{Memory@{Memory}!get\+Cluster\+Points@{get\+Cluster\+Points}}
+\index{get\+Cluster\+Points@{get\+Cluster\+Points}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Cluster\+Points()}{getClusterPoints()}}
+{\footnotesize\ttfamily void Memory\+::get\+Cluster\+Points (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id,  }\item[{std\+::vector$<$ int $>$ \&}]{points\+Idx }\end{DoxyParamCaption})}
+
+Return the list of features assigned to the specified cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the identifier of the cluster to get the list of assigned features \\
+\hline
+\mbox{\tt out}  & {\em points\+Idx} & the list of features \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 625 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a34e8ddd680ea3a878d7564bedc8bb220}\label{class_memory_a34e8ddd680ea3a878d7564bedc8bb220}} 
+\index{Memory@{Memory}!get\+Cluster\+Points\+As\+Cloud@{get\+Cluster\+Points\+As\+Cloud}}
+\index{get\+Cluster\+Points\+As\+Cloud@{get\+Cluster\+Points\+As\+Cloud}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Cluster\+Points\+As\+Cloud()}{getClusterPointsAsCloud()}}
+{\footnotesize\ttfamily void Memory\+::get\+Cluster\+Points\+As\+Cloud (\begin{DoxyParamCaption}\item[{Point\+Cloud$<$ Histogram$<$ 153 $>$ $>$\+::Ptr \&}]{points,  }\item[{vector$<$ int $>$ \&}]{points\+Mapper,  }\item[{int \&}]{cluster\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 537 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a54eea5f00668704da0dac9fb91f4773e}\label{class_memory_a54eea5f00668704da0dac9fb91f4773e}} 
+\index{Memory@{Memory}!get\+Cluster\+Random\+Point@{get\+Cluster\+Random\+Point}}
+\index{get\+Cluster\+Random\+Point@{get\+Cluster\+Random\+Point}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Cluster\+Random\+Point()}{getClusterRandomPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const int Memory\+::get\+Cluster\+Random\+Point (\begin{DoxyParamCaption}\item[{const int \&}]{cluster }\end{DoxyParamCaption})}
+
+Get a random point from the specified cluster identifier
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster} & the cluster identifier\\
+\hline
+\end{DoxyParams}
+Returns the index to the feature 
+
+Definition at line 1656 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a3a327af9dcb4c8f6213833b880564620}\label{class_memory_a3a327af9dcb4c8f6213833b880564620}} 
+\index{Memory@{Memory}!get\+Cluster\+Random\+Point@{get\+Cluster\+Random\+Point}}
+\index{get\+Cluster\+Random\+Point@{get\+Cluster\+Random\+Point}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Cluster\+Random\+Point()}{getClusterRandomPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const int Memory\+::get\+Cluster\+Random\+Point (\begin{DoxyParamCaption}\item[{const int \&}]{cluster,  }\item[{int \&}]{point\+Idx }\end{DoxyParamCaption})}
+
+Get a random point from the specified cluster identifier. The same as get\+Cluster\+Random\+Point(int) except that the value specified by the parameter point\+Idx should not be repeated
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster} & the cluster identifier \\
+\hline
+\mbox{\tt in}  & {\em point\+Idx} & the cluster identifier\\
+\hline
+\end{DoxyParams}
+Returns the index to the feature 
+
+Definition at line 1662 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_ae40891f66673f8aab1f33efed7fc9750}\label{class_memory_ae40891f66673f8aab1f33efed7fc9750}} 
+\index{Memory@{Memory}!get\+Clusters@{get\+Clusters}}
+\index{get\+Clusters@{get\+Clusters}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Clusters()}{getClusters()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$int, \hyperlink{class_cluster}{Cluster}$>$\& Memory\+::get\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 778 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_af9c8b5c59df8b4d7ba77d08b90828d96}\label{class_memory_af9c8b5c59df8b4d7ba77d08b90828d96}} 
+\index{Memory@{Memory}!get\+Cluster\+Size@{get\+Cluster\+Size}}
+\index{get\+Cluster\+Size@{get\+Cluster\+Size}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Cluster\+Size()}{getClusterSize()}}
+{\footnotesize\ttfamily int Memory\+::get\+Cluster\+Size (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id }\end{DoxyParamCaption})}
+
+Gets the size of a specific cluster.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the cluster identifier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 629 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_abdfd86649f7e608ae6ea6af54e192fe6}\label{class_memory_abdfd86649f7e608ae6ea6af54e192fe6}} 
+\index{Memory@{Memory}!get\+Feature@{get\+Feature}}
+\index{get\+Feature@{get\+Feature}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Feature()}{getFeature()}}
+{\footnotesize\ttfamily Histogram$<$ 153 $>$ \& Memory\+::get\+Feature (\begin{DoxyParamCaption}\item[{const int \&}]{key }\end{DoxyParamCaption})}
+
+Returns the feature stored at the specified map key
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & the key \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 484 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a31661ea1c1d5a5fd22c0168541e82e3a}\label{class_memory_a31661ea1c1d5a5fd22c0168541e82e3a}} 
+\index{Memory@{Memory}!get\+Feature\+Metadata@{get\+Feature\+Metadata}}
+\index{get\+Feature\+Metadata@{get\+Feature\+Metadata}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Feature\+Metadata()}{getFeatureMetadata()}}
+{\footnotesize\ttfamily \hyperlink{class_feature_metadata}{Feature\+Metadata} \& Memory\+::get\+Feature\+Metadata (\begin{DoxyParamCaption}\item[{const int \&}]{key }\end{DoxyParamCaption})}
+
+Returns the feature metadata structure stored at the specified map key
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & the key \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 506 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_ac57d713e84dce226545c1bd13007084b}\label{class_memory_ac57d713e84dce226545c1bd13007084b}} 
+\index{Memory@{Memory}!get\+Feature\+Metadata2@{get\+Feature\+Metadata2}}
+\index{get\+Feature\+Metadata2@{get\+Feature\+Metadata2}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Feature\+Metadata2()}{getFeatureMetadata2()}}
+{\footnotesize\ttfamily const \hyperlink{class_feature_metadata}{Feature\+Metadata} $\ast$ Memory\+::get\+Feature\+Metadata2 (\begin{DoxyParamCaption}\item[{const int \&}]{key }\end{DoxyParamCaption})}
+
+The same as in get\+Feature\+Metadata but we can have a N\+U\+LL return. 
+
+Definition at line 496 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a6fe889030e89f7d9e473b1fc276a2def}\label{class_memory_a6fe889030e89f7d9e473b1fc276a2def}} 
+\index{Memory@{Memory}!get\+Feature\+Redundancy\+Treshold@{get\+Feature\+Redundancy\+Treshold}}
+\index{get\+Feature\+Redundancy\+Treshold@{get\+Feature\+Redundancy\+Treshold}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Feature\+Redundancy\+Treshold()}{getFeatureRedundancyTreshold()}}
+{\footnotesize\ttfamily double Memory\+::get\+Feature\+Redundancy\+Treshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 400 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a0b1d14bfe43af3d3a0353dea8c6eca35}\label{class_memory_a0b1d14bfe43af3d3a0353dea8c6eca35}} 
+\index{Memory@{Memory}!get\+Features@{get\+Features}}
+\index{get\+Features@{get\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Features()}{getFeatures()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$int, \hyperlink{class_feature_metadata}{Feature\+Metadata}$>$\& Memory\+::get\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 811 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a590b5d16853c7af4c97fbffab86b9c4b}\label{class_memory_a590b5d16853c7af4c97fbffab86b9c4b}} 
+\index{Memory@{Memory}!get\+Forget\+Features@{get\+Forget\+Features}}
+\index{get\+Forget\+Features@{get\+Forget\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Forget\+Features()}{getForgetFeatures()}}
+{\footnotesize\ttfamily bool Memory\+::get\+Forget\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets information regarding the forgeting mechanism state (on$\vert$off) of the application. 
+
+Definition at line 453 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a46da690515148bd8adaf9fbc7f42e0dc}\label{class_memory_a46da690515148bd8adaf9fbc7f42e0dc}} 
+\index{Memory@{Memory}!get\+G\+W\+Redist\+Search\+Radius@{get\+G\+W\+Redist\+Search\+Radius}}
+\index{get\+G\+W\+Redist\+Search\+Radius@{get\+G\+W\+Redist\+Search\+Radius}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+G\+W\+Redist\+Search\+Radius()}{getGWRedistSearchRadius()}}
+{\footnotesize\ttfamily double Memory\+::get\+G\+W\+Redist\+Search\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the search radius used to get the features to redistribute global weights. 
+
+Definition at line 513 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a7cc17e0a04c535832ae23420901b3978}\label{class_memory_a7cc17e0a04c535832ae23420901b3978}} 
+\index{Memory@{Memory}!get\+Max\+Distance@{get\+Max\+Distance}}
+\index{get\+Max\+Distance@{get\+Max\+Distance}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Max\+Distance()}{getMaxDistance()}}
+{\footnotesize\ttfamily double Memory\+::get\+Max\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 486 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ab744bd3c27190554606e4ed4ed8ce44d}\label{class_memory_ab744bd3c27190554606e4ed4ed8ce44d}} 
+\index{Memory@{Memory}!get\+Max\+Num\+Features\+In\+Memory@{get\+Max\+Num\+Features\+In\+Memory}}
+\index{get\+Max\+Num\+Features\+In\+Memory@{get\+Max\+Num\+Features\+In\+Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Max\+Num\+Features\+In\+Memory()}{getMaxNumFeaturesInMemory()}}
+{\footnotesize\ttfamily float Memory\+::get\+Max\+Num\+Features\+In\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 408 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a0317f4f9b25f51ed57b53971439b93de}\label{class_memory_a0317f4f9b25f51ed57b53971439b93de}} 
+\index{Memory@{Memory}!get\+Max\+Search\+Radius@{get\+Max\+Search\+Radius}}
+\index{get\+Max\+Search\+Radius@{get\+Max\+Search\+Radius}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Max\+Search\+Radius()}{getMaxSearchRadius()}}
+{\footnotesize\ttfamily double Memory\+::get\+Max\+Search\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 472 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a094aabdbe0f06bb5a5db61645cead64b}\label{class_memory_a094aabdbe0f06bb5a5db61645cead64b}} 
+\index{Memory@{Memory}!get\+Max\+Wg@{get\+Max\+Wg}}
+\index{get\+Max\+Wg@{get\+Max\+Wg}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Max\+Wg()}{getMaxWg()}}
+{\footnotesize\ttfamily double Memory\+::get\+Max\+Wg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 476 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ada2689cdc85e2429579c0e8a75b63b8b}\label{class_memory_ada2689cdc85e2429579c0e8a75b63b8b}} 
+\index{Memory@{Memory}!get\+Max\+Wl@{get\+Max\+Wl}}
+\index{get\+Max\+Wl@{get\+Max\+Wl}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Max\+Wl()}{getMaxWl()}}
+{\footnotesize\ttfamily double Memory\+::get\+Max\+Wl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 480 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a03d6c9fa9594c8385bfe30a4c6253757}\label{class_memory_a03d6c9fa9594c8385bfe30a4c6253757}} 
+\index{Memory@{Memory}!get\+Memory\+Decay\+Factor@{get\+Memory\+Decay\+Factor}}
+\index{get\+Memory\+Decay\+Factor@{get\+Memory\+Decay\+Factor}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Memory\+Decay\+Factor()}{getMemoryDecayFactor()}}
+{\footnotesize\ttfamily float Memory\+::get\+Memory\+Decay\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 360 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ada0d9f016a8913fd6ca9c959c3a7f49a}\label{class_memory_ada0d9f016a8913fd6ca9c959c3a7f49a}} 
+\index{Memory@{Memory}!get\+Memory\+Decay\+Treshold@{get\+Memory\+Decay\+Treshold}}
+\index{get\+Memory\+Decay\+Treshold@{get\+Memory\+Decay\+Treshold}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Memory\+Decay\+Treshold()}{getMemoryDecayTreshold()}}
+{\footnotesize\ttfamily float Memory\+::get\+Memory\+Decay\+Treshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 368 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_af8bb8336585ad267f1ea7ca8c35b7421}\label{class_memory_af8bb8336585ad267f1ea7ca8c35b7421}} 
+\index{Memory@{Memory}!get\+Min\+Distance@{get\+Min\+Distance}}
+\index{get\+Min\+Distance@{get\+Min\+Distance}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Min\+Distance()}{getMinDistance()}}
+{\footnotesize\ttfamily double Memory\+::get\+Min\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 484 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a22d038e7c6a1a9c273af2f14764cdca5}\label{class_memory_a22d038e7c6a1a9c273af2f14764cdca5}} 
+\index{Memory@{Memory}!get\+Min\+Search\+Radius@{get\+Min\+Search\+Radius}}
+\index{get\+Min\+Search\+Radius@{get\+Min\+Search\+Radius}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Min\+Search\+Radius()}{getMinSearchRadius()}}
+{\footnotesize\ttfamily double Memory\+::get\+Min\+Search\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 474 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aba901fec044454033b0534d2a602eeb4}\label{class_memory_aba901fec044454033b0534d2a602eeb4}} 
+\index{Memory@{Memory}!get\+Min\+Wg@{get\+Min\+Wg}}
+\index{get\+Min\+Wg@{get\+Min\+Wg}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Min\+Wg()}{getMinWg()}}
+{\footnotesize\ttfamily double Memory\+::get\+Min\+Wg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 478 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a8af1be617551d77f7356e2d10f796af1}\label{class_memory_a8af1be617551d77f7356e2d10f796af1}} 
+\index{Memory@{Memory}!get\+Min\+Wl@{get\+Min\+Wl}}
+\index{get\+Min\+Wl@{get\+Min\+Wl}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Min\+Wl()}{getMinWl()}}
+{\footnotesize\ttfamily double Memory\+::get\+Min\+Wl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 482 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aacaf803387738204131008c1a0658fa2}\label{class_memory_aacaf803387738204131008c1a0658fa2}} 
+\index{Memory@{Memory}!get\+N\+Clusters@{get\+N\+Clusters}}
+\index{get\+N\+Clusters@{get\+N\+Clusters}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+N\+Clusters()}{getNClusters()}}
+{\footnotesize\ttfamily int Memory\+::get\+N\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 774 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ae5b168514b6b6bf8121526a6216a8b4e}\label{class_memory_ae5b168514b6b6bf8121526a6216a8b4e}} 
+\index{Memory@{Memory}!get\+Num\+Features\+In\+Memory@{get\+Num\+Features\+In\+Memory}}
+\index{get\+Num\+Features\+In\+Memory@{get\+Num\+Features\+In\+Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Num\+Features\+In\+Memory()}{getNumFeaturesInMemory()}}
+{\footnotesize\ttfamily long long Memory\+::get\+Num\+Features\+In\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 380 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a71384aeaf8830770030cd7e7fc8d4342}\label{class_memory_a71384aeaf8830770030cd7e7fc8d4342}} 
+\index{Memory@{Memory}!get\+Num\+Forgotten\+Features@{get\+Num\+Forgotten\+Features}}
+\index{get\+Num\+Forgotten\+Features@{get\+Num\+Forgotten\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Num\+Forgotten\+Features()}{getNumForgottenFeatures()}}
+{\footnotesize\ttfamily long long Memory\+::get\+Num\+Forgotten\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 372 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a9b0d2e1ab33d34fef984581921acdf7e}\label{class_memory_a9b0d2e1ab33d34fef984581921acdf7e}} 
+\index{Memory@{Memory}!get\+Num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor@{get\+Num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}}
+\index{get\+Num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor@{get\+Num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor()}{getNumForgottenFeaturesByMemoryDecayFactor()}}
+{\footnotesize\ttfamily int Memory\+::get\+Num\+Forgotten\+Features\+By\+Memory\+Decay\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 412 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a5ea7ba5bae1d18a31b83b7a9cc5c30cb}\label{class_memory_a5ea7ba5bae1d18a31b83b7a9cc5c30cb}} 
+\index{Memory@{Memory}!get\+Num\+Redundant\+Features@{get\+Num\+Redundant\+Features}}
+\index{get\+Num\+Redundant\+Features@{get\+Num\+Redundant\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Num\+Redundant\+Features()}{getNumRedundantFeatures()}}
+{\footnotesize\ttfamily long long Memory\+::get\+Num\+Redundant\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 384 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aff0dd81352bffafc0989c71721f5c685}\label{class_memory_aff0dd81352bffafc0989c71721f5c685}} 
+\index{Memory@{Memory}!get\+Num\+Seen\+Features@{get\+Num\+Seen\+Features}}
+\index{get\+Num\+Seen\+Features@{get\+Num\+Seen\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Num\+Seen\+Features()}{getNumSeenFeatures()}}
+{\footnotesize\ttfamily long long Memory\+::get\+Num\+Seen\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 376 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aee4eb4b1f005a36bd59a0b159d6b8a32}\label{class_memory_aee4eb4b1f005a36bd59a0b159d6b8a32}} 
+\index{Memory@{Memory}!get\+Num\+Seen\+Objects@{get\+Num\+Seen\+Objects}}
+\index{get\+Num\+Seen\+Objects@{get\+Num\+Seen\+Objects}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Num\+Seen\+Objects()}{getNumSeenObjects()}}
+{\footnotesize\ttfamily long long Memory\+::get\+Num\+Seen\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 388 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a9861a7a0fa823cc992f96651a08a177d}\label{class_memory_a9861a7a0fa823cc992f96651a08a177d}} 
+\index{Memory@{Memory}!get\+Point\+Cloud@{get\+Point\+Cloud}}
+\index{get\+Point\+Cloud@{get\+Point\+Cloud}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Point\+Cloud()}{getPointCloud()}}
+{\footnotesize\ttfamily void Memory\+::get\+Point\+Cloud (\begin{DoxyParamCaption}\item[{pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&}]{cloud }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1641 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_af45cd527f0c6fad40154e19b42d8fce3}\label{class_memory_af45cd527f0c6fad40154e19b42d8fce3}} 
+\index{Memory@{Memory}!get\+Search\+Radius@{get\+Search\+Radius}}
+\index{get\+Search\+Radius@{get\+Search\+Radius}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Search\+Radius()}{getSearchRadius()}}
+{\footnotesize\ttfamily double Memory\+::get\+Search\+Radius (\begin{DoxyParamCaption}\item[{int}]{feature\+Id,  }\item[{\hyperlink{class_feature_metadata}{Feature\+Metadata} \&}]{feature\+Metadata,  }\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets a radius to search for neighbors to redistribute global weights.
+
+If the number of clusters = 0 -\/$>$ throw exception If the number of clusters = 1 -\/$>$ return distance(cluster, feature) If the number of clusters $>$ 1 -\/$>$ return mean(distance(cluster\+A, feature) + distance(cluster\+B, feature)), clusterA and clusterB are the 2 closest clusters to feature.
+
+Open issues\+: Idea\+: get a mean between a max and a min search radius from a set of results and use it as a default, instead of computing this from cluster distances. 
+
+Definition at line 1443 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_aaf033cd124262162565795054e4051c9}\label{class_memory_aaf033cd124262162565795054e4051c9}} 
+\index{Memory@{Memory}!get\+Smallest\+Distance@{get\+Smallest\+Distance}}
+\index{get\+Smallest\+Distance@{get\+Smallest\+Distance}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Smallest\+Distance()}{getSmallestDistance()}}
+{\footnotesize\ttfamily double Memory\+::get\+Smallest\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 392 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a7be462960a5fa5fdd8ab63dd980a56c2}\label{class_memory_a7be462960a5fa5fdd8ab63dd980a56c2}} 
+\index{Memory@{Memory}!get\+View\+Category@{get\+View\+Category}}
+\index{get\+View\+Category@{get\+View\+Category}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+View\+Category()}{getViewCategory()}}
+{\footnotesize\ttfamily int Memory\+::get\+View\+Category (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{view\+Histogram }\end{DoxyParamCaption})}
+
+Don\textquotesingle{}t use this function! Use \hyperlink{class_category_recognizer}{Category\+Recognizer} instead! 
+
+Definition at line 792 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a137b4cca30a6eb6bce929f53112cbb40}\label{class_memory_a137b4cca30a6eb6bce929f53112cbb40}} 
+\index{Memory@{Memory}!get\+View\+Histogram@{get\+View\+Histogram}}
+\index{get\+View\+Histogram@{get\+View\+Histogram}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+View\+Histogram()}{getViewHistogram()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ $\ast$ Memory\+::get\+View\+Histogram (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{feats\+Idx,  }\item[{vector$<$ int $>$ \&}]{redundancy\+Feats\+Idx }\end{DoxyParamCaption})}
+
+Don use this function! Use \hyperlink{class_category_recognizer}{Category\+Recognizer} instead! 
+
+Definition at line 787 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_ae520566ff0cd3b122c0773825141f567}\label{class_memory_ae520566ff0cd3b122c0773825141f567}} 
+\index{Memory@{Memory}!is\+Redundant\+Feature@{is\+Redundant\+Feature}}
+\index{is\+Redundant\+Feature@{is\+Redundant\+Feature}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{is\+Redundant\+Feature()}{isRedundantFeature()}}
+{\footnotesize\ttfamily bool Memory\+::is\+Redundant\+Feature (\begin{DoxyParamCaption}\item[{const Histogram$<$ 153 $>$ \&}]{search\+Feature,  }\item[{int}]{feature\+Id }\end{DoxyParamCaption})}
+
+Checks if a given feature, new seen feature not yet in memory, is redundant. Redundancy follows from the use of a treshold min distance. If the given feature is redundant, the id of the feature in memory making it redundant is returned. New seen/added features, not yet assign to a cluster, are also used to look for redundancy.
+
+search\+Feature feature to look for redundancy feature\+Id the id of the feature in memory making the given feature redundant if the feature is found redundant
+
+Note\+: It is assumed that the feature to look for redundancy is not yet in memory! This will became an issue if the architecture changes!
+
+returns true if redundant or false otherwise. 
+
+Definition at line 1497 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_aeee28733d4a736e1c37a373405a532d4}\label{class_memory_aeee28733d4a736e1c37a373405a532d4}} 
+\index{Memory@{Memory}!print\+Categories\+Info@{print\+Categories\+Info}}
+\index{print\+Categories\+Info@{print\+Categories\+Info}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{print\+Categories\+Info()}{printCategoriesInfo()}}
+{\footnotesize\ttfamily void Memory\+::print\+Categories\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints information to the console about the categories stored in memory. 
+
+Definition at line 899 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a8b6338bb727061f8c55e0e5df04204d4}\label{class_memory_a8b6338bb727061f8c55e0e5df04204d4}} 
+\index{Memory@{Memory}!redistribute\+Global\+Weights@{redistribute\+Global\+Weights}}
+\index{redistribute\+Global\+Weights@{redistribute\+Global\+Weights}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{redistribute\+Global\+Weights()}{redistributeGlobalWeights()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Memory\+::redistribute\+Global\+Weights (\begin{DoxyParamCaption}\item[{int}]{feature\+Id,  }\item[{\hyperlink{class_feature_metadata}{Feature\+Metadata} \&}]{feature\+Metadata,  }\item[{double}]{search\+Radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Redistribute global weights to the neighbors of a feature that is going to be forgotten. The neighbors are found within a given radius. The weight redistribution follows the formula given in the application specification.
+
+If no neighbors are found for weight redistribution, the application will continue with a message to the output.
+
+Redistribution of global weights is not expected to occur in a situation where there are no clusters yet. If this is to happen the application will throw an exception.
+
+T\+O\+DO\+: Check the number of clusters in the begining of the function and throw an exception if it is 0. 
+
+Definition at line 1068 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a3b697274988fa315d03015d854e3f813}\label{class_memory_a3b697274988fa315d03015d854e3f813}} 
+\index{Memory@{Memory}!redistribute\+Global\+Weights@{redistribute\+Global\+Weights}}
+\index{redistribute\+Global\+Weights@{redistribute\+Global\+Weights}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{redistribute\+Global\+Weights()}{redistributeGlobalWeights()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Memory\+::redistribute\+Global\+Weights (\begin{DoxyParamCaption}\item[{unordered\+\_\+set$<$ int $>$ \&}]{to\+Forget,  }\item[{Kd\+Tree\+F\+L\+A\+NN$<$ Histogram$<$ 153 $>$ $>$ \&}]{kdtree,  }\item[{vector$<$ int $>$ \&}]{mapping,  }\item[{double}]{search\+Radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Redistribute global weights to the neighbors of a feature that is going to be forgotten. This function uses a snapshot. The neighbors are found within a given radius. The weight redistribution follows the formula given in the application specification.
+
+If no neighbors are found for weight redistribution, the application will continue with a message to the output.
+
+Redistribution of global weights is not expected to occur in a situation where there are no clusters yet. If this is to happen the application will throw an exception.
+
+T\+O\+DO\+: Check the number of clusters in the begining of the function and throw an exception if it is 0.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em to\+Forget} & features ids of features to forget and use to redistribute weights. \\
+\hline
+\mbox{\tt in}  & {\em kdtree} & the already constructed index to use, the snapshot. \\
+\hline
+\mbox{\tt in}  & {\em mapping} & features ids mappings with the snapshot. \\
+\hline
+\mbox{\tt in}  & {\em search\+Radius} & the search radius to use. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 325 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a1f36348fab81a50b9bbe16986b7a0337}\label{class_memory_a1f36348fab81a50b9bbe16986b7a0337}} 
+\index{Memory@{Memory}!redistribute\+Local\+Weights@{redistribute\+Local\+Weights}}
+\index{redistribute\+Local\+Weights@{redistribute\+Local\+Weights}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{redistribute\+Local\+Weights()}{redistributeLocalWeights()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Memory\+::redistribute\+Local\+Weights (\begin{DoxyParamCaption}\item[{unordered\+\_\+set$<$ int $>$ \&}]{to\+Forget,  }\item[{int}]{category\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Redistributes local weights. The local weight redistribution follows the same formula used for the global weight redistribution.
+
+This function uses a snapshot and should only be used to redistribute local weights for a set of features belonging to the same category. As is the case for new seen features of an object view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em to\+Forget} & the features ids to use for weight redistribution. \\
+\hline
+\mbox{\tt in}  & {\em feature\+Metadata} & the category id the features belong to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 232 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a53d9e1a15f774f05c68eeb1ab1042cb8}\label{class_memory_a53d9e1a15f774f05c68eeb1ab1042cb8}} 
+\index{Memory@{Memory}!redistribute\+Local\+Weights@{redistribute\+Local\+Weights}}
+\index{redistribute\+Local\+Weights@{redistribute\+Local\+Weights}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{redistribute\+Local\+Weights()}{redistributeLocalWeights()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Memory\+::redistribute\+Local\+Weights (\begin{DoxyParamCaption}\item[{int}]{feature\+Id,  }\item[{\hyperlink{class_feature_metadata}{Feature\+Metadata} \&}]{feature\+Metadata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Redistribute local weights i.\+e., to the features belonging to the same category as the one the feature to forget belongs to. The local weight redistribution follows the same formula used for the global weight redistribution.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feature\+Id} & the feature id to use for weight redistribution. \\
+\hline
+\mbox{\tt in}  & {\em feature\+Metadata} & the features\textquotesingle{} associated metadata. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1242 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_ae4c5bcd99c34f0bcc62e0fcc8bac57fc}\label{class_memory_ae4c5bcd99c34f0bcc62e0fcc8bac57fc}} 
+\index{Memory@{Memory}!rem\+Feature\+From\+Memory@{rem\+Feature\+From\+Memory}}
+\index{rem\+Feature\+From\+Memory@{rem\+Feature\+From\+Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{rem\+Feature\+From\+Memory()}{remFeatureFromMemory()}}
+{\footnotesize\ttfamily void Memory\+::rem\+Feature\+From\+Memory (\begin{DoxyParamCaption}\item[{int}]{feature\+Id,  }\item[{\hyperlink{class_feature_metadata}{Feature\+Metadata} \&}]{feature\+Metadata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Redistribute local and global weights. The specified feature is not removed from memory. This function is called during the feature redundancy check.
+
+Open issues\+: due to the current architecture, local weight redistribution is not made, because it is not possible to apply it to all the features in a category W\+H\+EN T\+HE C\+A\+T\+E\+G\+O\+RY OF T\+HE F\+E\+A\+T\+U\+RE IS U\+N\+K\+N\+O\+W\+N\+ED but only on that particular situation. In practice this means that no local weight redistribution is made in the case of feature redundancy! T\+O\+DO\+: change the architecture to\+: 1 -\/ assign new features to a cluster. 2 -\/ assign new features to a category. 3 -\/ now we can check those features for redundancy. Removes a feature from memory. Updates the cluster sums, unassigns the feature from the respective assigned cluster and category. Removes the feature from memory, recomputes the cluster centroid and updates the number of features forgotten and in memory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feature\+Id} & the feature id to remove. \\
+\hline
+\mbox{\tt in}  & {\em feature\+Metadata} & the features\textquotesingle{} associated metadata. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 448 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a2ead3c4cac6c9fea43047ae1c63b5a54}\label{class_memory_a2ead3c4cac6c9fea43047ae1c63b5a54}} 
+\index{Memory@{Memory}!remove\+Feature\+From\+Memory@{remove\+Feature\+From\+Memory}}
+\index{remove\+Feature\+From\+Memory@{remove\+Feature\+From\+Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{remove\+Feature\+From\+Memory()}{removeFeatureFromMemory()}}
+{\footnotesize\ttfamily void Memory\+::remove\+Feature\+From\+Memory (\begin{DoxyParamCaption}\item[{int}]{feature\+Id }\end{DoxyParamCaption})}
+
+Deletes/removes a given feature from memory. No redistribution of weights is made in this function!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feature\+Id} & the id of the feature to delete/forget. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 580 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_ad4a2f8d5ad6def3bca8ca8cfff122d66}\label{class_memory_ad4a2f8d5ad6def3bca8ca8cfff122d66}} 
+\index{Memory@{Memory}!remove\+Point\+From\+Category@{remove\+Point\+From\+Category}}
+\index{remove\+Point\+From\+Category@{remove\+Point\+From\+Category}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{remove\+Point\+From\+Category()}{removePointFromCategory()}}
+{\footnotesize\ttfamily void Memory\+::remove\+Point\+From\+Category (\begin{DoxyParamCaption}\item[{int \&}]{cat\+Id,  }\item[{int \&}]{feat\+Idx }\end{DoxyParamCaption})}
+
+Remove a feature from the category
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cat\+Id} & the identifier of the category \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the index of the feature (in main memory) to remove from the category \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 859 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_ac99702a46e98175ec1b05dfd6001eaab}\label{class_memory_ac99702a46e98175ec1b05dfd6001eaab}} 
+\index{Memory@{Memory}!remove\+Point\+From\+Category2@{remove\+Point\+From\+Category2}}
+\index{remove\+Point\+From\+Category2@{remove\+Point\+From\+Category2}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{remove\+Point\+From\+Category2()}{removePointFromCategory2()}}
+{\footnotesize\ttfamily void Memory\+::remove\+Point\+From\+Category2 (\begin{DoxyParamCaption}\item[{int}]{category\+Id,  }\item[{int}]{feat\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unassigns a feature from a category.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em category\+Id} & the category id. \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the feature id. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 879 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a3f1f42a162bbee90517642e9b2aad294}\label{class_memory_a3f1f42a162bbee90517642e9b2aad294}} 
+\index{Memory@{Memory}!remove\+Point\+From\+Cluster@{remove\+Point\+From\+Cluster}}
+\index{remove\+Point\+From\+Cluster@{remove\+Point\+From\+Cluster}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{remove\+Point\+From\+Cluster()}{removePointFromCluster()}}
+{\footnotesize\ttfamily void Memory\+::remove\+Point\+From\+Cluster (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id,  }\item[{int \&}]{feat\+Idx }\end{DoxyParamCaption})}
+
+Remove a feature from the cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the identifier of the cluster \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the index of the feature (in main memory) to remove from the cluster \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 576 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a0dbad1e7f9ae70aaf65dd733f3e6c9b9}\label{class_memory_a0dbad1e7f9ae70aaf65dd733f3e6c9b9}} 
+\index{Memory@{Memory}!remove\+Point\+From\+Cluster2@{remove\+Point\+From\+Cluster2}}
+\index{remove\+Point\+From\+Cluster2@{remove\+Point\+From\+Cluster2}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{remove\+Point\+From\+Cluster2()}{removePointFromCluster2()}}
+{\footnotesize\ttfamily void Memory\+::remove\+Point\+From\+Cluster2 (\begin{DoxyParamCaption}\item[{int}]{cluster\+Id,  }\item[{int}]{feat\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unassigns a feature from a cluster.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the cluster id. \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the feature id. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 594 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a4e5a7afc93319dd8be8f17dcfd6dc3c2}\label{class_memory_a4e5a7afc93319dd8be8f17dcfd6dc3c2}} 
+\index{Memory@{Memory}!reset\+Cluster\+Totals@{reset\+Cluster\+Totals}}
+\index{reset\+Cluster\+Totals@{reset\+Cluster\+Totals}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{reset\+Cluster\+Totals()}{resetClusterTotals()}}
+{\footnotesize\ttfamily void Memory\+::reset\+Cluster\+Totals (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id }\end{DoxyParamCaption})}
+
+Resets the running totals of the specified cluster; sum\+Weight and sum\+Features 
+
+Definition at line 615 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_afae3d1c028779858634b0cfe0492a214}\label{class_memory_afae3d1c028779858634b0cfe0492a214}} 
+\index{Memory@{Memory}!set\+Cluster\+Centroid@{set\+Cluster\+Centroid}}
+\index{set\+Cluster\+Centroid@{set\+Cluster\+Centroid}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{set\+Cluster\+Centroid()}{setClusterCentroid()}}
+{\footnotesize\ttfamily void Memory\+::set\+Cluster\+Centroid (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id,  }\item[{int \&}]{feat\+Idx }\end{DoxyParamCaption})}
+
+Sets the centroid of a cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the identifier of the cluster \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the index of the feature (in main memory) to be used as the cluster centroid \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 611 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a6f874ffdeee770c5349c712f0b7d0952}\label{class_memory_a6f874ffdeee770c5349c712f0b7d0952}} 
+\index{Memory@{Memory}!set\+Debug\+Mode@{set\+Debug\+Mode}}
+\index{set\+Debug\+Mode@{set\+Debug\+Mode}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{set\+Debug\+Mode()}{setDebugMode()}}
+{\footnotesize\ttfamily void Memory\+::set\+Debug\+Mode (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets debug mode on$\vert$off. Debug mode on will print extra information to the console. 
+
+Definition at line 467 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a9baac2bce6c671109e3ca334c82208dd}\label{class_memory_a9baac2bce6c671109e3ca334c82208dd}} 
+\index{Memory@{Memory}!set\+Feature\+Redundancy\+Treshold@{set\+Feature\+Redundancy\+Treshold}}
+\index{set\+Feature\+Redundancy\+Treshold@{set\+Feature\+Redundancy\+Treshold}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{set\+Feature\+Redundancy\+Treshold()}{setFeatureRedundancyTreshold()}}
+{\footnotesize\ttfamily void Memory\+::set\+Feature\+Redundancy\+Treshold (\begin{DoxyParamCaption}\item[{double}]{a\+Feature\+Redundancy\+Treshold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 396 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a743603d575e4f65c0ca1292957fd9cf2}\label{class_memory_a743603d575e4f65c0ca1292957fd9cf2}} 
+\index{Memory@{Memory}!set\+Forget\+Features@{set\+Forget\+Features}}
+\index{set\+Forget\+Features@{set\+Forget\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{set\+Forget\+Features()}{setForgetFeatures()}}
+{\footnotesize\ttfamily void Memory\+::set\+Forget\+Features (\begin{DoxyParamCaption}\item[{bool}]{forget\+Features }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a feature to forget from memory based on the smallest global weight. All features in memory are considered except the ones not yet assign to a cluster.
+
+returns the id of the feature in memory with the smallest global weight. Indicates if the application should forget features. 
+
+Definition at line 448 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_afa0151bc0daa95b0c96aa2f5e750c7c4}\label{class_memory_afa0151bc0daa95b0c96aa2f5e750c7c4}} 
+\index{Memory@{Memory}!set\+G\+W\+Redist\+Search\+Radius@{set\+G\+W\+Redist\+Search\+Radius}}
+\index{set\+G\+W\+Redist\+Search\+Radius@{set\+G\+W\+Redist\+Search\+Radius}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{set\+G\+W\+Redist\+Search\+Radius()}{setGWRedistSearchRadius()}}
+{\footnotesize\ttfamily void Memory\+::set\+G\+W\+Redist\+Search\+Radius (\begin{DoxyParamCaption}\item[{double}]{G\+Weights\+\_\+\+R\+\_\+search\+\_\+radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the search radius used to get the features to redistribute global weights.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em G\+Weights\+\_\+\+R\+\_\+search\+\_\+radius} & the search radius value to use. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 505 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a84fcb51d7b244744161b27fe731eb1dc}\label{class_memory_a84fcb51d7b244744161b27fe731eb1dc}} 
+\index{Memory@{Memory}!set\+Kmeans@{set\+Kmeans}}
+\index{set\+Kmeans@{set\+Kmeans}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{set\+Kmeans()}{setKmeans()}}
+{\footnotesize\ttfamily void Memory\+::set\+Kmeans (\begin{DoxyParamCaption}\item[{\hyperlink{class_k_means}{K\+Means} $\ast$}]{a\+Kmeans }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a pointer to Kmeans for update purposes during weight redistribution. 
+
+Definition at line 460 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a87e6f6575dde85b6e823370fe8b94d16}\label{class_memory_a87e6f6575dde85b6e823370fe8b94d16}} 
+\index{Memory@{Memory}!set\+Max\+Num\+Features\+In\+Memory@{set\+Max\+Num\+Features\+In\+Memory}}
+\index{set\+Max\+Num\+Features\+In\+Memory@{set\+Max\+Num\+Features\+In\+Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{set\+Max\+Num\+Features\+In\+Memory()}{setMaxNumFeaturesInMemory()}}
+{\footnotesize\ttfamily void Memory\+::set\+Max\+Num\+Features\+In\+Memory (\begin{DoxyParamCaption}\item[{float}]{Max\+Num\+Features\+In\+Memory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 404 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ab9449f7b75eeb52bf50a9e4ae08da8f0}\label{class_memory_ab9449f7b75eeb52bf50a9e4ae08da8f0}} 
+\index{Memory@{Memory}!set\+Memory\+Decay\+Factor@{set\+Memory\+Decay\+Factor}}
+\index{set\+Memory\+Decay\+Factor@{set\+Memory\+Decay\+Factor}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{set\+Memory\+Decay\+Factor()}{setMemoryDecayFactor()}}
+{\footnotesize\ttfamily void Memory\+::set\+Memory\+Decay\+Factor (\begin{DoxyParamCaption}\item[{float}]{a\+Memory\+Decay\+Factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 356 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a035e450994077e442b5607e72b22cb0c}\label{class_memory_a035e450994077e442b5607e72b22cb0c}} 
+\index{Memory@{Memory}!set\+Memory\+Decay\+Treshold@{set\+Memory\+Decay\+Treshold}}
+\index{set\+Memory\+Decay\+Treshold@{set\+Memory\+Decay\+Treshold}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{set\+Memory\+Decay\+Treshold()}{setMemoryDecayTreshold()}}
+{\footnotesize\ttfamily void Memory\+::set\+Memory\+Decay\+Treshold (\begin{DoxyParamCaption}\item[{float}]{a\+Memory\+Decay\+Treshold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 364 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a91ac81338123d3b57a7f5ee62db8ec8d}\label{class_memory_a91ac81338123d3b57a7f5ee62db8ec8d}} 
+\index{Memory@{Memory}!size@{size}}
+\index{size@{size}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Memory\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 807 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_af9c379b0907b97bc242c46bda5d58c4e}\label{class_memory_af9c379b0907b97bc242c46bda5d58c4e}} 
+\index{Memory@{Memory}!sync\+Cluster\+Assignment@{sync\+Cluster\+Assignment}}
+\index{sync\+Cluster\+Assignment@{sync\+Cluster\+Assignment}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{sync\+Cluster\+Assignment()}{syncClusterAssignment()}}
+{\footnotesize\ttfamily void Memory\+::sync\+Cluster\+Assignment (\begin{DoxyParamCaption}\item[{int}]{p\+Cluster\+Id,  }\item[{int}]{n\+Cluster\+Id,  }\item[{int}]{feat\+Idx }\end{DoxyParamCaption})}
+
+Synchronizes cluster assignment for features
+
+Removes the feature from the list of points from the previous cluster assignment if one exists and adds the feature to the list of points of the new assigned cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Cluster\+Id} & the cluster identifier of the previous cluster assignment \\
+\hline
+\mbox{\tt in}  & {\em n\+Cluster\+Id} & the cluster identifier of the new cluster assignment \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the feature map key \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a638e22630bebfff55e6122b38d37c464}\label{class_memory_a638e22630bebfff55e6122b38d37c464}} 
+\index{Memory@{Memory}!un\+Assign\+All\+Points\+From\+Cluster@{un\+Assign\+All\+Points\+From\+Cluster}}
+\index{un\+Assign\+All\+Points\+From\+Cluster@{un\+Assign\+All\+Points\+From\+Cluster}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{un\+Assign\+All\+Points\+From\+Cluster()}{unAssignAllPointsFromCluster()}}
+{\footnotesize\ttfamily void Memory\+::un\+Assign\+All\+Points\+From\+Cluster (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id }\end{DoxyParamCaption})}
+
+Sets all features assigned to the specified cluster to -\/1 (in the cluster identifier field) in order to mark them as unassigned
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the identifier of the cluster \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 598 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a81ed8055b93c8e1e050d0e5f62f8a354}\label{class_memory_a81ed8055b93c8e1e050d0e5f62f8a354}} 
+\index{Memory@{Memory}!update\+Centroids@{update\+Centroids}}
+\index{update\+Centroids@{update\+Centroids}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{update\+Centroids()}{updateCentroids()}}
+{\footnotesize\ttfamily void Memory\+::update\+Centroids (\begin{DoxyParamCaption}\item[{int}]{p\+Cluster\+Id,  }\item[{int}]{n\+Cluster\+Id,  }\item[{int}]{feat\+Idx }\end{DoxyParamCaption})}
+
+Updates the cenroids of the clusters after feature assignment
+
+uses the formula \+: mean(k) = mean(k-\/1) + (feat -\/ mean(k-\/1))/k (for new assignments) mean(k) is the new centroid to be computed mean(k-\/1) is the previous centroid (before the new featue assignment) feat is the newly assigned feature to the cluster k is the number of elements in the cluster after the new assignment
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Cluster\+Id} & the cluster identifier of the previous cluster assignment \\
+\hline
+\mbox{\tt in}  & {\em n\+Cluster\+Id} & the cluster identifier of the new cluster assignment \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the feature map key \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file Memory.\+cpp.
+
+\mbox{\Hypertarget{class_memory_a951c156d970ba7fa7a61290b1d63d95b}\label{class_memory_a951c156d970ba7fa7a61290b1d63d95b}} 
+\index{Memory@{Memory}!wss@{wss}}
+\index{wss@{wss}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{wss()}{wss()}}
+{\footnotesize\ttfamily float Memory\+::wss (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ int, \hyperlink{class_wss_bag}{Wss\+Bag} $>$ $>$ \&}]{clusters\+Wss }\end{DoxyParamCaption})}
+
+Compute W\+SS (Whithin cluster Sum of Squares) measure
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em clusters\+Wss} & vector holding the wss computed for every cluster, sorted by descending order (bigger wss values first)\\
+\hline
+\end{DoxyParams}
+Returns the total wss 
+
+Definition at line 704 of file Memory.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_memory_ab7733936ac814bc1f834a79fd868c8d9}\label{class_memory_ab7733936ac814bc1f834a79fd868c8d9}} 
+\index{Memory@{Memory}!categories@{categories}}
+\index{categories@{categories}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{categories}{categories}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$int, \hyperlink{class_category}{Category}$>$ Memory\+::categories\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 755 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aa40e026a0318c101754d065725a7b72d}\label{class_memory_aa40e026a0318c101754d065725a7b72d}} 
+\index{Memory@{Memory}!categories\+Id\+Map@{categories\+Id\+Map}}
+\index{categories\+Id\+Map@{categories\+Id\+Map}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{categories\+Id\+Map}{categoriesIdMap}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$std\+::string, int$>$ Memory\+::categories\+Id\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+The map of the categories. 
+
+Definition at line 760 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a9e1a47adebdbbbade810a92215903ce1}\label{class_memory_a9e1a47adebdbbbade810a92215903ce1}} 
+\index{Memory@{Memory}!category\+Id\+Gen@{category\+Id\+Gen}}
+\index{category\+Id\+Gen@{category\+Id\+Gen}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{category\+Id\+Gen}{categoryIdGen}}
+{\footnotesize\ttfamily \hyperlink{class_seq_generator}{Seq\+Generator} Memory\+::category\+Id\+Gen\hspace{0.3cm}{\ttfamily [protected]}}
+
+A sequential generator of integer identifiers for the categories map structure keys. 
+
+Definition at line 765 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aedc30fc567e03bfa3fa43fb47ba506f8}\label{class_memory_aedc30fc567e03bfa3fa43fb47ba506f8}} 
+\index{Memory@{Memory}!cluster\+Id\+Gen@{cluster\+Id\+Gen}}
+\index{cluster\+Id\+Gen@{cluster\+Id\+Gen}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{cluster\+Id\+Gen}{clusterIdGen}}
+{\footnotesize\ttfamily \hyperlink{class_seq_generator}{Seq\+Generator} Memory\+::cluster\+Id\+Gen\hspace{0.3cm}{\ttfamily [protected]}}
+
+A sequential generator of integer identifiers for the clusters map structure keys. 
+
+Definition at line 753 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a9836b99d2ec4b06e98a90aa31d16439a}\label{class_memory_a9836b99d2ec4b06e98a90aa31d16439a}} 
+\index{Memory@{Memory}!clusters@{clusters}}
+\index{clusters@{clusters}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{clusters}{clusters}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$int, \hyperlink{class_cluster}{Cluster}$>$ Memory\+::clusters\hspace{0.3cm}{\ttfamily [protected]}}
+
+The map of the clusters. 
+
+Definition at line 746 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a8607f19b7d9871eeb12ca94d7938c710}\label{class_memory_a8607f19b7d9871eeb12ca94d7938c710}} 
+\index{Memory@{Memory}!D\+E\+B\+UG@{D\+E\+B\+UG}}
+\index{D\+E\+B\+UG@{D\+E\+B\+UG}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{D\+E\+B\+UG}{DEBUG}}
+{\footnotesize\ttfamily bool Memory\+::\+D\+E\+B\+UG\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 711 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a3c07af17879875325b9073fc77f56e3f}\label{class_memory_a3c07af17879875325b9073fc77f56e3f}} 
+\index{Memory@{Memory}!feature\+Id\+Gen@{feature\+Id\+Gen}}
+\index{feature\+Id\+Gen@{feature\+Id\+Gen}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{feature\+Id\+Gen}{featureIdGen}}
+{\footnotesize\ttfamily \hyperlink{class_seq_generator}{Seq\+Generator} Memory\+::feature\+Id\+Gen\hspace{0.3cm}{\ttfamily [protected]}}
+
+A sequential generator of integer identifiers for the features map structure keys. 
+
+Definition at line 770 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a5b4e6c308dedb36e66bef5b85f5a1d1a}\label{class_memory_a5b4e6c308dedb36e66bef5b85f5a1d1a}} 
+\index{Memory@{Memory}!feature\+Redundancy\+Treshold@{feature\+Redundancy\+Treshold}}
+\index{feature\+Redundancy\+Treshold@{feature\+Redundancy\+Treshold}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{feature\+Redundancy\+Treshold}{featureRedundancyTreshold}}
+{\footnotesize\ttfamily double Memory\+::feature\+Redundancy\+Treshold\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 719 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a70a3ffe94ecd25fa10c683b3fac6328b}\label{class_memory_a70a3ffe94ecd25fa10c683b3fac6328b}} 
+\index{Memory@{Memory}!features\+Metadata@{features\+Metadata}}
+\index{features\+Metadata@{features\+Metadata}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{features\+Metadata}{featuresMetadata}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$int, \hyperlink{class_feature_metadata}{Feature\+Metadata}$>$ Memory\+::features\+Metadata\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 741 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a65e77a8517b78627da8bc33dd5f7925b}\label{class_memory_a65e77a8517b78627da8bc33dd5f7925b}} 
+\index{Memory@{Memory}!fixed\+Search\+Radius@{fixed\+Search\+Radius}}
+\index{fixed\+Search\+Radius@{fixed\+Search\+Radius}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{fixed\+Search\+Radius}{fixedSearchRadius}}
+{\footnotesize\ttfamily double Memory\+::fixed\+Search\+Radius\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 543 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ac3c18308c5e73bd2a54fcf5cb346c638}\label{class_memory_ac3c18308c5e73bd2a54fcf5cb346c638}} 
+\index{Memory@{Memory}!forget\+Features@{forget\+Features}}
+\index{forget\+Features@{forget\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{forget\+Features}{forgetFeatures}}
+{\footnotesize\ttfamily bool Memory\+::forget\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 727 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a4d1844ac4c1ff005f5a87373783a96f1}\label{class_memory_a4d1844ac4c1ff005f5a87373783a96f1}} 
+\index{Memory@{Memory}!kmeans@{kmeans}}
+\index{kmeans@{kmeans}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{kmeans}{kmeans}}
+{\footnotesize\ttfamily \hyperlink{class_k_means}{K\+Means}$\ast$ Memory\+::kmeans\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 713 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aed07b3dddef97de3f7eaca420ff00df3}\label{class_memory_aed07b3dddef97de3f7eaca420ff00df3}} 
+\index{Memory@{Memory}!max\+Distance@{max\+Distance}}
+\index{max\+Distance@{max\+Distance}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{max\+Distance}{maxDistance}}
+{\footnotesize\ttfamily double Memory\+::max\+Distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 540 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a39621632b0a7c038b589cdb1c7402c02}\label{class_memory_a39621632b0a7c038b589cdb1c7402c02}} 
+\index{Memory@{Memory}!max\+Num\+Features\+In\+Memory@{max\+Num\+Features\+In\+Memory}}
+\index{max\+Num\+Features\+In\+Memory@{max\+Num\+Features\+In\+Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{max\+Num\+Features\+In\+Memory}{maxNumFeaturesInMemory}}
+{\footnotesize\ttfamily long long Memory\+::max\+Num\+Features\+In\+Memory\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 739 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a26d5cb9d95759ae04db5e3c89dbae345}\label{class_memory_a26d5cb9d95759ae04db5e3c89dbae345}} 
+\index{Memory@{Memory}!max\+Search\+Radius@{max\+Search\+Radius}}
+\index{max\+Search\+Radius@{max\+Search\+Radius}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{max\+Search\+Radius}{maxSearchRadius}}
+{\footnotesize\ttfamily double Memory\+::max\+Search\+Radius\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 526 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a657eb626fc7fa089dea3274b87658d81}\label{class_memory_a657eb626fc7fa089dea3274b87658d81}} 
+\index{Memory@{Memory}!max\+Wg@{max\+Wg}}
+\index{max\+Wg@{max\+Wg}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{max\+Wg}{maxWg}}
+{\footnotesize\ttfamily double Memory\+::max\+Wg\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 530 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_af3eb8d644c9b8bef76a262234ae6c070}\label{class_memory_af3eb8d644c9b8bef76a262234ae6c070}} 
+\index{Memory@{Memory}!max\+Wl@{max\+Wl}}
+\index{max\+Wl@{max\+Wl}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{max\+Wl}{maxWl}}
+{\footnotesize\ttfamily double Memory\+::max\+Wl\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 534 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ad82103f1fc27ceab9c6e20c8c96ddfb2}\label{class_memory_ad82103f1fc27ceab9c6e20c8c96ddfb2}} 
+\index{Memory@{Memory}!memory\+Decay\+Factor@{memory\+Decay\+Factor}}
+\index{memory\+Decay\+Factor@{memory\+Decay\+Factor}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{memory\+Decay\+Factor}{memoryDecayFactor}}
+{\footnotesize\ttfamily float Memory\+::memory\+Decay\+Factor\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 721 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a5cbea14d34dceeca8d8f3fd82674a7f0}\label{class_memory_a5cbea14d34dceeca8d8f3fd82674a7f0}} 
+\index{Memory@{Memory}!memory\+Decay\+Treshold@{memory\+Decay\+Treshold}}
+\index{memory\+Decay\+Treshold@{memory\+Decay\+Treshold}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{memory\+Decay\+Treshold}{memoryDecayTreshold}}
+{\footnotesize\ttfamily float Memory\+::memory\+Decay\+Treshold\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 723 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ac3ffdf66cf9b1144dad6aa9f39040db6}\label{class_memory_ac3ffdf66cf9b1144dad6aa9f39040db6}} 
+\index{Memory@{Memory}!min\+Distance@{min\+Distance}}
+\index{min\+Distance@{min\+Distance}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{min\+Distance}{minDistance}}
+{\footnotesize\ttfamily double Memory\+::min\+Distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 538 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a80399a94aa2cb5d06d4e7b4b578b73b8}\label{class_memory_a80399a94aa2cb5d06d4e7b4b578b73b8}} 
+\index{Memory@{Memory}!min\+Search\+Radius@{min\+Search\+Radius}}
+\index{min\+Search\+Radius@{min\+Search\+Radius}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{min\+Search\+Radius}{minSearchRadius}}
+{\footnotesize\ttfamily double Memory\+::min\+Search\+Radius\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 528 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a1bf6db077ded1e0f826a09b89b543695}\label{class_memory_a1bf6db077ded1e0f826a09b89b543695}} 
+\index{Memory@{Memory}!min\+Wg@{min\+Wg}}
+\index{min\+Wg@{min\+Wg}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{min\+Wg}{minWg}}
+{\footnotesize\ttfamily double Memory\+::min\+Wg\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 532 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a9172ef7604d582af5b7d38ecd5245e47}\label{class_memory_a9172ef7604d582af5b7d38ecd5245e47}} 
+\index{Memory@{Memory}!min\+Wl@{min\+Wl}}
+\index{min\+Wl@{min\+Wl}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{min\+Wl}{minWl}}
+{\footnotesize\ttfamily double Memory\+::min\+Wl\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 536 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a9bb05f7f61a8eb13c91fa9f99d1962a6}\label{class_memory_a9bb05f7f61a8eb13c91fa9f99d1962a6}} 
+\index{Memory@{Memory}!new\+Seen\+Features\+Ids@{new\+Seen\+Features\+Ids}}
+\index{new\+Seen\+Features\+Ids@{new\+Seen\+Features\+Ids}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{new\+Seen\+Features\+Ids}{newSeenFeaturesIds}}
+{\footnotesize\ttfamily vector$<$int$>$ Memory\+::new\+Seen\+Features\+Ids\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 748 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_aa351103686a0f8230ca638fbf0b2dc5b}\label{class_memory_aa351103686a0f8230ca638fbf0b2dc5b}} 
+\index{Memory@{Memory}!n\+Forgotten\+Features\+By\+Memory\+Decay\+Factor@{n\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}}
+\index{n\+Forgotten\+Features\+By\+Memory\+Decay\+Factor@{n\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{n\+Forgotten\+Features\+By\+Memory\+Decay\+Factor}{nForgottenFeaturesByMemoryDecayFactor}}
+{\footnotesize\ttfamily int Memory\+::n\+Forgotten\+Features\+By\+Memory\+Decay\+Factor\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 725 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a35ac41aee3f23446e2f34e492818007e}\label{class_memory_a35ac41aee3f23446e2f34e492818007e}} 
+\index{Memory@{Memory}!num\+Features\+In\+Memory@{num\+Features\+In\+Memory}}
+\index{num\+Features\+In\+Memory@{num\+Features\+In\+Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{num\+Features\+In\+Memory}{numFeaturesInMemory}}
+{\footnotesize\ttfamily long long Memory\+::num\+Features\+In\+Memory\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 729 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a01e573fd360050d1d87e4702eeec77ff}\label{class_memory_a01e573fd360050d1d87e4702eeec77ff}} 
+\index{Memory@{Memory}!num\+Forgotten\+Features@{num\+Forgotten\+Features}}
+\index{num\+Forgotten\+Features@{num\+Forgotten\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{num\+Forgotten\+Features}{numForgottenFeatures}}
+{\footnotesize\ttfamily long long Memory\+::num\+Forgotten\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 737 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ae3c078fe2fb8bc942d13ede6a2eb951b}\label{class_memory_ae3c078fe2fb8bc942d13ede6a2eb951b}} 
+\index{Memory@{Memory}!num\+Redundant\+Features@{num\+Redundant\+Features}}
+\index{num\+Redundant\+Features@{num\+Redundant\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{num\+Redundant\+Features}{numRedundantFeatures}}
+{\footnotesize\ttfamily long long Memory\+::num\+Redundant\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 735 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_ae10824d7cf347234fd910fa3a4e6a9c7}\label{class_memory_ae10824d7cf347234fd910fa3a4e6a9c7}} 
+\index{Memory@{Memory}!num\+Seen\+Features@{num\+Seen\+Features}}
+\index{num\+Seen\+Features@{num\+Seen\+Features}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{num\+Seen\+Features}{numSeenFeatures}}
+{\footnotesize\ttfamily long long Memory\+::num\+Seen\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 731 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a3b7f28c5be1d201bb41cdbc90646fb4b}\label{class_memory_a3b7f28c5be1d201bb41cdbc90646fb4b}} 
+\index{Memory@{Memory}!num\+Seen\+Objects@{num\+Seen\+Objects}}
+\index{num\+Seen\+Objects@{num\+Seen\+Objects}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{num\+Seen\+Objects}{numSeenObjects}}
+{\footnotesize\ttfamily long long Memory\+::num\+Seen\+Objects\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 733 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a28d1cf97ef560d4f096a506ef53a1410}\label{class_memory_a28d1cf97ef560d4f096a506ef53a1410}} 
+\index{Memory@{Memory}!searcher@{searcher}}
+\index{searcher@{searcher}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{searcher}{searcher}}
+{\footnotesize\ttfamily \hyperlink{class_searcher}{Searcher} Memory\+::searcher\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 717 of file Memory.\+h.
+
+\mbox{\Hypertarget{class_memory_a4b73ac8b78b6a1003e946f61697fe65d}\label{class_memory_a4b73ac8b78b6a1003e946f61697fe65d}} 
+\index{Memory@{Memory}!smallest\+Distance@{smallest\+Distance}}
+\index{smallest\+Distance@{smallest\+Distance}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{smallest\+Distance}{smallestDistance}}
+{\footnotesize\ttfamily double Memory\+::smallest\+Distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 715 of file Memory.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_memory_8h}{Memory.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_memory_8cpp}{Memory.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+sp_search_radius = 0.1
+voxel_size = 0.01
+window_width = 8
+support_lenght = 0.1
+support_angle = 0
+min_pts_neighbours = 0
+featureRedundancyTreshold = 0.000126
+memoryDecayFactor = 0.99985
+memoryDecayTreshold = 0.97775
+maxNumFeaturesInMemory = 35000
+rGW_search_radius = 0.065

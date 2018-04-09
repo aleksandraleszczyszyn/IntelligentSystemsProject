@@ -1,0 +1,150 @@
+\hypertarget{class_category_recognizer}{}\section{Category\+Recognizer Class Reference}
+\label{class_category_recognizer}\index{Category\+Recognizer@{Category\+Recognizer}}
+
+
+This class assigns an object view to a category, based on the euclidean distance between the object view histogram and the categories histgrams.  
+
+
+
+
+{\ttfamily \#include $<$Category\+Recognizer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_category_recognizer_a67c56c30b0cb2783842c53169e7176c4}{Category\+Recognizer} (\hyperlink{class_memory}{Memory} \&memory, bool debug\+Mode=false)
+\item 
+\hyperlink{class_category_recognizer_a0b47f145ff89da44fa5191a52a6c558a}{$\sim$\+Category\+Recognizer} ()
+\item 
+void \hyperlink{class_category_recognizer_abb06a33eac9f693dc38a40f8c0b107f8}{assign\+View\+To\+Category} (std\+::vector$<$ int $>$ \&feats\+Idx, int category\+Id)
+\item 
+std\+::vector$<$ double $>$ $\ast$ \hyperlink{class_category_recognizer_ac712455609c64f0caca9977519824d7d}{get\+View\+Histogram} (std\+::vector$<$ int $>$ \&feats\+Idx, std\+::vector$<$ int $>$ \&redundancy\+Feats\+Idx)
+\item 
+std\+::vector$<$ double $>$ $\ast$ \hyperlink{class_category_recognizer_a9d9a2d29796bfd033a5045411392b195}{get\+View\+Histogram} (std\+::vector$<$ int $>$ \&feats\+Idx)
+\item 
+int \hyperlink{class_category_recognizer_ab66fab9c9404447350f1ce81adc83007}{get\+View\+Category} (std\+::vector$<$ double $>$ \&view\+Histogram)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class assigns an object view to a category, based on the euclidean distance between the object view histogram and the categories histgrams. 
+
+Histograms are vectors in N dimensions, N = number of clusters. Histograms are computed based on the features\textquotesingle{} local weight, i.\+e., its\textquotesingle{} category weight. Histograms are normalized using\+: sqrt(sum(\+Wli $\ast$ Wli)) $\vert$ Wli is the sum of the local wieghts of all features that belong to the view$\vert$category and to cluster i i = 1,..., N, N = number of clusters. 
+
+Definition at line 36 of file Category\+Recognizer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_category_recognizer_a67c56c30b0cb2783842c53169e7176c4}\label{class_category_recognizer_a67c56c30b0cb2783842c53169e7176c4}} 
+\index{Category\+Recognizer@{Category\+Recognizer}!Category\+Recognizer@{Category\+Recognizer}}
+\index{Category\+Recognizer@{Category\+Recognizer}!Category\+Recognizer@{Category\+Recognizer}}
+\subsubsection{\texorpdfstring{Category\+Recognizer()}{CategoryRecognizer()}}
+{\footnotesize\ttfamily Category\+Recognizer\+::\+Category\+Recognizer (\begin{DoxyParamCaption}\item[{\hyperlink{class_memory}{Memory} \&}]{memory,  }\item[{bool}]{debug\+Mode = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Creates a new \hyperlink{class_category_recognizer}{Category\+Recognizer} class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em memory} & reference to the applications\textquotesingle{} memory structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file Category\+Recognizer.\+cpp.
+
+\mbox{\Hypertarget{class_category_recognizer_a0b47f145ff89da44fa5191a52a6c558a}\label{class_category_recognizer_a0b47f145ff89da44fa5191a52a6c558a}} 
+\index{Category\+Recognizer@{Category\+Recognizer}!````~Category\+Recognizer@{$\sim$\+Category\+Recognizer}}
+\index{````~Category\+Recognizer@{$\sim$\+Category\+Recognizer}!Category\+Recognizer@{Category\+Recognizer}}
+\subsubsection{\texorpdfstring{$\sim$\+Category\+Recognizer()}{~CategoryRecognizer()}}
+{\footnotesize\ttfamily Category\+Recognizer\+::$\sim$\+Category\+Recognizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file Category\+Recognizer.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_category_recognizer_abb06a33eac9f693dc38a40f8c0b107f8}\label{class_category_recognizer_abb06a33eac9f693dc38a40f8c0b107f8}} 
+\index{Category\+Recognizer@{Category\+Recognizer}!assign\+View\+To\+Category@{assign\+View\+To\+Category}}
+\index{assign\+View\+To\+Category@{assign\+View\+To\+Category}!Category\+Recognizer@{Category\+Recognizer}}
+\subsubsection{\texorpdfstring{assign\+View\+To\+Category()}{assignViewToCategory()}}
+{\footnotesize\ttfamily void Category\+Recognizer\+::assign\+View\+To\+Category (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{feats\+Idx,  }\item[{int}]{category\+Id }\end{DoxyParamCaption})}
+
+Assigns every feature of a given object view to the given category id.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feats\+Idx} & the objects\textquotesingle{} view feature indeces to assign. \\
+\hline
+\mbox{\tt in}  & {\em category\+Id} & the category id to assign the features to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 212 of file Category\+Recognizer.\+cpp.
+
+\mbox{\Hypertarget{class_category_recognizer_ab66fab9c9404447350f1ce81adc83007}\label{class_category_recognizer_ab66fab9c9404447350f1ce81adc83007}} 
+\index{Category\+Recognizer@{Category\+Recognizer}!get\+View\+Category@{get\+View\+Category}}
+\index{get\+View\+Category@{get\+View\+Category}!Category\+Recognizer@{Category\+Recognizer}}
+\subsubsection{\texorpdfstring{get\+View\+Category()}{getViewCategory()}}
+{\footnotesize\ttfamily int Category\+Recognizer\+::get\+View\+Category (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{view\+Histogram }\end{DoxyParamCaption})}
+
+Assigns a view to a category based on the view and category histograms. The histograms are normalized!
+
+Open issues\+: the categories\textquotesingle{}s histograms are computed every time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em view\+Histogram} & the objects\textquotesingle{} view histogram \\
+\hline
+\mbox{\tt out}  & {\em returns} & the object view predicted category id. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 132 of file Category\+Recognizer.\+cpp.
+
+\mbox{\Hypertarget{class_category_recognizer_ac712455609c64f0caca9977519824d7d}\label{class_category_recognizer_ac712455609c64f0caca9977519824d7d}} 
+\index{Category\+Recognizer@{Category\+Recognizer}!get\+View\+Histogram@{get\+View\+Histogram}}
+\index{get\+View\+Histogram@{get\+View\+Histogram}!Category\+Recognizer@{Category\+Recognizer}}
+\subsubsection{\texorpdfstring{get\+View\+Histogram()}{getViewHistogram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$$\ast$ Category\+Recognizer\+::get\+View\+Histogram (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{feats\+Idx,  }\item[{std\+::vector$<$ int $>$ \&}]{redundancy\+Feats\+Idx }\end{DoxyParamCaption})}
+
+Computes the objects\textquotesingle{} view histogram.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feats\+Idx} & the objects\textquotesingle{} view feature indices seen for the first time. \\
+\hline
+\mbox{\tt in}  & {\em redundancy\+Feats\+Idx} & the objects\textquotesingle{} view feature indeces of features already in memory (redundancy). replacing seen redundant features\\
+\hline
+\mbox{\tt out}  & {\em returns} & the view histogram as a vector in N dimensions, where N is the number of clusters. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_category_recognizer_a9d9a2d29796bfd033a5045411392b195}\label{class_category_recognizer_a9d9a2d29796bfd033a5045411392b195}} 
+\index{Category\+Recognizer@{Category\+Recognizer}!get\+View\+Histogram@{get\+View\+Histogram}}
+\index{get\+View\+Histogram@{get\+View\+Histogram}!Category\+Recognizer@{Category\+Recognizer}}
+\subsubsection{\texorpdfstring{get\+View\+Histogram()}{getViewHistogram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ $\ast$ Category\+Recognizer\+::get\+View\+Histogram (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{feats\+Idx }\end{DoxyParamCaption})}
+
+Computes the objects\textquotesingle{} view histogram.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feats\+Idx} & the objects\textquotesingle{} view features indices seen for the first time.\\
+\hline
+\mbox{\tt out}  & {\em returns} & the view histogram as a vector in N dimensions, where N is the number of clusters. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Category\+Recognizer.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_category_recognizer_8h}{Category\+Recognizer.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_category_recognizer_8cpp}{Category\+Recognizer.\+cpp}\end{DoxyCompactItemize}

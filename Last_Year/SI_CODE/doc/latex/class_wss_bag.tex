@@ -1,0 +1,339 @@
+\hypertarget{class_wss_bag}{}\section{Wss\+Bag Class Reference}
+\label{class_wss_bag}\index{Wss\+Bag@{Wss\+Bag}}
+
+
+Utility class to hold numeric values.  
+
+
+
+
+{\ttfamily \#include $<$Wss\+Bag.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wss_bag_a67435486174798f81a34887ef2e043b8}{Wss\+Bag} ()
+\item 
+bool \hyperlink{class_wss_bag_af78f05046f501370d2f9fdd357229d5d}{operator$<$} (const \hyperlink{class_wss_bag}{Wss\+Bag} \&bag) const
+\item 
+int \hyperlink{class_wss_bag_ac82edcabdc9453934746a78f06cd5532}{get\+Id} ()
+\item 
+void \hyperlink{class_wss_bag_a0e2859dfdb070ff7a8fe0c5ba4135af7}{set\+Id} (const int \&value)
+\item 
+float \hyperlink{class_wss_bag_a4deab0c34ec6854d559eac6826e7f72d}{get\+Wss} () const
+\item 
+float \hyperlink{class_wss_bag_a636fe904ed2f9154bd33fb5feb254961}{get\+Normalized\+Wss} () const
+\item 
+void \hyperlink{class_wss_bag_a2a36ac684d72b7e8f29b302c0805a978}{set\+Wss} (float \&value)
+\item 
+int \hyperlink{class_wss_bag_a8f0597beadf6a65bac27b59d775eabbb}{get\+Count} ()
+\item 
+void \hyperlink{class_wss_bag_a4467a111c05bfced71e799414fa6144c}{set\+Count} (const int \&value)
+\item 
+float \hyperlink{class_wss_bag_ad81f1788775aa9c340d2f215b267e7e8}{get\+Cluster\+Radius} ()
+\item 
+void \hyperlink{class_wss_bag_af79ca518bffb8df641655b70707c3f1a}{set\+Cluster\+Radius} (const float \&value)
+\item 
+float \hyperlink{class_wss_bag_a1f785231b3bb2d7737bed7022a46b4e6}{get\+Cluster\+Density} ()
+\item 
+void \hyperlink{class_wss_bag_a5e55486287410b7b51cc31a8af115d58}{set\+Min\+Distance} (const float \&value)
+\item 
+float \hyperlink{class_wss_bag_a342ec7f142cd7d31c926c878667f2f2e}{get\+Min\+Distance} ()
+\item 
+void \hyperlink{class_wss_bag_aa8d3109ab823231b0001ceeca68e1a2b}{set\+Max\+Distance} (const float \&value)
+\item 
+float \hyperlink{class_wss_bag_ae6544449a24ffde79a2680d98c1e1d52}{get\+Max\+Distance} ()
+\item 
+void \hyperlink{class_wss_bag_aa53e281e368b34888f30c2c3cef4435c}{set\+Operated\+On} ()
+\item 
+bool \hyperlink{class_wss_bag_aa806ac9a3dd391c3a0579db62babb380}{as\+Been\+Operated\+On} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_wss_bag_ab428fb4d86dba46033e23d799ce48cbd}{id}
+\item 
+float \hyperlink{class_wss_bag_a95962ba44b5f1fde09bfc53e5c83afaf}{wss}
+\item 
+float \hyperlink{class_wss_bag_ab4b90933446259adba9c59cbadd8dfac}{min\+Distance}
+\item 
+float \hyperlink{class_wss_bag_a22f03f5b980f81a16ef4dda0fbec1cb2}{max\+Distance}
+\item 
+int \hyperlink{class_wss_bag_a08a9a4fff1f870829390b302ce664569}{count}
+\item 
+float \hyperlink{class_wss_bag_a30ae57df2d130fd6e2ce756148d5cd51}{cluster\+Radius}
+\item 
+bool \hyperlink{class_wss_bag_a6092b58db8c3ab366ddc74b3d5ff1ae4}{operated\+On}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class to hold numeric values. 
+
+Definition at line 20 of file Wss\+Bag.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wss_bag_a67435486174798f81a34887ef2e043b8}\label{class_wss_bag_a67435486174798f81a34887ef2e043b8}} 
+\index{Wss\+Bag@{Wss\+Bag}!Wss\+Bag@{Wss\+Bag}}
+\index{Wss\+Bag@{Wss\+Bag}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{Wss\+Bag()}{WssBag()}}
+{\footnotesize\ttfamily Wss\+Bag\+::\+Wss\+Bag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The empty constructor is required when used as the value in a map. 
+
+Definition at line 5 of file Wss\+Bag.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wss_bag_aa806ac9a3dd391c3a0579db62babb380}\label{class_wss_bag_aa806ac9a3dd391c3a0579db62babb380}} 
+\index{Wss\+Bag@{Wss\+Bag}!as\+Been\+Operated\+On@{as\+Been\+Operated\+On}}
+\index{as\+Been\+Operated\+On@{as\+Been\+Operated\+On}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{as\+Been\+Operated\+On()}{asBeenOperatedOn()}}
+{\footnotesize\ttfamily bool Wss\+Bag\+::as\+Been\+Operated\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 103 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a1f785231b3bb2d7737bed7022a46b4e6}\label{class_wss_bag_a1f785231b3bb2d7737bed7022a46b4e6}} 
+\index{Wss\+Bag@{Wss\+Bag}!get\+Cluster\+Density@{get\+Cluster\+Density}}
+\index{get\+Cluster\+Density@{get\+Cluster\+Density}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{get\+Cluster\+Density()}{getClusterDensity()}}
+{\footnotesize\ttfamily float Wss\+Bag\+::get\+Cluster\+Density (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 69 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_ad81f1788775aa9c340d2f215b267e7e8}\label{class_wss_bag_ad81f1788775aa9c340d2f215b267e7e8}} 
+\index{Wss\+Bag@{Wss\+Bag}!get\+Cluster\+Radius@{get\+Cluster\+Radius}}
+\index{get\+Cluster\+Radius@{get\+Cluster\+Radius}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{get\+Cluster\+Radius()}{getClusterRadius()}}
+{\footnotesize\ttfamily float Wss\+Bag\+::get\+Cluster\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a8f0597beadf6a65bac27b59d775eabbb}\label{class_wss_bag_a8f0597beadf6a65bac27b59d775eabbb}} 
+\index{Wss\+Bag@{Wss\+Bag}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{get\+Count()}{getCount()}}
+{\footnotesize\ttfamily int Wss\+Bag\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 53 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_ac82edcabdc9453934746a78f06cd5532}\label{class_wss_bag_ac82edcabdc9453934746a78f06cd5532}} 
+\index{Wss\+Bag@{Wss\+Bag}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int Wss\+Bag\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 33 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_ae6544449a24ffde79a2680d98c1e1d52}\label{class_wss_bag_ae6544449a24ffde79a2680d98c1e1d52}} 
+\index{Wss\+Bag@{Wss\+Bag}!get\+Max\+Distance@{get\+Max\+Distance}}
+\index{get\+Max\+Distance@{get\+Max\+Distance}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{get\+Max\+Distance()}{getMaxDistance()}}
+{\footnotesize\ttfamily float Wss\+Bag\+::get\+Max\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a342ec7f142cd7d31c926c878667f2f2e}\label{class_wss_bag_a342ec7f142cd7d31c926c878667f2f2e}} 
+\index{Wss\+Bag@{Wss\+Bag}!get\+Min\+Distance@{get\+Min\+Distance}}
+\index{get\+Min\+Distance@{get\+Min\+Distance}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{get\+Min\+Distance()}{getMinDistance()}}
+{\footnotesize\ttfamily float Wss\+Bag\+::get\+Min\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 79 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a636fe904ed2f9154bd33fb5feb254961}\label{class_wss_bag_a636fe904ed2f9154bd33fb5feb254961}} 
+\index{Wss\+Bag@{Wss\+Bag}!get\+Normalized\+Wss@{get\+Normalized\+Wss}}
+\index{get\+Normalized\+Wss@{get\+Normalized\+Wss}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{get\+Normalized\+Wss()}{getNormalizedWss()}}
+{\footnotesize\ttfamily float Wss\+Bag\+::get\+Normalized\+Wss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a4deab0c34ec6854d559eac6826e7f72d}\label{class_wss_bag_a4deab0c34ec6854d559eac6826e7f72d}} 
+\index{Wss\+Bag@{Wss\+Bag}!get\+Wss@{get\+Wss}}
+\index{get\+Wss@{get\+Wss}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{get\+Wss()}{getWss()}}
+{\footnotesize\ttfamily float Wss\+Bag\+::get\+Wss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 41 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_af78f05046f501370d2f9fdd357229d5d}\label{class_wss_bag_af78f05046f501370d2f9fdd357229d5d}} 
+\index{Wss\+Bag@{Wss\+Bag}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Wss\+Bag\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wss_bag}{Wss\+Bag} \&}]{bag }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_af79ca518bffb8df641655b70707c3f1a}\label{class_wss_bag_af79ca518bffb8df641655b70707c3f1a}} 
+\index{Wss\+Bag@{Wss\+Bag}!set\+Cluster\+Radius@{set\+Cluster\+Radius}}
+\index{set\+Cluster\+Radius@{set\+Cluster\+Radius}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{set\+Cluster\+Radius()}{setClusterRadius()}}
+{\footnotesize\ttfamily void Wss\+Bag\+::set\+Cluster\+Radius (\begin{DoxyParamCaption}\item[{const float \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a4467a111c05bfced71e799414fa6144c}\label{class_wss_bag_a4467a111c05bfced71e799414fa6144c}} 
+\index{Wss\+Bag@{Wss\+Bag}!set\+Count@{set\+Count}}
+\index{set\+Count@{set\+Count}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{set\+Count()}{setCount()}}
+{\footnotesize\ttfamily void Wss\+Bag\+::set\+Count (\begin{DoxyParamCaption}\item[{const int \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a0e2859dfdb070ff7a8fe0c5ba4135af7}\label{class_wss_bag_a0e2859dfdb070ff7a8fe0c5ba4135af7}} 
+\index{Wss\+Bag@{Wss\+Bag}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{set\+Id()}{setId()}}
+{\footnotesize\ttfamily void Wss\+Bag\+::set\+Id (\begin{DoxyParamCaption}\item[{const int \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_aa8d3109ab823231b0001ceeca68e1a2b}\label{class_wss_bag_aa8d3109ab823231b0001ceeca68e1a2b}} 
+\index{Wss\+Bag@{Wss\+Bag}!set\+Max\+Distance@{set\+Max\+Distance}}
+\index{set\+Max\+Distance@{set\+Max\+Distance}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{set\+Max\+Distance()}{setMaxDistance()}}
+{\footnotesize\ttfamily void Wss\+Bag\+::set\+Max\+Distance (\begin{DoxyParamCaption}\item[{const float \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a5e55486287410b7b51cc31a8af115d58}\label{class_wss_bag_a5e55486287410b7b51cc31a8af115d58}} 
+\index{Wss\+Bag@{Wss\+Bag}!set\+Min\+Distance@{set\+Min\+Distance}}
+\index{set\+Min\+Distance@{set\+Min\+Distance}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{set\+Min\+Distance()}{setMinDistance()}}
+{\footnotesize\ttfamily void Wss\+Bag\+::set\+Min\+Distance (\begin{DoxyParamCaption}\item[{const float \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 75 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_aa53e281e368b34888f30c2c3cef4435c}\label{class_wss_bag_aa53e281e368b34888f30c2c3cef4435c}} 
+\index{Wss\+Bag@{Wss\+Bag}!set\+Operated\+On@{set\+Operated\+On}}
+\index{set\+Operated\+On@{set\+Operated\+On}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{set\+Operated\+On()}{setOperatedOn()}}
+{\footnotesize\ttfamily void Wss\+Bag\+::set\+Operated\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 99 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a2a36ac684d72b7e8f29b302c0805a978}\label{class_wss_bag_a2a36ac684d72b7e8f29b302c0805a978}} 
+\index{Wss\+Bag@{Wss\+Bag}!set\+Wss@{set\+Wss}}
+\index{set\+Wss@{set\+Wss}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{set\+Wss()}{setWss()}}
+{\footnotesize\ttfamily void Wss\+Bag\+::set\+Wss (\begin{DoxyParamCaption}\item[{float \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Wss\+Bag.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_wss_bag_a30ae57df2d130fd6e2ce756148d5cd51}\label{class_wss_bag_a30ae57df2d130fd6e2ce756148d5cd51}} 
+\index{Wss\+Bag@{Wss\+Bag}!cluster\+Radius@{cluster\+Radius}}
+\index{cluster\+Radius@{cluster\+Radius}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{cluster\+Radius}{clusterRadius}}
+{\footnotesize\ttfamily float Wss\+Bag\+::cluster\+Radius\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 134 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a08a9a4fff1f870829390b302ce664569}\label{class_wss_bag_a08a9a4fff1f870829390b302ce664569}} 
+\index{Wss\+Bag@{Wss\+Bag}!count@{count}}
+\index{count@{count}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int Wss\+Bag\+::count\hspace{0.3cm}{\ttfamily [protected]}}
+
+A count. 
+
+Definition at line 132 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_ab428fb4d86dba46033e23d799ce48cbd}\label{class_wss_bag_ab428fb4d86dba46033e23d799ce48cbd}} 
+\index{Wss\+Bag@{Wss\+Bag}!id@{id}}
+\index{id@{id}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Wss\+Bag\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+A unique identifier. 
+
+Definition at line 112 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a22f03f5b980f81a16ef4dda0fbec1cb2}\label{class_wss_bag_a22f03f5b980f81a16ef4dda0fbec1cb2}} 
+\index{Wss\+Bag@{Wss\+Bag}!max\+Distance@{max\+Distance}}
+\index{max\+Distance@{max\+Distance}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{max\+Distance}{maxDistance}}
+{\footnotesize\ttfamily float Wss\+Bag\+::max\+Distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+The maximum distance to the cluster centroid. 
+
+Definition at line 127 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_ab4b90933446259adba9c59cbadd8dfac}\label{class_wss_bag_ab4b90933446259adba9c59cbadd8dfac}} 
+\index{Wss\+Bag@{Wss\+Bag}!min\+Distance@{min\+Distance}}
+\index{min\+Distance@{min\+Distance}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{min\+Distance}{minDistance}}
+{\footnotesize\ttfamily float Wss\+Bag\+::min\+Distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+The minimum distance to the cluster centroid. 
+
+Definition at line 122 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a6092b58db8c3ab366ddc74b3d5ff1ae4}\label{class_wss_bag_a6092b58db8c3ab366ddc74b3d5ff1ae4}} 
+\index{Wss\+Bag@{Wss\+Bag}!operated\+On@{operated\+On}}
+\index{operated\+On@{operated\+On}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{operated\+On}{operatedOn}}
+{\footnotesize\ttfamily bool Wss\+Bag\+::operated\+On\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 138 of file Wss\+Bag.\+h.
+
+\mbox{\Hypertarget{class_wss_bag_a95962ba44b5f1fde09bfc53e5c83afaf}\label{class_wss_bag_a95962ba44b5f1fde09bfc53e5c83afaf}} 
+\index{Wss\+Bag@{Wss\+Bag}!wss@{wss}}
+\index{wss@{wss}!Wss\+Bag@{Wss\+Bag}}
+\subsubsection{\texorpdfstring{wss}{wss}}
+{\footnotesize\ttfamily float Wss\+Bag\+::wss\hspace{0.3cm}{\ttfamily [protected]}}
+
+The wss. 
+
+Definition at line 117 of file Wss\+Bag.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_wss_bag_8h}{Wss\+Bag.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_wss_bag_8cpp}{Wss\+Bag.\+cpp}\end{DoxyCompactItemize}

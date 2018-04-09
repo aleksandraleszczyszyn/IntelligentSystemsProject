@@ -1,0 +1,336 @@
+
+Configuration
+	voxel_size 0.01
+	spin_imgs_search_radius 0.1
+	window_width 8
+	support_length 0.1
+	support_angle 0
+	min_pts_neighbours 0
+	redistribute_GWeights_search_radius 0.065
+	Forget Features On
+	Number Of Tests To Perform: 1
+	Number Categories used in the tests: 5
+	% Views for training: 0.65
+	Views Dir: ../SI_CODE/views/
+	Memory Decay Factor: 0.99985
+	Memory Decay Threshold: 0.97775
+	Feature Redundancy Threshold: 0.000126
+	Max Number Features In Memory: 35000
+	bin_size 0.00883883
+	cylinder r = 0.8 height = 1.6
+
+Test 1
+Nº Categories used: 5
+Nº Categories Available: 51
+Nº Views per Categories: 20
+Nº Views for Training: 12
+Nº Views for Testing: 8
+
+Task: Training
+
+View: ../SI_CODE/views/garlic/garlic_1_4_16.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_78.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_15.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_26.pcd
+View: ../SI_CODE/views/comb/comb_1_1_155.pcd
+View: ../SI_CODE/views/comb/comb_1_1_119.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_212.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_20.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_196.pcd
+View: ../SI_CODE/views/comb/comb_1_2_155.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_190.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_146.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_64.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_109.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_132.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_153.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_258.pcd
+View: ../SI_CODE/views/comb/comb_1_2_179.pcd
+View: ../SI_CODE/views/comb/comb_1_1_123.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_162.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_41.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_10.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_185.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_53.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_50.pcd
+View: ../SI_CODE/views/comb/comb_1_1_165.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_86.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_142.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_127.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_185.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_52.pcd
+View: ../SI_CODE/views/comb/comb_1_1_5.pcd
+View: ../SI_CODE/views/comb/comb_1_4_100.pcd
+View: ../SI_CODE/views/comb/comb_1_4_186.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_17.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_17.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_122.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_133.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_113.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_181.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_174.pcd
+View: ../SI_CODE/views/comb/comb_1_4_74.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_43.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_159.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_1.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_129.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_101.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_92.pcd
+View: ../SI_CODE/views/comb/comb_1_4_7.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_120.pcd
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_12.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_18.pcd
+View: ../SI_CODE/views/garlic/garlic_1_2_4.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_112.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_175.pcd
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_157.pcd
+View: ../SI_CODE/views/comb/comb_1_2_156.pcd
+View: ../SI_CODE/views/garlic/garlic_1_4_82.pcd
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_160.pcd
+View: ../SI_CODE/views/garlic/garlic_1_1_206.pcd
+
+Training done!
+
+Starting Testing phase!
+
+Task: Testing
+
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_31.pcd
+Category Id:
+	Predicted: 2 || Real: 2
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/comb/comb_1_2_121.pcd
+Category Id:
+	Predicted: 4 || Real: 4
+Category:
+	Predicted: comb || Real: comb
+View: ../SI_CODE/views/garlic/garlic_1_4_195.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/garlic/garlic_1_2_118.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_30.pcd
+Category Id:
+	Predicted: 1 || Real: 3
+Category:
+	Predicted: bell_pepper || Real: cereal_box
+View: ../SI_CODE/views/dry_battery/dry_battery_1_1_86.pcd
+Category Id:
+	Predicted: 2 || Real: 2
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_49.pcd
+Category Id:
+	Predicted: 2 || Real: 2
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/comb/comb_1_1_17.pcd
+Category Id:
+	Predicted: 4 || Real: 4
+Category:
+	Predicted: comb || Real: comb
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_203.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: bell_pepper || Real: bell_pepper
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_65.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: bell_pepper || Real: bell_pepper
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_150.pcd
+Category Id:
+	Predicted: 1 || Real: 3
+Category:
+	Predicted: bell_pepper || Real: cereal_box
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_107.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: bell_pepper || Real: bell_pepper
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_12.pcd
+Category Id:
+	Predicted: 2 || Real: 2
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/comb/comb_1_4_104.pcd
+Category Id:
+	Predicted: 4 || Real: 4
+Category:
+	Predicted: comb || Real: comb
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_56.pcd
+Category Id:
+	Predicted: 3 || Real: 3
+Category:
+	Predicted: cereal_box || Real: cereal_box
+View: ../SI_CODE/views/comb/comb_1_1_139.pcd
+Category Id:
+	Predicted: 2 || Real: 4
+Category:
+	Predicted: dry_battery || Real: comb
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_159.pcd
+Category Id:
+	Predicted: 2 || Real: 2
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/cereal_box/cereal_box_1_2_3.pcd
+Category Id:
+	Predicted: 1 || Real: 3
+Category:
+	Predicted: bell_pepper || Real: cereal_box
+View: ../SI_CODE/views/garlic/garlic_1_2_176.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_1_15.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: bell_pepper || Real: bell_pepper
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_106.pcd
+Category Id:
+	Predicted: 3 || Real: 3
+Category:
+	Predicted: cereal_box || Real: cereal_box
+View: ../SI_CODE/views/dry_battery/dry_battery_1_2_153.pcd
+Category Id:
+	Predicted: 2 || Real: 2
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/comb/comb_1_4_5.pcd
+Category Id:
+	Predicted: 4 || Real: 4
+Category:
+	Predicted: comb || Real: comb
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_39.pcd
+Category Id:
+	Predicted: 1 || Real: 3
+Category:
+	Predicted: bell_pepper || Real: cereal_box
+View: ../SI_CODE/views/garlic/garlic_1_2_113.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/garlic/garlic_1_2_201.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_156.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: bell_pepper || Real: bell_pepper
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_53.pcd
+Category Id:
+	Predicted: 2 || Real: 2
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/comb/comb_1_2_182.pcd
+Category Id:
+	Predicted: 4 || Real: 4
+Category:
+	Predicted: comb || Real: comb
+View: ../SI_CODE/views/dry_battery/dry_battery_1_4_165.pcd
+Category Id:
+	Predicted: 2 || Real: 2
+Category:
+	Predicted: dry_battery || Real: dry_battery
+View: ../SI_CODE/views/cereal_box/cereal_box_1_4_19.pcd
+Category Id:
+	Predicted: 3 || Real: 3
+Category:
+	Predicted: cereal_box || Real: cereal_box
+View: ../SI_CODE/views/garlic/garlic_1_1_102.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/garlic/garlic_1_1_248.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_2_36.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: bell_pepper || Real: bell_pepper
+View: ../SI_CODE/views/cereal_box/cereal_box_1_1_107.pcd
+Category Id:
+	Predicted: 1 || Real: 3
+Category:
+	Predicted: bell_pepper || Real: cereal_box
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_184.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: bell_pepper || Real: bell_pepper
+View: ../SI_CODE/views/garlic/garlic_1_1_255.pcd
+Category Id:
+	Predicted: 0 || Real: 0
+Category:
+	Predicted: garlic || Real: garlic
+View: ../SI_CODE/views/comb/comb_1_2_127.pcd
+Category Id:
+	Predicted: 0 || Real: 4
+Category:
+	Predicted: garlic || Real: comb
+View: ../SI_CODE/views/bell_pepper/bell_pepper_1_4_59.pcd
+Category Id:
+	Predicted: 1 || Real: 1
+Category:
+	Predicted: bell_pepper || Real: bell_pepper
+View: ../SI_CODE/views/comb/comb_1_1_4.pcd
+Category Id:
+	Predicted: 4 || Real: 4
+Category:
+	Predicted: comb || Real: comb
+
+Testing done!
+	Max Global Weight: 3.13057
+	Min Global Weigh: 0.985256
+	Max Local Weight: 2.21128
+	Min Local Weigh: 0.985552
+	Min distance: 3.94009e-06
+	Max distance: 0.000125978
+
+RESULTS
+Test 1
+Test performance
+	37 cluster(s) used in the test
+	40 samples used: 33 correct classifications, accuracy: 82.50%
+Category Meassures
+	Category garlic ,precision 88.89% ,recall 100.00%
+	Category bell_pepper ,precision 61.54% ,recall 100.00%
+	Category dry_battery ,precision 88.89% ,recall 100.00%
+	Category cereal_box ,precision 100.00% ,recall 37.50%
+	Category comb ,precision 100.00% ,recall 75.00%
+Memory Managment
+	Nº forgotten features: 3593
+	Nº redundant features: 3593
+	Nº forgotten features by Memory Decay: 0
+	Nº seen objects: 100
+	Nº seen features: 23864
+	Nº features in memory: 20271
+	Feature smallest distance: 0.000004
+
+Average Results
+	Accuracy: 82.50%
+	Category: bell_pepper Precision: 61.54% Recall: 100.00%
+	Category: cereal_box Precision: 100.00% Recall: 37.50%
+	Category: comb Precision: 100.00% Recall: 75.00%
+	Category: dry_battery Precision: 88.89% Recall: 100.00%
+	Category: garlic Precision: 88.89% Recall: 100.00%
+
+Time Elapsed: 0:8:46
+Time Elapsed: 00:08:46

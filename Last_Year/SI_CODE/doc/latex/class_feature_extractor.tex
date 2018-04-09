@@ -1,0 +1,138 @@
+\hypertarget{class_feature_extractor}{}\section{Feature\+Extractor Class Reference}
+\label{class_feature_extractor}\index{Feature\+Extractor@{Feature\+Extractor}}
+
+
+Functions to extract keypoints from a point cloud and compute spin images.  
+
+
+
+
+{\ttfamily \#include $<$Feature\+Extractor.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_feature_extractor_a58c705d663551bfa7baea3d75614311f}{Feature\+Extractor} ()
+\item 
+\hyperlink{class_feature_extractor_ad87b36879a01dcfe45f57318d2850c54}{$\sim$\+Feature\+Extractor} ()
+\item 
+void \hyperlink{class_feature_extractor_aa9dc5acc77de1af1f320c131a81a0928}{Get\+Keypoints\+Using\+A\+Voxel\+Filter} (const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&pc, float voxel\+Size, Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&keypoints) const
+\item 
+void \hyperlink{class_feature_extractor_ad977ae7b163c09dd44b488c80a0a201c}{Compute\+Spin\+Images\+At\+Keypoints} (const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&search\+\_\+surface, const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&keypoints, float radius\+\_\+search, int \hyperlink{pcd__read_8cpp_a0e2e740afd510cfe652a1836ffbad209}{window\+\_\+width}, float \hyperlink{pcd__read_8cpp_abed5c1c3716fc66df9f1a01a430aa8cc}{support\+\_\+lenght}, float \hyperlink{pcd__read_8cpp_a13fd0ebf6c809f68d2b0e9bfc16bf68d}{support\+\_\+angle}, float \hyperlink{pcd__read_8cpp_abbd3dac675fcfc5a5b1d4650518f3771}{min\+\_\+pts\+\_\+neighbours}, Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr \&spin\+\_\+images) const
+\item 
+void \hyperlink{class_feature_extractor_a7612f1c3b17030d24a89b44973fd109e}{Compute\+Surface\+Normals} (const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&pc, float normal\+\_\+radius, Point\+Cloud$<$ Normal $>$\+::Ptr \&pc\+\_\+normals\+\_\+out) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to extract keypoints from a point cloud and compute spin images. 
+
+In this version the keypoints are extracted using a voxel grid filter. 
+
+Definition at line 11 of file Feature\+Extractor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_feature_extractor_a58c705d663551bfa7baea3d75614311f}\label{class_feature_extractor_a58c705d663551bfa7baea3d75614311f}} 
+\index{Feature\+Extractor@{Feature\+Extractor}!Feature\+Extractor@{Feature\+Extractor}}
+\index{Feature\+Extractor@{Feature\+Extractor}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection{\texorpdfstring{Feature\+Extractor()}{FeatureExtractor()}}
+{\footnotesize\ttfamily Feature\+Extractor\+::\+Feature\+Extractor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file Feature\+Extractor.\+cpp.
+
+\mbox{\Hypertarget{class_feature_extractor_ad87b36879a01dcfe45f57318d2850c54}\label{class_feature_extractor_ad87b36879a01dcfe45f57318d2850c54}} 
+\index{Feature\+Extractor@{Feature\+Extractor}!````~Feature\+Extractor@{$\sim$\+Feature\+Extractor}}
+\index{````~Feature\+Extractor@{$\sim$\+Feature\+Extractor}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection{\texorpdfstring{$\sim$\+Feature\+Extractor()}{~FeatureExtractor()}}
+{\footnotesize\ttfamily Feature\+Extractor\+::$\sim$\+Feature\+Extractor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file Feature\+Extractor.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_feature_extractor_ad977ae7b163c09dd44b488c80a0a201c}\label{class_feature_extractor_ad977ae7b163c09dd44b488c80a0a201c}} 
+\index{Feature\+Extractor@{Feature\+Extractor}!Compute\+Spin\+Images\+At\+Keypoints@{Compute\+Spin\+Images\+At\+Keypoints}}
+\index{Compute\+Spin\+Images\+At\+Keypoints@{Compute\+Spin\+Images\+At\+Keypoints}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection{\texorpdfstring{Compute\+Spin\+Images\+At\+Keypoints()}{ComputeSpinImagesAtKeypoints()}}
+{\footnotesize\ttfamily void Feature\+Extractor\+::\+Compute\+Spin\+Images\+At\+Keypoints (\begin{DoxyParamCaption}\item[{const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&}]{search\+\_\+surface,  }\item[{const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&}]{keypoints,  }\item[{float}]{radius\+\_\+search,  }\item[{int}]{window\+\_\+width,  }\item[{float}]{support\+\_\+lenght,  }\item[{float}]{support\+\_\+angle,  }\item[{float}]{min\+\_\+pts\+\_\+neighbours,  }\item[{Point\+Cloud$<$ \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} $>$\+::Ptr \&}]{spin\+\_\+images }\end{DoxyParamCaption}) const}
+
+Computes spin images for a set of given points.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em search\+\_\+surface} & the search surface \\
+\hline
+\mbox{\tt in}  & {\em keypoints} & the keypoints, points, to get the spin images for \\
+\hline
+\mbox{\tt in}  & {\em radius\+\_\+search} & paremeters for spin image generation \\
+\hline
+\mbox{\tt in}  & {\em window\+\_\+width} & \\
+\hline
+\mbox{\tt in}  & {\em support\+\_\+lenght} & \\
+\hline
+\mbox{\tt in}  & {\em support\+\_\+angle} & \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+pts\+\_\+neighbours} & \\
+\hline
+\mbox{\tt out}  & {\em spin\+\_\+images} & the computed spin images for each point \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file Feature\+Extractor.\+cpp.
+
+\mbox{\Hypertarget{class_feature_extractor_a7612f1c3b17030d24a89b44973fd109e}\label{class_feature_extractor_a7612f1c3b17030d24a89b44973fd109e}} 
+\index{Feature\+Extractor@{Feature\+Extractor}!Compute\+Surface\+Normals@{Compute\+Surface\+Normals}}
+\index{Compute\+Surface\+Normals@{Compute\+Surface\+Normals}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection{\texorpdfstring{Compute\+Surface\+Normals()}{ComputeSurfaceNormals()}}
+{\footnotesize\ttfamily void Feature\+Extractor\+::\+Compute\+Surface\+Normals (\begin{DoxyParamCaption}\item[{const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&}]{pc,  }\item[{float}]{normal\+\_\+radius,  }\item[{Point\+Cloud$<$ Normal $>$\+::Ptr \&}]{pc\+\_\+normals\+\_\+out }\end{DoxyParamCaption}) const}
+
+Computes the surface normals.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pc} & the point cloud \\
+\hline
+\mbox{\tt in}  & {\em normal\+\_\+radius} & paremeter for normals computation \\
+\hline
+\mbox{\tt out}  & {\em pc\+\_\+normals\+\_\+out} & the point cloud computed normals \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file Feature\+Extractor.\+cpp.
+
+\mbox{\Hypertarget{class_feature_extractor_aa9dc5acc77de1af1f320c131a81a0928}\label{class_feature_extractor_aa9dc5acc77de1af1f320c131a81a0928}} 
+\index{Feature\+Extractor@{Feature\+Extractor}!Get\+Keypoints\+Using\+A\+Voxel\+Filter@{Get\+Keypoints\+Using\+A\+Voxel\+Filter}}
+\index{Get\+Keypoints\+Using\+A\+Voxel\+Filter@{Get\+Keypoints\+Using\+A\+Voxel\+Filter}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection{\texorpdfstring{Get\+Keypoints\+Using\+A\+Voxel\+Filter()}{GetKeypointsUsingAVoxelFilter()}}
+{\footnotesize\ttfamily void Feature\+Extractor\+::\+Get\+Keypoints\+Using\+A\+Voxel\+Filter (\begin{DoxyParamCaption}\item[{const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&}]{pc,  }\item[{float}]{voxel\+Size,  }\item[{Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr \&}]{keypoints }\end{DoxyParamCaption}) const}
+
+Find keypoints using a Voxel Grid Filter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pc} & the point cloud to get keypoints from \\
+\hline
+\mbox{\tt in}  & {\em voxel\+Size} & the voxel grid filter size \\
+\hline
+\mbox{\tt out}  & {\em keypoints} & the keypoints found using the Voxel Grid Filter \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file Feature\+Extractor.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_feature_extractor_8h}{Feature\+Extractor.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_feature_extractor_8cpp}{Feature\+Extractor.\+cpp}\end{DoxyCompactItemize}

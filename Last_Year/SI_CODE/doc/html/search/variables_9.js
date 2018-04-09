@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['name',['name',['../class_category.html#a433491cdb802174ee504a41eea7bc7c7',1,'Category']]],
+  ['ncategories',['nCategories',['../pcd__read_8cpp.html#a21d538faa7b6b1c86f9d819afb80545a',1,'pcd_read.cpp']]],
+  ['nclusters',['nClusters',['../class_test_result.html#add83898b67f41cc78be15efef7748ac0',1,'TestResult']]],
+  ['ncorrectclass',['nCorrectClass',['../class_test_result.html#a35cefffa1f0be43a99b0061c03008c16',1,'TestResult']]],
+  ['newseenfeaturesids',['newSeenFeaturesIds',['../class_memory.html#a9bb05f7f61a8eb13c91fa9f99d1962a6',1,'Memory']]],
+  ['nforgottenfeaturesbymemorydecayfactor',['nForgottenFeaturesByMemoryDecayFactor',['../class_memory.html#aa351103686a0f8230ca638fbf0b2dc5b',1,'Memory']]],
+  ['nsamples',['nSamples',['../class_test_result.html#a2986ed45ae3e5dd3287804d3e35f3830',1,'TestResult']]],
+  ['ntests',['nTests',['../struct_performance_manager_1_1_average_results.html#a2a5cb49ab2800a943385f0b5637ec845',1,'PerformanceManager::AverageResults']]],
+  ['numberoftests',['numberOfTests',['../pcd__read_8cpp.html#ae4d2a6bfe8a5f3769966bedeb51fd5ce',1,'pcd_read.cpp']]],
+  ['numfeaturesinmemory',['numFeaturesInMemory',['../class_memory.html#a35ac41aee3f23446e2f34e492818007e',1,'Memory::numFeaturesInMemory()'],['../class_test_result.html#a9d7b76c3afe61c67ffd4a73af768e9c4',1,'TestResult::numFeaturesInMemory()']]],
+  ['numforgottenfeatures',['numForgottenFeatures',['../class_memory.html#a01e573fd360050d1d87e4702eeec77ff',1,'Memory::numForgottenFeatures()'],['../class_test_result.html#ac6db89d90c92fbc19b701c3e1327dabf',1,'TestResult::numForgottenFeatures()']]],
+  ['numforgottenfeaturesbymemorydecayfactor',['numForgottenFeaturesByMemoryDecayFactor',['../class_test_result.html#a1e421539c0074eeb06cc31ba177a724e',1,'TestResult']]],
+  ['numredundantfeatures',['numRedundantFeatures',['../class_memory.html#ae3c078fe2fb8bc942d13ede6a2eb951b',1,'Memory::numRedundantFeatures()'],['../class_test_result.html#aa416470604df77c02a8f4a971f413e1a',1,'TestResult::numRedundantFeatures()']]],
+  ['numseenfeatures',['numSeenFeatures',['../class_memory.html#ae10824d7cf347234fd910fa3a4e6a9c7',1,'Memory::numSeenFeatures()'],['../class_test_result.html#a3908b36b2834082b11fdbb3932a4908e',1,'TestResult::numSeenFeatures()']]],
+  ['numseenobjects',['numSeenObjects',['../class_memory.html#a3b7f28c5be1d201bb41cdbc90646fb4b',1,'Memory::numSeenObjects()'],['../class_test_result.html#a5e10d3944bd5a8f6997547fb2faf4de6',1,'TestResult::numSeenObjects()']]],
+  ['nviewstoseepercategory',['nViewsToSeePerCategory',['../pcd__read_8cpp.html#ad7293039828c875da50e40a0640f3dfa',1,'pcd_read.cpp']]]
+];

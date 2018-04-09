@@ -1,0 +1,118 @@
+\hypertarget{class_viewer}{}\section{Viewer Class Reference}
+\label{class_viewer}\index{Viewer@{Viewer}}
+
+
+Functions for visualization of points$\vert$features and histograms.  
+
+
+
+
+{\ttfamily \#include $<$Viewer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_viewer_aaedebacb31cba87de6e7d448ed8d6586}{Viewer} ()
+\item 
+\hyperlink{class_viewer_a324e5a6a1532fe5eac3f3b0e4792b2da}{$\sim$\+Viewer} ()
+\item 
+void \hyperlink{class_viewer_af5b5d29371cad5439cffbc1e242ecfcd}{View\+Spin\+Image\+Histogram} (const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&descriptor) const
+\item 
+void \hyperlink{class_viewer_add8f4dde235531d689e0bf6e70689414}{Visualize\+Keypoints\+In\+Point\+Cloud} (const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr pc, const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr keypoints) const
+\item 
+void \hyperlink{class_viewer_a1c2fe687ac2ce3f920caecae92a44482}{Visualize\+Side\+By\+Side} (const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr left\+Window\+PC, const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr right\+Window\+PC) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for visualization of points$\vert$features and histograms. 
+
+Definition at line 12 of file Viewer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_viewer_aaedebacb31cba87de6e7d448ed8d6586}\label{class_viewer_aaedebacb31cba87de6e7d448ed8d6586}} 
+\index{Viewer@{Viewer}!Viewer@{Viewer}}
+\index{Viewer@{Viewer}!Viewer@{Viewer}}
+\subsubsection{\texorpdfstring{Viewer()}{Viewer()}}
+{\footnotesize\ttfamily Viewer\+::\+Viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file Viewer.\+cpp.
+
+\mbox{\Hypertarget{class_viewer_a324e5a6a1532fe5eac3f3b0e4792b2da}\label{class_viewer_a324e5a6a1532fe5eac3f3b0e4792b2da}} 
+\index{Viewer@{Viewer}!````~Viewer@{$\sim$\+Viewer}}
+\index{````~Viewer@{$\sim$\+Viewer}!Viewer@{Viewer}}
+\subsubsection{\texorpdfstring{$\sim$\+Viewer()}{~Viewer()}}
+{\footnotesize\ttfamily Viewer\+::$\sim$\+Viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file Viewer.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_viewer_af5b5d29371cad5439cffbc1e242ecfcd}\label{class_viewer_af5b5d29371cad5439cffbc1e242ecfcd}} 
+\index{Viewer@{Viewer}!View\+Spin\+Image\+Histogram@{View\+Spin\+Image\+Histogram}}
+\index{View\+Spin\+Image\+Histogram@{View\+Spin\+Image\+Histogram}!Viewer@{Viewer}}
+\subsubsection{\texorpdfstring{View\+Spin\+Image\+Histogram()}{ViewSpinImageHistogram()}}
+{\footnotesize\ttfamily void Viewer\+::\+View\+Spin\+Image\+Histogram (\begin{DoxyParamCaption}\item[{const \hyperlink{include_8h_ab79ade12a22a8e5e2864650f820e9c6f}{Spin\+Image} \&}]{descriptor }\end{DoxyParamCaption}) const}
+
+View the histogram of a given spin image.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em descriptor} & spin image \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file Viewer.\+cpp.
+
+\mbox{\Hypertarget{class_viewer_add8f4dde235531d689e0bf6e70689414}\label{class_viewer_add8f4dde235531d689e0bf6e70689414}} 
+\index{Viewer@{Viewer}!Visualize\+Keypoints\+In\+Point\+Cloud@{Visualize\+Keypoints\+In\+Point\+Cloud}}
+\index{Visualize\+Keypoints\+In\+Point\+Cloud@{Visualize\+Keypoints\+In\+Point\+Cloud}!Viewer@{Viewer}}
+\subsubsection{\texorpdfstring{Visualize\+Keypoints\+In\+Point\+Cloud()}{VisualizeKeypointsInPointCloud()}}
+{\footnotesize\ttfamily void Viewer\+::\+Visualize\+Keypoints\+In\+Point\+Cloud (\begin{DoxyParamCaption}\item[{const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr}]{pc,  }\item[{const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr}]{keypoints }\end{DoxyParamCaption}) const}
+
+View the keypoints in the original point cloud. Generalization\+: view a set of points as spheres in a universe of points. Where\+: set of points $<$$<$ universe of points
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pc} & the universe of points \\
+\hline
+\mbox{\tt in}  & {\em keypoints} & a subset of points of the universe of points \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Viewer.\+cpp.
+
+\mbox{\Hypertarget{class_viewer_a1c2fe687ac2ce3f920caecae92a44482}\label{class_viewer_a1c2fe687ac2ce3f920caecae92a44482}} 
+\index{Viewer@{Viewer}!Visualize\+Side\+By\+Side@{Visualize\+Side\+By\+Side}}
+\index{Visualize\+Side\+By\+Side@{Visualize\+Side\+By\+Side}!Viewer@{Viewer}}
+\subsubsection{\texorpdfstring{Visualize\+Side\+By\+Side()}{VisualizeSideBySide()}}
+{\footnotesize\ttfamily void Viewer\+::\+Visualize\+Side\+By\+Side (\begin{DoxyParamCaption}\item[{const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr}]{left\+Window\+PC,  }\item[{const Point\+Cloud$<$ \hyperlink{include_8h_a6ca7710b84e9152e036423253ffc1ae7}{PointT} $>$\+::Ptr}]{right\+Window\+PC }\end{DoxyParamCaption}) const}
+
+View the keypoints and the original point cloud in two windows side by side. Generalization\+: view two sets of points in two windows side by side.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em left\+Window\+PC} & point cloud to show in the left window \\
+\hline
+\mbox{\tt in}  & {\em right\+Window\+PC} & point cloud to show in the right window \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file Viewer.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_viewer_8h}{Viewer.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_viewer_8cpp}{Viewer.\+cpp}\end{DoxyCompactItemize}

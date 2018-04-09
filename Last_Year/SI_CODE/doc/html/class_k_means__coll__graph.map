@@ -1,0 +1,5 @@
+<map id="KMeans" name="KMeans">
+<area shape="rect" id="node2" href="$class_memory.html" title="Main structure of the application. Holds the applications&#39; memory. " alt="" coords="300,192,369,219"/>
+<area shape="rect" id="node4" href="$class_seq_generator.html" title="Uses an int internal variable to generate sequential integer identifiers. " alt="" coords="25,156,127,183"/>
+<area shape="rect" id="node6" href="$class_searcher.html" title="A class with functions to search for features in a given search domain. It also provides functions fo..." alt="" coords="39,273,113,300"/>
+</map>

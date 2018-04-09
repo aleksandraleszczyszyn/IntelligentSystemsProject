@@ -1,0 +1,140 @@
+\hypertarget{class_performance_manager}{}\section{Performance\+Manager Class Reference}
+\label{class_performance_manager}\index{Performance\+Manager@{Performance\+Manager}}
+
+
+A class to handle performance results.  
+
+
+
+
+{\ttfamily \#include $<$Performance\+Manager.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_performance_manager_1_1_average_results}{Average\+Results}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_performance_manager_ab9e6bcde7a6a29b4b791300805e3774d}{Performance\+Manager} ()
+\item 
+\hyperlink{class_performance_manager_a4cdbf108ea6a7cdad618144c3c7a287c}{$\sim$\+Performance\+Manager} ()
+\item 
+void \hyperlink{class_performance_manager_a51d37a97f0ef246c5e5e5b6c2bbefc23}{print\+Perf\+Results} ()
+\item 
+void \hyperlink{class_performance_manager_a35c9c4d3c52d3580a56a684196393dd5}{add\+Test\+Result} (\hyperlink{class_test_result}{Test\+Result} $\ast$test\+Result)
+\item 
+void \hyperlink{class_performance_manager_a732f26520dd9d6216b7ac80160bc5db3}{add\+Test\+Result} (\hyperlink{class_test_result}{Test\+Result} \&test\+Result)
+\item 
+const std\+::vector$<$ \hyperlink{class_test_result}{Test\+Result} $>$ \& \hyperlink{class_performance_manager_aca3998b3ce95df432df3b72eda3f639e}{get\+Results} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_test_result}{Test\+Result} $\ast$$>$ \hyperlink{class_performance_manager_ad456304b0437d5dac639f622f33dbabe}{test\+Results}
+\item 
+std\+::vector$<$ \hyperlink{class_test_result}{Test\+Result} $>$ \hyperlink{class_performance_manager_ad71f956546a14c54a6a6122f0b857b9d}{perf}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to handle performance results. 
+
+Definition at line 12 of file Performance\+Manager.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_performance_manager_ab9e6bcde7a6a29b4b791300805e3774d}\label{class_performance_manager_ab9e6bcde7a6a29b4b791300805e3774d}} 
+\index{Performance\+Manager@{Performance\+Manager}!Performance\+Manager@{Performance\+Manager}}
+\index{Performance\+Manager@{Performance\+Manager}!Performance\+Manager@{Performance\+Manager}}
+\subsubsection{\texorpdfstring{Performance\+Manager()}{PerformanceManager()}}
+{\footnotesize\ttfamily Performance\+Manager\+::\+Performance\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The empty constructor is required when used as the value in a map. 
+
+Definition at line 18 of file Performance\+Manager.\+h.
+
+\mbox{\Hypertarget{class_performance_manager_a4cdbf108ea6a7cdad618144c3c7a287c}\label{class_performance_manager_a4cdbf108ea6a7cdad618144c3c7a287c}} 
+\index{Performance\+Manager@{Performance\+Manager}!````~Performance\+Manager@{$\sim$\+Performance\+Manager}}
+\index{````~Performance\+Manager@{$\sim$\+Performance\+Manager}!Performance\+Manager@{Performance\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Performance\+Manager()}{~PerformanceManager()}}
+{\footnotesize\ttfamily Performance\+Manager\+::$\sim$\+Performance\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file Performance\+Manager.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_performance_manager_a35c9c4d3c52d3580a56a684196393dd5}\label{class_performance_manager_a35c9c4d3c52d3580a56a684196393dd5}} 
+\index{Performance\+Manager@{Performance\+Manager}!add\+Test\+Result@{add\+Test\+Result}}
+\index{add\+Test\+Result@{add\+Test\+Result}!Performance\+Manager@{Performance\+Manager}}
+\subsubsection{\texorpdfstring{add\+Test\+Result()}{addTestResult()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Performance\+Manager\+::add\+Test\+Result (\begin{DoxyParamCaption}\item[{\hyperlink{class_test_result}{Test\+Result} $\ast$}]{test\+Result }\end{DoxyParamCaption})}
+
+Adds a new test result. 
+
+Definition at line 77 of file Performance\+Manager.\+cpp.
+
+\mbox{\Hypertarget{class_performance_manager_a732f26520dd9d6216b7ac80160bc5db3}\label{class_performance_manager_a732f26520dd9d6216b7ac80160bc5db3}} 
+\index{Performance\+Manager@{Performance\+Manager}!add\+Test\+Result@{add\+Test\+Result}}
+\index{add\+Test\+Result@{add\+Test\+Result}!Performance\+Manager@{Performance\+Manager}}
+\subsubsection{\texorpdfstring{add\+Test\+Result()}{addTestResult()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Performance\+Manager\+::add\+Test\+Result (\begin{DoxyParamCaption}\item[{\hyperlink{class_test_result}{Test\+Result} \&}]{test\+Result }\end{DoxyParamCaption})}
+
+Adds a new test result. 
+
+Definition at line 73 of file Performance\+Manager.\+cpp.
+
+\mbox{\Hypertarget{class_performance_manager_aca3998b3ce95df432df3b72eda3f639e}\label{class_performance_manager_aca3998b3ce95df432df3b72eda3f639e}} 
+\index{Performance\+Manager@{Performance\+Manager}!get\+Results@{get\+Results}}
+\index{get\+Results@{get\+Results}!Performance\+Manager@{Performance\+Manager}}
+\subsubsection{\texorpdfstring{get\+Results()}{getResults()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{class_test_result}{Test\+Result}$>$\& Performance\+Manager\+::get\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file Performance\+Manager.\+h.
+
+\mbox{\Hypertarget{class_performance_manager_a51d37a97f0ef246c5e5e5b6c2bbefc23}\label{class_performance_manager_a51d37a97f0ef246c5e5e5b6c2bbefc23}} 
+\index{Performance\+Manager@{Performance\+Manager}!print\+Perf\+Results@{print\+Perf\+Results}}
+\index{print\+Perf\+Results@{print\+Perf\+Results}!Performance\+Manager@{Performance\+Manager}}
+\subsubsection{\texorpdfstring{print\+Perf\+Results()}{printPerfResults()}}
+{\footnotesize\ttfamily void Performance\+Manager\+::print\+Perf\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints tests performance information. 
+
+Definition at line 12 of file Performance\+Manager.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_performance_manager_ad71f956546a14c54a6a6122f0b857b9d}\label{class_performance_manager_ad71f956546a14c54a6a6122f0b857b9d}} 
+\index{Performance\+Manager@{Performance\+Manager}!perf@{perf}}
+\index{perf@{perf}!Performance\+Manager@{Performance\+Manager}}
+\subsubsection{\texorpdfstring{perf}{perf}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_test_result}{Test\+Result}$>$ Performance\+Manager\+::perf\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds the perfomance results (precision and recall) for the categories used in all the test runs. 
+
+Definition at line 63 of file Performance\+Manager.\+h.
+
+\mbox{\Hypertarget{class_performance_manager_ad456304b0437d5dac639f622f33dbabe}\label{class_performance_manager_ad456304b0437d5dac639f622f33dbabe}} 
+\index{Performance\+Manager@{Performance\+Manager}!test\+Results@{test\+Results}}
+\index{test\+Results@{test\+Results}!Performance\+Manager@{Performance\+Manager}}
+\subsubsection{\texorpdfstring{test\+Results}{testResults}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_test_result}{Test\+Result}$\ast$ $>$ Performance\+Manager\+::test\+Results\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds the perfomance results (precision and recall) for the categories used in all the test runs. 
+
+Definition at line 57 of file Performance\+Manager.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_performance_manager_8h}{Performance\+Manager.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_performance_manager_8cpp}{Performance\+Manager.\+cpp}\end{DoxyCompactItemize}

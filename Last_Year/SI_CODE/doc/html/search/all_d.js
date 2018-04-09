@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['pcd_5fread_2ecpp',['pcd_read.cpp',['../pcd__read_8cpp.html',1,'']]],
+  ['pcl',['pcl',['../namespacepcl.html',1,'']]],
+  ['perf',['perf',['../class_performance_manager.html#ad71f956546a14c54a6a6122f0b857b9d',1,'PerformanceManager']]],
+  ['perfassess',['perfAssess',['../class_category.html#ae2153cae8cf1b7eded7625a40e45ab8c',1,'Category::perfAssess()'],['../class_test_result.html#a7d451af5c02d15b3b8d117adbcdede57',1,'TestResult::perfAssess()']]],
+  ['performancemanager',['PerformanceManager',['../class_performance_manager.html',1,'PerformanceManager'],['../class_performance_manager.html#ab9e6bcde7a6a29b4b791300805e3774d',1,'PerformanceManager::PerformanceManager()']]],
+  ['performancemanager_2ecpp',['PerformanceManager.cpp',['../_performance_manager_8cpp.html',1,'']]],
+  ['performancemanager_2eh',['PerformanceManager.h',['../_performance_manager_8h.html',1,'']]],
+  ['points',['points',['../class_category.html#a9b83a3525cbe3c9e806ca10f7c39f51f',1,'Category::points()'],['../class_cluster.html#a9aa583a643474a3744e1508ab51807d5',1,'Cluster::points()']]],
+  ['pointt',['PointT',['../include_8h.html#a6ca7710b84e9152e036423253ffc1ae7',1,'include.h']]],
+  ['precision',['precision',['../struct_performance_manager_1_1_average_results.html#a1a47d2dbd7646999a6daf9fcfb6aba81',1,'PerformanceManager::AverageResults::precision()'],['../class_category.html#aba83338fa764aa9d9157de0f2c24b07f',1,'Category::precision()'],['../class_measure.html#a2cac1a29c5ae012b810499be8d301753',1,'Measure::precision()']]],
+  ['printcategories',['printCategories',['../class_object_view_repository.html#afb69d2aac573032b3c10a57060d2eab7',1,'ObjectViewRepository']]],
+  ['printcategoriesinfo',['printCategoriesInfo',['../class_memory.html#aeee28733d4a736e1c37a373405a532d4',1,'Memory']]],
+  ['printcategoryviews',['printCategoryViews',['../class_object_view_repository.html#a5fe3f74c032f0d24f695eaee1714071c',1,'ObjectViewRepository']]],
+  ['printconfiguration',['printConfiguration',['../pcd__read_8cpp.html#aa45f069fe76674a03f3dd560dd00b1ee',1,'pcd_read.cpp']]],
+  ['printperfresults',['printPerfResults',['../class_performance_manager.html#a51d37a97f0ef246c5e5e5b6c2bbefc23',1,'PerformanceManager']]],
+  ['printtestresults',['printTestResults',['../class_test_result.html#a99aeb67d2dec816bcaf73d62554e65b9',1,'TestResult']]]
+];

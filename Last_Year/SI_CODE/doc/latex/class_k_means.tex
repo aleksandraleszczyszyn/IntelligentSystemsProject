@@ -1,0 +1,562 @@
+\hypertarget{class_k_means}{}\section{K\+Means Class Reference}
+\label{class_k_means}\index{K\+Means@{K\+Means}}
+
+
+A custom implementation of Kmeans.  
+
+
+
+
+{\ttfamily \#include $<$kmeans.\+h$>$}
+
+
+
+Collaboration diagram for K\+Means\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_means__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_k_means_aa5756bdbeb9251ceb6ee216750f03768}{K\+Means} (int \hyperlink{class_k_means_a605becae019372330541541fec4ecfe5}{max\+Iters}=10)
+\item 
+void \hyperlink{class_k_means_ac3cd603b2f690e166fb860d5869280e4}{init} (\hyperlink{class_memory}{Memory} \&\hyperlink{class_k_means_af11af5cfa79ac50307a580839d36deef}{memory})
+\item 
+void \hyperlink{class_k_means_a464d883306ac4e2651eb435207d7b9f5}{update} ()
+\item 
+void \hyperlink{class_k_means_a8ca0d91448c1e9768808c21fee341e11}{assign} (std\+::vector$<$ int $>$ \&feats\+Idx, int assign\+Cluster=-\/1)
+\item 
+void \hyperlink{class_k_means_a24391c53c50d73c3c7bab0dabacaeca7}{assign\+Features} (std\+::vector$<$ int $>$ \&feats\+Idx, int \&assign\+Cluster, bool up\+Centroids=true, int max\+Its=1)
+\item 
+bool \hyperlink{class_k_means_a7aeb5bd10c7faf177955cafab9e55281}{assign\+To\+Clusters} (pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&centroids, std\+::vector$<$ int $>$ \&mapper, unordered\+\_\+map$<$ int, int $>$ \&rev\+Mapper, \hyperlink{class_feature_metadata}{Feature\+Metadata} \&feat\+Metadata, const int \&feat\+Idx, int k, bool \&up\+Centroids, int \&assign\+Cluster, int \&p\+Cluster, int \&n\+Cluster)
+\item 
+void \hyperlink{class_k_means_a3da2ed78f2e7b11c67e405fccdda86b7}{find\+Nearest\+Point} (const pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&points, const pcl\+::\+Histogram$<$ 153 $>$ \&point, std\+::vector$<$ int $>$ \&k\+Indices, std\+::vector$<$ float $>$ \&k\+Sqr\+Distances, int knn)
+\item 
+void \hyperlink{class_k_means_ad798e3546155a9f694a4be22331e25e7}{recompute\+Centroids} ()
+\item 
+void \hyperlink{class_k_means_ad4598c662956fc8b224a287f0c2c9ea0}{get\+Centroids} (pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&centroids, std\+::vector$<$ int $>$ \&mapper, unordered\+\_\+map$<$ int, int $>$ \&rev\+Mapper)
+\item 
+void \hyperlink{class_k_means_af8f2b01669d61b4093de2854cfe0a935}{check\+Clusters\+Validity} (vector$<$ int $>$ \&touched\+Clusters)
+\item 
+void \hyperlink{class_k_means_a957725688440a070083e9fcb0f017ce9}{check\+Validity} ()
+\item 
+void \hyperlink{class_k_means_afd33eafb625ca716c5f808923fb7215e}{split\+Cluster} (int \&cluster\+Id, vector$<$ int $>$ \&touched\+Clusters)
+\item 
+void \hyperlink{class_k_means_a8e1b5e817bfd073ae331c8ebc3dfb134}{merge\+Clusters} (int \&l\+Cluster\+Id, int \&r\+Cluster\+Id, vector$<$ int $>$ \&touched\+Clusters)
+\item 
+void \hyperlink{class_k_means_a0004047b206790fee820d57e4b76e9c6}{clean\+Degenerate\+Cluster} (int \&cluster\+Id)
+\item 
+void \hyperlink{class_k_means_a127c22c2118c8ac22b84a3d2fe01dbf2}{clean\+Empty\+Clusters} (vector$<$ int $>$ \&clusters)
+\item 
+bool \hyperlink{class_k_means_ac934340bd9baf49360e5cf951f7f6ccb}{check\+Split\+Conditions} (\hyperlink{class_wss_bag}{Wss\+Bag} \&cluster\+Meta)
+\item 
+bool \hyperlink{class_k_means_a6fd3c45341b534c0ee08bb1ef57ed0d6}{check\+Merge\+Conditions} (\hyperlink{class_wss_bag}{Wss\+Bag} \&cluster\+Meta)
+\item 
+bool \hyperlink{class_k_means_a58eecd073218a14075ade361a7858563}{check\+Degenerate} (\hyperlink{class_wss_bag}{Wss\+Bag} \&cluster\+Meta)
+\item 
+int \hyperlink{class_k_means_a280557e55db230a66b5f89c284c88310}{find\+Cluster\+To\+Merge} (vector$<$ pair$<$ int, \hyperlink{class_wss_bag}{Wss\+Bag} $>$ $>$ \&clusters\+Wss, int \&curr\+Ind)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_k_means_a605becae019372330541541fec4ecfe5}{max\+Iters}
+\item 
+int \hyperlink{class_k_means_aa0fdafa4937a817dd15c182ce0c049fe}{max\+Check\+Iters}
+\item 
+\hyperlink{class_memory}{Memory} $\ast$ \hyperlink{class_k_means_af11af5cfa79ac50307a580839d36deef}{memory}
+\item 
+float \hyperlink{class_k_means_a95c0e524c7f084ce5a1202d5d6670f45}{wss\+Thresh\+For\+Split}
+\item 
+int \hyperlink{class_k_means_af056c5370d89a82c2974dfc822624cf0}{min\+Split\+Cluster\+Size}
+\item 
+int \hyperlink{class_k_means_a99dbe7fd9c440484f54d2f0c2e7bc181}{max\+Split\+Cluster\+Size}
+\item 
+float \hyperlink{class_k_means_ab002dc02ca5ee154ca56b926a06338d7}{wss\+Thresh\+For\+Merge}
+\item 
+float \hyperlink{class_k_means_af7004e76ea22f687b4066644a37bf8c9}{bss\+Thresh\+For\+Merge}
+\item 
+int \hyperlink{class_k_means_a50600403065d0f967e8f2cfdcf6366e8}{degenerate\+Cluster\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A custom implementation of Kmeans. 
+
+The number of clusters is dynamic, i.\+e., there can be merge and split of clusters. 
+
+Definition at line 23 of file kmeans.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_means_aa5756bdbeb9251ceb6ee216750f03768}\label{class_k_means_aa5756bdbeb9251ceb6ee216750f03768}} 
+\index{K\+Means@{K\+Means}!K\+Means@{K\+Means}}
+\index{K\+Means@{K\+Means}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{K\+Means()}{KMeans()}}
+{\footnotesize\ttfamily K\+Means\+::\+K\+Means (\begin{DoxyParamCaption}\item[{int}]{max\+Iters = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em max\+Iters} & the maximum number of iterations in case convergence can not be achieved \\
+\hline
+\mbox{\tt in}  & {\em split\+Thresh} & The W\+SS (Within Sum of Squares) threshold to consider splitting a cluster \\
+\hline
+\mbox{\tt in}  & {\em merge\+Thresh} & The W\+SS (Within Sum of Squares) threshold to consider merging 2 clusters \\
+\hline
+\mbox{\tt in}  & {\em bss\+Thresh} & The bss threshold \\
+\hline
+\mbox{\tt in}  & {\em wtss\+Thresh} & The W\+S\+S/\+T\+SS ratio threshold \\
+\hline
+\mbox{\tt in}  & {\em wtss\+Improve\+Thresh} & The improvement check threshold \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file kmeans.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_means_a8ca0d91448c1e9768808c21fee341e11}\label{class_k_means_a8ca0d91448c1e9768808c21fee341e11}} 
+\index{K\+Means@{K\+Means}!assign@{assign}}
+\index{assign@{assign}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily void K\+Means\+::assign (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{feats\+Idx,  }\item[{int}]{assign\+Cluster = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Assign features to clusters one at a time in a streaming fashion
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feats\+Idx} & the keys (indices) of the features \\
+\hline
+\mbox{\tt in}  & {\em assign\+Cluster} & flag controlling wether features should be assiged to a specific cluster or not \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 110 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a24391c53c50d73c3c7bab0dabacaeca7}\label{class_k_means_a24391c53c50d73c3c7bab0dabacaeca7}} 
+\index{K\+Means@{K\+Means}!assign\+Features@{assign\+Features}}
+\index{assign\+Features@{assign\+Features}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{assign\+Features()}{assignFeatures()}}
+{\footnotesize\ttfamily void K\+Means\+::assign\+Features (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{feats\+Idx,  }\item[{int \&}]{assign\+Cluster,  }\item[{bool}]{up\+Centroids = {\ttfamily true},  }\item[{int}]{max\+Its = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Assign features to clusters one at a time in a streaming fashion (called inside assign)
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feats\+Idx} & the keys (indices) of the features \\
+\hline
+\mbox{\tt in}  & {\em assign\+Cluster} & the identifier of the assignment cluster \\
+\hline
+\mbox{\tt in}  & {\em up\+Centroids} & flag controlling wether the centroids should be updated or not upon each feature assignment \\
+\hline
+\mbox{\tt in}  & {\em max\+Its} & the number of times to run the assignment (defaults to 1) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 131 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a7aeb5bd10c7faf177955cafab9e55281}\label{class_k_means_a7aeb5bd10c7faf177955cafab9e55281}} 
+\index{K\+Means@{K\+Means}!assign\+To\+Clusters@{assign\+To\+Clusters}}
+\index{assign\+To\+Clusters@{assign\+To\+Clusters}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{assign\+To\+Clusters()}{assignToClusters()}}
+{\footnotesize\ttfamily bool K\+Means\+::assign\+To\+Clusters (\begin{DoxyParamCaption}\item[{pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&}]{centroids,  }\item[{std\+::vector$<$ int $>$ \&}]{mapper,  }\item[{unordered\+\_\+map$<$ int, int $>$ \&}]{rev\+Mapper,  }\item[{\hyperlink{class_feature_metadata}{Feature\+Metadata} \&}]{feat\+Metadata,  }\item[{const int \&}]{feat\+Idx,  }\item[{int}]{k,  }\item[{bool \&}]{up\+Centroids,  }\item[{int \&}]{assign\+Cluster,  }\item[{int \&}]{p\+Cluster,  }\item[{int \&}]{n\+Cluster }\end{DoxyParamCaption})}
+
+Temporary work around for fit. Used only in a specific situation! This should change! Run the \hyperlink{class_k_means}{K\+Means} algorithm to perform the clustering until convergence or the maximum number of iterations has been reached
+
+For computational performance \hyperlink{class_k_means}{K\+Means} runs only over the features added at each batch of computed features
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em feats\+Idx} & the keys (indices) of the features Assign the feature specified in feat\+Metadata to the nearest cluster\\
+\hline
+\mbox{\tt in}  & {\em centroids} & the cenroids of th cluters \\
+\hline
+\mbox{\tt in}  & {\em mapper} & mapper a structure that maps from the centroids vector indexes to the cluster identifiers \\
+\hline
+\mbox{\tt in}  & {\em rev\+Mapper} & a structure that maps from the cluster identifiers to the centroids vector indexes \\
+\hline
+\mbox{\tt in}  & {\em feat\+Metadata} & the feature metadata (contains the feature to be assigned) \\
+\hline
+\mbox{\tt in}  & {\em feat\+Idx} & the index of the feature in the memory vector \\
+\hline
+\mbox{\tt in}  & {\em k} & the number of nearest cluster centroids to consider for cluster assignment \\
+\hline
+\mbox{\tt in}  & {\em up\+Centroids} & if set to true the centroids will be updated after each new assignment \\
+\hline
+\mbox{\tt in}  & {\em assign\+Cluster} & the identifier of the assignment cluster \\
+\hline
+\mbox{\tt out}  & {\em p\+Cluster} & the previous cluster assignment (of the feature) \\
+\hline
+\mbox{\tt out}  & {\em n\+Cluster} & the new cluster assignment (of the feature)\\
+\hline
+\end{DoxyParams}
+Returns true if a new assignmnt took place, false otherwise
+
+p.\+s. If an assignment cluster (assgn\+Cluster) is specified, then the features are assigned to that cluster. If no assignment cluster is specified (assgn\+Cluster = -\/1), then the features are assigned to the nearest cluster 
+
+Definition at line 192 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_af8f2b01669d61b4093de2854cfe0a935}\label{class_k_means_af8f2b01669d61b4093de2854cfe0a935}} 
+\index{K\+Means@{K\+Means}!check\+Clusters\+Validity@{check\+Clusters\+Validity}}
+\index{check\+Clusters\+Validity@{check\+Clusters\+Validity}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{check\+Clusters\+Validity()}{checkClustersValidity()}}
+{\footnotesize\ttfamily void K\+Means\+::check\+Clusters\+Validity (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{touched\+Clusters }\end{DoxyParamCaption})}
+
+Check the quality of the clusters
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em touched\+Clusters} & the list of clusters modified by the checking process \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 477 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a58eecd073218a14075ade361a7858563}\label{class_k_means_a58eecd073218a14075ade361a7858563}} 
+\index{K\+Means@{K\+Means}!check\+Degenerate@{check\+Degenerate}}
+\index{check\+Degenerate@{check\+Degenerate}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{check\+Degenerate()}{checkDegenerate()}}
+{\footnotesize\ttfamily bool K\+Means\+::check\+Degenerate (\begin{DoxyParamCaption}\item[{\hyperlink{class_wss_bag}{Wss\+Bag} \&}]{cluster\+Meta }\end{DoxyParamCaption})}
+
+
+
+Definition at line 525 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a6fd3c45341b534c0ee08bb1ef57ed0d6}\label{class_k_means_a6fd3c45341b534c0ee08bb1ef57ed0d6}} 
+\index{K\+Means@{K\+Means}!check\+Merge\+Conditions@{check\+Merge\+Conditions}}
+\index{check\+Merge\+Conditions@{check\+Merge\+Conditions}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{check\+Merge\+Conditions()}{checkMergeConditions()}}
+{\footnotesize\ttfamily bool K\+Means\+::check\+Merge\+Conditions (\begin{DoxyParamCaption}\item[{\hyperlink{class_wss_bag}{Wss\+Bag} \&}]{cluster\+Meta }\end{DoxyParamCaption})}
+
+Check for if the specified cluster fits the conditions to be merged
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Meta} & metadata concerning th cluster to be verified against the merging conditions \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 554 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_ac934340bd9baf49360e5cf951f7f6ccb}\label{class_k_means_ac934340bd9baf49360e5cf951f7f6ccb}} 
+\index{K\+Means@{K\+Means}!check\+Split\+Conditions@{check\+Split\+Conditions}}
+\index{check\+Split\+Conditions@{check\+Split\+Conditions}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{check\+Split\+Conditions()}{checkSplitConditions()}}
+{\footnotesize\ttfamily bool K\+Means\+::check\+Split\+Conditions (\begin{DoxyParamCaption}\item[{\hyperlink{class_wss_bag}{Wss\+Bag} \&}]{cluster\+Meta }\end{DoxyParamCaption})}
+
+Check for if the specified cluster fits the conditions to be splitted
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Meta} & metadata concerning th cluster to be verified against the splitting conditions \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 535 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a957725688440a070083e9fcb0f017ce9}\label{class_k_means_a957725688440a070083e9fcb0f017ce9}} 
+\index{K\+Means@{K\+Means}!check\+Validity@{check\+Validity}}
+\index{check\+Validity@{check\+Validity}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{check\+Validity()}{checkValidity()}}
+{\footnotesize\ttfamily void K\+Means\+::check\+Validity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 371 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a0004047b206790fee820d57e4b76e9c6}\label{class_k_means_a0004047b206790fee820d57e4b76e9c6}} 
+\index{K\+Means@{K\+Means}!clean\+Degenerate\+Cluster@{clean\+Degenerate\+Cluster}}
+\index{clean\+Degenerate\+Cluster@{clean\+Degenerate\+Cluster}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{clean\+Degenerate\+Cluster()}{cleanDegenerateCluster()}}
+{\footnotesize\ttfamily void K\+Means\+::clean\+Degenerate\+Cluster (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 723 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a127c22c2118c8ac22b84a3d2fe01dbf2}\label{class_k_means_a127c22c2118c8ac22b84a3d2fe01dbf2}} 
+\index{K\+Means@{K\+Means}!clean\+Empty\+Clusters@{clean\+Empty\+Clusters}}
+\index{clean\+Empty\+Clusters@{clean\+Empty\+Clusters}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{clean\+Empty\+Clusters()}{cleanEmptyClusters()}}
+{\footnotesize\ttfamily void K\+Means\+::clean\+Empty\+Clusters (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{clusters }\end{DoxyParamCaption})}
+
+Removes empty clusters from the clusters list
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em clusters} & metadata the list of candidate clusters to consider for removal \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 595 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a280557e55db230a66b5f89c284c88310}\label{class_k_means_a280557e55db230a66b5f89c284c88310}} 
+\index{K\+Means@{K\+Means}!find\+Cluster\+To\+Merge@{find\+Cluster\+To\+Merge}}
+\index{find\+Cluster\+To\+Merge@{find\+Cluster\+To\+Merge}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{find\+Cluster\+To\+Merge()}{findClusterToMerge()}}
+{\footnotesize\ttfamily int K\+Means\+::find\+Cluster\+To\+Merge (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ int, \hyperlink{class_wss_bag}{Wss\+Bag} $>$ $>$ \&}]{clusters\+Wss,  }\item[{int \&}]{curr\+Ind }\end{DoxyParamCaption})}
+
+Finds a suitable cluster to perform a merge operation with the specified cluster
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em clusters\+Wss} & the list of candidate clusters \\
+\hline
+\mbox{\tt in}  & {\em curr\+Ind} & the index specifying the current cluster\\
+\hline
+\end{DoxyParams}
+Returns the identifier of the cluster if one could be found, -\/1 otherwise 
+
+Definition at line 567 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a3da2ed78f2e7b11c67e405fccdda86b7}\label{class_k_means_a3da2ed78f2e7b11c67e405fccdda86b7}} 
+\index{K\+Means@{K\+Means}!find\+Nearest\+Point@{find\+Nearest\+Point}}
+\index{find\+Nearest\+Point@{find\+Nearest\+Point}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{find\+Nearest\+Point()}{findNearestPoint()}}
+{\footnotesize\ttfamily void K\+Means\+::find\+Nearest\+Point (\begin{DoxyParamCaption}\item[{const pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&}]{points,  }\item[{const pcl\+::\+Histogram$<$ 153 $>$ \&}]{point,  }\item[{std\+::vector$<$ int $>$ \&}]{k\+Indices,  }\item[{std\+::vector$<$ float $>$ \&}]{k\+Sqr\+Distances,  }\item[{int}]{knn }\end{DoxyParamCaption})}
+
+Find the nearest point amongst the given points to the specified point
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em points} & the points to search in for the closest point \\
+\hline
+\mbox{\tt in}  & {\em point} & the point to compare to the points \\
+\hline
+\mbox{\tt in}  & {\em k\+Indices} & returns the indices of the knn nearest centroids \\
+\hline
+\mbox{\tt in}  & {\em k\+Sqr\+Distances} & returns the squared distances to the centroids \\
+\hline
+\mbox{\tt in}  & {\em knn} & the number of nearest centroids to search for \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 363 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_ad4598c662956fc8b224a287f0c2c9ea0}\label{class_k_means_ad4598c662956fc8b224a287f0c2c9ea0}} 
+\index{K\+Means@{K\+Means}!get\+Centroids@{get\+Centroids}}
+\index{get\+Centroids@{get\+Centroids}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{get\+Centroids()}{getCentroids()}}
+{\footnotesize\ttfamily void K\+Means\+::get\+Centroids (\begin{DoxyParamCaption}\item[{pcl\+::\+Point\+Cloud$<$ pcl\+::\+Histogram$<$ 153 $>$ $>$\+::Ptr \&}]{centroids,  }\item[{std\+::vector$<$ int $>$ \&}]{mapper,  }\item[{unordered\+\_\+map$<$ int, int $>$ \&}]{rev\+Mapper }\end{DoxyParamCaption})}
+
+Retrieve the cluster centroids stored in memory. If no clustera are defined yet, a cluster is created and a random point in memory is taken as its centroid
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em centroids} & the centroids of the clusters \\
+\hline
+\mbox{\tt out}  & {\em mapper} & a structure that maps from the centroids vector indexes to the cluster identifiers \\
+\hline
+\mbox{\tt out}  & {\em rev\+Mapper} & a structure that maps from the cluster identifiers to the centroids vector indexes \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 265 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_ac3cd603b2f690e166fb860d5869280e4}\label{class_k_means_ac3cd603b2f690e166fb860d5869280e4}} 
+\index{K\+Means@{K\+Means}!init@{init}}
+\index{init@{init}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void K\+Means\+::init (\begin{DoxyParamCaption}\item[{\hyperlink{class_memory}{Memory} \&}]{memory }\end{DoxyParamCaption})}
+
+Initialize K\+M\+Eans by setting the internal reference (pointer) to the memory structure 
+
+Definition at line 38 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a8e1b5e817bfd073ae331c8ebc3dfb134}\label{class_k_means_a8e1b5e817bfd073ae331c8ebc3dfb134}} 
+\index{K\+Means@{K\+Means}!merge\+Clusters@{merge\+Clusters}}
+\index{merge\+Clusters@{merge\+Clusters}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{merge\+Clusters()}{mergeClusters()}}
+{\footnotesize\ttfamily void K\+Means\+::merge\+Clusters (\begin{DoxyParamCaption}\item[{int \&}]{l\+Cluster\+Id,  }\item[{int \&}]{r\+Cluster\+Id,  }\item[{vector$<$ int $>$ \&}]{touched\+Clusters }\end{DoxyParamCaption})}
+
+Perform a merge operation between the specified clusters
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em l\+Cluster\+Id} & the first cluster identifier to merge \\
+\hline
+\mbox{\tt in}  & {\em r\+Cluster\+Id} & the second cluster identifier to merge \\
+\hline
+\mbox{\tt out}  & {\em touched\+Clusters} & the list of clusters modified by the checking process \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 681 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_ad798e3546155a9f694a4be22331e25e7}\label{class_k_means_ad798e3546155a9f694a4be22331e25e7}} 
+\index{K\+Means@{K\+Means}!recompute\+Centroids@{recompute\+Centroids}}
+\index{recompute\+Centroids@{recompute\+Centroids}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{recompute\+Centroids()}{recomputeCentroids()}}
+{\footnotesize\ttfamily void K\+Means\+::recompute\+Centroids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Recomputes all cluster centroids 
+
+Definition at line 335 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_afd33eafb625ca716c5f808923fb7215e}\label{class_k_means_afd33eafb625ca716c5f808923fb7215e}} 
+\index{K\+Means@{K\+Means}!split\+Cluster@{split\+Cluster}}
+\index{split\+Cluster@{split\+Cluster}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{split\+Cluster()}{splitCluster()}}
+{\footnotesize\ttfamily void K\+Means\+::split\+Cluster (\begin{DoxyParamCaption}\item[{int \&}]{cluster\+Id,  }\item[{vector$<$ int $>$ \&}]{touched\+Clusters }\end{DoxyParamCaption})}
+
+Perform a split operation on the specified cluster
+
+After the split, a fit must be performed in order to stabalize the newly created clusters
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cluster\+Id} & the cluster identifier \\
+\hline
+\mbox{\tt out}  & {\em touched\+Clusters} & the list of clusters modified by the checking process \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 604 of file kmeans.\+cpp.
+
+\mbox{\Hypertarget{class_k_means_a464d883306ac4e2651eb435207d7b9f5}\label{class_k_means_a464d883306ac4e2651eb435207d7b9f5}} 
+\index{K\+Means@{K\+Means}!update@{update}}
+\index{update@{update}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void K\+Means\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update kmeans after forgeting a feature 
+
+Definition at line 43 of file kmeans.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_k_means_af7004e76ea22f687b4066644a37bf8c9}\label{class_k_means_af7004e76ea22f687b4066644a37bf8c9}} 
+\index{K\+Means@{K\+Means}!bss\+Thresh\+For\+Merge@{bss\+Thresh\+For\+Merge}}
+\index{bss\+Thresh\+For\+Merge@{bss\+Thresh\+For\+Merge}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{bss\+Thresh\+For\+Merge}{bssThreshForMerge}}
+{\footnotesize\ttfamily float K\+Means\+::bss\+Thresh\+For\+Merge\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 308 of file kmeans.\+h.
+
+\mbox{\Hypertarget{class_k_means_a50600403065d0f967e8f2cfdcf6366e8}\label{class_k_means_a50600403065d0f967e8f2cfdcf6366e8}} 
+\index{K\+Means@{K\+Means}!degenerate\+Cluster\+Size@{degenerate\+Cluster\+Size}}
+\index{degenerate\+Cluster\+Size@{degenerate\+Cluster\+Size}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{degenerate\+Cluster\+Size}{degenerateClusterSize}}
+{\footnotesize\ttfamily int K\+Means\+::degenerate\+Cluster\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 311 of file kmeans.\+h.
+
+\mbox{\Hypertarget{class_k_means_aa0fdafa4937a817dd15c182ce0c049fe}\label{class_k_means_aa0fdafa4937a817dd15c182ce0c049fe}} 
+\index{K\+Means@{K\+Means}!max\+Check\+Iters@{max\+Check\+Iters}}
+\index{max\+Check\+Iters@{max\+Check\+Iters}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{max\+Check\+Iters}{maxCheckIters}}
+{\footnotesize\ttfamily int K\+Means\+::max\+Check\+Iters\hspace{0.3cm}{\ttfamily [protected]}}
+
+The maximum number of iterations for cluster validity check 
+
+Definition at line 224 of file kmeans.\+h.
+
+\mbox{\Hypertarget{class_k_means_a605becae019372330541541fec4ecfe5}\label{class_k_means_a605becae019372330541541fec4ecfe5}} 
+\index{K\+Means@{K\+Means}!max\+Iters@{max\+Iters}}
+\index{max\+Iters@{max\+Iters}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{max\+Iters}{maxIters}}
+{\footnotesize\ttfamily int K\+Means\+::max\+Iters\hspace{0.3cm}{\ttfamily [protected]}}
+
+The maximum number of iterations 
+
+Definition at line 219 of file kmeans.\+h.
+
+\mbox{\Hypertarget{class_k_means_a99dbe7fd9c440484f54d2f0c2e7bc181}\label{class_k_means_a99dbe7fd9c440484f54d2f0c2e7bc181}} 
+\index{K\+Means@{K\+Means}!max\+Split\+Cluster\+Size@{max\+Split\+Cluster\+Size}}
+\index{max\+Split\+Cluster\+Size@{max\+Split\+Cluster\+Size}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{max\+Split\+Cluster\+Size}{maxSplitClusterSize}}
+{\footnotesize\ttfamily int K\+Means\+::max\+Split\+Cluster\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 302 of file kmeans.\+h.
+
+\mbox{\Hypertarget{class_k_means_af11af5cfa79ac50307a580839d36deef}\label{class_k_means_af11af5cfa79ac50307a580839d36deef}} 
+\index{K\+Means@{K\+Means}!memory@{memory}}
+\index{memory@{memory}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{memory}{memory}}
+{\footnotesize\ttfamily \hyperlink{class_memory}{Memory}$\ast$ K\+Means\+::memory\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pointer to the memory structure holding the features 
+
+Definition at line 229 of file kmeans.\+h.
+
+\mbox{\Hypertarget{class_k_means_af056c5370d89a82c2974dfc822624cf0}\label{class_k_means_af056c5370d89a82c2974dfc822624cf0}} 
+\index{K\+Means@{K\+Means}!min\+Split\+Cluster\+Size@{min\+Split\+Cluster\+Size}}
+\index{min\+Split\+Cluster\+Size@{min\+Split\+Cluster\+Size}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{min\+Split\+Cluster\+Size}{minSplitClusterSize}}
+{\footnotesize\ttfamily int K\+Means\+::min\+Split\+Cluster\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 298 of file kmeans.\+h.
+
+\mbox{\Hypertarget{class_k_means_ab002dc02ca5ee154ca56b926a06338d7}\label{class_k_means_ab002dc02ca5ee154ca56b926a06338d7}} 
+\index{K\+Means@{K\+Means}!wss\+Thresh\+For\+Merge@{wss\+Thresh\+For\+Merge}}
+\index{wss\+Thresh\+For\+Merge@{wss\+Thresh\+For\+Merge}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{wss\+Thresh\+For\+Merge}{wssThreshForMerge}}
+{\footnotesize\ttfamily float K\+Means\+::wss\+Thresh\+For\+Merge\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 305 of file kmeans.\+h.
+
+\mbox{\Hypertarget{class_k_means_a95c0e524c7f084ce5a1202d5d6670f45}\label{class_k_means_a95c0e524c7f084ce5a1202d5d6670f45}} 
+\index{K\+Means@{K\+Means}!wss\+Thresh\+For\+Split@{wss\+Thresh\+For\+Split}}
+\index{wss\+Thresh\+For\+Split@{wss\+Thresh\+For\+Split}!K\+Means@{K\+Means}}
+\subsubsection{\texorpdfstring{wss\+Thresh\+For\+Split}{wssThreshForSplit}}
+{\footnotesize\ttfamily float K\+Means\+::wss\+Thresh\+For\+Split\hspace{0.3cm}{\ttfamily [protected]}}
+
+Thresholds The W\+S\+S/\+T\+SS ratio
+
+Holds the last W\+S\+S/\+T\+SS ratio computed to check cluster quality The W\+SS (Within Sum of Squares) threshold to consider splitting a cluster
+
+The cluster will be consider for spliting if its W\+SS measure is above this value
+
+y default it is innitialized to 2.\+0f The W\+SS (Within Sum of Squares) threshold to consider merging 2 clusters
+
+The cluster will be consider for merging if its W\+SS measure is below this value
+
+By default it is innitialized to 1.\+0f The bss threshold
+
+Used to check clustering quality. If the B\+SS measure between 2 clusters falls below this threshold, then the cluster will be considered for merging (in case their individual W\+SS measures are also below the \textquotesingle{}merge\+Thresh\textquotesingle{} value)
+
+By default it is innitialized to 1.\+0f The W\+S\+S/\+T\+SS ratio threshold
+
+Used to check clustering quality. A value close to or below 0.\+2 means good clustering quality. A value above is an indication of non-\/optimum clustering quality
+
+By default it is innitialized to 0.\+2f The improvement check threshold
+
+If only a small improvement would be achieved, then no attempt to improve clustering quality is performed, and is delayed until a bigger improvement can be achieved
+
+By default it is innitialized to 0.\+1f 
+
+Definition at line 294 of file kmeans.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{kmeans_8h}{kmeans.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{kmeans_8cpp}{kmeans.\+cpp}\end{DoxyCompactItemize}

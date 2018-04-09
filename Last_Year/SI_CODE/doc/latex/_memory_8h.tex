@@ -1,0 +1,40 @@
+\hypertarget{_memory_8h}{}\section{H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\+Memory.h File Reference}
+\label{_memory_8h}\index{H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\+Memory.\+h@{H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\+Memory.\+h}}
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$pcl/point\+\_\+types.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/pcl\+\_\+base.\+h$>$}\newline
+{\ttfamily \#include $<$pcl/common/point\+\_\+tests.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Feature\+Metadata.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cluster.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Searcher.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Category.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Seq\+Generator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wss\+Bag.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bss\+Bag.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$tr1/unordered\+\_\+map$>$}\newline
+Include dependency graph for Memory.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_memory_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_memory_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_memory}{Memory}
+\begin{DoxyCompactList}\small\item\em Main structure of the application. Holds the applications\textquotesingle{} memory. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_memory_1_1_category_view_distance}{Memory\+::\+Category\+View\+Distance}
+\begin{DoxyCompactList}\small\item\em Auxiliar data structure to hold the distances between a specific object view and the categories. The distance is the euclidean distance between the respective histograms. \end{DoxyCompactList}\item 
+struct \hyperlink{structdescending}{descending}
+\begin{DoxyCompactList}\small\item\em Operator used with std\+:sort to sort a vector$<$pair$<$int, float$>$ $>$ by the value of the pair (the second argument of the pair, the float) in descending order. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,312 @@
+\hypertarget{class_category}{}\section{Category Class Reference}
+\label{class_category}\index{Category@{Category}}
+
+
+Represents an object category, e.\+g., apple, bowl, bell-\/pepper, etc.  
+
+
+
+
+{\ttfamily \#include $<$Category.\+h$>$}
+
+
+
+Collaboration diagram for Category\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{class_category__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_category_adeee911f773db1ebeb1005a00da45e08}{Category} ()
+\item 
+\hyperlink{class_category_aff8390ac4bbbf06c85648f76b78680d2}{Category} (int \hyperlink{class_category_a10f4f758d6942ef39ca6d1cc5dfb6369}{identifier}, std\+::string \&\hyperlink{class_category_a433491cdb802174ee504a41eea7bc7c7}{name})
+\item 
+void \hyperlink{class_category_a30dcc955d24ac3a6cfd2b37adbac5e14}{add\+Point} (int idx)
+\item 
+void \hyperlink{class_category_a213b1e03615488e5ef9ddd6189f8dc16}{remove\+Point} (int idx)
+\item 
+void \hyperlink{class_category_ad1816cec49d0c93cdc394f3c9292ecbb}{get\+Points} (std\+::vector$<$ int $>$ \&points\+Idx) const
+\item 
+std\+::string \hyperlink{class_category_a22e764bdb9b0d8d342c2971a1951a818}{to\+String} () const
+\item 
+const std\+::string \& \hyperlink{class_category_a23af5ca47bddcf85828a835ae188ed1f}{get\+Name} ()
+\item 
+const int \hyperlink{class_category_aad52cad1dde01976b9ee2fba33fb3661}{get\+Identifier} () const
+\item 
+unordered\+\_\+set$<$ int $>$ \& \hyperlink{class_category_af7bf3e19fc53d93b8c0d88974a03227c}{get\+Points} ()
+\item 
+\hyperlink{class_measure}{Measure} \& \hyperlink{class_category_a4752e892d1b8b078bfd4d9e1c13f8082}{get\+Perf\+Measure} ()
+\item 
+void \hyperlink{class_category_afb7ad18835edec07acf3c6129204f63d}{add\+TP} ()
+\item 
+void \hyperlink{class_category_a8ed7b1ffad6f82547b8d1fd68a1926f7}{add\+FP} ()
+\item 
+void \hyperlink{class_category_a6211d9ab0c6e542ce8ad675f7f51472f}{add\+FN} ()
+\item 
+double \hyperlink{class_category_aba83338fa764aa9d9157de0f2c24b07f}{precision} ()
+\item 
+double \hyperlink{class_category_a778001a2865033dbfb99fcc136815295}{recall} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_category_a10f4f758d6942ef39ca6d1cc5dfb6369}{identifier}
+\item 
+std\+::string \hyperlink{class_category_a433491cdb802174ee504a41eea7bc7c7}{name}
+\item 
+unordered\+\_\+set$<$ int $>$ \hyperlink{class_category_a9b83a3525cbe3c9e806ca10f7c39f51f}{points}
+\item 
+\hyperlink{class_measure}{Measure} \hyperlink{class_category_ae2153cae8cf1b7eded7625a40e45ab8c}{perf\+Assess}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an object category, e.\+g., apple, bowl, bell-\/pepper, etc. 
+
+Open issues\+:
+\begin{DoxyItemize}
+\item a category should hold/handle its\textquotesingle{} own histogram. In this version the category\textquotesingle{} histogram is computed every time a new view-\/category prediction is made. A better approach could hold and maintain the histogram instead of computing it every time. 
+\end{DoxyItemize}
+
+Definition at line 28 of file Category.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_category_adeee911f773db1ebeb1005a00da45e08}\label{class_category_adeee911f773db1ebeb1005a00da45e08}} 
+\index{Category@{Category}!Category@{Category}}
+\index{Category@{Category}!Category@{Category}}
+\subsubsection{\texorpdfstring{Category()}{Category()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Category\+::\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The empty constructor is required when used as the value in a map. However! a call to this constructor could be due to an error so calling this constructor is considered a severe error and it is treated with an exception! No \char`\"{}not well formed object\char`\"{} are allowed to be injected into the applications\textquotesingle{} stream! 
+
+Definition at line 5 of file Category.\+cpp.
+
+\mbox{\Hypertarget{class_category_aff8390ac4bbbf06c85648f76b78680d2}\label{class_category_aff8390ac4bbbf06c85648f76b78680d2}} 
+\index{Category@{Category}!Category@{Category}}
+\index{Category@{Category}!Category@{Category}}
+\subsubsection{\texorpdfstring{Category()}{Category()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Category\+::\+Category (\begin{DoxyParamCaption}\item[{int}]{identifier,  }\item[{std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Creates a new category.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em identifier} & the unique identifier of the category \\
+\hline
+\mbox{\tt in}  & {\em name} & the name of the category, e.\+g., apple, tomato, etc. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_category_a6211d9ab0c6e542ce8ad675f7f51472f}\label{class_category_a6211d9ab0c6e542ce8ad675f7f51472f}} 
+\index{Category@{Category}!add\+FN@{add\+FN}}
+\index{add\+FN@{add\+FN}!Category@{Category}}
+\subsubsection{\texorpdfstring{add\+F\+N()}{addFN()}}
+{\footnotesize\ttfamily void Category\+::add\+FN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increments false negatives. 
+
+Definition at line 140 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_a8ed7b1ffad6f82547b8d1fd68a1926f7}\label{class_category_a8ed7b1ffad6f82547b8d1fd68a1926f7}} 
+\index{Category@{Category}!add\+FP@{add\+FP}}
+\index{add\+FP@{add\+FP}!Category@{Category}}
+\subsubsection{\texorpdfstring{add\+F\+P()}{addFP()}}
+{\footnotesize\ttfamily void Category\+::add\+FP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increments false positives. 
+
+Definition at line 134 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_a30dcc955d24ac3a6cfd2b37adbac5e14}\label{class_category_a30dcc955d24ac3a6cfd2b37adbac5e14}} 
+\index{Category@{Category}!add\+Point@{add\+Point}}
+\index{add\+Point@{add\+Point}!Category@{Category}}
+\subsubsection{\texorpdfstring{add\+Point()}{addPoint()}}
+{\footnotesize\ttfamily void Category\+::add\+Point (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+Adds a feature to the category.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em idx} & the id of the feature to add (features\textquotesingle{} id in the main memory structure). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file Category.\+cpp.
+
+\mbox{\Hypertarget{class_category_afb7ad18835edec07acf3c6129204f63d}\label{class_category_afb7ad18835edec07acf3c6129204f63d}} 
+\index{Category@{Category}!add\+TP@{add\+TP}}
+\index{add\+TP@{add\+TP}!Category@{Category}}
+\subsubsection{\texorpdfstring{add\+T\+P()}{addTP()}}
+{\footnotesize\ttfamily void Category\+::add\+TP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increments true positives. 
+
+Definition at line 127 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_aad52cad1dde01976b9ee2fba33fb3661}\label{class_category_aad52cad1dde01976b9ee2fba33fb3661}} 
+\index{Category@{Category}!get\+Identifier@{get\+Identifier}}
+\index{get\+Identifier@{get\+Identifier}!Category@{Category}}
+\subsubsection{\texorpdfstring{get\+Identifier()}{getIdentifier()}}
+{\footnotesize\ttfamily const int Category\+::get\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the category identifier.
+
+Issues\+: Is this identifier realy needed? It is the same as the map key in the main memory! T\+O\+DO\+: remove this? 
+
+Definition at line 103 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_a23af5ca47bddcf85828a835ae188ed1f}\label{class_category_a23af5ca47bddcf85828a835ae188ed1f}} 
+\index{Category@{Category}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Category@{Category}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily const std\+::string\& Category\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the name of the category. 
+
+Definition at line 92 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_a4752e892d1b8b078bfd4d9e1c13f8082}\label{class_category_a4752e892d1b8b078bfd4d9e1c13f8082}} 
+\index{Category@{Category}!get\+Perf\+Measure@{get\+Perf\+Measure}}
+\index{get\+Perf\+Measure@{get\+Perf\+Measure}!Category@{Category}}
+\subsubsection{\texorpdfstring{get\+Perf\+Measure()}{getPerfMeasure()}}
+{\footnotesize\ttfamily \hyperlink{class_measure}{Measure}\& Category\+::get\+Perf\+Measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the \hyperlink{class_measure}{Measure} class with information about the test results obtained for the category. 
+
+Definition at line 120 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_ad1816cec49d0c93cdc394f3c9292ecbb}\label{class_category_ad1816cec49d0c93cdc394f3c9292ecbb}} 
+\index{Category@{Category}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Category@{Category}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Category\+::get\+Points (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{points\+Idx }\end{DoxyParamCaption}) const}
+
+Gets the features assigned to the category, i.\+e., the indeces of the features in main memory.
+
+This is a read only method and it is probably not even used. T\+O\+DO\+: remove this method?
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em points\+Idx} & a vector holding the indeces (map keys) of the features assigned to the category. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_category_af7bf3e19fc53d93b8c0d88974a03227c}\label{class_category_af7bf3e19fc53d93b8c0d88974a03227c}} 
+\index{Category@{Category}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Category@{Category}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unordered\+\_\+set$<$int$>$\& Category\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the feature indeces assigned to the category. 
+
+Definition at line 110 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_aba83338fa764aa9d9157de0f2c24b07f}\label{class_category_aba83338fa764aa9d9157de0f2c24b07f}} 
+\index{Category@{Category}!precision@{precision}}
+\index{precision@{precision}!Category@{Category}}
+\subsubsection{\texorpdfstring{precision()}{precision()}}
+{\footnotesize\ttfamily double Category\+::precision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the test precision value for the category. 
+
+Definition at line 147 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_a778001a2865033dbfb99fcc136815295}\label{class_category_a778001a2865033dbfb99fcc136815295}} 
+\index{Category@{Category}!recall@{recall}}
+\index{recall@{recall}!Category@{Category}}
+\subsubsection{\texorpdfstring{recall()}{recall()}}
+{\footnotesize\ttfamily double Category\+::recall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the test recall value for the category. 
+
+Definition at line 154 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_a213b1e03615488e5ef9ddd6189f8dc16}\label{class_category_a213b1e03615488e5ef9ddd6189f8dc16}} 
+\index{Category@{Category}!remove\+Point@{remove\+Point}}
+\index{remove\+Point@{remove\+Point}!Category@{Category}}
+\subsubsection{\texorpdfstring{remove\+Point()}{removePoint()}}
+{\footnotesize\ttfamily void Category\+::remove\+Point (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+Removes a feature from the category. Note\+: The feature is not removed from the main memory!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em idx} & the id of the feature to remove (features\textquotesingle{} id in the main memory structure). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Category.\+cpp.
+
+\mbox{\Hypertarget{class_category_a22e764bdb9b0d8d342c2971a1951a818}\label{class_category_a22e764bdb9b0d8d342c2971a1951a818}} 
+\index{Category@{Category}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Category@{Category}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily std\+::string Category\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+A string representation, of the category, of the form\+: category\+\_\+name Id\+: category\+\_\+id P\+: unordered\+\_\+list\+\_\+of\+\_\+point\+\_\+ids
+
+ex\+: apple Id\+: 1 P\+: 10, 12, 5, ...,
+
+Notes\+: Used for debug purposes. 
+
+Definition at line 14 of file Category.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_category_a10f4f758d6942ef39ca6d1cc5dfb6369}\label{class_category_a10f4f758d6942ef39ca6d1cc5dfb6369}} 
+\index{Category@{Category}!identifier@{identifier}}
+\index{identifier@{identifier}!Category@{Category}}
+\subsubsection{\texorpdfstring{identifier}{identifier}}
+{\footnotesize\ttfamily int Category\+::identifier\hspace{0.3cm}{\ttfamily [protected]}}
+
+The category unique identifier. 
+
+Definition at line 162 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_a433491cdb802174ee504a41eea7bc7c7}\label{class_category_a433491cdb802174ee504a41eea7bc7c7}} 
+\index{Category@{Category}!name@{name}}
+\index{name@{name}!Category@{Category}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Category\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+The category name. 
+
+Definition at line 167 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_ae2153cae8cf1b7eded7625a40e45ab8c}\label{class_category_ae2153cae8cf1b7eded7625a40e45ab8c}} 
+\index{Category@{Category}!perf\+Assess@{perf\+Assess}}
+\index{perf\+Assess@{perf\+Assess}!Category@{Category}}
+\subsubsection{\texorpdfstring{perf\+Assess}{perfAssess}}
+{\footnotesize\ttfamily \hyperlink{class_measure}{Measure} Category\+::perf\+Assess\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds the recognition performance measures for the category. 
+
+Definition at line 177 of file Category.\+h.
+
+\mbox{\Hypertarget{class_category_a9b83a3525cbe3c9e806ca10f7c39f51f}\label{class_category_a9b83a3525cbe3c9e806ca10f7c39f51f}} 
+\index{Category@{Category}!points@{points}}
+\index{points@{points}!Category@{Category}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily unordered\+\_\+set$<$int$>$ Category\+::points\hspace{0.3cm}{\ttfamily [protected]}}
+
+The features\textquotesingle{} ids assigned to the category (the map keys of the features in main memory). 
+
+Definition at line 172 of file Category.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/include/\hyperlink{_category_8h}{Category.\+h}\item 
+H\+:/\+M\+E\+I/sistemas inteligentes/tp2/\+S\+I\+\_\+\+C\+O\+D\+E/src/\hyperlink{_category_8cpp}{Category.\+cpp}\end{DoxyCompactItemize}
