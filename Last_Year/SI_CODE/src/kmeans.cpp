@@ -35,6 +35,10 @@ KMeans::KMeans(int maxIters)
 	bssThreshForMerge = 0.14;
 }
 
+//KMeans::KMeans(int maxIters, int numOfClusters)
+//	: maxIters(maxIters), numOfClusters(numOfClusters){
+//}
+
 void KMeans::init(Memory &mem){
     memory = &mem;
 }
@@ -122,7 +126,7 @@ void KMeans::assign(vector<int> &featsIdx, int assignCluster) {
     // decide if a merge or a split is necessary in order to improve cluster quality
     // check if no improvement was achieved to end the check
 
-	checkValidity();
+	//checkValidity();
     /*while(!checkClustersValidity()) {
         //fit();
     }*/
@@ -262,15 +266,31 @@ bool KMeans::assignToClusters(PointCloud<Histogram<153> >::Ptr &centroids, vecto
     return assignChanged;
 }
 
+// void KMeans::getCentroids(
+// 	PointCloud<Histogram<153> >::Ptr &centroids, vector<int> &mapper, unordered_map<int, int> &revMapper){
+//     std::cout<<numOfClusters<<std::endl;
+//     memory->getCentroids(centroids, mapper, revMapper);
+//     if(centroids->empty()){
+//         // if there are no centroids yet (i.e. no clusters)
+//         // create a cluster and set it's centroid as any random point
+//         // already in memory (e.g. the first point)
+//         memory->addCluster(memory->getFeature(0));
+//         // with a cluster defined get the centroids again
+//         memory->getCentroids(centroids, mapper, revMapper);
+//     }
+// }
+
 void KMeans::getCentroids(
 	PointCloud<Histogram<153> >::Ptr &centroids, vector<int> &mapper, unordered_map<int, int> &revMapper){
-    
+
     memory->getCentroids(centroids, mapper, revMapper);
     if(centroids->empty()){
         // if there are no centroids yet (i.e. no clusters)
         // create a cluster and set it's centroid as any random point
         // already in memory (e.g. the first point)
-        memory->addCluster(memory->getFeature(0));
+		for(int i=0; i<numOfClusters; i++) {
+			memory->addCluster(memory->getFeature(i));
+		}
         // with a cluster defined get the centroids again
         memory->getCentroids(centroids, mapper, revMapper);
     }

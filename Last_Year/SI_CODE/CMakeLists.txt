@@ -15,29 +15,29 @@ include_directories(src)
 #        src/*.cpp)
 
 set(SOURCE_FILES
-        pcd_read.cpp)
+		pcd_read.cpp)
 
-#set(SOURCE_FILES
-#        src/Memory.cpp
-#        src/Cluster.cpp
-#        src/kmeans.cpp
-#        src/SeqGenerator.cpp
-#        src/FeatureMetadata.cpp
-#        src/Category.cpp
-#	src/WssBag.cpp
-#	src/BssBag.cpp
-#	src/FeatureExtractor.cpp
-#	src/ObjectViewRepository.cpp
-#	src/Searcher.cpp
-#	src/Viewer.cpp
-#	src/TestResult.cpp
-#	src/PerformanceManager.cpp
-#	src/Measure.cpp
-#	src/CategoryRecognizer.cpp
-#	pcd_read.cpp
-#
-#
-#)
+set(SOURCE_FILES
+        src/Memory.cpp
+        src/Cluster.cpp
+        src/kmeans.cpp
+        src/SeqGenerator.cpp
+        src/FeatureMetadata.cpp
+        src/Category.cpp
+	src/WssBag.cpp
+	src/BssBag.cpp
+	src/FeatureExtractor.cpp
+	src/ObjectViewRepository.cpp
+	src/Searcher.cpp
+	src/Viewer.cpp
+	src/TestResult.cpp
+	src/PerformanceManager.cpp
+	src/Measure.cpp
+	src/CategoryRecognizer.cpp
+	pcd_read.cpp
+
+
+)
 
 list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
 

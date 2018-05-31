@@ -23,7 +23,7 @@ using std::tr1::unordered_map;
 class KMeans {
 
     public:
-
+    int numOfClusters;
 		/**
 		* Constructor
 		* @param[in] maxIters the maximum number of iterations in case convergence can not be achieved
@@ -37,10 +37,17 @@ class KMeans {
 		//KMeans(int maxIters=10, int maxCheckIters=2, float splitThresh=2.0f, float mergeThresh=1.0f, float bssThresh=1.0f,
 		//		   float wtssThresh=0.2f, float wtssImproveThresh=0.1f);
 
+		//KMeans(int maxIters=10, int numOfClusters=10);
+
 		/**
 		* Initialize KMEans by setting the internal reference (pointer)
 		* to the memory structure
 		*/
+
+		void setNumberOfClusters(int number)
+		{
+			numOfClusters=number;
+		}
 		void init(Memory &memory);
 
 		/**
@@ -217,6 +224,8 @@ class KMeans {
 		* The maximum number of iterations
 		*/
 		int maxIters;
+
+//		int numOfClusters;
 	
 		/**
 		* The maximum number of iterations for cluster validity check

@@ -507,7 +507,7 @@ FeatureMetadata &Memory::getFeatureMetadata(const int &key) {
 
     unordered_map<int, FeatureMetadata>::iterator it = featuresMetadata.find(key);
     if(it == featuresMetadata.end()){
-		cout << "FEATURE ID " << key << endl;
+		cout << "FEATURE ID" << key << endl;
 		throw(std::runtime_error("FEATURE NOT FOUND IN MAP!"));
     }
 
@@ -770,8 +770,8 @@ float Memory::wss(vector<pair<int, WssBag> > &clustersWss) {
 	*/
 	
 	//cout << "normalized WSS " << wss / nSamples << endl;
-    return (dataSetWss / datasetNSamples); // / clusters.size();
-	//return wss;
+    //return (dataSetWss / datasetNSamples); // / clusters.size();
+	return dataSetWss;
 }
 
 const std::string& Memory::getCategoryName(int categoryId)

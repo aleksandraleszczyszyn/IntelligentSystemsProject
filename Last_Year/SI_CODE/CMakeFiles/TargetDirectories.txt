@@ -1,0 +1,3 @@
+/home/ola/intelligentsystemscourse/Last_Year/SI_CODE/CMakeFiles/rebuild_cache.dir
+/home/ola/intelligentsystemscourse/Last_Year/SI_CODE/CMakeFiles/edit_cache.dir
+/home/ola/intelligentsystemscourse/Last_Year/SI_CODE/CMakeFiles/pcd_read.dir
