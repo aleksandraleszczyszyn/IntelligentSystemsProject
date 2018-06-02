@@ -50,6 +50,7 @@ class Memory {
       	*/
         void updateCentroids(int pClusterId, int nClusterId, int featIdx);
 
+        float Ch();
         /**
      	* Synchronizes cluster assignment for features
     	*

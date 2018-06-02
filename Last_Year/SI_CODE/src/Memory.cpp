@@ -78,6 +78,23 @@ Memory::Memory(){
 Memory::~Memory()
 {}
 
+float Memory::Ch()
+{
+    float bssValue, wssValue, ch;
+    vector<pair<int, WssBag> > clustersWss;
+    unordered_map<int, BssBag> clustersBss;
+	bssValue = bss(clustersBss);
+	wssValue = wss(clustersWss);
+	int nClusters = clusters.size();
+	int nFeatures = featuresMetadata.size();
+	cout << "Number of features: " << nFeatures << endl;
+	cout << "Number of clusters: " << nClusters << endl;
+	cout << "Bss value: " << bssValue << endl;
+	cout << "Wss value: " << wssValue << endl;
+	return ch = (bssValue/(nClusters-1))/(wssValue/(nFeatures-nClusters));
+}
+
+
 void Memory::updateCentroids(int pClusterId, int nClusterId, int featIdx) {
     FeatureMetadata &featM = getFeatureMetadata(featIdx);
     //Histogram<153> &feat = getFeature(featIdx);

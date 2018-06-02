@@ -23,34 +23,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pcd_read.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pcd_read.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pcd_read.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1341">
-              <caret line="219" column="25" lean-forward="true" selection-start-line="219" selection-start-column="25" selection-end-line="219" selection-end-column="25" />
+            <state relative-caret-position="102">
+              <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#222#248#0" expanded="true" />
-                <element signature="e#433#453#0" expanded="true" />
+                <element signature="e#223#249#0" expanded="true" />
+                <element signature="e#434#454#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Memory.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Memory.cpp">
+      <file leaf-file-name="TestResult.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestResult.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="721" column="39" selection-start-line="721" selection-start-column="39" selection-end-line="721" selection-end-column="39" />
+            <state relative-caret-position="324">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kmeans.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/kmeans.h">
+      <file leaf-file-name="TestResult.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/TestResult.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+            <state relative-caret-position="342">
+              <caret line="177" column="27" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -58,8 +61,35 @@
       <file leaf-file-name="kmeans.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kmeans.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+            <state relative-caret-position="185">
+              <caret line="420" column="32" selection-start-line="420" selection-start-column="30" selection-end-line="420" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Memory.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Memory.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="88" column="44" lean-forward="true" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Memory.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/Memory.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1578">
+              <caret line="104" column="44" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kmeans.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/kmeans.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="36" column="32" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -68,27 +98,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>assignT</find>
-      <find>NUMBER CATE</find>
-      <find>getCentr</find>
-      <find>getCe</find>
-      <find>object_views_directory</find>
-      <find>pc</find>
-      <find>voxel_size</find>
-      <find>search_radius</find>
-      <find>window_width</find>
-      <find>support_lenght</find>
-      <find>return</find>
-      <find>checkclus</find>
-      <find>KMeans</find>
-      <find>boost</find>
-      <find>RunThreads</find>
-      <find>Wss</find>
-      <find>featuresMetadata</find>
-      <find>features</find>
       <find>featuresMetadata.end()</find>
       <find>categoryRecognizer</find>
-      <find>runTest</find>
       <find>categoryreco</find>
       <find>while</find>
       <find>numberOfThreads</find>
@@ -98,6 +109,25 @@
       <find>exception</find>
       <find>addcate</find>
       <find>numOfClusters</find>
+      <find>12</find>
+      <find>training</find>
+      <find>runTest</find>
+      <find>////</find>
+      <find>getn</find>
+      <find>set</find>
+      <find>getCentr</find>
+      <find>centroi</find>
+      <find>getCe</find>
+      <find>setN</find>
+      <find>getCen</find>
+      <find>7</find>
+      <find>BBBB</find>
+      <find>Reduce</find>
+      <find>Memory n</find>
+      <find>cluster(s) used in the test</find>
+      <find>setNumberOfCl</find>
+      <find>10</find>
+      <find>Number of feat</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -113,6 +143,7 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/kmeans.h" />
         <option value="$PROJECT_DIR$/src/kmeans.cpp" />
+        <option value="$PROJECT_DIR$/include/Memory.h" />
         <option value="$PROJECT_DIR$/src/Memory.cpp" />
         <option value="$PROJECT_DIR$/pcd_read.cpp" />
       </list>
@@ -127,6 +158,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="73" />
     <option name="y" value="-5" />
@@ -140,7 +172,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="kmeans.h&#9;FILE&#9;file:///home/ola/intelligentsystemscourse/Last_Year/SI_CODE/include/kmeans.h&#10;kmeans&#9;FILE&#9;file:///home/ola/intelligentsystemscourse/Last_Year/SI_CODE/src/kmeans.cpp" />
+    <property name="SearchEverywhereHistoryKey" value="setN&#9;null&#9;null&#10;kmeans&#9;FILE&#9;file:///home/ola/intelligentsystemscourse/Last_Year/SI_CODE/src/kmeans.cpp&#10;memo&#9;FILE&#9;file:///home/ola/intelligentsystemscourse/Last_Year/SI_CODE/include/Memory.h&#10;kmeans.h&#9;FILE&#9;file:///home/ola/intelligentsystemscourse/Last_Year/SI_CODE/include/kmeans.h" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../ap/work/signals/progs" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -195,22 +227,24 @@
       <workItem from="1527694332209" duration="4660000" />
       <workItem from="1527702390041" duration="2945000" />
       <workItem from="1527709742247" duration="2493000" />
+      <workItem from="1527798804821" duration="930000" />
+      <workItem from="1527848333161" duration="16480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84367000" />
+    <option name="totallyTimeSpent" value="101777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="-8" width="1849" height="1089" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.10178668" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.2861635" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.19412382" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.27434555" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32984293" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3427673" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5729276" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -256,28 +290,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/kmeans.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9738">
-          <caret line="541" column="5" selection-start-line="498" selection-start-column="4" selection-end-line="541" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/kmeans.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="91" column="23" selection-start-line="91" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pcd_read.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9018">
           <caret line="501" lean-forward="true" selection-start-line="501" selection-end-line="501" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#222#248#0" expanded="true" />
-            <element signature="e#433#453#0" expanded="true" />
+            <element signature="e#223#249#0" expanded="true" />
+            <element signature="e#434#454#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -332,8 +352,8 @@
           <caret line="365" selection-start-line="365" selection-end-line="365" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#222#248#0" expanded="true" />
-            <element signature="e#433#453#0" expanded="true" />
+            <element signature="e#223#249#0" expanded="true" />
+            <element signature="e#434#454#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -374,8 +394,8 @@
           <caret line="550" column="41" lean-forward="true" selection-start-line="550" selection-start-column="41" selection-end-line="550" selection-end-column="41" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#222#248#0" expanded="true" />
-            <element signature="e#433#453#0" expanded="true" />
+            <element signature="e#223#249#0" expanded="true" />
+            <element signature="e#434#454#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -517,43 +537,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Memory.h">
+    <entry file="file://$PROJECT_DIR$/include/TestResult.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13788">
-          <caret line="811" column="35" selection-start-line="811" selection-start-column="19" selection-end-line="811" selection-end-column="35" />
+        <state relative-caret-position="342">
+          <caret line="177" column="27" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestResult.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/kmeans.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        <state relative-caret-position="174">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmeans.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Memory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="721" column="39" selection-start-line="721" selection-start-column="39" selection-end-line="721" selection-end-column="39" />
+        <state relative-caret-position="185">
+          <caret line="420" column="32" selection-start-line="420" selection-start-column="30" selection-end-line="420" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pcd_read.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1341">
-          <caret line="219" column="25" lean-forward="true" selection-start-line="219" selection-start-column="25" selection-end-line="219" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#222#248#0" expanded="true" />
-            <element signature="e#433#453#0" expanded="true" />
+            <element signature="e#223#249#0" expanded="true" />
+            <element signature="e#434#454#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Memory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1578">
+          <caret line="104" column="44" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Memory.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="88" column="44" lean-forward="true" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
         </state>
       </provider>
     </entry>

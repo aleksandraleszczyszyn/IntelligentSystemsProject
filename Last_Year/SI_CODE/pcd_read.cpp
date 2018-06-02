@@ -70,6 +70,11 @@ int nViewsToSeePerCategory = 0;
 bool randShuffle = false;
 const int numberOfThreads = 3;
 const int numIters = 10;
+bool featureFinished = false;
+
+int initialNumberOfClusters = 7;
+
+int minNumberOfClusters = initialNumberOfClusters;
 /**
  * Loads the configuration file from disk.
  *
@@ -162,19 +167,23 @@ void printConfiguration(){
  *
  *
  */
-int trainingPhase(Memory& memory, TestResult& testResult, FeatureExtractor* featureExtractor, ObjectViewRepository* objectViewRepository, KMeans* kMeans, float& wss, float& bss)
+int trainingPhase(Memory& memory, TestResult& testResult, FeatureExtractor* featureExtractor, ObjectViewRepository* objectViewRepository, KMeans* kMeans, float& wss, float& bss, int iteration)
 {
+
     ostringstream category;
     int categoryId;
     int featId;
     char ret;
     char callResult;
-
+    int counter = 0;
     while(1)
     {
         PointCloud<PointT>::Ptr pc (new PointCloud<PointT>);
         ret = objectViewRepository->NextObjectView(pc);
-
+        counter++;
+        if(counter%(10*iteration) == 0){
+            return 0;
+        }
         if(ret == 3)
         {
             cout << "The ObjectViewRepository is not initialized yet!" << endl;
@@ -190,18 +199,8 @@ int trainingPhase(Memory& memory, TestResult& testResult, FeatureExtractor* feat
                 // learning
                 cout << "Starting Testing phase!" << endl;
                 objectViewRepository->shuffleViewsForLearning();
-
-                // calculating Wss
-            vector<pair<int, WssBag> > clustersWss;
-            unordered_map<int, BssBag> clustersBss;
-            // wss is the total WSS computed over all clusters
-            // WSS stands for Within cluster Sum of Squares
-            bss = memory.bss(clustersBss);
-            wss = memory.wss(clustersWss);
-           // wss = kMeans->numOfClusters;
-            //*Wss = memory->wss(clustersWss);
-            //cout << "Wss inside: " << wss << "-------------------------------------------------------------------------------------------------------------------------------------" << endl;
-                return 0;
+                featureFinished = true;
+                return 1;
 
         }
         else if(ret == 5)
@@ -408,6 +407,7 @@ public:
     float wss;
     float bss;
     int bestThreadIndex;
+    int iteration=1;
 
     ThreadSctructures(): categoryRecognizer(memory, DEBUG), kMeans(numIters), objectViewRepository(DEBUG, nViewsToSeePerCategory, randShuffle)
     {
@@ -420,8 +420,6 @@ public:
         memory.setDebugMode(DEBUG);
         memory.setForgetFeatures(forget);
         memory.setGWRedistSearchRadius(redistribute_gWeights_search_radius);
-//        kMeans.init(memory);
-//        memory.setKmeans(&kMeans);
         featureExtractor = FeatureExtractor();
         testResult = new TestResult();
     }
@@ -431,8 +429,27 @@ public:
         kMeans.setNumberOfClusters(number);
         kMeans.init(memory);
         memory.setKmeans(&kMeans);
+
+        cout<<"Kmeans cluster: "<<kMeans.numOfClusters<<" Memory n cluster: "<<memory.getNClusters()<<"   BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"<<endl;
+    }
+
+    void ReduceNumberOfClusters() {
+        if (minNumberOfClusters > 2) {
+            minNumberOfClusters--;
+            cout << "Decreasing number of clusters !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "
+                 << kMeans.numOfClusters << endl;
+        }
+    }
+
+    void IncreaseNumberOfClusters()
+    {
+        minNumberOfClusters++;
+        memory.setKmeans(&kMeans);
+        cout << "Increasing number of clusters !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "
+             << kMeans.numOfClusters << endl;
     }
 };
+
 
 char runTest(ThreadSctructures threadSctructures[]){
 
@@ -460,28 +477,101 @@ char runTest(ThreadSctructures threadSctructures[]){
 
     thread *threads[numberOfThreads];
 
-    for (int i=0; i<numberOfThreads; i++)
-        threads[i] = new thread(trainingPhase, boost::ref(threadSctructures[i].memory), *threadSctructures[i].testResult,&threadSctructures[i].featureExtractor, &threadSctructures[i].objectViewRepository, &threadSctructures[i].kMeans, boost::ref(threadSctructures[i].wss), boost::ref(threadSctructures[i].bss));
+    while(!featureFinished){
 
-    for (int i=0; i<numberOfThreads; i++)
-    {
-        threads[i]->join();
-        delete threads[i];
+        //TODO check results of previous iteration if there is previous
+        cout<<"While loop iteration!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
+
+        for (int i=0; i<numberOfThreads; i++)
+        {
+            threadSctructures[i].memory = Memory();
+        }
+
+        // set the number of clusters for each thread
+        for (int i=0; i<numberOfThreads; i++)
+        {
+            threadSctructures[i].setNumberOfClusters(minNumberOfClusters+i);
+        }
+        for (int i=0; i<numberOfThreads; i++) {
+            threads[i] = new thread(trainingPhase, boost::ref(threadSctructures[i].memory),
+                                    *threadSctructures[i].testResult, &threadSctructures[i].featureExtractor,
+                                    &threadSctructures[i].objectViewRepository, &threadSctructures[i].kMeans,
+                                    boost::ref(threadSctructures[i].wss), boost::ref(threadSctructures[i].bss),
+                                    threadSctructures[i].iteration);
+
+            threadSctructures[i].iteration++;
+
+        }
+
+        for (int i=0; i<numberOfThreads; i++)
+        {
+            threads[i]->join();
+            delete threads[i];
+        }
+        // finding the best thread
+        int best=0;
+        float bestCH = threadSctructures[0].memory.Ch();
+        float ch;
+        for (int i=0; i<numberOfThreads; i++) {
+
+            ch=threadSctructures[i].memory.Ch();
+            cout<<"CH["<<i<<"]= "<<ch<<"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"<<endl;
+            if (ch > bestCH)
+            {
+                best = i;
+                bestCH = ch;
+            }
+            threadSctructures[i].bestThreadIndex=best;
+        }
+
+        if (numberOfThreads%2==0)
+        {
+            int middle = numberOfThreads/2;
+            if (best < middle-1)
+            {
+
+                threadSctructures[0].ReduceNumberOfClusters();
+
+            }
+
+            if (best > middle)
+            {
+
+                threadSctructures[0].IncreaseNumberOfClusters();
+
+            }
+        } else{
+
+
+            int middle = numberOfThreads/2;
+            cout << "middle: " << middle << " best: " << best << " n of threads: " << numberOfThreads << "      33333333333333333333333333333333333333333333333333"<< endl;
+            if (best < middle)
+            {
+                    threadSctructures[0].ReduceNumberOfClusters();
+            }
+
+            if (best>middle)
+            {
+                threadSctructures[0].IncreaseNumberOfClusters();
+
+            }
+
+        }
+
     }
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    // finding the best threads
-    int best=0;
-    for (int i=0; i<numberOfThreads; i++)
-    {
-        if (threadSctructures[i].wss < threadSctructures[best].wss)
-            best = i;
-    }
+
+    //// finding the best threads
+
+
+
 
 
     //trainingPhase(memory, testResult, &featureExtractor, &objectViewRepository, &kMeans);
 //
-    testingPhase(threadSctructures[best].memory,*threadSctructures[best].testResult, &threadSctructures[best].featureExtractor, &threadSctructures[best].objectViewRepository, &threadSctructures[best].kMeans,&threadSctructures[best].categoryRecognizer);
+//    testingPhase(threadSctructures[best].memory,*threadSctructures[best].testResult, &threadSctructures[best].featureExtractor, &threadSctructures[best].objectViewRepository, &threadSctructures[best].kMeans,&threadSctructures[best].categoryRecognizer);
 }
 
 /**
@@ -559,26 +649,31 @@ int main (int argc, char** argv){
         // holds the individual test results. A new testResult should be created for each test run
         //TestResult* testResult = new TestResult();
 
-        //Memory memory;
-
-        // run a test
 
         ThreadSctructures threadSctructures[numberOfThreads];
+
+        // set the number of clusters for each thread
         for (int i=0; i<numberOfThreads; i++)
         {
-            threadSctructures[i].setNumberOfClusters(3+i);
+            threadSctructures[i].setNumberOfClusters(initialNumberOfClusters+i);
         }
 
+        // training phase
         runTest(threadSctructures);
+        int best = threadSctructures[0].bestThreadIndex;
+
+        // testing phase
+
+                cout << "Best thread index: " << best << " @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" << endl;
+        cout << "Best thread index: " << threadSctructures[best].kMeans.numOfClusters << " @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" << endl;
+        testingPhase(threadSctructures[best].memory,*threadSctructures[best].testResult, &threadSctructures[best].featureExtractor, &threadSctructures[best].objectViewRepository, &threadSctructures[best].kMeans,&threadSctructures[best].categoryRecognizer);
+
 
         for (int i=0; i<numberOfThreads; i++)
         {
             cout << "Thread " << i << " wss: " << threadSctructures[i].wss << " @@@@@@@@@@@######################################$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" << endl;
             cout << "Thread " << i << " bss: " << threadSctructures[i].bss << " @@@@@@@@@@@######################################$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" << endl;
         }
-
-        int best= threadSctructures[0].bestThreadIndex;
-
 
         // collect results
         threadSctructures[best].testResult->setPerfAssess(threadSctructures[best].memory.getCategories());
